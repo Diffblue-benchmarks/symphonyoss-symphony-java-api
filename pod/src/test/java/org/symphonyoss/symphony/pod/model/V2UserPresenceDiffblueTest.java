@@ -1,0 +1,186 @@
+package org.symphonyoss.symphony.pod.model;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.MethodsUnderTest;
+import org.junit.Test;
+
+public class V2UserPresenceDiffblueTest {
+  /**
+   * Test {@link V2UserPresence#equals(Object)}, and {@link V2UserPresence#hashCode()}.
+   * <ul>
+   *   <li>When other is equal.</li>
+   *   <li>Then return equal.</li>
+   * </ul>
+   * <p>
+   * Methods under test:
+   * <ul>
+   *   <li>{@link V2UserPresence#equals(Object)}
+   *   <li>{@link V2UserPresence#hashCode()}
+   * </ul>
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
+    // Arrange
+    V2UserPresence v2UserPresence = new V2UserPresence();
+    V2UserPresence v2UserPresence2 = new V2UserPresence();
+
+    // Act and Assert
+    assertEquals(v2UserPresence, v2UserPresence2);
+    int expectedHashCodeResult = v2UserPresence.hashCode();
+    assertEquals(expectedHashCodeResult, v2UserPresence2.hashCode());
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}, and {@link V2UserPresence#hashCode()}.
+   * <ul>
+   *   <li>When other is same.</li>
+   *   <li>Then return equal.</li>
+   * </ul>
+   * <p>
+   * Methods under test:
+   * <ul>
+   *   <li>{@link V2UserPresence#equals(Object)}
+   *   <li>{@link V2UserPresence#hashCode()}
+   * </ul>
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
+    // Arrange
+    V2UserPresence v2UserPresence = new V2UserPresence();
+
+    // Act and Assert
+    assertEquals(v2UserPresence, v2UserPresence);
+    int expectedHashCodeResult = v2UserPresence.hashCode();
+    assertEquals(expectedHashCodeResult, v2UserPresence.hashCode());
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}.
+   * <ul>
+   *   <li>When other is different.</li>
+   *   <li>Then return not equal.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link V2UserPresence#equals(Object)}
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
+    // Arrange, Act and Assert
+    assertNotEquals(new V2UserPresence(), 1);
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}.
+   * <ul>
+   *   <li>When other is different.</li>
+   *   <li>Then return not equal.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link V2UserPresence#equals(Object)}
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
+    // Arrange
+    V2UserPresence v2UserPresence = new V2UserPresence();
+    v2UserPresence.category("Category");
+
+    // Act and Assert
+    assertNotEquals(v2UserPresence, new V2UserPresence());
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}.
+   * <ul>
+   *   <li>When other is different.</li>
+   *   <li>Then return not equal.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link V2UserPresence#equals(Object)}
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
+    // Arrange
+    V2UserPresence v2UserPresence = new V2UserPresence();
+    v2UserPresence.userId(1L);
+
+    // Act and Assert
+    assertNotEquals(v2UserPresence, new V2UserPresence());
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}.
+   * <ul>
+   *   <li>When other is {@code null}.</li>
+   *   <li>Then return not equal.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link V2UserPresence#equals(Object)}
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
+    // Arrange, Act and Assert
+    assertNotEquals(new V2UserPresence(), null);
+  }
+
+  /**
+   * Test {@link V2UserPresence#equals(Object)}.
+   * <ul>
+   *   <li>When other is wrong type.</li>
+   *   <li>Then return not equal.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link V2UserPresence#equals(Object)}
+   */
+  @Test
+  @MethodsUnderTest({"boolean V2UserPresence.equals(Object)", "int V2UserPresence.hashCode()"})
+  public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
+    // Arrange, Act and Assert
+    assertNotEquals(new V2UserPresence(), "Different type to V2UserPresence");
+  }
+
+  /**
+   * Test getters and setters.
+   * <p>
+   * Methods under test:
+   * <ul>
+   *   <li>default or parameterless constructor of {@link V2UserPresence}
+   *   <li>{@link V2UserPresence#category(String)}
+   *   <li>{@link V2UserPresence#setCategory(String)}
+   *   <li>{@link V2UserPresence#setUserId(Long)}
+   *   <li>{@link V2UserPresence#userId(Long)}
+   *   <li>{@link V2UserPresence#toString()}
+   *   <li>{@link V2UserPresence#getCategory()}
+   *   <li>{@link V2UserPresence#getUserId()}
+   * </ul>
+   */
+  @Test
+  @MethodsUnderTest({"void V2UserPresence.<init>()", "V2UserPresence V2UserPresence.category(String)",
+      "String V2UserPresence.getCategory()", "Long V2UserPresence.getUserId()",
+      "void V2UserPresence.setCategory(String)", "void V2UserPresence.setUserId(Long)",
+      "String V2UserPresence.toString()", "V2UserPresence V2UserPresence.userId(Long)"})
+  public void testGettersAndSetters() {
+    // Arrange and Act
+    V2UserPresence actualV2UserPresence = new V2UserPresence();
+    V2UserPresence actualCategoryResult = actualV2UserPresence.category("Category");
+    actualV2UserPresence.setCategory("Category");
+    actualV2UserPresence.setUserId(1L);
+    V2UserPresence actualUserIdResult = actualV2UserPresence.userId(1L);
+    String actualToStringResult = actualV2UserPresence.toString();
+    String actualCategory = actualV2UserPresence.getCategory();
+
+    // Assert
+    assertEquals("Category", actualCategory);
+    assertEquals("class V2UserPresence {\n    category: Category\n    userId: 1\n}", actualToStringResult);
+    assertEquals(1L, actualV2UserPresence.getUserId().longValue());
+    assertSame(actualV2UserPresence, actualCategoryResult);
+    assertSame(actualV2UserPresence, actualUserIdResult);
+  }
+}
