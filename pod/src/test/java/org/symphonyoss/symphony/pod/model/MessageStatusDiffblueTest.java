@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,129 +13,165 @@ import org.junit.Test;
 public class MessageStatusDiffblueTest {
   /**
    * Test {@link MessageStatus#addDeliveredItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor).</li>
+   *   <li>Given {@link MessageStatus} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addDeliveredItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addDeliveredItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addDeliveredItem(MessageStatusUser)"})
   public void testAddDeliveredItem_givenMessageStatus() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addDeliveredItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddDeliveredItemResult =
+        messageStatus.addDeliveredItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddDeliveredItemResult);
   }
 
   /**
    * Test {@link MessageStatus#addDeliveredItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor) delivered {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link MessageStatus} (default constructor) delivered {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addDeliveredItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addDeliveredItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addDeliveredItem(MessageStatusUser)"})
   public void testAddDeliveredItem_givenMessageStatusDeliveredArrayList() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
     messageStatus.delivered(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addDeliveredItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddDeliveredItemResult =
+        messageStatus.addDeliveredItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddDeliveredItemResult);
   }
 
   /**
    * Test {@link MessageStatus#addReadItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor).</li>
+   *   <li>Given {@link MessageStatus} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addReadItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addReadItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addReadItem(MessageStatusUser)"})
   public void testAddReadItem_givenMessageStatus() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addReadItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddReadItemResult = messageStatus.addReadItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddReadItemResult);
   }
 
   /**
    * Test {@link MessageStatus#addReadItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor) read {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link MessageStatus} (default constructor) read {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addReadItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addReadItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addReadItem(MessageStatusUser)"})
   public void testAddReadItem_givenMessageStatusReadArrayList() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
     messageStatus.read(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addReadItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddReadItemResult = messageStatus.addReadItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddReadItemResult);
   }
 
   /**
    * Test {@link MessageStatus#addSentItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor).</li>
+   *   <li>Given {@link MessageStatus} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addSentItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addSentItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addSentItem(MessageStatusUser)"})
   public void testAddSentItem_givenMessageStatus() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addSentItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddSentItemResult = messageStatus.addSentItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddSentItemResult);
   }
 
   /**
    * Test {@link MessageStatus#addSentItem(MessageStatusUser)}.
+   *
    * <ul>
-   *   <li>Given {@link MessageStatus} (default constructor) sent {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link MessageStatus} (default constructor) sent {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#addSentItem(MessageStatusUser)}
+   *
+   * <p>Method under test: {@link MessageStatus#addSentItem(MessageStatusUser)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"MessageStatus MessageStatus.addSentItem(MessageStatusUser)"})
   public void testAddSentItem_givenMessageStatusSentArrayList() {
     // Arrange
     MessageStatus messageStatus = new MessageStatus();
     messageStatus.sent(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(messageStatus, messageStatus.addSentItem(new MessageStatusUser()));
+    // Act
+    MessageStatus actualAddSentItemResult = messageStatus.addSentItem(new MessageStatusUser());
+
+    // Assert
+    assertSame(messageStatus, actualAddSentItemResult);
   }
 
   /**
    * Test {@link MessageStatus#equals(Object)}, and {@link MessageStatus#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageStatus#equals(Object)}
    *   <li>{@link MessageStatus#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -143,24 +180,26 @@ public class MessageStatusDiffblueTest {
 
     // Act and Assert
     assertEquals(messageStatus, messageStatus2);
-    int expectedHashCodeResult = messageStatus.hashCode();
-    assertEquals(expectedHashCodeResult, messageStatus2.hashCode());
+    assertEquals(messageStatus.hashCode(), messageStatus2.hashCode());
   }
 
   /**
    * Test {@link MessageStatus#equals(Object)}, and {@link MessageStatus#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageStatus#equals(Object)}
    *   <li>{@link MessageStatus#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -174,14 +213,16 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test {@link MessageStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -194,14 +235,16 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test {@link MessageStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -214,14 +257,16 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test {@link MessageStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -234,14 +279,16 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test {@link MessageStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -250,14 +297,16 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test {@link MessageStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean MessageStatus.equals(Object)", "int MessageStatus.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -266,8 +315,9 @@ public class MessageStatusDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link MessageStatus}
    *   <li>{@link MessageStatus#delivered(List)}
@@ -283,11 +333,20 @@ public class MessageStatusDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void MessageStatus.<init>()", "MessageStatus MessageStatus.delivered(List)",
-      "List MessageStatus.getDelivered()", "List MessageStatus.getRead()", "List MessageStatus.getSent()",
-      "MessageStatus MessageStatus.read(List)", "MessageStatus MessageStatus.sent(List)",
-      "void MessageStatus.setDelivered(List)", "void MessageStatus.setRead(List)", "void MessageStatus.setSent(List)",
-      "String MessageStatus.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void MessageStatus.<init>()",
+    "MessageStatus MessageStatus.delivered(List)",
+    "List MessageStatus.getDelivered()",
+    "List MessageStatus.getRead()",
+    "List MessageStatus.getSent()",
+    "MessageStatus MessageStatus.read(List)",
+    "MessageStatus MessageStatus.sent(List)",
+    "void MessageStatus.setDelivered(List)",
+    "void MessageStatus.setRead(List)",
+    "void MessageStatus.setSent(List)",
+    "String MessageStatus.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     MessageStatus actualMessageStatus = new MessageStatus();
@@ -306,7 +365,9 @@ public class MessageStatusDiffblueTest {
     List<MessageStatusUser> actualSent = actualMessageStatus.getSent();
 
     // Assert
-    assertEquals("class MessageStatus {\n    read: []\n    delivered: []\n    sent: []\n}", actualToStringResult);
+    assertEquals(
+        "class MessageStatus {\n    read: []\n    delivered: []\n    sent: []\n}",
+        actualToStringResult);
     assertTrue(actualDelivered.isEmpty());
     assertTrue(actualRead.isEmpty());
     assertTrue(actualSent.isEmpty());

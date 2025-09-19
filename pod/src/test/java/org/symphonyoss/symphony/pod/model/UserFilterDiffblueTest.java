@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.UserFilter.StatusEnum;
@@ -12,18 +13,21 @@ import org.symphonyoss.symphony.pod.model.UserFilter.UsertypeEnum;
 public class UserFilterDiffblueTest {
   /**
    * Test {@link UserFilter#equals(Object)}, and {@link UserFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserFilter#equals(Object)}
    *   <li>{@link UserFilter#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -32,24 +36,26 @@ public class UserFilterDiffblueTest {
 
     // Act and Assert
     assertEquals(userFilter, userFilter2);
-    int expectedHashCodeResult = userFilter.hashCode();
-    assertEquals(expectedHashCodeResult, userFilter2.hashCode());
+    assertEquals(userFilter.hashCode(), userFilter2.hashCode());
   }
 
   /**
    * Test {@link UserFilter#equals(Object)}, and {@link UserFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserFilter#equals(Object)}
    *   <li>{@link UserFilter#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -63,14 +69,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -79,14 +87,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -99,14 +109,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -119,14 +131,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -139,14 +153,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -159,14 +175,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -179,14 +197,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -199,14 +219,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -219,14 +241,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -239,14 +263,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -259,14 +285,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -275,14 +303,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test {@link UserFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link UserFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserFilter.equals(Object)", "int UserFilter.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -291,8 +321,9 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserFilter}
    *   <li>{@link UserFilter#department(String)}
@@ -326,18 +357,38 @@ public class UserFilterDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserFilter.<init>()", "UserFilter UserFilter.department(String)",
-      "UserFilter UserFilter.email(String)", "UserFilter UserFilter.feature(String)",
-      "String UserFilter.getDepartment()", "String UserFilter.getEmail()", "String UserFilter.getFeature()",
-      "String UserFilter.getLocation()", "String UserFilter.getName()", "String UserFilter.getRole()",
-      "StatusEnum UserFilter.getStatus()", "String UserFilter.getTitle()", "UsertypeEnum UserFilter.getUsertype()",
-      "UserFilter UserFilter.location(String)", "UserFilter UserFilter.name(String)",
-      "UserFilter UserFilter.role(String)", "void UserFilter.setDepartment(String)", "void UserFilter.setEmail(String)",
-      "void UserFilter.setFeature(String)", "void UserFilter.setLocation(String)", "void UserFilter.setName(String)",
-      "void UserFilter.setRole(String)", "void UserFilter.setStatus(StatusEnum)", "void UserFilter.setTitle(String)",
-      "void UserFilter.setUsertype(UsertypeEnum)", "UserFilter UserFilter.status(StatusEnum)",
-      "UserFilter UserFilter.title(String)", "String UserFilter.toString()",
-      "UserFilter UserFilter.usertype(UsertypeEnum)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserFilter.<init>()",
+    "UserFilter UserFilter.department(String)",
+    "UserFilter UserFilter.email(String)",
+    "UserFilter UserFilter.feature(String)",
+    "String UserFilter.getDepartment()",
+    "String UserFilter.getEmail()",
+    "String UserFilter.getFeature()",
+    "String UserFilter.getLocation()",
+    "String UserFilter.getName()",
+    "String UserFilter.getRole()",
+    "StatusEnum UserFilter.getStatus()",
+    "String UserFilter.getTitle()",
+    "UsertypeEnum UserFilter.getUsertype()",
+    "UserFilter UserFilter.location(String)",
+    "UserFilter UserFilter.name(String)",
+    "UserFilter UserFilter.role(String)",
+    "void UserFilter.setDepartment(String)",
+    "void UserFilter.setEmail(String)",
+    "void UserFilter.setFeature(String)",
+    "void UserFilter.setLocation(String)",
+    "void UserFilter.setName(String)",
+    "void UserFilter.setRole(String)",
+    "void UserFilter.setStatus(StatusEnum)",
+    "void UserFilter.setTitle(String)",
+    "void UserFilter.setUsertype(UsertypeEnum)",
+    "UserFilter UserFilter.status(StatusEnum)",
+    "UserFilter UserFilter.title(String)",
+    "String UserFilter.toString()",
+    "UserFilter UserFilter.usertype(UsertypeEnum)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserFilter actualUserFilter = new UserFilter();
@@ -377,9 +428,17 @@ public class UserFilterDiffblueTest {
     assertEquals("Name", actualName);
     assertEquals("Role", actualRole);
     assertEquals(
-        "class UserFilter {\n" + "    email: jane.doe@example.org\n" + "    name: Name\n"
-            + "    department: Department\n" + "    title: Dr\n" + "    role: Role\n" + "    feature: Feature\n"
-            + "    status: ENABLED\n" + "    usertype: NORMAL\n" + "    location: Location\n" + "}",
+        "class UserFilter {\n"
+            + "    email: jane.doe@example.org\n"
+            + "    name: Name\n"
+            + "    department: Department\n"
+            + "    title: Dr\n"
+            + "    role: Role\n"
+            + "    feature: Feature\n"
+            + "    status: ENABLED\n"
+            + "    usertype: NORMAL\n"
+            + "    location: Location\n"
+            + "}",
         actualToStringResult);
     assertEquals("jane.doe@example.org", actualEmail);
     assertEquals(StatusEnum.ENABLED, actualStatus);
@@ -397,14 +456,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code ENABLED}.</li>
-   *   <li>Then return {@code ENABLED}.</li>
+   *   <li>When {@code ENABLED}.
+   *   <li>Then return {@code ENABLED}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenEnabled_thenReturnEnabled() {
     // Arrange, Act and Assert
@@ -413,14 +474,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -429,14 +492,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test StatusEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StatusEnum#toString()}
    *   <li>{@link StatusEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String StatusEnum.getValue()", "String StatusEnum.toString()"})
   public void testStatusEnumGettersAndSetters() {
     // Arrange
@@ -452,14 +517,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test UsertypeEnum {@link UsertypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code NORMAL}.</li>
-   *   <li>Then return {@code NORMAL}.</li>
+   *   <li>When {@code NORMAL}.
+   *   <li>Then return {@code NORMAL}.
    * </ul>
-   * <p>
-   * Method under test: {@link UsertypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link UsertypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UsertypeEnum UsertypeEnum.fromValue(String)"})
   public void testUsertypeEnumFromValue_whenNormal_thenReturnNormal() {
     // Arrange, Act and Assert
@@ -468,14 +535,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test UsertypeEnum {@link UsertypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link UsertypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link UsertypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UsertypeEnum UsertypeEnum.fromValue(String)"})
   public void testUsertypeEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -484,14 +553,16 @@ public class UserFilterDiffblueTest {
 
   /**
    * Test UsertypeEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UsertypeEnum#toString()}
    *   <li>{@link UsertypeEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String UsertypeEnum.getValue()", "String UsertypeEnum.toString()"})
   public void testUsertypeEnumGettersAndSetters() {
     // Arrange

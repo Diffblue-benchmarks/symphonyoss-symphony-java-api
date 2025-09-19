@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomAttributesDiffblueTest {
   /**
    * Test {@link RoomAttributes#equals(Object)}, and {@link RoomAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomAttributes#equals(Object)}
    *   <li>{@link RoomAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class RoomAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(roomAttributes, roomAttributes2);
-    int expectedHashCodeResult = roomAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, roomAttributes2.hashCode());
+    assertEquals(roomAttributes.hashCode(), roomAttributes2.hashCode());
   }
 
   /**
    * Test {@link RoomAttributes#equals(Object)}, and {@link RoomAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomAttributes#equals(Object)}
    *   <li>{@link RoomAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -173,14 +191,16 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test {@link RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomAttributes.equals(Object)", "int RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -189,8 +209,9 @@ public class RoomAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomAttributes}
    *   <li>{@link RoomAttributes#description(String)}
@@ -209,18 +230,28 @@ public class RoomAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomAttributes.<init>()", "RoomAttributes RoomAttributes.description(String)",
-      "RoomAttributes RoomAttributes.discoverable(Boolean)", "String RoomAttributes.getDescription()",
-      "Boolean RoomAttributes.getDiscoverable()", "Boolean RoomAttributes.getMembersCanInvite()",
-      "String RoomAttributes.getName()", "RoomAttributes RoomAttributes.membersCanInvite(Boolean)",
-      "RoomAttributes RoomAttributes.name(String)", "void RoomAttributes.setDescription(String)",
-      "void RoomAttributes.setDiscoverable(Boolean)", "void RoomAttributes.setMembersCanInvite(Boolean)",
-      "void RoomAttributes.setName(String)", "String RoomAttributes.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomAttributes.<init>()",
+    "RoomAttributes RoomAttributes.description(String)",
+    "RoomAttributes RoomAttributes.discoverable(Boolean)",
+    "String RoomAttributes.getDescription()",
+    "Boolean RoomAttributes.getDiscoverable()",
+    "Boolean RoomAttributes.getMembersCanInvite()",
+    "String RoomAttributes.getName()",
+    "RoomAttributes RoomAttributes.membersCanInvite(Boolean)",
+    "RoomAttributes RoomAttributes.name(String)",
+    "void RoomAttributes.setDescription(String)",
+    "void RoomAttributes.setDiscoverable(Boolean)",
+    "void RoomAttributes.setMembersCanInvite(Boolean)",
+    "void RoomAttributes.setName(String)",
+    "String RoomAttributes.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomAttributes actualRoomAttributes = new RoomAttributes();
-    RoomAttributes actualDescriptionResult = actualRoomAttributes
-        .description("The characteristics of someone or something");
+    RoomAttributes actualDescriptionResult =
+        actualRoomAttributes.description("The characteristics of someone or something");
     RoomAttributes actualDiscoverableResult = actualRoomAttributes.discoverable(true);
     RoomAttributes actualMembersCanInviteResult = actualRoomAttributes.membersCanInvite(true);
     RoomAttributes actualNameResult = actualRoomAttributes.name("Name");
@@ -236,9 +267,14 @@ public class RoomAttributesDiffblueTest {
     // Assert
     assertEquals("Name", actualRoomAttributes.getName());
     assertEquals("The characteristics of someone or something", actualDescription);
-    assertEquals("class RoomAttributes {\n" + "    name: Name\n"
-        + "    description: The characteristics of someone or something\n" + "    membersCanInvite: true\n"
-        + "    discoverable: true\n" + "}", actualToStringResult);
+    assertEquals(
+        "class RoomAttributes {\n"
+            + "    name: Name\n"
+            + "    description: The characteristics of someone or something\n"
+            + "    membersCanInvite: true\n"
+            + "    discoverable: true\n"
+            + "}",
+        actualToStringResult);
     assertTrue(actualDiscoverable);
     assertTrue(actualMembersCanInvite);
     assertSame(actualRoomAttributes, actualDescriptionResult);

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.Disclaimer.FormatEnum;
@@ -12,18 +13,21 @@ import org.symphonyoss.symphony.pod.model.Disclaimer.FormatEnum;
 public class DisclaimerDiffblueTest {
   /**
    * Test {@link Disclaimer#equals(Object)}, and {@link Disclaimer#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Disclaimer#equals(Object)}
    *   <li>{@link Disclaimer#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -32,24 +36,26 @@ public class DisclaimerDiffblueTest {
 
     // Act and Assert
     assertEquals(disclaimer, disclaimer2);
-    int expectedHashCodeResult = disclaimer.hashCode();
-    assertEquals(expectedHashCodeResult, disclaimer2.hashCode());
+    assertEquals(disclaimer.hashCode(), disclaimer2.hashCode());
   }
 
   /**
    * Test {@link Disclaimer#equals(Object)}, and {@link Disclaimer#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Disclaimer#equals(Object)}
    *   <li>{@link Disclaimer#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -63,14 +69,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -79,14 +87,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -99,14 +109,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -119,14 +131,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -139,14 +153,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -159,14 +175,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -179,14 +197,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -199,14 +219,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -219,14 +241,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -239,14 +263,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -259,14 +285,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -275,14 +303,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test {@link Disclaimer#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Disclaimer#equals(Object)}
+   *
+   * <p>Method under test: {@link Disclaimer#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Disclaimer.equals(Object)", "int Disclaimer.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -291,14 +321,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -307,14 +339,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -323,14 +357,16 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -346,8 +382,9 @@ public class DisclaimerDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Disclaimer}
    *   <li>{@link Disclaimer#content(String)}
@@ -381,19 +418,38 @@ public class DisclaimerDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Disclaimer.<init>()", "Disclaimer Disclaimer.content(String)",
-      "Disclaimer Disclaimer.createdDate(Long)", "Disclaimer Disclaimer.format(FormatEnum)",
-      "Disclaimer Disclaimer.frequencyInHours(Integer)", "String Disclaimer.getContent()",
-      "Long Disclaimer.getCreatedDate()", "FormatEnum Disclaimer.getFormat()",
-      "Integer Disclaimer.getFrequencyInHours()", "String Disclaimer.getId()", "Boolean Disclaimer.getIsActive()",
-      "Boolean Disclaimer.getIsDefault()", "Long Disclaimer.getModifiedDate()", "String Disclaimer.getName()",
-      "Disclaimer Disclaimer.id(String)", "Disclaimer Disclaimer.isActive(Boolean)",
-      "Disclaimer Disclaimer.isDefault(Boolean)", "Disclaimer Disclaimer.modifiedDate(Long)",
-      "Disclaimer Disclaimer.name(String)", "void Disclaimer.setContent(String)",
-      "void Disclaimer.setCreatedDate(Long)", "void Disclaimer.setFormat(FormatEnum)",
-      "void Disclaimer.setFrequencyInHours(Integer)", "void Disclaimer.setId(String)",
-      "void Disclaimer.setIsActive(Boolean)", "void Disclaimer.setIsDefault(Boolean)",
-      "void Disclaimer.setModifiedDate(Long)", "void Disclaimer.setName(String)", "String Disclaimer.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Disclaimer.<init>()",
+    "Disclaimer Disclaimer.content(String)",
+    "Disclaimer Disclaimer.createdDate(Long)",
+    "Disclaimer Disclaimer.format(FormatEnum)",
+    "Disclaimer Disclaimer.frequencyInHours(Integer)",
+    "String Disclaimer.getContent()",
+    "Long Disclaimer.getCreatedDate()",
+    "FormatEnum Disclaimer.getFormat()",
+    "Integer Disclaimer.getFrequencyInHours()",
+    "String Disclaimer.getId()",
+    "Boolean Disclaimer.getIsActive()",
+    "Boolean Disclaimer.getIsDefault()",
+    "Long Disclaimer.getModifiedDate()",
+    "String Disclaimer.getName()",
+    "Disclaimer Disclaimer.id(String)",
+    "Disclaimer Disclaimer.isActive(Boolean)",
+    "Disclaimer Disclaimer.isDefault(Boolean)",
+    "Disclaimer Disclaimer.modifiedDate(Long)",
+    "Disclaimer Disclaimer.name(String)",
+    "void Disclaimer.setContent(String)",
+    "void Disclaimer.setCreatedDate(Long)",
+    "void Disclaimer.setFormat(FormatEnum)",
+    "void Disclaimer.setFrequencyInHours(Integer)",
+    "void Disclaimer.setId(String)",
+    "void Disclaimer.setIsActive(Boolean)",
+    "void Disclaimer.setIsDefault(Boolean)",
+    "void Disclaimer.setModifiedDate(Long)",
+    "void Disclaimer.setName(String)",
+    "String Disclaimer.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Disclaimer actualDisclaimer = new Disclaimer();
@@ -429,9 +485,18 @@ public class DisclaimerDiffblueTest {
     assertEquals("42", actualId);
     assertEquals("Name", actualDisclaimer.getName());
     assertEquals("Not all who wander are lost", actualContent);
-    assertEquals("class Disclaimer {\n" + "    id: 42\n" + "    name: Name\n"
-        + "    content: Not all who wander are lost\n" + "    frequencyInHours: 1\n" + "    isDefault: true\n"
-        + "    isActive: true\n" + "    createdDate: 1\n" + "    modifiedDate: 1\n" + "    format: TEXT\n" + "}",
+    assertEquals(
+        "class Disclaimer {\n"
+            + "    id: 42\n"
+            + "    name: Name\n"
+            + "    content: Not all who wander are lost\n"
+            + "    frequencyInHours: 1\n"
+            + "    isDefault: true\n"
+            + "    isActive: true\n"
+            + "    createdDate: 1\n"
+            + "    modifiedDate: 1\n"
+            + "    format: TEXT\n"
+            + "}",
         actualToStringResult);
     assertEquals(1, actualFrequencyInHours.intValue());
     assertEquals(1L, actualCreatedDate.longValue());

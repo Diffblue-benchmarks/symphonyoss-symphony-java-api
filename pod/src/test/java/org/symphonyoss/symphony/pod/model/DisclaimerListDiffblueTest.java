@@ -2,24 +2,28 @@ package org.symphonyoss.symphony.pod.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class DisclaimerListDiffblueTest {
   /**
    * Test {@link DisclaimerList#equals(Object)}, and {@link DisclaimerList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link DisclaimerList#equals(Object)}
    *   <li>{@link DisclaimerList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean DisclaimerList.equals(Object)", "int DisclaimerList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -28,24 +32,26 @@ public class DisclaimerListDiffblueTest {
 
     // Act and Assert
     assertEquals(disclaimerList, disclaimerList2);
-    int expectedHashCodeResult = disclaimerList.hashCode();
-    assertEquals(expectedHashCodeResult, disclaimerList2.hashCode());
+    assertEquals(disclaimerList.hashCode(), disclaimerList2.hashCode());
   }
 
   /**
    * Test {@link DisclaimerList#equals(Object)}, and {@link DisclaimerList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link DisclaimerList#equals(Object)}
    *   <li>{@link DisclaimerList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean DisclaimerList.equals(Object)", "int DisclaimerList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -59,14 +65,16 @@ public class DisclaimerListDiffblueTest {
 
   /**
    * Test {@link DisclaimerList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link DisclaimerList#equals(Object)}
+   *
+   * <p>Method under test: {@link DisclaimerList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean DisclaimerList.equals(Object)", "int DisclaimerList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -79,14 +87,16 @@ public class DisclaimerListDiffblueTest {
 
   /**
    * Test {@link DisclaimerList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link DisclaimerList#equals(Object)}
+   *
+   * <p>Method under test: {@link DisclaimerList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean DisclaimerList.equals(Object)", "int DisclaimerList.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -95,14 +105,16 @@ public class DisclaimerListDiffblueTest {
 
   /**
    * Test {@link DisclaimerList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link DisclaimerList#equals(Object)}
+   *
+   * <p>Method under test: {@link DisclaimerList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean DisclaimerList.equals(Object)", "int DisclaimerList.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -111,17 +123,19 @@ public class DisclaimerListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link DisclaimerList}
    *   <li>{@link DisclaimerList#toString()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void DisclaimerList.<init>()", "java.lang.String DisclaimerList.toString()"})
   public void testGettersAndSetters() {
     // Arrange, Act and Assert
-    assertEquals("class DisclaimerList {\n    []\n}", (new DisclaimerList()).toString());
+    assertEquals("class DisclaimerList {\n    []\n}", new DisclaimerList().toString());
   }
 }

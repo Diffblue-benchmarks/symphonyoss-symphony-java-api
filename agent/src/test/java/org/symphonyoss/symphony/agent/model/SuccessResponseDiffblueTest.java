@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.agent.model.SuccessResponse.FormatEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.agent.model.SuccessResponse.FormatEnum;
 public class SuccessResponseDiffblueTest {
   /**
    * Test {@link SuccessResponse#equals(Object)}, and {@link SuccessResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link SuccessResponse#equals(Object)}
    *   <li>{@link SuccessResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class SuccessResponseDiffblueTest {
 
     // Act and Assert
     assertEquals(successResponse, successResponse2);
-    int expectedHashCodeResult = successResponse.hashCode();
-    assertEquals(expectedHashCodeResult, successResponse2.hashCode());
+    assertEquals(successResponse.hashCode(), successResponse2.hashCode());
   }
 
   /**
    * Test {@link SuccessResponse#equals(Object)}, and {@link SuccessResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link SuccessResponse#equals(Object)}
    *   <li>{@link SuccessResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,14 +68,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test {@link SuccessResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link SuccessResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link SuccessResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -78,14 +86,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test {@link SuccessResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link SuccessResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link SuccessResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -98,14 +108,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test {@link SuccessResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link SuccessResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link SuccessResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -118,14 +130,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test {@link SuccessResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link SuccessResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link SuccessResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -134,14 +148,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test {@link SuccessResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link SuccessResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link SuccessResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean SuccessResponse.equals(Object)", "int SuccessResponse.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -150,14 +166,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -166,14 +184,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -182,14 +202,16 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -205,8 +227,9 @@ public class SuccessResponseDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link SuccessResponse}
    *   <li>{@link SuccessResponse#format(FormatEnum)}
@@ -219,15 +242,23 @@ public class SuccessResponseDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void SuccessResponse.<init>()", "SuccessResponse SuccessResponse.format(FormatEnum)",
-      "FormatEnum SuccessResponse.getFormat()", "String SuccessResponse.getMessage()",
-      "SuccessResponse SuccessResponse.message(String)", "void SuccessResponse.setFormat(FormatEnum)",
-      "void SuccessResponse.setMessage(String)", "String SuccessResponse.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void SuccessResponse.<init>()",
+    "SuccessResponse SuccessResponse.format(FormatEnum)",
+    "FormatEnum SuccessResponse.getFormat()",
+    "String SuccessResponse.getMessage()",
+    "SuccessResponse SuccessResponse.message(String)",
+    "void SuccessResponse.setFormat(FormatEnum)",
+    "void SuccessResponse.setMessage(String)",
+    "String SuccessResponse.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     SuccessResponse actualSuccessResponse = new SuccessResponse();
     SuccessResponse actualFormatResult = actualSuccessResponse.format(FormatEnum.TEXT);
-    SuccessResponse actualMessageResult = actualSuccessResponse.message("Not all who wander are lost");
+    SuccessResponse actualMessageResult =
+        actualSuccessResponse.message("Not all who wander are lost");
     actualSuccessResponse.setFormat(FormatEnum.TEXT);
     actualSuccessResponse.setMessage("Not all who wander are lost");
     String actualToStringResult = actualSuccessResponse.toString();
@@ -235,7 +266,8 @@ public class SuccessResponseDiffblueTest {
 
     // Assert
     assertEquals("Not all who wander are lost", actualSuccessResponse.getMessage());
-    assertEquals("class SuccessResponse {\n    format: TEXT\n    message: Not all who wander are lost\n}",
+    assertEquals(
+        "class SuccessResponse {\n    format: TEXT\n    message: Not all who wander are lost\n}",
         actualToStringResult);
     assertEquals(FormatEnum.TEXT, actualFormat);
     assertSame(actualSuccessResponse, actualFormatResult);

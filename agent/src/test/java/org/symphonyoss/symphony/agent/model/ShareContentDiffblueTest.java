@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ShareContentDiffblueTest {
   /**
    * Test {@link ShareContent#equals(Object)}, and {@link ShareContent#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ShareContent#equals(Object)}
    *   <li>{@link ShareContent#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class ShareContentDiffblueTest {
 
     // Act and Assert
     assertEquals(shareContent, shareContent2);
-    int expectedHashCodeResult = shareContent.hashCode();
-    assertEquals(expectedHashCodeResult, shareContent2.hashCode());
+    assertEquals(shareContent.hashCode(), shareContent2.hashCode());
   }
 
   /**
    * Test {@link ShareContent#equals(Object)}, and {@link ShareContent#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ShareContent#equals(Object)}
    *   <li>{@link ShareContent#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test {@link ShareContent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareContent#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareContent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test {@link ShareContent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareContent#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareContent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test {@link ShareContent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareContent#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareContent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test {@link ShareContent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareContent#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareContent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test {@link ShareContent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareContent#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareContent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareContent.equals(Object)", "int ShareContent.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class ShareContentDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ShareContent}
    *   <li>{@link ShareContent#content(ShareArticle)}
@@ -162,10 +179,17 @@ public class ShareContentDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ShareContent.<init>()", "ShareContent ShareContent.content(ShareArticle)",
-      "ShareArticle ShareContent.getContent()", "String ShareContent.getType()",
-      "void ShareContent.setContent(ShareArticle)", "void ShareContent.setType(String)",
-      "String ShareContent.toString()", "ShareContent ShareContent.type(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ShareContent.<init>()",
+    "ShareContent ShareContent.content(ShareArticle)",
+    "ShareArticle ShareContent.getContent()",
+    "String ShareContent.getType()",
+    "void ShareContent.setContent(ShareArticle)",
+    "void ShareContent.setType(String)",
+    "String ShareContent.toString()",
+    "ShareContent ShareContent.type(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ShareContent actualShareContent = new ShareContent();
@@ -179,11 +203,26 @@ public class ShareContentDiffblueTest {
 
     // Assert
     assertEquals("Type", actualShareContent.getType());
-    assertEquals("class ShareContent {\n" + "    type: Type\n" + "    content: class ShareArticle {\n"
-        + "        articleId: null\n" + "        title: null\n" + "        subTitle: null\n" + "        message: null\n"
-        + "        publisher: null\n" + "        publishDate: null\n" + "        thumbnailUrl: null\n"
-        + "        author: null\n" + "        articleUrl: null\n" + "        summary: null\n" + "        appId: null\n"
-        + "        appName: null\n" + "        appIconUrl: null\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ShareContent {\n"
+            + "    type: Type\n"
+            + "    content: class ShareArticle {\n"
+            + "        articleId: null\n"
+            + "        title: null\n"
+            + "        subTitle: null\n"
+            + "        message: null\n"
+            + "        publisher: null\n"
+            + "        publishDate: null\n"
+            + "        thumbnailUrl: null\n"
+            + "        author: null\n"
+            + "        articleUrl: null\n"
+            + "        summary: null\n"
+            + "        appId: null\n"
+            + "        appName: null\n"
+            + "        appIconUrl: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(content, actualContent);
     assertSame(actualShareContent, actualContentResult);
     assertSame(actualShareContent, actualTypeResult);

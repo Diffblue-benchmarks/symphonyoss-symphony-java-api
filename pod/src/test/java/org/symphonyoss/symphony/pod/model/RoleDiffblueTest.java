@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoleDiffblueTest {
   /**
    * Test {@link Role#equals(Object)}, and {@link Role#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Role#equals(Object)}
    *   <li>{@link Role#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class RoleDiffblueTest {
 
     // Act and Assert
     assertEquals(role, role2);
-    int expectedHashCodeResult = role.hashCode();
-    assertEquals(expectedHashCodeResult, role2.hashCode());
+    assertEquals(role.hashCode(), role2.hashCode());
   }
 
   /**
    * Test {@link Role#equals(Object)}, and {@link Role#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Role#equals(Object)}
    *   <li>{@link Role#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -152,14 +168,16 @@ public class RoleDiffblueTest {
 
   /**
    * Test {@link Role#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Role#equals(Object)}
+   *
+   * <p>Method under test: {@link Role#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Role.equals(Object)", "int Role.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -168,8 +186,9 @@ public class RoleDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Role}
    *   <li>{@link Role#description(String)}
@@ -185,14 +204,25 @@ public class RoleDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Role.<init>()", "Role Role.description(String)", "String Role.getDescription()",
-      "String Role.getId()", "String Role.getName()", "Role Role.id(String)", "Role Role.name(String)",
-      "void Role.setDescription(String)", "void Role.setId(String)", "void Role.setName(String)",
-      "String Role.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Role.<init>()",
+    "Role Role.description(String)",
+    "String Role.getDescription()",
+    "String Role.getId()",
+    "String Role.getName()",
+    "Role Role.id(String)",
+    "Role Role.name(String)",
+    "void Role.setDescription(String)",
+    "void Role.setId(String)",
+    "void Role.setName(String)",
+    "String Role.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Role actualRole = new Role();
-    Role actualDescriptionResult = actualRole.description("The characteristics of someone or something");
+    Role actualDescriptionResult =
+        actualRole.description("The characteristics of someone or something");
     Role actualIdResult = actualRole.id("42");
     Role actualNameResult = actualRole.name("Name");
     actualRole.setDescription("The characteristics of someone or something");
@@ -206,8 +236,13 @@ public class RoleDiffblueTest {
     assertEquals("42", actualId);
     assertEquals("Name", actualRole.getName());
     assertEquals("The characteristics of someone or something", actualDescription);
-    assertEquals("class Role {\n" + "    id: 42\n" + "    name: Name\n"
-        + "    description: The characteristics of someone or something\n" + "}", actualToStringResult);
+    assertEquals(
+        "class Role {\n"
+            + "    id: 42\n"
+            + "    name: Name\n"
+            + "    description: The characteristics of someone or something\n"
+            + "}",
+        actualToStringResult);
     assertSame(actualRole, actualDescriptionResult);
     assertSame(actualRole, actualIdResult);
     assertSame(actualRole, actualNameResult);

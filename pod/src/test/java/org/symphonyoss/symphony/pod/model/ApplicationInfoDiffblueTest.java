@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ApplicationInfoDiffblueTest {
   /**
    * Test {@link ApplicationInfo#equals(Object)}, and {@link ApplicationInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ApplicationInfo#equals(Object)}
    *   <li>{@link ApplicationInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class ApplicationInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(applicationInfo, applicationInfo2);
-    int expectedHashCodeResult = applicationInfo.hashCode();
-    assertEquals(expectedHashCodeResult, applicationInfo2.hashCode());
+    assertEquals(applicationInfo.hashCode(), applicationInfo2.hashCode());
   }
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}, and {@link ApplicationInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ApplicationInfo#equals(Object)}
    *   <li>{@link ApplicationInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -192,14 +212,16 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test {@link ApplicationInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ApplicationInfo.equals(Object)", "int ApplicationInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -208,8 +230,9 @@ public class ApplicationInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ApplicationInfo}
    *   <li>{@link ApplicationInfo#appId(String)}
@@ -231,19 +254,32 @@ public class ApplicationInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ApplicationInfo.<init>()", "ApplicationInfo ApplicationInfo.appId(String)",
-      "ApplicationInfo ApplicationInfo.appUrl(String)", "ApplicationInfo ApplicationInfo.domain(String)",
-      "String ApplicationInfo.getAppId()", "String ApplicationInfo.getAppUrl()", "String ApplicationInfo.getDomain()",
-      "String ApplicationInfo.getName()", "String ApplicationInfo.getPublisher()",
-      "ApplicationInfo ApplicationInfo.name(String)", "ApplicationInfo ApplicationInfo.publisher(String)",
-      "void ApplicationInfo.setAppId(String)", "void ApplicationInfo.setAppUrl(String)",
-      "void ApplicationInfo.setDomain(String)", "void ApplicationInfo.setName(String)",
-      "void ApplicationInfo.setPublisher(String)", "String ApplicationInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ApplicationInfo.<init>()",
+    "ApplicationInfo ApplicationInfo.appId(String)",
+    "ApplicationInfo ApplicationInfo.appUrl(String)",
+    "ApplicationInfo ApplicationInfo.domain(String)",
+    "String ApplicationInfo.getAppId()",
+    "String ApplicationInfo.getAppUrl()",
+    "String ApplicationInfo.getDomain()",
+    "String ApplicationInfo.getName()",
+    "String ApplicationInfo.getPublisher()",
+    "ApplicationInfo ApplicationInfo.name(String)",
+    "ApplicationInfo ApplicationInfo.publisher(String)",
+    "void ApplicationInfo.setAppId(String)",
+    "void ApplicationInfo.setAppUrl(String)",
+    "void ApplicationInfo.setDomain(String)",
+    "void ApplicationInfo.setName(String)",
+    "void ApplicationInfo.setPublisher(String)",
+    "String ApplicationInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ApplicationInfo actualApplicationInfo = new ApplicationInfo();
     ApplicationInfo actualAppIdResult = actualApplicationInfo.appId("42");
-    ApplicationInfo actualAppUrlResult = actualApplicationInfo.appUrl("https://example.org/example");
+    ApplicationInfo actualAppUrlResult =
+        actualApplicationInfo.appUrl("https://example.org/example");
     ApplicationInfo actualDomainResult = actualApplicationInfo.domain("Domain");
     ApplicationInfo actualNameResult = actualApplicationInfo.name("Name");
     ApplicationInfo actualPublisherResult = actualApplicationInfo.publisher("Publisher");
@@ -264,8 +300,13 @@ public class ApplicationInfoDiffblueTest {
     assertEquals("Name", actualName);
     assertEquals("Publisher", actualApplicationInfo.getPublisher());
     assertEquals(
-        "class ApplicationInfo {\n" + "    appId: 42\n" + "    name: Name\n"
-            + "    appUrl: https://example.org/example\n" + "    domain: Domain\n" + "    publisher: Publisher\n" + "}",
+        "class ApplicationInfo {\n"
+            + "    appId: 42\n"
+            + "    name: Name\n"
+            + "    appUrl: https://example.org/example\n"
+            + "    domain: Domain\n"
+            + "    publisher: Publisher\n"
+            + "}",
         actualToStringResult);
     assertEquals("https://example.org/example", actualAppUrl);
     assertSame(actualApplicationInfo, actualAppIdResult);

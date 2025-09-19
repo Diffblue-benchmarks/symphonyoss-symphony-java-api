@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,14 +15,16 @@ import org.symphonyoss.symphony.pod.model.UserAttributes.AccountTypeEnum;
 public class UserAttributesDiffblueTest {
   /**
    * Test AccountTypeEnum {@link AccountTypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code NORMAL}.</li>
-   *   <li>Then return {@code NORMAL}.</li>
+   *   <li>When {@code NORMAL}.
+   *   <li>Then return {@code NORMAL}.
    * </ul>
-   * <p>
-   * Method under test: {@link AccountTypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link AccountTypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AccountTypeEnum AccountTypeEnum.fromValue(String)"})
   public void testAccountTypeEnumFromValue_whenNormal_thenReturnNormal() {
     // Arrange, Act and Assert
@@ -30,14 +33,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test AccountTypeEnum {@link AccountTypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link AccountTypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link AccountTypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AccountTypeEnum AccountTypeEnum.fromValue(String)"})
   public void testAccountTypeEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -46,14 +51,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test AccountTypeEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AccountTypeEnum#toString()}
    *   <li>{@link AccountTypeEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String AccountTypeEnum.getValue()", "String AccountTypeEnum.toString()"})
   public void testAccountTypeEnumGettersAndSetters() {
     // Arrange
@@ -69,92 +76,121 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#addAssetClassesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link UserAttributes} (default constructor).</li>
+   *   <li>Given {@link UserAttributes} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#addAssetClassesItem(String)}
+   *
+   * <p>Method under test: {@link UserAttributes#addAssetClassesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UserAttributes UserAttributes.addAssetClassesItem(String)"})
   public void testAddAssetClassesItem_givenUserAttributes() {
     // Arrange
     UserAttributes userAttributes = new UserAttributes();
 
-    // Act and Assert
-    assertSame(userAttributes, userAttributes.addAssetClassesItem("Asset Classes Item"));
+    // Act
+    UserAttributes actualAddAssetClassesItemResult =
+        userAttributes.addAssetClassesItem("Asset Classes Item");
+
+    // Assert
+    assertSame(userAttributes, actualAddAssetClassesItemResult);
   }
 
   /**
    * Test {@link UserAttributes#addAssetClassesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link UserAttributes} (default constructor) assetClasses {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link UserAttributes} (default constructor) assetClasses {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#addAssetClassesItem(String)}
+   *
+   * <p>Method under test: {@link UserAttributes#addAssetClassesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UserAttributes UserAttributes.addAssetClassesItem(String)"})
   public void testAddAssetClassesItem_givenUserAttributesAssetClassesArrayList() {
     // Arrange
     UserAttributes userAttributes = new UserAttributes();
     userAttributes.assetClasses(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(userAttributes, userAttributes.addAssetClassesItem("Asset Classes Item"));
+    // Act
+    UserAttributes actualAddAssetClassesItemResult =
+        userAttributes.addAssetClassesItem("Asset Classes Item");
+
+    // Assert
+    assertSame(userAttributes, actualAddAssetClassesItemResult);
   }
 
   /**
    * Test {@link UserAttributes#addIndustriesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link UserAttributes} (default constructor).</li>
+   *   <li>Given {@link UserAttributes} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#addIndustriesItem(String)}
+   *
+   * <p>Method under test: {@link UserAttributes#addIndustriesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UserAttributes UserAttributes.addIndustriesItem(String)"})
   public void testAddIndustriesItem_givenUserAttributes() {
     // Arrange
     UserAttributes userAttributes = new UserAttributes();
 
-    // Act and Assert
-    assertSame(userAttributes, userAttributes.addIndustriesItem("Industries Item"));
+    // Act
+    UserAttributes actualAddIndustriesItemResult =
+        userAttributes.addIndustriesItem("Industries Item");
+
+    // Assert
+    assertSame(userAttributes, actualAddIndustriesItemResult);
   }
 
   /**
    * Test {@link UserAttributes#addIndustriesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link UserAttributes} (default constructor) industries {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link UserAttributes} (default constructor) industries {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#addIndustriesItem(String)}
+   *
+   * <p>Method under test: {@link UserAttributes#addIndustriesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"UserAttributes UserAttributes.addIndustriesItem(String)"})
   public void testAddIndustriesItem_givenUserAttributesIndustriesArrayList() {
     // Arrange
     UserAttributes userAttributes = new UserAttributes();
     userAttributes.industries(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(userAttributes, userAttributes.addIndustriesItem("Industries Item"));
+    // Act
+    UserAttributes actualAddIndustriesItemResult =
+        userAttributes.addIndustriesItem("Industries Item");
+
+    // Assert
+    assertSame(userAttributes, actualAddIndustriesItemResult);
   }
 
   /**
    * Test {@link UserAttributes#equals(Object)}, and {@link UserAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserAttributes#equals(Object)}
    *   <li>{@link UserAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -163,24 +199,26 @@ public class UserAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(userAttributes, userAttributes2);
-    int expectedHashCodeResult = userAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, userAttributes2.hashCode());
+    assertEquals(userAttributes.hashCode(), userAttributes2.hashCode());
   }
 
   /**
    * Test {@link UserAttributes#equals(Object)}, and {@link UserAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserAttributes#equals(Object)}
    *   <li>{@link UserAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -194,14 +232,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -214,14 +254,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -235,14 +277,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -256,14 +300,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -277,14 +323,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -298,14 +346,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -319,14 +369,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -340,14 +392,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -361,14 +415,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -382,14 +438,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -403,14 +461,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
@@ -424,14 +484,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual12() {
     // Arrange
@@ -445,14 +507,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual13() {
     // Arrange
@@ -466,14 +530,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual14() {
     // Arrange
@@ -487,14 +553,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual15() {
     // Arrange
@@ -508,14 +576,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual16() {
     // Arrange
@@ -529,14 +599,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual17() {
     // Arrange
@@ -549,14 +621,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -565,14 +639,16 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test {@link UserAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserAttributes.equals(Object)", "int UserAttributes.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -581,8 +657,9 @@ public class UserAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserAttributes}
    *   <li>{@link UserAttributes#accountType(AccountTypeEnum)}
@@ -640,36 +717,67 @@ public class UserAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserAttributes.<init>()", "UserAttributes UserAttributes.accountType(AccountTypeEnum)",
-      "UserAttributes UserAttributes.assetClasses(List)", "UserAttributes UserAttributes.companyName(String)",
-      "UserAttributes UserAttributes.department(String)", "UserAttributes UserAttributes.displayName(String)",
-      "UserAttributes UserAttributes.division(String)", "UserAttributes UserAttributes.emailAddress(String)",
-      "UserAttributes UserAttributes.firstName(String)", "AccountTypeEnum UserAttributes.getAccountType()",
-      "List UserAttributes.getAssetClasses()", "String UserAttributes.getCompanyName()",
-      "String UserAttributes.getDepartment()", "String UserAttributes.getDisplayName()",
-      "String UserAttributes.getDivision()", "String UserAttributes.getEmailAddress()",
-      "String UserAttributes.getFirstName()", "List UserAttributes.getIndustries()",
-      "String UserAttributes.getJobFunction()", "String UserAttributes.getLastName()",
-      "String UserAttributes.getLocation()", "String UserAttributes.getMobilePhoneNumber()",
-      "String UserAttributes.getSmsNumber()", "String UserAttributes.getTitle()", "String UserAttributes.getUserName()",
-      "String UserAttributes.getWorkPhoneNumber()", "UserAttributes UserAttributes.industries(List)",
-      "UserAttributes UserAttributes.jobFunction(String)", "UserAttributes UserAttributes.lastName(String)",
-      "UserAttributes UserAttributes.location(String)", "UserAttributes UserAttributes.mobilePhoneNumber(String)",
-      "void UserAttributes.setAccountType(AccountTypeEnum)", "void UserAttributes.setAssetClasses(List)",
-      "void UserAttributes.setCompanyName(String)", "void UserAttributes.setDepartment(String)",
-      "void UserAttributes.setDisplayName(String)", "void UserAttributes.setDivision(String)",
-      "void UserAttributes.setEmailAddress(String)", "void UserAttributes.setFirstName(String)",
-      "void UserAttributes.setIndustries(List)", "void UserAttributes.setJobFunction(String)",
-      "void UserAttributes.setLastName(String)", "void UserAttributes.setLocation(String)",
-      "void UserAttributes.setMobilePhoneNumber(String)", "void UserAttributes.setSmsNumber(String)",
-      "void UserAttributes.setTitle(String)", "void UserAttributes.setUserName(String)",
-      "void UserAttributes.setWorkPhoneNumber(String)", "UserAttributes UserAttributes.smsNumber(String)",
-      "UserAttributes UserAttributes.title(String)", "String UserAttributes.toString()",
-      "UserAttributes UserAttributes.userName(String)", "UserAttributes UserAttributes.workPhoneNumber(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserAttributes.<init>()",
+    "UserAttributes UserAttributes.accountType(AccountTypeEnum)",
+    "UserAttributes UserAttributes.assetClasses(List)",
+    "UserAttributes UserAttributes.companyName(String)",
+    "UserAttributes UserAttributes.department(String)",
+    "UserAttributes UserAttributes.displayName(String)",
+    "UserAttributes UserAttributes.division(String)",
+    "UserAttributes UserAttributes.emailAddress(String)",
+    "UserAttributes UserAttributes.firstName(String)",
+    "AccountTypeEnum UserAttributes.getAccountType()",
+    "List UserAttributes.getAssetClasses()",
+    "String UserAttributes.getCompanyName()",
+    "String UserAttributes.getDepartment()",
+    "String UserAttributes.getDisplayName()",
+    "String UserAttributes.getDivision()",
+    "String UserAttributes.getEmailAddress()",
+    "String UserAttributes.getFirstName()",
+    "List UserAttributes.getIndustries()",
+    "String UserAttributes.getJobFunction()",
+    "String UserAttributes.getLastName()",
+    "String UserAttributes.getLocation()",
+    "String UserAttributes.getMobilePhoneNumber()",
+    "String UserAttributes.getSmsNumber()",
+    "String UserAttributes.getTitle()",
+    "String UserAttributes.getUserName()",
+    "String UserAttributes.getWorkPhoneNumber()",
+    "UserAttributes UserAttributes.industries(List)",
+    "UserAttributes UserAttributes.jobFunction(String)",
+    "UserAttributes UserAttributes.lastName(String)",
+    "UserAttributes UserAttributes.location(String)",
+    "UserAttributes UserAttributes.mobilePhoneNumber(String)",
+    "void UserAttributes.setAccountType(AccountTypeEnum)",
+    "void UserAttributes.setAssetClasses(List)",
+    "void UserAttributes.setCompanyName(String)",
+    "void UserAttributes.setDepartment(String)",
+    "void UserAttributes.setDisplayName(String)",
+    "void UserAttributes.setDivision(String)",
+    "void UserAttributes.setEmailAddress(String)",
+    "void UserAttributes.setFirstName(String)",
+    "void UserAttributes.setIndustries(List)",
+    "void UserAttributes.setJobFunction(String)",
+    "void UserAttributes.setLastName(String)",
+    "void UserAttributes.setLocation(String)",
+    "void UserAttributes.setMobilePhoneNumber(String)",
+    "void UserAttributes.setSmsNumber(String)",
+    "void UserAttributes.setTitle(String)",
+    "void UserAttributes.setUserName(String)",
+    "void UserAttributes.setWorkPhoneNumber(String)",
+    "UserAttributes UserAttributes.smsNumber(String)",
+    "UserAttributes UserAttributes.title(String)",
+    "String UserAttributes.toString()",
+    "UserAttributes UserAttributes.userName(String)",
+    "UserAttributes UserAttributes.workPhoneNumber(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserAttributes actualUserAttributes = new UserAttributes();
-    UserAttributes actualAccountTypeResult = actualUserAttributes.accountType(AccountTypeEnum.NORMAL);
+    UserAttributes actualAccountTypeResult =
+        actualUserAttributes.accountType(AccountTypeEnum.NORMAL);
     UserAttributes actualAssetClassesResult = actualUserAttributes.assetClasses(new ArrayList<>());
     UserAttributes actualCompanyNameResult = actualUserAttributes.companyName("Company Name");
     UserAttributes actualDepartmentResult = actualUserAttributes.department("Department");
@@ -681,7 +789,8 @@ public class UserAttributesDiffblueTest {
     UserAttributes actualJobFunctionResult = actualUserAttributes.jobFunction("Job Function");
     UserAttributes actualLastNameResult = actualUserAttributes.lastName("Doe");
     UserAttributes actualLocationResult = actualUserAttributes.location("Location");
-    UserAttributes actualMobilePhoneNumberResult = actualUserAttributes.mobilePhoneNumber("6625550144");
+    UserAttributes actualMobilePhoneNumberResult =
+        actualUserAttributes.mobilePhoneNumber("6625550144");
     actualUserAttributes.setAccountType(AccountTypeEnum.NORMAL);
     ArrayList<String> assetClasses = new ArrayList<>();
     actualUserAttributes.setAssetClasses(assetClasses);
@@ -737,12 +846,26 @@ public class UserAttributesDiffblueTest {
     assertEquals("Jane", actualFirstName);
     assertEquals("Job Function", actualJobFunction);
     assertEquals("Location", actualLocation);
-    assertEquals("class UserAttributes {\n" + "    emailAddress: 42 Main St\n" + "    firstName: Jane\n"
-        + "    lastName: Doe\n" + "    userName: janedoe\n" + "    displayName: Display Name\n"
-        + "    companyName: Company Name\n" + "    department: Department\n" + "    division: Division\n"
-        + "    title: Dr\n" + "    workPhoneNumber: 6625550144\n" + "    mobilePhoneNumber: 6625550144\n"
-        + "    smsNumber: 42\n" + "    accountType: NORMAL\n" + "    location: Location\n"
-        + "    jobFunction: Job Function\n" + "    assetClasses: []\n" + "    industries: []\n" + "}",
+    assertEquals(
+        "class UserAttributes {\n"
+            + "    emailAddress: 42 Main St\n"
+            + "    firstName: Jane\n"
+            + "    lastName: Doe\n"
+            + "    userName: janedoe\n"
+            + "    displayName: Display Name\n"
+            + "    companyName: Company Name\n"
+            + "    department: Department\n"
+            + "    division: Division\n"
+            + "    title: Dr\n"
+            + "    workPhoneNumber: 6625550144\n"
+            + "    mobilePhoneNumber: 6625550144\n"
+            + "    smsNumber: 42\n"
+            + "    accountType: NORMAL\n"
+            + "    location: Location\n"
+            + "    jobFunction: Job Function\n"
+            + "    assetClasses: []\n"
+            + "    industries: []\n"
+            + "}",
         actualToStringResult);
     assertEquals("janedoe", actualUserName);
     assertEquals(AccountTypeEnum.NORMAL, actualAccountType);

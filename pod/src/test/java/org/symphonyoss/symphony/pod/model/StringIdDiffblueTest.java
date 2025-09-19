@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class StringIdDiffblueTest {
   /**
    * Test {@link StringId#equals(Object)}, and {@link StringId#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StringId#equals(Object)}
    *   <li>{@link StringId#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StringId.equals(Object)", "int StringId.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class StringIdDiffblueTest {
 
     // Act and Assert
     assertEquals(stringId, stringId2);
-    int expectedHashCodeResult = stringId.hashCode();
-    assertEquals(expectedHashCodeResult, stringId2.hashCode());
+    assertEquals(stringId.hashCode(), stringId2.hashCode());
   }
 
   /**
    * Test {@link StringId#equals(Object)}, and {@link StringId#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StringId#equals(Object)}
    *   <li>{@link StringId#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StringId.equals(Object)", "int StringId.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,30 +66,16 @@ public class StringIdDiffblueTest {
 
   /**
    * Test {@link StringId#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StringId#equals(Object)}
+   *
+   * <p>Method under test: {@link StringId#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean StringId.equals(Object)", "int StringId.hashCode()"})
-  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
-    // Arrange, Act and Assert
-    assertNotEquals(new StringId(), null);
-  }
-
-  /**
-   * Test {@link StringId#equals(Object)}.
-   * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link StringId#equals(Object)}
-   */
-  @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StringId.equals(Object)", "int StringId.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -92,14 +84,16 @@ public class StringIdDiffblueTest {
 
   /**
    * Test {@link StringId#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StringId#equals(Object)}
+   *
+   * <p>Method under test: {@link StringId#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StringId.equals(Object)", "int StringId.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -108,8 +102,9 @@ public class StringIdDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link StringId}
    *   <li>{@link StringId#id(String)}
@@ -119,8 +114,14 @@ public class StringIdDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void StringId.<init>()", "String StringId.getId()", "StringId StringId.id(String)",
-      "void StringId.setId(String)", "String StringId.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void StringId.<init>()",
+    "String StringId.getId()",
+    "StringId StringId.id(String)",
+    "void StringId.setId(String)",
+    "String StringId.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     StringId actualStringId = new StringId();

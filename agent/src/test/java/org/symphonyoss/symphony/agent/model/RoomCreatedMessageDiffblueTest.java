@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,56 +14,75 @@ import org.junit.Test;
 public class RoomCreatedMessageDiffblueTest {
   /**
    * Test {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}.
+   *
    * <ul>
-   *   <li>Given {@link RoomCreatedMessage} (default constructor).</li>
+   *   <li>Given {@link RoomCreatedMessage} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"RoomCreatedMessage RoomCreatedMessage.addKeywordsItem(RoomTag)"})
   public void testAddKeywordsItem_givenRoomCreatedMessage() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
 
-    // Act and Assert
-    assertSame(roomCreatedMessage, roomCreatedMessage.addKeywordsItem(new RoomTag()));
+    // Act
+    RoomCreatedMessage actualAddKeywordsItemResult =
+        roomCreatedMessage.addKeywordsItem(new RoomTag());
+
+    // Assert
+    assertSame(roomCreatedMessage, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}.
+   *
    * <ul>
-   *   <li>Given {@link RoomCreatedMessage} (default constructor) keywords {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link RoomCreatedMessage} (default constructor) keywords {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#addKeywordsItem(RoomTag)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"RoomCreatedMessage RoomCreatedMessage.addKeywordsItem(RoomTag)"})
   public void testAddKeywordsItem_givenRoomCreatedMessageKeywordsArrayList() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
     roomCreatedMessage.keywords(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(roomCreatedMessage, roomCreatedMessage.addKeywordsItem(new RoomTag()));
+    // Act
+    RoomCreatedMessage actualAddKeywordsItemResult =
+        roomCreatedMessage.addKeywordsItem(new RoomTag());
+
+    // Assert
+    assertSame(roomCreatedMessage, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}, and {@link RoomCreatedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomCreatedMessage#equals(Object)}
    *   <li>{@link RoomCreatedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -70,25 +90,30 @@ public class RoomCreatedMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(roomCreatedMessage, roomCreatedMessage2);
-    int expectedHashCodeResult = roomCreatedMessage.hashCode();
-    assertEquals(expectedHashCodeResult, roomCreatedMessage2.hashCode());
+    assertEquals(roomCreatedMessage.hashCode(), roomCreatedMessage2.hashCode());
   }
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}, and {@link RoomCreatedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomCreatedMessage#equals(Object)}
    *   <li>{@link RoomCreatedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -101,15 +126,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -121,15 +151,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -142,15 +177,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -163,15 +203,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -183,15 +228,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -203,15 +253,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -223,15 +278,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -243,15 +303,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -263,15 +328,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -283,15 +353,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -303,15 +378,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
     RoomCreatedMessage roomCreatedMessage = new RoomCreatedMessage();
@@ -323,15 +403,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomCreatedMessage(), null);
@@ -339,15 +424,20 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomCreatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomCreatedMessage.equals(Object)", "int RoomCreatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomCreatedMessage.equals(Object)",
+    "int RoomCreatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomCreatedMessage(), "Different type to RoomCreatedMessage");
@@ -355,8 +445,9 @@ public class RoomCreatedMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomCreatedMessage}
    *   <li>{@link RoomCreatedMessage#_public(Boolean)}
@@ -393,25 +484,41 @@ public class RoomCreatedMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomCreatedMessage.<init>()", "RoomCreatedMessage RoomCreatedMessage._public(Boolean)",
-      "RoomCreatedMessage RoomCreatedMessage.copyProtected(Boolean)",
-      "RoomCreatedMessage RoomCreatedMessage.createdByUserId(Long)",
-      "RoomCreatedMessage RoomCreatedMessage.creationDate(Long)",
-      "RoomCreatedMessage RoomCreatedMessage.description(String)",
-      "RoomCreatedMessage RoomCreatedMessage.discoverable(Boolean)", "Boolean RoomCreatedMessage.getCopyProtected()",
-      "Long RoomCreatedMessage.getCreatedByUserId()", "Long RoomCreatedMessage.getCreationDate()",
-      "String RoomCreatedMessage.getDescription()", "Boolean RoomCreatedMessage.getDiscoverable()",
-      "List RoomCreatedMessage.getKeywords()", "Boolean RoomCreatedMessage.getMembersCanInvite()",
-      "String RoomCreatedMessage.getName()", "Boolean RoomCreatedMessage.getPublic()",
-      "Boolean RoomCreatedMessage.getReadOnly()", "RoomCreatedMessage RoomCreatedMessage.keywords(List)",
-      "RoomCreatedMessage RoomCreatedMessage.membersCanInvite(Boolean)",
-      "RoomCreatedMessage RoomCreatedMessage.name(String)", "RoomCreatedMessage RoomCreatedMessage.readOnly(Boolean)",
-      "void RoomCreatedMessage.setCopyProtected(Boolean)", "void RoomCreatedMessage.setCreatedByUserId(Long)",
-      "void RoomCreatedMessage.setCreationDate(Long)", "void RoomCreatedMessage.setDescription(String)",
-      "void RoomCreatedMessage.setDiscoverable(Boolean)", "void RoomCreatedMessage.setKeywords(List)",
-      "void RoomCreatedMessage.setMembersCanInvite(Boolean)", "void RoomCreatedMessage.setName(String)",
-      "void RoomCreatedMessage.setPublic(Boolean)", "void RoomCreatedMessage.setReadOnly(Boolean)",
-      "String RoomCreatedMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomCreatedMessage.<init>()",
+    "RoomCreatedMessage RoomCreatedMessage._public(Boolean)",
+    "RoomCreatedMessage RoomCreatedMessage.copyProtected(Boolean)",
+    "RoomCreatedMessage RoomCreatedMessage.createdByUserId(Long)",
+    "RoomCreatedMessage RoomCreatedMessage.creationDate(Long)",
+    "RoomCreatedMessage RoomCreatedMessage.description(String)",
+    "RoomCreatedMessage RoomCreatedMessage.discoverable(Boolean)",
+    "Boolean RoomCreatedMessage.getCopyProtected()",
+    "Long RoomCreatedMessage.getCreatedByUserId()",
+    "Long RoomCreatedMessage.getCreationDate()",
+    "String RoomCreatedMessage.getDescription()",
+    "Boolean RoomCreatedMessage.getDiscoverable()",
+    "List RoomCreatedMessage.getKeywords()",
+    "Boolean RoomCreatedMessage.getMembersCanInvite()",
+    "String RoomCreatedMessage.getName()",
+    "Boolean RoomCreatedMessage.getPublic()",
+    "Boolean RoomCreatedMessage.getReadOnly()",
+    "RoomCreatedMessage RoomCreatedMessage.keywords(List)",
+    "RoomCreatedMessage RoomCreatedMessage.membersCanInvite(Boolean)",
+    "RoomCreatedMessage RoomCreatedMessage.name(String)",
+    "RoomCreatedMessage RoomCreatedMessage.readOnly(Boolean)",
+    "void RoomCreatedMessage.setCopyProtected(Boolean)",
+    "void RoomCreatedMessage.setCreatedByUserId(Long)",
+    "void RoomCreatedMessage.setCreationDate(Long)",
+    "void RoomCreatedMessage.setDescription(String)",
+    "void RoomCreatedMessage.setDiscoverable(Boolean)",
+    "void RoomCreatedMessage.setKeywords(List)",
+    "void RoomCreatedMessage.setMembersCanInvite(Boolean)",
+    "void RoomCreatedMessage.setName(String)",
+    "void RoomCreatedMessage.setPublic(Boolean)",
+    "void RoomCreatedMessage.setReadOnly(Boolean)",
+    "String RoomCreatedMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomCreatedMessage actualRoomCreatedMessage = new RoomCreatedMessage();
@@ -419,11 +526,12 @@ public class RoomCreatedMessageDiffblueTest {
     RoomCreatedMessage actualCopyProtectedResult = actualRoomCreatedMessage.copyProtected(true);
     RoomCreatedMessage actualCreatedByUserIdResult = actualRoomCreatedMessage.createdByUserId(1L);
     RoomCreatedMessage actualCreationDateResult = actualRoomCreatedMessage.creationDate(1L);
-    RoomCreatedMessage actualDescriptionResult = actualRoomCreatedMessage
-        .description("The characteristics of someone or something");
+    RoomCreatedMessage actualDescriptionResult =
+        actualRoomCreatedMessage.description("The characteristics of someone or something");
     RoomCreatedMessage actualDiscoverableResult = actualRoomCreatedMessage.discoverable(true);
     RoomCreatedMessage actualKeywordsResult = actualRoomCreatedMessage.keywords(new ArrayList<>());
-    RoomCreatedMessage actualMembersCanInviteResult = actualRoomCreatedMessage.membersCanInvite(true);
+    RoomCreatedMessage actualMembersCanInviteResult =
+        actualRoomCreatedMessage.membersCanInvite(true);
     RoomCreatedMessage actualNameResult = actualRoomCreatedMessage.name("Name");
     RoomCreatedMessage actualReadOnlyResult = actualRoomCreatedMessage.readOnly(true);
     actualRoomCreatedMessage.setCopyProtected(true);
@@ -452,12 +560,26 @@ public class RoomCreatedMessageDiffblueTest {
     // Assert
     assertEquals("Name", actualName);
     assertEquals("The characteristics of someone or something", actualDescription);
-    assertEquals("class RoomCreatedMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    creationDate: 1\n" + "    name: Name\n" + "    keywords: []\n"
-        + "    description: The characteristics of someone or something\n" + "    createdByUserId: 1\n"
-        + "    readOnly: true\n" + "    discoverable: true\n" + "    _public: true\n" + "    membersCanInvite: true\n"
-        + "    copyProtected: true\n" + "}", actualToStringResult);
+    assertEquals(
+        "class RoomCreatedMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    creationDate: 1\n"
+            + "    name: Name\n"
+            + "    keywords: []\n"
+            + "    description: The characteristics of someone or something\n"
+            + "    createdByUserId: 1\n"
+            + "    readOnly: true\n"
+            + "    discoverable: true\n"
+            + "    _public: true\n"
+            + "    membersCanInvite: true\n"
+            + "    copyProtected: true\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualRoomCreatedMessage.getId());
     assertNull(actualRoomCreatedMessage.getStreamId());
     assertNull(actualRoomCreatedMessage.getTimestamp());

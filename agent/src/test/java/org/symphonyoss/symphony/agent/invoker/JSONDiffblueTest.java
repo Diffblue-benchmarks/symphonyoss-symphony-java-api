@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.databind.MappingJsonFactory;
@@ -23,10 +24,11 @@ import org.junit.Test;
 public class JSONDiffblueTest {
   /**
    * Test {@link JSON#getContext(Class)}.
-   * <p>
-   * Method under test: {@link JSON#getContext(Class)}
+   *
+   * <p>Method under test: {@link JSON#getContext(Class)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"ObjectMapper JSON.getContext(Class)"})
   public void testGetContext() {
     // Arrange
@@ -39,7 +41,8 @@ public class JSONDiffblueTest {
     // Assert
     JsonFactory factory = actualContext.getFactory();
     assertTrue(factory instanceof MappingJsonFactory);
-    assertTrue(actualContext.getDeserializationContext() instanceof DefaultDeserializationContext.Impl);
+    assertTrue(
+        actualContext.getDeserializationContext() instanceof DefaultDeserializationContext.Impl);
     assertTrue(actualContext.getVisibilityChecker() instanceof Std);
     assertTrue(actualContext.getSubtypeResolver() instanceof StdSubtypeResolver);
     assertTrue(actualContext.getSerializerFactory() instanceof BeanSerializerFactory);
@@ -53,14 +56,15 @@ public class JSONDiffblueTest {
 
   /**
    * Test new {@link JSON} (default constructor).
-   * <p>
-   * Method under test: default or parameterless constructor of {@link JSON}
+   *
+   * <p>Method under test: default or parameterless constructor of {@link JSON}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void JSON.<init>()"})
   public void testNewJson() {
     // Arrange, Act and Assert
-    ObjectMapper context = (new JSON()).getContext(null);
+    ObjectMapper context = new JSON().getContext(null);
     JsonFactory factory = context.getFactory();
     assertTrue(factory instanceof MappingJsonFactory);
     assertTrue(context.getDeserializationContext() instanceof DefaultDeserializationContext.Impl);
@@ -77,10 +81,11 @@ public class JSONDiffblueTest {
 
   /**
    * Test {@link JSON#setDateFormat(DateFormat)}.
-   * <p>
-   * Method under test: {@link JSON#setDateFormat(DateFormat)}
+   *
+   * <p>Method under test: {@link JSON#setDateFormat(DateFormat)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void JSON.setDateFormat(DateFormat)"})
   public void testSetDateFormat() {
     // Arrange
@@ -101,14 +106,17 @@ public class JSONDiffblueTest {
 
   /**
    * Test {@link JSON#setDateFormat(DateFormat)}.
+   *
    * <ul>
-   *   <li>When {@code null}.</li>
-   *   <li>Then {@link JSON} (default constructor) Context is {@code null} DateFormat is {@code null}.</li>
+   *   <li>When {@code null}.
+   *   <li>Then {@link JSON} (default constructor) Context is {@code null} DateFormat is {@code
+   *       null}.
    * </ul>
-   * <p>
-   * Method under test: {@link JSON#setDateFormat(DateFormat)}
+   *
+   * <p>Method under test: {@link JSON#setDateFormat(DateFormat)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void JSON.setDateFormat(DateFormat)"})
   public void testSetDateFormat_whenNull_thenJsonContextIsNullDateFormatIsNull() {
     // Arrange

@@ -3,25 +3,32 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class CompanyCertDetailDiffblueTest {
   /**
    * Test {@link CompanyCertDetail#equals(Object)}, and {@link CompanyCertDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link CompanyCertDetail#equals(Object)}
    *   <li>{@link CompanyCertDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     CompanyCertDetail companyCertDetail = new CompanyCertDetail();
@@ -29,25 +36,30 @@ public class CompanyCertDetailDiffblueTest {
 
     // Act and Assert
     assertEquals(companyCertDetail, companyCertDetail2);
-    int expectedHashCodeResult = companyCertDetail.hashCode();
-    assertEquals(expectedHashCodeResult, companyCertDetail2.hashCode());
+    assertEquals(companyCertDetail.hashCode(), companyCertDetail2.hashCode());
   }
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}, and {@link CompanyCertDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link CompanyCertDetail#equals(Object)}
    *   <li>{@link CompanyCertDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     CompanyCertDetail companyCertDetail = new CompanyCertDetail();
@@ -60,15 +72,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new CompanyCertDetail(), 1);
@@ -76,15 +93,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     CompanyCertDetail companyCertDetail = new CompanyCertDetail();
@@ -96,15 +118,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     CompanyCertDetail companyCertDetail = new CompanyCertDetail();
@@ -116,15 +143,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     CompanyCertDetail companyCertDetail = new CompanyCertDetail();
@@ -136,15 +168,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new CompanyCertDetail(), null);
@@ -152,15 +189,20 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test {@link CompanyCertDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean CompanyCertDetail.equals(Object)", "int CompanyCertDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean CompanyCertDetail.equals(Object)",
+    "int CompanyCertDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new CompanyCertDetail(), "Different type to CompanyCertDetail");
@@ -168,8 +210,9 @@ public class CompanyCertDetailDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link CompanyCertDetail}
    *   <li>{@link CompanyCertDetail#certInfo(CertInfo)}
@@ -185,20 +228,28 @@ public class CompanyCertDetailDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void CompanyCertDetail.<init>()", "CompanyCertDetail CompanyCertDetail.certInfo(CertInfo)",
-      "CompanyCertDetail CompanyCertDetail.companyCertAttributes(CompanyCertAttributes)",
-      "CompanyCertDetail CompanyCertDetail.companyCertInfo(CompanyCertInfo)",
-      "CertInfo CompanyCertDetail.getCertInfo()", "CompanyCertAttributes CompanyCertDetail.getCompanyCertAttributes()",
-      "CompanyCertInfo CompanyCertDetail.getCompanyCertInfo()", "void CompanyCertDetail.setCertInfo(CertInfo)",
-      "void CompanyCertDetail.setCompanyCertAttributes(CompanyCertAttributes)",
-      "void CompanyCertDetail.setCompanyCertInfo(CompanyCertInfo)", "String CompanyCertDetail.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void CompanyCertDetail.<init>()",
+    "CompanyCertDetail CompanyCertDetail.certInfo(CertInfo)",
+    "CompanyCertDetail CompanyCertDetail.companyCertAttributes(CompanyCertAttributes)",
+    "CompanyCertDetail CompanyCertDetail.companyCertInfo(CompanyCertInfo)",
+    "CertInfo CompanyCertDetail.getCertInfo()",
+    "CompanyCertAttributes CompanyCertDetail.getCompanyCertAttributes()",
+    "CompanyCertInfo CompanyCertDetail.getCompanyCertInfo()",
+    "void CompanyCertDetail.setCertInfo(CertInfo)",
+    "void CompanyCertDetail.setCompanyCertAttributes(CompanyCertAttributes)",
+    "void CompanyCertDetail.setCompanyCertInfo(CompanyCertInfo)",
+    "String CompanyCertDetail.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     CompanyCertDetail actualCompanyCertDetail = new CompanyCertDetail();
     CompanyCertDetail actualCertInfoResult = actualCompanyCertDetail.certInfo(new CertInfo());
-    CompanyCertDetail actualCompanyCertAttributesResult = actualCompanyCertDetail
-        .companyCertAttributes(new CompanyCertAttributes());
-    CompanyCertDetail actualCompanyCertInfoResult = actualCompanyCertDetail.companyCertInfo(new CompanyCertInfo());
+    CompanyCertDetail actualCompanyCertAttributesResult =
+        actualCompanyCertDetail.companyCertAttributes(new CompanyCertAttributes());
+    CompanyCertDetail actualCompanyCertInfoResult =
+        actualCompanyCertDetail.companyCertInfo(new CompanyCertInfo());
     CertInfo certInfo = new CertInfo();
     actualCompanyCertDetail.setCertInfo(certInfo);
     CompanyCertAttributes companyCertAttributes = new CompanyCertAttributes();
@@ -207,20 +258,37 @@ public class CompanyCertDetailDiffblueTest {
     actualCompanyCertDetail.setCompanyCertInfo(companyCertInfo);
     String actualToStringResult = actualCompanyCertDetail.toString();
     CertInfo actualCertInfo = actualCompanyCertDetail.getCertInfo();
-    CompanyCertAttributes actualCompanyCertAttributes = actualCompanyCertDetail.getCompanyCertAttributes();
+    CompanyCertAttributes actualCompanyCertAttributes =
+        actualCompanyCertDetail.getCompanyCertAttributes();
+    CompanyCertInfo actualCompanyCertInfo = actualCompanyCertDetail.getCompanyCertInfo();
 
     // Assert
-    assertEquals("class CompanyCertDetail {\n" + "    companyCertAttributes: class CompanyCertAttributes {\n"
-        + "        name: null\n" + "        type: null\n" + "        status: null\n" + "    }\n"
-        + "    companyCertInfo: class CompanyCertInfo {\n" + "        fingerPrint: null\n"
-        + "        issuerFingerPrint: null\n" + "        lastSeen: null\n" + "        updatedAt: null\n"
-        + "        updatedBy: null\n" + "        commonName: null\n" + "        expiryDate: null\n" + "    }\n"
-        + "    certInfo: class CertInfo {\n" + "        []\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class CompanyCertDetail {\n"
+            + "    companyCertAttributes: class CompanyCertAttributes {\n"
+            + "        name: null\n"
+            + "        type: null\n"
+            + "        status: null\n"
+            + "    }\n"
+            + "    companyCertInfo: class CompanyCertInfo {\n"
+            + "        fingerPrint: null\n"
+            + "        issuerFingerPrint: null\n"
+            + "        lastSeen: null\n"
+            + "        updatedAt: null\n"
+            + "        updatedBy: null\n"
+            + "        commonName: null\n"
+            + "        expiryDate: null\n"
+            + "    }\n"
+            + "    certInfo: class CertInfo {\n"
+            + "        []\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(certInfo, actualCertInfo);
     assertSame(companyCertAttributes, actualCompanyCertAttributes);
     assertSame(actualCompanyCertDetail, actualCertInfoResult);
     assertSame(actualCompanyCertDetail, actualCompanyCertAttributesResult);
     assertSame(actualCompanyCertDetail, actualCompanyCertInfoResult);
-    assertSame(companyCertInfo, actualCompanyCertDetail.getCompanyCertInfo());
+    assertSame(companyCertInfo, actualCompanyCertInfo);
   }
 }

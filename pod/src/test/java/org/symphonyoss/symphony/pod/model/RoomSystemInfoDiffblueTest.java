@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomSystemInfoDiffblueTest {
   /**
    * Test {@link RoomSystemInfo#equals(Object)}, and {@link RoomSystemInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomSystemInfo#equals(Object)}
    *   <li>{@link RoomSystemInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class RoomSystemInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(roomSystemInfo, roomSystemInfo2);
-    int expectedHashCodeResult = roomSystemInfo.hashCode();
-    assertEquals(expectedHashCodeResult, roomSystemInfo2.hashCode());
+    assertEquals(roomSystemInfo.hashCode(), roomSystemInfo2.hashCode());
   }
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}, and {@link RoomSystemInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomSystemInfo#equals(Object)}
    *   <li>{@link RoomSystemInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -173,14 +191,16 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test {@link RoomSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomSystemInfo.equals(Object)", "int RoomSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -189,8 +209,9 @@ public class RoomSystemInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomSystemInfo}
    *   <li>{@link RoomSystemInfo#active(Boolean)}
@@ -209,13 +230,23 @@ public class RoomSystemInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomSystemInfo.<init>()", "RoomSystemInfo RoomSystemInfo.active(Boolean)",
-      "RoomSystemInfo RoomSystemInfo.createdByUserId(Long)", "RoomSystemInfo RoomSystemInfo.creationDate(Long)",
-      "Boolean RoomSystemInfo.getActive()", "Long RoomSystemInfo.getCreatedByUserId()",
-      "Long RoomSystemInfo.getCreationDate()", "String RoomSystemInfo.getId()",
-      "RoomSystemInfo RoomSystemInfo.id(String)", "void RoomSystemInfo.setActive(Boolean)",
-      "void RoomSystemInfo.setCreatedByUserId(Long)", "void RoomSystemInfo.setCreationDate(Long)",
-      "void RoomSystemInfo.setId(String)", "String RoomSystemInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomSystemInfo.<init>()",
+    "RoomSystemInfo RoomSystemInfo.active(Boolean)",
+    "RoomSystemInfo RoomSystemInfo.createdByUserId(Long)",
+    "RoomSystemInfo RoomSystemInfo.creationDate(Long)",
+    "Boolean RoomSystemInfo.getActive()",
+    "Long RoomSystemInfo.getCreatedByUserId()",
+    "Long RoomSystemInfo.getCreationDate()",
+    "String RoomSystemInfo.getId()",
+    "RoomSystemInfo RoomSystemInfo.id(String)",
+    "void RoomSystemInfo.setActive(Boolean)",
+    "void RoomSystemInfo.setCreatedByUserId(Long)",
+    "void RoomSystemInfo.setCreationDate(Long)",
+    "void RoomSystemInfo.setId(String)",
+    "String RoomSystemInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomSystemInfo actualRoomSystemInfo = new RoomSystemInfo();
@@ -234,7 +265,8 @@ public class RoomSystemInfoDiffblueTest {
 
     // Assert
     assertEquals("42", actualRoomSystemInfo.getId());
-    assertEquals("class RoomSystemInfo {\n    id: 42\n    creationDate: 1\n    createdByUserId: 1\n    active: true\n}",
+    assertEquals(
+        "class RoomSystemInfo {\n    id: 42\n    creationDate: 1\n    createdByUserId: 1\n    active: true\n}",
         actualToStringResult);
     assertEquals(1L, actualCreatedByUserId.longValue());
     assertEquals(1L, actualCreationDate.longValue());

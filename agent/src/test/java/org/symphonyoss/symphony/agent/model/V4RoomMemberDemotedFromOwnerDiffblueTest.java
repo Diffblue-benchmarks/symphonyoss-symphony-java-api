@@ -3,26 +3,33 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4RoomMemberDemotedFromOwnerDiffblueTest {
   /**
-   * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}, and {@link V4RoomMemberDemotedFromOwner#hashCode()}.
+   * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}, and {@link
+   * V4RoomMemberDemotedFromOwner#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomMemberDemotedFromOwner#equals(Object)}
    *   <li>{@link V4RoomMemberDemotedFromOwner#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V4RoomMemberDemotedFromOwner v4RoomMemberDemotedFromOwner = new V4RoomMemberDemotedFromOwner();
@@ -30,26 +37,31 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
     // Act and Assert
     assertEquals(v4RoomMemberDemotedFromOwner, v4RoomMemberDemotedFromOwner2);
-    int expectedHashCodeResult = v4RoomMemberDemotedFromOwner.hashCode();
-    assertEquals(expectedHashCodeResult, v4RoomMemberDemotedFromOwner2.hashCode());
+    assertEquals(v4RoomMemberDemotedFromOwner.hashCode(), v4RoomMemberDemotedFromOwner2.hashCode());
   }
 
   /**
-   * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}, and {@link V4RoomMemberDemotedFromOwner#hashCode()}.
+   * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}, and {@link
+   * V4RoomMemberDemotedFromOwner#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomMemberDemotedFromOwner#equals(Object)}
    *   <li>{@link V4RoomMemberDemotedFromOwner#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V4RoomMemberDemotedFromOwner v4RoomMemberDemotedFromOwner = new V4RoomMemberDemotedFromOwner();
@@ -62,16 +74,20 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
   /**
    * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V4RoomMemberDemotedFromOwner(), 1);
@@ -79,16 +95,20 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
   /**
    * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V4RoomMemberDemotedFromOwner v4RoomMemberDemotedFromOwner = new V4RoomMemberDemotedFromOwner();
@@ -100,16 +120,20 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
   /**
    * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V4RoomMemberDemotedFromOwner v4RoomMemberDemotedFromOwner = new V4RoomMemberDemotedFromOwner();
@@ -121,16 +145,20 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
   /**
    * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V4RoomMemberDemotedFromOwner(), null);
@@ -138,25 +166,31 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
 
   /**
    * Test {@link V4RoomMemberDemotedFromOwner#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomMemberDemotedFromOwner#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4RoomMemberDemotedFromOwner.equals(Object)",
-      "int V4RoomMemberDemotedFromOwner.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V4RoomMemberDemotedFromOwner.equals(Object)",
+    "int V4RoomMemberDemotedFromOwner.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
-    assertNotEquals(new V4RoomMemberDemotedFromOwner(), "Different type to V4RoomMemberDemotedFromOwner");
+    assertNotEquals(
+        new V4RoomMemberDemotedFromOwner(), "Different type to V4RoomMemberDemotedFromOwner");
   }
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4RoomMemberDemotedFromOwner}
    *   <li>{@link V4RoomMemberDemotedFromOwner#affectedUser(V4User)}
@@ -169,37 +203,57 @@ public class V4RoomMemberDemotedFromOwnerDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4RoomMemberDemotedFromOwner.<init>()",
-      "V4RoomMemberDemotedFromOwner V4RoomMemberDemotedFromOwner.affectedUser(V4User)",
-      "V4User V4RoomMemberDemotedFromOwner.getAffectedUser()", "V4Stream V4RoomMemberDemotedFromOwner.getStream()",
-      "void V4RoomMemberDemotedFromOwner.setAffectedUser(V4User)",
-      "void V4RoomMemberDemotedFromOwner.setStream(V4Stream)",
-      "V4RoomMemberDemotedFromOwner V4RoomMemberDemotedFromOwner.stream(V4Stream)",
-      "String V4RoomMemberDemotedFromOwner.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4RoomMemberDemotedFromOwner.<init>()",
+    "V4RoomMemberDemotedFromOwner V4RoomMemberDemotedFromOwner.affectedUser(V4User)",
+    "V4User V4RoomMemberDemotedFromOwner.getAffectedUser()",
+    "V4Stream V4RoomMemberDemotedFromOwner.getStream()",
+    "void V4RoomMemberDemotedFromOwner.setAffectedUser(V4User)",
+    "void V4RoomMemberDemotedFromOwner.setStream(V4Stream)",
+    "V4RoomMemberDemotedFromOwner V4RoomMemberDemotedFromOwner.stream(V4Stream)",
+    "String V4RoomMemberDemotedFromOwner.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
-    V4RoomMemberDemotedFromOwner actualV4RoomMemberDemotedFromOwner = new V4RoomMemberDemotedFromOwner();
-    V4RoomMemberDemotedFromOwner actualAffectedUserResult = actualV4RoomMemberDemotedFromOwner
-        .affectedUser(new V4User());
+    V4RoomMemberDemotedFromOwner actualV4RoomMemberDemotedFromOwner =
+        new V4RoomMemberDemotedFromOwner();
+    V4RoomMemberDemotedFromOwner actualAffectedUserResult =
+        actualV4RoomMemberDemotedFromOwner.affectedUser(new V4User());
     V4User affectedUser = new V4User();
     actualV4RoomMemberDemotedFromOwner.setAffectedUser(affectedUser);
     actualV4RoomMemberDemotedFromOwner.setStream(new V4Stream());
     V4Stream stream = new V4Stream();
-    V4RoomMemberDemotedFromOwner actualStreamResult = actualV4RoomMemberDemotedFromOwner.stream(stream);
+    V4RoomMemberDemotedFromOwner actualStreamResult =
+        actualV4RoomMemberDemotedFromOwner.stream(stream);
     String actualToStringResult = actualV4RoomMemberDemotedFromOwner.toString();
     V4User actualAffectedUser = actualV4RoomMemberDemotedFromOwner.getAffectedUser();
+    V4Stream actualStream = actualV4RoomMemberDemotedFromOwner.getStream();
 
     // Assert
     assertEquals(
-        "class V4RoomMemberDemotedFromOwner {\n" + "    stream: class V4Stream {\n" + "        streamId: null\n"
-            + "        streamType: null\n" + "        roomName: null\n" + "        members: null\n"
-            + "        external: null\n" + "        crossPod: null\n" + "    }\n" + "    affectedUser: class V4User {\n"
-            + "        userId: null\n" + "        firstName: null\n" + "        lastName: null\n"
-            + "        displayName: null\n" + "        email: null\n" + "        username: null\n" + "    }\n" + "}",
+        "class V4RoomMemberDemotedFromOwner {\n"
+            + "    stream: class V4Stream {\n"
+            + "        streamId: null\n"
+            + "        streamType: null\n"
+            + "        roomName: null\n"
+            + "        members: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "    }\n"
+            + "    affectedUser: class V4User {\n"
+            + "        userId: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        displayName: null\n"
+            + "        email: null\n"
+            + "        username: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(actualV4RoomMemberDemotedFromOwner, actualAffectedUserResult);
     assertSame(actualV4RoomMemberDemotedFromOwner, actualStreamResult);
-    assertSame(stream, actualV4RoomMemberDemotedFromOwner.getStream());
+    assertSame(stream, actualStream);
     assertSame(affectedUser, actualAffectedUser);
   }
 }

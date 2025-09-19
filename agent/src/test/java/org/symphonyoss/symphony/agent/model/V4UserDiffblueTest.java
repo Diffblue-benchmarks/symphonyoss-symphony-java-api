@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4UserDiffblueTest {
   /**
    * Test {@link V4User#equals(Object)}, and {@link V4User#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4User#equals(Object)}
    *   <li>{@link V4User#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4UserDiffblueTest {
 
     // Act and Assert
     assertEquals(v4User, v4User2);
-    int expectedHashCodeResult = v4User.hashCode();
-    assertEquals(expectedHashCodeResult, v4User2.hashCode());
+    assertEquals(v4User.hashCode(), v4User2.hashCode());
   }
 
   /**
    * Test {@link V4User#equals(Object)}, and {@link V4User#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4User#equals(Object)}
    *   <li>{@link V4User#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -196,14 +216,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -212,14 +234,16 @@ public class V4UserDiffblueTest {
 
   /**
    * Test {@link V4User#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4User#equals(Object)}
+   *
+   * <p>Method under test: {@link V4User#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4User.equals(Object)", "int V4User.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -228,8 +252,9 @@ public class V4UserDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4User}
    *   <li>{@link V4User#displayName(String)}
@@ -254,13 +279,29 @@ public class V4UserDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4User.<init>()", "V4User V4User.displayName(String)", "V4User V4User.email(String)",
-      "V4User V4User.firstName(String)", "String V4User.getDisplayName()", "String V4User.getEmail()",
-      "String V4User.getFirstName()", "String V4User.getLastName()", "Long V4User.getUserId()",
-      "String V4User.getUsername()", "V4User V4User.lastName(String)", "void V4User.setDisplayName(String)",
-      "void V4User.setEmail(String)", "void V4User.setFirstName(String)", "void V4User.setLastName(String)",
-      "void V4User.setUserId(Long)", "void V4User.setUsername(String)", "String V4User.toString()",
-      "V4User V4User.userId(Long)", "V4User V4User.username(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4User.<init>()",
+    "V4User V4User.displayName(String)",
+    "V4User V4User.email(String)",
+    "V4User V4User.firstName(String)",
+    "String V4User.getDisplayName()",
+    "String V4User.getEmail()",
+    "String V4User.getFirstName()",
+    "String V4User.getLastName()",
+    "Long V4User.getUserId()",
+    "String V4User.getUsername()",
+    "V4User V4User.lastName(String)",
+    "void V4User.setDisplayName(String)",
+    "void V4User.setEmail(String)",
+    "void V4User.setFirstName(String)",
+    "void V4User.setLastName(String)",
+    "void V4User.setUserId(Long)",
+    "void V4User.setUsername(String)",
+    "String V4User.toString()",
+    "V4User V4User.userId(Long)",
+    "V4User V4User.username(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4User actualV4User = new V4User();
@@ -288,8 +329,14 @@ public class V4UserDiffblueTest {
     assertEquals("Doe", actualLastName);
     assertEquals("Jane", actualFirstName);
     assertEquals(
-        "class V4User {\n" + "    userId: 1\n" + "    firstName: Jane\n" + "    lastName: Doe\n"
-            + "    displayName: Display Name\n" + "    email: jane.doe@example.org\n" + "    username: janedoe\n" + "}",
+        "class V4User {\n"
+            + "    userId: 1\n"
+            + "    firstName: Jane\n"
+            + "    lastName: Doe\n"
+            + "    displayName: Display Name\n"
+            + "    email: jane.doe@example.org\n"
+            + "    username: janedoe\n"
+            + "}",
         actualToStringResult);
     assertEquals("jane.doe@example.org", actualEmail);
     assertEquals("janedoe", actualV4User.getUsername());

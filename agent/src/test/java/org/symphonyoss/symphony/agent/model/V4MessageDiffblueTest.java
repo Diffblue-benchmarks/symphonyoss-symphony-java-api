@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,68 @@ import org.junit.Test;
 public class V4MessageDiffblueTest {
   /**
    * Test {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V4Message} (default constructor).</li>
+   *   <li>Given {@link V4Message} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4Message V4Message.addAttachmentsItem(V4AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV4Message() {
     // Arrange
     V4Message v4Message = new V4Message();
 
-    // Act and Assert
-    assertSame(v4Message, v4Message.addAttachmentsItem(new V4AttachmentInfo()));
+    // Act
+    V4Message actualAddAttachmentsItemResult = v4Message.addAttachmentsItem(new V4AttachmentInfo());
+
+    // Assert
+    assertSame(v4Message, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V4Message} (default constructor) attachments {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V4Message} (default constructor) attachments {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V4Message#addAttachmentsItem(V4AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4Message V4Message.addAttachmentsItem(V4AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV4MessageAttachmentsArrayList() {
     // Arrange
     V4Message v4Message = new V4Message();
     v4Message.attachments(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v4Message, v4Message.addAttachmentsItem(new V4AttachmentInfo()));
+    // Act
+    V4Message actualAddAttachmentsItemResult = v4Message.addAttachmentsItem(new V4AttachmentInfo());
+
+    // Assert
+    assertSame(v4Message, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V4Message#equals(Object)}, and {@link V4Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Message#equals(Object)}
    *   <li>{@link V4Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +83,26 @@ public class V4MessageDiffblueTest {
 
     // Act and Assert
     assertEquals(v4Message, v4Message2);
-    int expectedHashCodeResult = v4Message.hashCode();
-    assertEquals(expectedHashCodeResult, v4Message2.hashCode());
+    assertEquals(v4Message.hashCode(), v4Message2.hashCode());
   }
 
   /**
    * Test {@link V4Message#equals(Object)}, and {@link V4Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Message#equals(Object)}
    *   <li>{@link V4Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +116,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +138,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +161,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -162,14 +184,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +207,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -204,14 +230,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -224,14 +252,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -244,14 +274,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -264,14 +296,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -284,14 +318,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -300,14 +336,16 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test {@link V4Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Message.equals(Object)", "int V4Message.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -316,8 +354,9 @@ public class V4MessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4Message}
    *   <li>{@link V4Message#attachments(List)}
@@ -351,17 +390,38 @@ public class V4MessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4Message.<init>()", "V4Message V4Message.attachments(List)",
-      "V4Message V4Message.data(String)", "V4Message V4Message.diagnostic(String)",
-      "V4Message V4Message.externalRecipients(Boolean)", "List V4Message.getAttachments()",
-      "String V4Message.getData()", "String V4Message.getDiagnostic()", "Boolean V4Message.getExternalRecipients()",
-      "String V4Message.getMessage()", "String V4Message.getMessageId()", "V4Stream V4Message.getStream()",
-      "Long V4Message.getTimestamp()", "V4User V4Message.getUser()", "V4Message V4Message.message(String)",
-      "V4Message V4Message.messageId(String)", "void V4Message.setAttachments(List)", "void V4Message.setData(String)",
-      "void V4Message.setDiagnostic(String)", "void V4Message.setExternalRecipients(Boolean)",
-      "void V4Message.setMessage(String)", "void V4Message.setMessageId(String)", "void V4Message.setStream(V4Stream)",
-      "void V4Message.setTimestamp(Long)", "void V4Message.setUser(V4User)", "V4Message V4Message.stream(V4Stream)",
-      "V4Message V4Message.timestamp(Long)", "String V4Message.toString()", "V4Message V4Message.user(V4User)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4Message.<init>()",
+    "V4Message V4Message.attachments(List)",
+    "V4Message V4Message.data(String)",
+    "V4Message V4Message.diagnostic(String)",
+    "V4Message V4Message.externalRecipients(Boolean)",
+    "List V4Message.getAttachments()",
+    "String V4Message.getData()",
+    "String V4Message.getDiagnostic()",
+    "Boolean V4Message.getExternalRecipients()",
+    "String V4Message.getMessage()",
+    "String V4Message.getMessageId()",
+    "V4Stream V4Message.getStream()",
+    "Long V4Message.getTimestamp()",
+    "V4User V4Message.getUser()",
+    "V4Message V4Message.message(String)",
+    "V4Message V4Message.messageId(String)",
+    "void V4Message.setAttachments(List)",
+    "void V4Message.setData(String)",
+    "void V4Message.setDiagnostic(String)",
+    "void V4Message.setExternalRecipients(Boolean)",
+    "void V4Message.setMessage(String)",
+    "void V4Message.setMessageId(String)",
+    "void V4Message.setStream(V4Stream)",
+    "void V4Message.setTimestamp(Long)",
+    "void V4Message.setUser(V4User)",
+    "V4Message V4Message.stream(V4Stream)",
+    "V4Message V4Message.timestamp(Long)",
+    "String V4Message.toString()",
+    "V4Message V4Message.user(V4User)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4Message actualV4Message = new V4Message();
@@ -402,14 +462,33 @@ public class V4MessageDiffblueTest {
     assertEquals("Data", actualData);
     assertEquals("Diagnostic", actualDiagnostic);
     assertEquals("Not all who wander are lost", actualMessage);
-    assertEquals("class V4Message {\n" + "    messageId: 42\n" + "    timestamp: 10\n"
-        + "    message: Not all who wander are lost\n" + "    data: Data\n" + "    attachments: []\n"
-        + "    user: class V4User {\n" + "        userId: null\n" + "        firstName: null\n"
-        + "        lastName: null\n" + "        displayName: null\n" + "        email: null\n"
-        + "        username: null\n" + "    }\n" + "    stream: class V4Stream {\n" + "        streamId: null\n"
-        + "        streamType: null\n" + "        roomName: null\n" + "        members: null\n"
-        + "        external: null\n" + "        crossPod: null\n" + "    }\n" + "    externalRecipients: true\n"
-        + "    diagnostic: Diagnostic\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V4Message {\n"
+            + "    messageId: 42\n"
+            + "    timestamp: 10\n"
+            + "    message: Not all who wander are lost\n"
+            + "    data: Data\n"
+            + "    attachments: []\n"
+            + "    user: class V4User {\n"
+            + "        userId: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        displayName: null\n"
+            + "        email: null\n"
+            + "        username: null\n"
+            + "    }\n"
+            + "    stream: class V4Stream {\n"
+            + "        streamId: null\n"
+            + "        streamType: null\n"
+            + "        roomName: null\n"
+            + "        members: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "    }\n"
+            + "    externalRecipients: true\n"
+            + "    diagnostic: Diagnostic\n"
+            + "}",
+        actualToStringResult);
     assertEquals(10L, actualTimestamp.longValue());
     assertTrue(actualAttachments.isEmpty());
     assertTrue(actualExternalRecipients);

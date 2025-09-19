@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4UserJoinedRoomDiffblueTest {
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}, and {@link V4UserJoinedRoom#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4UserJoinedRoom#equals(Object)}
    *   <li>{@link V4UserJoinedRoom#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4UserJoinedRoomDiffblueTest {
 
     // Act and Assert
     assertEquals(v4UserJoinedRoom, v4UserJoinedRoom2);
-    int expectedHashCodeResult = v4UserJoinedRoom.hashCode();
-    assertEquals(expectedHashCodeResult, v4UserJoinedRoom2.hashCode());
+    assertEquals(v4UserJoinedRoom.hashCode(), v4UserJoinedRoom2.hashCode());
   }
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}, and {@link V4UserJoinedRoom#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4UserJoinedRoom#equals(Object)}
    *   <li>{@link V4UserJoinedRoom#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserJoinedRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserJoinedRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserJoinedRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserJoinedRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserJoinedRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserJoinedRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserJoinedRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserJoinedRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test {@link V4UserJoinedRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserJoinedRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserJoinedRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserJoinedRoom.equals(Object)", "int V4UserJoinedRoom.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4UserJoinedRoomDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4UserJoinedRoom}
    *   <li>{@link V4UserJoinedRoom#affectedUser(V4User)}
@@ -162,10 +179,17 @@ public class V4UserJoinedRoomDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4UserJoinedRoom.<init>()", "V4UserJoinedRoom V4UserJoinedRoom.affectedUser(V4User)",
-      "V4User V4UserJoinedRoom.getAffectedUser()", "V4Stream V4UserJoinedRoom.getStream()",
-      "void V4UserJoinedRoom.setAffectedUser(V4User)", "void V4UserJoinedRoom.setStream(V4Stream)",
-      "V4UserJoinedRoom V4UserJoinedRoom.stream(V4Stream)", "String V4UserJoinedRoom.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4UserJoinedRoom.<init>()",
+    "V4UserJoinedRoom V4UserJoinedRoom.affectedUser(V4User)",
+    "V4User V4UserJoinedRoom.getAffectedUser()",
+    "V4Stream V4UserJoinedRoom.getStream()",
+    "void V4UserJoinedRoom.setAffectedUser(V4User)",
+    "void V4UserJoinedRoom.setStream(V4Stream)",
+    "V4UserJoinedRoom V4UserJoinedRoom.stream(V4Stream)",
+    "String V4UserJoinedRoom.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4UserJoinedRoom actualV4UserJoinedRoom = new V4UserJoinedRoom();
@@ -180,11 +204,24 @@ public class V4UserJoinedRoomDiffblueTest {
 
     // Assert
     assertEquals(
-        "class V4UserJoinedRoom {\n" + "    stream: class V4Stream {\n" + "        streamId: null\n"
-            + "        streamType: null\n" + "        roomName: null\n" + "        members: null\n"
-            + "        external: null\n" + "        crossPod: null\n" + "    }\n" + "    affectedUser: class V4User {\n"
-            + "        userId: null\n" + "        firstName: null\n" + "        lastName: null\n"
-            + "        displayName: null\n" + "        email: null\n" + "        username: null\n" + "    }\n" + "}",
+        "class V4UserJoinedRoom {\n"
+            + "    stream: class V4Stream {\n"
+            + "        streamId: null\n"
+            + "        streamType: null\n"
+            + "        roomName: null\n"
+            + "        members: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "    }\n"
+            + "    affectedUser: class V4User {\n"
+            + "        userId: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        displayName: null\n"
+            + "        email: null\n"
+            + "        username: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(stream, actualV4UserJoinedRoom.getStream());
     assertSame(affectedUser, actualAffectedUser);

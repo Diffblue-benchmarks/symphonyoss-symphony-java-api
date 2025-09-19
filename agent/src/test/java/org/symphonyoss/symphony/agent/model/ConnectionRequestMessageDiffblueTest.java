@@ -4,25 +4,33 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ConnectionRequestMessageDiffblueTest {
   /**
-   * Test {@link ConnectionRequestMessage#equals(Object)}, and {@link ConnectionRequestMessage#hashCode()}.
+   * Test {@link ConnectionRequestMessage#equals(Object)}, and {@link
+   * ConnectionRequestMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ConnectionRequestMessage#equals(Object)}
    *   <li>{@link ConnectionRequestMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -30,25 +38,31 @@ public class ConnectionRequestMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(connectionRequestMessage, connectionRequestMessage2);
-    int expectedHashCodeResult = connectionRequestMessage.hashCode();
-    assertEquals(expectedHashCodeResult, connectionRequestMessage2.hashCode());
+    assertEquals(connectionRequestMessage.hashCode(), connectionRequestMessage2.hashCode());
   }
 
   /**
-   * Test {@link ConnectionRequestMessage#equals(Object)}, and {@link ConnectionRequestMessage#hashCode()}.
+   * Test {@link ConnectionRequestMessage#equals(Object)}, and {@link
+   * ConnectionRequestMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ConnectionRequestMessage#equals(Object)}
    *   <li>{@link ConnectionRequestMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -61,15 +75,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ConnectionRequestMessage(), 1);
@@ -77,15 +96,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -97,15 +121,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -117,15 +146,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -137,15 +171,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -157,15 +196,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -177,15 +221,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -197,15 +246,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     ConnectionRequestMessage connectionRequestMessage = new ConnectionRequestMessage();
@@ -217,15 +271,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ConnectionRequestMessage(), null);
@@ -233,15 +292,20 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test {@link ConnectionRequestMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ConnectionRequestMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ConnectionRequestMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ConnectionRequestMessage.equals(Object)", "int ConnectionRequestMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ConnectionRequestMessage.equals(Object)",
+    "int ConnectionRequestMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ConnectionRequestMessage(), "Different type to ConnectionRequestMessage");
@@ -249,8 +313,9 @@ public class ConnectionRequestMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ConnectionRequestMessage}
    *   <li>{@link ConnectionRequestMessage#firstRequestedAt(Long)}
@@ -275,27 +340,38 @@ public class ConnectionRequestMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ConnectionRequestMessage.<init>()",
-      "ConnectionRequestMessage ConnectionRequestMessage.firstRequestedAt(Long)",
-      "Long ConnectionRequestMessage.getFirstRequestedAt()", "Integer ConnectionRequestMessage.getRequestCounter()",
-      "Long ConnectionRequestMessage.getRequestingUserId()", "String ConnectionRequestMessage.getStatus()",
-      "Long ConnectionRequestMessage.getTargetUserId()", "Long ConnectionRequestMessage.getUpdatedAt()",
-      "ConnectionRequestMessage ConnectionRequestMessage.requestCounter(Integer)",
-      "ConnectionRequestMessage ConnectionRequestMessage.requestingUserId(Long)",
-      "void ConnectionRequestMessage.setFirstRequestedAt(Long)",
-      "void ConnectionRequestMessage.setRequestCounter(Integer)",
-      "void ConnectionRequestMessage.setRequestingUserId(Long)", "void ConnectionRequestMessage.setStatus(String)",
-      "void ConnectionRequestMessage.setTargetUserId(Long)", "void ConnectionRequestMessage.setUpdatedAt(Long)",
-      "ConnectionRequestMessage ConnectionRequestMessage.status(String)",
-      "ConnectionRequestMessage ConnectionRequestMessage.targetUserId(Long)",
-      "String ConnectionRequestMessage.toString()",
-      "ConnectionRequestMessage ConnectionRequestMessage.updatedAt(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ConnectionRequestMessage.<init>()",
+    "ConnectionRequestMessage ConnectionRequestMessage.firstRequestedAt(Long)",
+    "Long ConnectionRequestMessage.getFirstRequestedAt()",
+    "Integer ConnectionRequestMessage.getRequestCounter()",
+    "Long ConnectionRequestMessage.getRequestingUserId()",
+    "String ConnectionRequestMessage.getStatus()",
+    "Long ConnectionRequestMessage.getTargetUserId()",
+    "Long ConnectionRequestMessage.getUpdatedAt()",
+    "ConnectionRequestMessage ConnectionRequestMessage.requestCounter(Integer)",
+    "ConnectionRequestMessage ConnectionRequestMessage.requestingUserId(Long)",
+    "void ConnectionRequestMessage.setFirstRequestedAt(Long)",
+    "void ConnectionRequestMessage.setRequestCounter(Integer)",
+    "void ConnectionRequestMessage.setRequestingUserId(Long)",
+    "void ConnectionRequestMessage.setStatus(String)",
+    "void ConnectionRequestMessage.setTargetUserId(Long)",
+    "void ConnectionRequestMessage.setUpdatedAt(Long)",
+    "ConnectionRequestMessage ConnectionRequestMessage.status(String)",
+    "ConnectionRequestMessage ConnectionRequestMessage.targetUserId(Long)",
+    "String ConnectionRequestMessage.toString()",
+    "ConnectionRequestMessage ConnectionRequestMessage.updatedAt(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ConnectionRequestMessage actualConnectionRequestMessage = new ConnectionRequestMessage();
-    ConnectionRequestMessage actualFirstRequestedAtResult = actualConnectionRequestMessage.firstRequestedAt(1L);
-    ConnectionRequestMessage actualRequestCounterResult = actualConnectionRequestMessage.requestCounter(3);
-    ConnectionRequestMessage actualRequestingUserIdResult = actualConnectionRequestMessage.requestingUserId(1L);
+    ConnectionRequestMessage actualFirstRequestedAtResult =
+        actualConnectionRequestMessage.firstRequestedAt(1L);
+    ConnectionRequestMessage actualRequestCounterResult =
+        actualConnectionRequestMessage.requestCounter(3);
+    ConnectionRequestMessage actualRequestingUserIdResult =
+        actualConnectionRequestMessage.requestingUserId(1L);
     actualConnectionRequestMessage.setFirstRequestedAt(1L);
     actualConnectionRequestMessage.setRequestCounter(3);
     actualConnectionRequestMessage.setRequestingUserId(1L);
@@ -303,7 +379,8 @@ public class ConnectionRequestMessageDiffblueTest {
     actualConnectionRequestMessage.setTargetUserId(1L);
     actualConnectionRequestMessage.setUpdatedAt(1L);
     ConnectionRequestMessage actualStatusResult = actualConnectionRequestMessage.status("Status");
-    ConnectionRequestMessage actualTargetUserIdResult = actualConnectionRequestMessage.targetUserId(1L);
+    ConnectionRequestMessage actualTargetUserIdResult =
+        actualConnectionRequestMessage.targetUserId(1L);
     ConnectionRequestMessage actualUpdatedAtResult = actualConnectionRequestMessage.updatedAt(1L);
     String actualToStringResult = actualConnectionRequestMessage.toString();
     Long actualFirstRequestedAt = actualConnectionRequestMessage.getFirstRequestedAt();
@@ -315,10 +392,22 @@ public class ConnectionRequestMessageDiffblueTest {
 
     // Assert
     assertEquals("Status", actualStatus);
-    assertEquals("class ConnectionRequestMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    requestingUserId: 1\n" + "    targetUserId: 1\n" + "    firstRequestedAt: 1\n" + "    updatedAt: 1\n"
-        + "    requestCounter: 3\n" + "    status: Status\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ConnectionRequestMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    requestingUserId: 1\n"
+            + "    targetUserId: 1\n"
+            + "    firstRequestedAt: 1\n"
+            + "    updatedAt: 1\n"
+            + "    requestCounter: 3\n"
+            + "    status: Status\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualConnectionRequestMessage.getId());
     assertNull(actualConnectionRequestMessage.getStreamId());
     assertNull(actualConnectionRequestMessage.getTimestamp());

@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.StreamType.TypeEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.pod.model.StreamType.TypeEnum;
 public class StreamTypeDiffblueTest {
   /**
    * Test {@link StreamType#equals(Object)}, and {@link StreamType#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamType#equals(Object)}
    *   <li>{@link StreamType#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamType.equals(Object)", "int StreamType.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class StreamTypeDiffblueTest {
 
     // Act and Assert
     assertEquals(streamType, streamType2);
-    int expectedHashCodeResult = streamType.hashCode();
-    assertEquals(expectedHashCodeResult, streamType2.hashCode());
+    assertEquals(streamType.hashCode(), streamType2.hashCode());
   }
 
   /**
    * Test {@link StreamType#equals(Object)}, and {@link StreamType#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamType#equals(Object)}
    *   <li>{@link StreamType#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamType.equals(Object)", "int StreamType.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,30 +68,16 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test {@link StreamType#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamType#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamType#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean StreamType.equals(Object)", "int StreamType.hashCode()"})
-  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
-    // Arrange, Act and Assert
-    assertNotEquals(new StreamType(), null);
-  }
-
-  /**
-   * Test {@link StreamType#equals(Object)}.
-   * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link StreamType#equals(Object)}
-   */
-  @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamType.equals(Object)", "int StreamType.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -94,14 +86,16 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test {@link StreamType#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamType#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamType#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamType.equals(Object)", "int StreamType.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -110,8 +104,9 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link StreamType}
    *   <li>{@link StreamType#setType(TypeEnum)}
@@ -121,8 +116,14 @@ public class StreamTypeDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void StreamType.<init>()", "TypeEnum StreamType.getType()", "void StreamType.setType(TypeEnum)",
-      "String StreamType.toString()", "StreamType StreamType.type(TypeEnum)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void StreamType.<init>()",
+    "TypeEnum StreamType.getType()",
+    "void StreamType.setType(TypeEnum)",
+    "String StreamType.toString()",
+    "StreamType StreamType.type(TypeEnum)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     StreamType actualStreamType = new StreamType();
@@ -138,14 +139,16 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test TypeEnum {@link TypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code IM}.</li>
-   *   <li>Then return {@code IM}.</li>
+   *   <li>When {@code IM}.
+   *   <li>Then return {@code IM}.
    * </ul>
-   * <p>
-   * Method under test: {@link TypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link TypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"TypeEnum TypeEnum.fromValue(String)"})
   public void testTypeEnumFromValue_whenIm_thenReturnIm() {
     // Arrange, Act and Assert
@@ -154,14 +157,16 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test TypeEnum {@link TypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link TypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link TypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"TypeEnum TypeEnum.fromValue(String)"})
   public void testTypeEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -170,14 +175,16 @@ public class StreamTypeDiffblueTest {
 
   /**
    * Test TypeEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link TypeEnum#toString()}
    *   <li>{@link TypeEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String TypeEnum.getValue()", "String TypeEnum.toString()"})
   public void testTypeEnumGettersAndSetters() {
     // Arrange

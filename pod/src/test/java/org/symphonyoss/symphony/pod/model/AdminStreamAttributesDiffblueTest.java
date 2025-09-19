@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,56 +13,74 @@ import org.junit.Test;
 public class AdminStreamAttributesDiffblueTest {
   /**
    * Test {@link AdminStreamAttributes#addMembersItem(Long)}.
+   *
    * <ul>
-   *   <li>Given {@link AdminStreamAttributes} (default constructor).</li>
+   *   <li>Given {@link AdminStreamAttributes} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#addMembersItem(Long)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#addMembersItem(Long)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AdminStreamAttributes AdminStreamAttributes.addMembersItem(Long)"})
   public void testAddMembersItem_givenAdminStreamAttributes() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
 
-    // Act and Assert
-    assertSame(adminStreamAttributes, adminStreamAttributes.addMembersItem(1L));
+    // Act
+    AdminStreamAttributes actualAddMembersItemResult = adminStreamAttributes.addMembersItem(1L);
+
+    // Assert
+    assertSame(adminStreamAttributes, actualAddMembersItemResult);
   }
 
   /**
    * Test {@link AdminStreamAttributes#addMembersItem(Long)}.
+   *
    * <ul>
-   *   <li>Given {@link AdminStreamAttributes} (default constructor) members {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link AdminStreamAttributes} (default constructor) members {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#addMembersItem(Long)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#addMembersItem(Long)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AdminStreamAttributes AdminStreamAttributes.addMembersItem(Long)"})
   public void testAddMembersItem_givenAdminStreamAttributesMembersArrayList() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
     adminStreamAttributes.members(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(adminStreamAttributes, adminStreamAttributes.addMembersItem(1L));
+    // Act
+    AdminStreamAttributes actualAddMembersItemResult = adminStreamAttributes.addMembersItem(1L);
+
+    // Assert
+    assertSame(adminStreamAttributes, actualAddMembersItemResult);
   }
 
   /**
-   * Test {@link AdminStreamAttributes#equals(Object)}, and {@link AdminStreamAttributes#hashCode()}.
+   * Test {@link AdminStreamAttributes#equals(Object)}, and {@link
+   * AdminStreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamAttributes#equals(Object)}
    *   <li>{@link AdminStreamAttributes#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -69,25 +88,31 @@ public class AdminStreamAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(adminStreamAttributes, adminStreamAttributes2);
-    int expectedHashCodeResult = adminStreamAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, adminStreamAttributes2.hashCode());
+    assertEquals(adminStreamAttributes.hashCode(), adminStreamAttributes2.hashCode());
   }
 
   /**
-   * Test {@link AdminStreamAttributes#equals(Object)}, and {@link AdminStreamAttributes#hashCode()}.
+   * Test {@link AdminStreamAttributes#equals(Object)}, and {@link
+   * AdminStreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamAttributes#equals(Object)}
    *   <li>{@link AdminStreamAttributes#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -100,15 +125,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -120,15 +150,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -141,15 +176,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -162,15 +202,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -182,15 +227,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -202,15 +252,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -222,15 +277,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -242,15 +302,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -262,15 +327,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
     AdminStreamAttributes adminStreamAttributes = new AdminStreamAttributes();
@@ -282,15 +352,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminStreamAttributes(), null);
@@ -298,15 +373,20 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamAttributes.equals(Object)", "int AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamAttributes.equals(Object)",
+    "int AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminStreamAttributes(), "Different type to AdminStreamAttributes");
@@ -314,8 +394,9 @@ public class AdminStreamAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AdminStreamAttributes}
    *   <li>{@link AdminStreamAttributes#createdByUserId(Long)}
@@ -349,37 +430,55 @@ public class AdminStreamAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AdminStreamAttributes.<init>()",
-      "AdminStreamAttributes AdminStreamAttributes.createdByUserId(Long)",
-      "AdminStreamAttributes AdminStreamAttributes.createdDate(Long)",
-      "Long AdminStreamAttributes.getCreatedByUserId()", "Long AdminStreamAttributes.getCreatedDate()",
-      "Long AdminStreamAttributes.getLastModifiedDate()", "List AdminStreamAttributes.getMembers()",
-      "Integer AdminStreamAttributes.getMembersCount()", "String AdminStreamAttributes.getOriginCompany()",
-      "Integer AdminStreamAttributes.getOriginCompanyId()", "String AdminStreamAttributes.getRoomDescription()",
-      "String AdminStreamAttributes.getRoomName()",
-      "AdminStreamAttributes AdminStreamAttributes.lastModifiedDate(Long)",
-      "AdminStreamAttributes AdminStreamAttributes.members(List)",
-      "AdminStreamAttributes AdminStreamAttributes.membersCount(Integer)",
-      "AdminStreamAttributes AdminStreamAttributes.originCompany(String)",
-      "AdminStreamAttributes AdminStreamAttributes.originCompanyId(Integer)",
-      "AdminStreamAttributes AdminStreamAttributes.roomDescription(String)",
-      "AdminStreamAttributes AdminStreamAttributes.roomName(String)",
-      "void AdminStreamAttributes.setCreatedByUserId(Long)", "void AdminStreamAttributes.setCreatedDate(Long)",
-      "void AdminStreamAttributes.setLastModifiedDate(Long)", "void AdminStreamAttributes.setMembers(List)",
-      "void AdminStreamAttributes.setMembersCount(Integer)", "void AdminStreamAttributes.setOriginCompany(String)",
-      "void AdminStreamAttributes.setOriginCompanyId(Integer)", "void AdminStreamAttributes.setRoomDescription(String)",
-      "void AdminStreamAttributes.setRoomName(String)", "String AdminStreamAttributes.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AdminStreamAttributes.<init>()",
+    "AdminStreamAttributes AdminStreamAttributes.createdByUserId(Long)",
+    "AdminStreamAttributes AdminStreamAttributes.createdDate(Long)",
+    "Long AdminStreamAttributes.getCreatedByUserId()",
+    "Long AdminStreamAttributes.getCreatedDate()",
+    "Long AdminStreamAttributes.getLastModifiedDate()",
+    "List AdminStreamAttributes.getMembers()",
+    "Integer AdminStreamAttributes.getMembersCount()",
+    "String AdminStreamAttributes.getOriginCompany()",
+    "Integer AdminStreamAttributes.getOriginCompanyId()",
+    "String AdminStreamAttributes.getRoomDescription()",
+    "String AdminStreamAttributes.getRoomName()",
+    "AdminStreamAttributes AdminStreamAttributes.lastModifiedDate(Long)",
+    "AdminStreamAttributes AdminStreamAttributes.members(List)",
+    "AdminStreamAttributes AdminStreamAttributes.membersCount(Integer)",
+    "AdminStreamAttributes AdminStreamAttributes.originCompany(String)",
+    "AdminStreamAttributes AdminStreamAttributes.originCompanyId(Integer)",
+    "AdminStreamAttributes AdminStreamAttributes.roomDescription(String)",
+    "AdminStreamAttributes AdminStreamAttributes.roomName(String)",
+    "void AdminStreamAttributes.setCreatedByUserId(Long)",
+    "void AdminStreamAttributes.setCreatedDate(Long)",
+    "void AdminStreamAttributes.setLastModifiedDate(Long)",
+    "void AdminStreamAttributes.setMembers(List)",
+    "void AdminStreamAttributes.setMembersCount(Integer)",
+    "void AdminStreamAttributes.setOriginCompany(String)",
+    "void AdminStreamAttributes.setOriginCompanyId(Integer)",
+    "void AdminStreamAttributes.setRoomDescription(String)",
+    "void AdminStreamAttributes.setRoomName(String)",
+    "String AdminStreamAttributes.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AdminStreamAttributes actualAdminStreamAttributes = new AdminStreamAttributes();
-    AdminStreamAttributes actualCreatedByUserIdResult = actualAdminStreamAttributes.createdByUserId(1L);
+    AdminStreamAttributes actualCreatedByUserIdResult =
+        actualAdminStreamAttributes.createdByUserId(1L);
     AdminStreamAttributes actualCreatedDateResult = actualAdminStreamAttributes.createdDate(1L);
-    AdminStreamAttributes actualLastModifiedDateResult = actualAdminStreamAttributes.lastModifiedDate(1L);
-    AdminStreamAttributes actualMembersResult = actualAdminStreamAttributes.members(new ArrayList<>());
+    AdminStreamAttributes actualLastModifiedDateResult =
+        actualAdminStreamAttributes.lastModifiedDate(1L);
+    AdminStreamAttributes actualMembersResult =
+        actualAdminStreamAttributes.members(new ArrayList<>());
     AdminStreamAttributes actualMembersCountResult = actualAdminStreamAttributes.membersCount(3);
-    AdminStreamAttributes actualOriginCompanyResult = actualAdminStreamAttributes.originCompany("Origin Company");
-    AdminStreamAttributes actualOriginCompanyIdResult = actualAdminStreamAttributes.originCompanyId(1);
-    AdminStreamAttributes actualRoomDescriptionResult = actualAdminStreamAttributes.roomDescription("Room Description");
+    AdminStreamAttributes actualOriginCompanyResult =
+        actualAdminStreamAttributes.originCompany("Origin Company");
+    AdminStreamAttributes actualOriginCompanyIdResult =
+        actualAdminStreamAttributes.originCompanyId(1);
+    AdminStreamAttributes actualRoomDescriptionResult =
+        actualAdminStreamAttributes.roomDescription("Room Description");
     AdminStreamAttributes actualRoomNameResult = actualAdminStreamAttributes.roomName("Room Name");
     actualAdminStreamAttributes.setCreatedByUserId(1L);
     actualAdminStreamAttributes.setCreatedDate(1L);
@@ -406,9 +505,17 @@ public class AdminStreamAttributesDiffblueTest {
     assertEquals("Room Description", actualRoomDescription);
     assertEquals("Room Name", actualAdminStreamAttributes.getRoomName());
     assertEquals(
-        "class AdminStreamAttributes {\n" + "    roomName: Room Name\n" + "    roomDescription: Room Description\n"
-            + "    members: []\n" + "    createdByUserId: 1\n" + "    createdDate: 1\n" + "    lastModifiedDate: 1\n"
-            + "    originCompany: Origin Company\n" + "    originCompanyId: 1\n" + "    membersCount: 3\n" + "}",
+        "class AdminStreamAttributes {\n"
+            + "    roomName: Room Name\n"
+            + "    roomDescription: Room Description\n"
+            + "    members: []\n"
+            + "    createdByUserId: 1\n"
+            + "    createdDate: 1\n"
+            + "    lastModifiedDate: 1\n"
+            + "    originCompany: Origin Company\n"
+            + "    originCompanyId: 1\n"
+            + "    membersCount: 3\n"
+            + "}",
         actualToStringResult);
     assertEquals(1, actualOriginCompanyId.intValue());
     assertEquals(1L, actualCreatedByUserId.longValue());

@@ -4,25 +4,33 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserJoinedRoomMessageDiffblueTest {
   /**
-   * Test {@link UserJoinedRoomMessage#equals(Object)}, and {@link UserJoinedRoomMessage#hashCode()}.
+   * Test {@link UserJoinedRoomMessage#equals(Object)}, and {@link
+   * UserJoinedRoomMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserJoinedRoomMessage#equals(Object)}
    *   <li>{@link UserJoinedRoomMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     UserJoinedRoomMessage userJoinedRoomMessage = new UserJoinedRoomMessage();
@@ -30,25 +38,31 @@ public class UserJoinedRoomMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(userJoinedRoomMessage, userJoinedRoomMessage2);
-    int expectedHashCodeResult = userJoinedRoomMessage.hashCode();
-    assertEquals(expectedHashCodeResult, userJoinedRoomMessage2.hashCode());
+    assertEquals(userJoinedRoomMessage.hashCode(), userJoinedRoomMessage2.hashCode());
   }
 
   /**
-   * Test {@link UserJoinedRoomMessage#equals(Object)}, and {@link UserJoinedRoomMessage#hashCode()}.
+   * Test {@link UserJoinedRoomMessage#equals(Object)}, and {@link
+   * UserJoinedRoomMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserJoinedRoomMessage#equals(Object)}
    *   <li>{@link UserJoinedRoomMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     UserJoinedRoomMessage userJoinedRoomMessage = new UserJoinedRoomMessage();
@@ -61,15 +75,20 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserJoinedRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserJoinedRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserJoinedRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     UserJoinedRoomMessage userJoinedRoomMessage = new UserJoinedRoomMessage();
@@ -81,15 +100,20 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserJoinedRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserJoinedRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserJoinedRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     UserJoinedRoomMessage userJoinedRoomMessage = new UserJoinedRoomMessage();
@@ -101,15 +125,20 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserJoinedRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserJoinedRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserJoinedRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     UserJoinedRoomMessage userJoinedRoomMessage = new UserJoinedRoomMessage();
@@ -121,15 +150,20 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserJoinedRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserJoinedRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserJoinedRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserJoinedRoomMessage(), null);
@@ -137,15 +171,20 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserJoinedRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserJoinedRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserJoinedRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserJoinedRoomMessage.equals(Object)", "int UserJoinedRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserJoinedRoomMessage.equals(Object)",
+    "int UserJoinedRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserJoinedRoomMessage(), "Different type to UserJoinedRoomMessage");
@@ -153,8 +192,9 @@ public class UserJoinedRoomMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserJoinedRoomMessage}
    *   <li>{@link UserJoinedRoomMessage#memberAddedUserId(Long)}
@@ -167,16 +207,22 @@ public class UserJoinedRoomMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserJoinedRoomMessage.<init>()",
-      "UserJoinedRoomMessage UserJoinedRoomMessage.addedByUserId(Long)",
-      "Long UserJoinedRoomMessage.getAddedByUserId()", "Long UserJoinedRoomMessage.getMemberAddedUserId()",
-      "UserJoinedRoomMessage UserJoinedRoomMessage.memberAddedUserId(Long)",
-      "void UserJoinedRoomMessage.setAddedByUserId(Long)", "void UserJoinedRoomMessage.setMemberAddedUserId(Long)",
-      "String UserJoinedRoomMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserJoinedRoomMessage.<init>()",
+    "UserJoinedRoomMessage UserJoinedRoomMessage.addedByUserId(Long)",
+    "Long UserJoinedRoomMessage.getAddedByUserId()",
+    "Long UserJoinedRoomMessage.getMemberAddedUserId()",
+    "UserJoinedRoomMessage UserJoinedRoomMessage.memberAddedUserId(Long)",
+    "void UserJoinedRoomMessage.setAddedByUserId(Long)",
+    "void UserJoinedRoomMessage.setMemberAddedUserId(Long)",
+    "String UserJoinedRoomMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserJoinedRoomMessage actualUserJoinedRoomMessage = new UserJoinedRoomMessage();
-    UserJoinedRoomMessage actualMemberAddedUserIdResult = actualUserJoinedRoomMessage.memberAddedUserId(1L);
+    UserJoinedRoomMessage actualMemberAddedUserIdResult =
+        actualUserJoinedRoomMessage.memberAddedUserId(1L);
     actualUserJoinedRoomMessage.setAddedByUserId(1L);
     actualUserJoinedRoomMessage.setMemberAddedUserId(1L);
     UserJoinedRoomMessage actualAddedByUserIdResult = actualUserJoinedRoomMessage.addedByUserId(1L);
@@ -185,9 +231,18 @@ public class UserJoinedRoomMessageDiffblueTest {
     Long actualMemberAddedUserId = actualUserJoinedRoomMessage.getMemberAddedUserId();
 
     // Assert
-    assertEquals("class UserJoinedRoomMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    addedByUserId: 1\n" + "    memberAddedUserId: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class UserJoinedRoomMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    addedByUserId: 1\n"
+            + "    memberAddedUserId: 1\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualUserJoinedRoomMessage.getId());
     assertNull(actualUserJoinedRoomMessage.getStreamId());
     assertNull(actualUserJoinedRoomMessage.getTimestamp());

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,55 +14,68 @@ import org.junit.Test;
 public class V2MessageDiffblueTest {
   /**
    * Test {@link V2Message#addAttachmentsItem(AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V2Message} (default constructor).</li>
+   *   <li>Given {@link V2Message} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#addAttachmentsItem(AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V2Message#addAttachmentsItem(AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2Message V2Message.addAttachmentsItem(AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV2Message() {
     // Arrange
     V2Message v2Message = new V2Message();
 
-    // Act and Assert
-    assertSame(v2Message, v2Message.addAttachmentsItem(new AttachmentInfo()));
+    // Act
+    V2Message actualAddAttachmentsItemResult = v2Message.addAttachmentsItem(new AttachmentInfo());
+
+    // Assert
+    assertSame(v2Message, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V2Message#addAttachmentsItem(AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V2Message} (default constructor) attachments {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V2Message} (default constructor) attachments {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#addAttachmentsItem(AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V2Message#addAttachmentsItem(AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2Message V2Message.addAttachmentsItem(AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV2MessageAttachmentsArrayList() {
     // Arrange
     V2Message v2Message = new V2Message();
     v2Message.attachments(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v2Message, v2Message.addAttachmentsItem(new AttachmentInfo()));
+    // Act
+    V2Message actualAddAttachmentsItemResult = v2Message.addAttachmentsItem(new AttachmentInfo());
+
+    // Assert
+    assertSame(v2Message, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V2Message#equals(Object)}, and {@link V2Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Message#equals(Object)}
    *   <li>{@link V2Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -70,24 +84,26 @@ public class V2MessageDiffblueTest {
 
     // Act and Assert
     assertEquals(v2Message, v2Message2);
-    int expectedHashCodeResult = v2Message.hashCode();
-    assertEquals(expectedHashCodeResult, v2Message2.hashCode());
+    assertEquals(v2Message.hashCode(), v2Message2.hashCode());
   }
 
   /**
    * Test {@link V2Message#equals(Object)}, and {@link V2Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Message#equals(Object)}
    *   <li>{@link V2Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -101,14 +117,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -121,14 +139,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -142,14 +162,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -163,14 +185,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +207,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -199,14 +225,16 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test {@link V2Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Message#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Message.equals(Object)", "int V2Message.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -215,8 +243,9 @@ public class V2MessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2Message}
    *   <li>{@link V2Message#attachments(List)}
@@ -232,10 +261,20 @@ public class V2MessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2Message.<init>()", "V2Message V2Message.attachments(List)",
-      "V2Message V2Message.fromUserId(Long)", "List V2Message.getAttachments()", "Long V2Message.getFromUserId()",
-      "String V2Message.getMessage()", "V2Message V2Message.message(String)", "void V2Message.setAttachments(List)",
-      "void V2Message.setFromUserId(Long)", "void V2Message.setMessage(String)", "String V2Message.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2Message.<init>()",
+    "V2Message V2Message.attachments(List)",
+    "V2Message V2Message.fromUserId(Long)",
+    "List V2Message.getAttachments()",
+    "Long V2Message.getFromUserId()",
+    "String V2Message.getMessage()",
+    "V2Message V2Message.message(String)",
+    "void V2Message.setAttachments(List)",
+    "void V2Message.setFromUserId(Long)",
+    "void V2Message.setMessage(String)",
+    "String V2Message.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2Message actualV2Message = new V2Message();
@@ -253,9 +292,17 @@ public class V2MessageDiffblueTest {
     // Assert
     assertEquals("Not all who wander are lost", actualV2Message.getMessage());
     assertEquals(
-        "class V2Message {\n" + "    class V2BaseMessage {\n" + "        id: null\n" + "        timestamp: null\n"
-            + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-            + "    message: Not all who wander are lost\n" + "    fromUserId: 1\n" + "    attachments: []\n" + "}",
+        "class V2Message {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    message: Not all who wander are lost\n"
+            + "    fromUserId: 1\n"
+            + "    attachments: []\n"
+            + "}",
         actualToStringResult);
     assertNull(actualV2Message.getId());
     assertNull(actualV2Message.getStreamId());

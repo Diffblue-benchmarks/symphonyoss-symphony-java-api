@@ -5,24 +5,28 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class StreamAttributesDiffblueTest {
   /**
    * Test {@link StreamAttributes#equals(Object)}, and {@link StreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamAttributes#equals(Object)}
    *   <li>{@link StreamAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class StreamAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(streamAttributes, streamAttributes2);
-    int expectedHashCodeResult = streamAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, streamAttributes2.hashCode());
+    assertEquals(streamAttributes.hashCode(), streamAttributes2.hashCode());
   }
 
   /**
    * Test {@link StreamAttributes#equals(Object)}, and {@link StreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamAttributes#equals(Object)}
    *   <li>{@link StreamAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,14 +68,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -78,14 +86,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -98,14 +108,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -118,14 +130,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -138,14 +152,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -158,14 +174,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -178,14 +196,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -198,14 +218,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -214,14 +236,16 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test {@link StreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamAttributes.equals(Object)", "int StreamAttributes.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -230,8 +254,9 @@ public class StreamAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link StreamAttributes}
    *   <li>{@link StreamAttributes#active(Boolean)}
@@ -256,27 +281,37 @@ public class StreamAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void StreamAttributes.<init>()", "StreamAttributes StreamAttributes.active(Boolean)",
-      "StreamAttributes StreamAttributes.crossPod(Boolean)", "Boolean StreamAttributes.getActive()",
-      "Boolean StreamAttributes.getCrossPod()", "String StreamAttributes.getId()",
-      "RoomSpecificStreamAttributes StreamAttributes.getRoomAttributes()",
-      "ConversationSpecificStreamAttributes StreamAttributes.getStreamAttributes()",
-      "StreamType StreamAttributes.getStreamType()", "StreamAttributes StreamAttributes.id(String)",
-      "StreamAttributes StreamAttributes.roomAttributes(RoomSpecificStreamAttributes)",
-      "void StreamAttributes.setActive(Boolean)", "void StreamAttributes.setCrossPod(Boolean)",
-      "void StreamAttributes.setId(String)", "void StreamAttributes.setRoomAttributes(RoomSpecificStreamAttributes)",
-      "void StreamAttributes.setStreamAttributes(ConversationSpecificStreamAttributes)",
-      "void StreamAttributes.setStreamType(StreamType)",
-      "StreamAttributes StreamAttributes.streamAttributes(ConversationSpecificStreamAttributes)",
-      "StreamAttributes StreamAttributes.streamType(StreamType)", "String StreamAttributes.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void StreamAttributes.<init>()",
+    "StreamAttributes StreamAttributes.active(Boolean)",
+    "StreamAttributes StreamAttributes.crossPod(Boolean)",
+    "Boolean StreamAttributes.getActive()",
+    "Boolean StreamAttributes.getCrossPod()",
+    "String StreamAttributes.getId()",
+    "RoomSpecificStreamAttributes StreamAttributes.getRoomAttributes()",
+    "ConversationSpecificStreamAttributes StreamAttributes.getStreamAttributes()",
+    "StreamType StreamAttributes.getStreamType()",
+    "StreamAttributes StreamAttributes.id(String)",
+    "StreamAttributes StreamAttributes.roomAttributes(RoomSpecificStreamAttributes)",
+    "void StreamAttributes.setActive(Boolean)",
+    "void StreamAttributes.setCrossPod(Boolean)",
+    "void StreamAttributes.setId(String)",
+    "void StreamAttributes.setRoomAttributes(RoomSpecificStreamAttributes)",
+    "void StreamAttributes.setStreamAttributes(ConversationSpecificStreamAttributes)",
+    "void StreamAttributes.setStreamType(StreamType)",
+    "StreamAttributes StreamAttributes.streamAttributes(ConversationSpecificStreamAttributes)",
+    "StreamAttributes StreamAttributes.streamType(StreamType)",
+    "String StreamAttributes.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     StreamAttributes actualStreamAttributes = new StreamAttributes();
     StreamAttributes actualActiveResult = actualStreamAttributes.active(true);
     StreamAttributes actualCrossPodResult = actualStreamAttributes.crossPod(true);
     StreamAttributes actualIdResult = actualStreamAttributes.id("42");
-    StreamAttributes actualRoomAttributesResult = actualStreamAttributes
-        .roomAttributes(new RoomSpecificStreamAttributes());
+    StreamAttributes actualRoomAttributesResult =
+        actualStreamAttributes.roomAttributes(new RoomSpecificStreamAttributes());
     actualStreamAttributes.setActive(true);
     actualStreamAttributes.setCrossPod(true);
     actualStreamAttributes.setId("42");
@@ -284,8 +319,10 @@ public class StreamAttributesDiffblueTest {
     actualStreamAttributes.setRoomAttributes(roomAttributes);
     actualStreamAttributes.setStreamAttributes(new ConversationSpecificStreamAttributes());
     actualStreamAttributes.setStreamType(new StreamType());
-    ConversationSpecificStreamAttributes streamAttributes = new ConversationSpecificStreamAttributes();
-    StreamAttributes actualStreamAttributesResult = actualStreamAttributes.streamAttributes(streamAttributes);
+    ConversationSpecificStreamAttributes streamAttributes =
+        new ConversationSpecificStreamAttributes();
+    StreamAttributes actualStreamAttributesResult =
+        actualStreamAttributes.streamAttributes(streamAttributes);
     StreamType streamType = new StreamType();
     StreamAttributes actualStreamTypeResult = actualStreamAttributes.streamType(streamType);
     String actualToStringResult = actualStreamAttributes.toString();
@@ -293,15 +330,27 @@ public class StreamAttributesDiffblueTest {
     Boolean actualCrossPod = actualStreamAttributes.getCrossPod();
     String actualId = actualStreamAttributes.getId();
     RoomSpecificStreamAttributes actualRoomAttributes = actualStreamAttributes.getRoomAttributes();
-    ConversationSpecificStreamAttributes actualStreamAttributes2 = actualStreamAttributes.getStreamAttributes();
+    ConversationSpecificStreamAttributes actualStreamAttributes2 =
+        actualStreamAttributes.getStreamAttributes();
     StreamType actualStreamType = actualStreamAttributes.getStreamType();
 
     // Assert
     assertEquals("42", actualId);
-    assertEquals("class StreamAttributes {\n" + "    id: 42\n" + "    crossPod: true\n" + "    active: true\n"
-        + "    streamType: class StreamType {\n" + "        type: null\n" + "    }\n"
-        + "    streamAttributes: class ConversationSpecificStreamAttributes {\n" + "        members: null\n" + "    }\n"
-        + "    roomAttributes: class RoomSpecificStreamAttributes {\n" + "        name: null\n" + "    }\n" + "}",
+    assertEquals(
+        "class StreamAttributes {\n"
+            + "    id: 42\n"
+            + "    crossPod: true\n"
+            + "    active: true\n"
+            + "    streamType: class StreamType {\n"
+            + "        type: null\n"
+            + "    }\n"
+            + "    streamAttributes: class ConversationSpecificStreamAttributes {\n"
+            + "        members: null\n"
+            + "    }\n"
+            + "    roomAttributes: class RoomSpecificStreamAttributes {\n"
+            + "        name: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertNull(actualRoomAttributes.getName());
     assertNull(actualStreamType.getType());

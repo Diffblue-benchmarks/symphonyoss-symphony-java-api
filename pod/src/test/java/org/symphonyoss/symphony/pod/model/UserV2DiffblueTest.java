@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserV2DiffblueTest {
   /**
    * Test {@link UserV2#equals(Object)}, and {@link UserV2#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserV2#equals(Object)}
    *   <li>{@link UserV2#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class UserV2DiffblueTest {
 
     // Act and Assert
     assertEquals(userV2, userV22);
-    int expectedHashCodeResult = userV2.hashCode();
-    assertEquals(expectedHashCodeResult, userV22.hashCode());
+    assertEquals(userV2.hashCode(), userV22.hashCode());
   }
 
   /**
    * Test {@link UserV2#equals(Object)}, and {@link UserV2#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserV2#equals(Object)}
    *   <li>{@link UserV2#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -196,14 +216,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -216,14 +238,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -236,14 +260,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -256,14 +282,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
@@ -276,14 +304,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual12() {
     // Arrange
@@ -296,14 +326,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual13() {
     // Arrange
@@ -316,14 +348,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual14() {
     // Arrange
@@ -336,14 +370,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual15() {
     // Arrange
@@ -356,14 +392,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual16() {
     // Arrange
@@ -376,14 +414,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -392,14 +432,16 @@ public class UserV2DiffblueTest {
 
   /**
    * Test {@link UserV2#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserV2#equals(Object)}
+   *
+   * <p>Method under test: {@link UserV2#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserV2.equals(Object)", "int UserV2.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -408,8 +450,9 @@ public class UserV2DiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserV2}
    *   <li>{@link UserV2#avatars(AvatarList)}
@@ -461,22 +504,56 @@ public class UserV2DiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserV2.<init>()", "UserV2 UserV2.avatars(AvatarList)", "UserV2 UserV2.company(String)",
-      "UserV2 UserV2.department(String)", "UserV2 UserV2.displayName(String)", "UserV2 UserV2.division(String)",
-      "UserV2 UserV2.emailAddress(String)", "UserV2 UserV2.firstName(String)", "AvatarList UserV2.getAvatars()",
-      "String UserV2.getCompany()", "String UserV2.getDepartment()", "String UserV2.getDisplayName()",
-      "String UserV2.getDivision()", "String UserV2.getEmailAddress()", "String UserV2.getFirstName()",
-      "Long UserV2.getId()", "String UserV2.getJobFunction()", "String UserV2.getLastName()",
-      "String UserV2.getLocation()", "String UserV2.getMobilePhoneNumber()", "String UserV2.getTitle()",
-      "String UserV2.getUsername()", "String UserV2.getWorkPhoneNumber()", "UserV2 UserV2.id(Long)",
-      "UserV2 UserV2.jobFunction(String)", "UserV2 UserV2.lastName(String)", "UserV2 UserV2.location(String)",
-      "UserV2 UserV2.mobilePhoneNumber(String)", "void UserV2.setAvatars(AvatarList)", "void UserV2.setCompany(String)",
-      "void UserV2.setDepartment(String)", "void UserV2.setDisplayName(String)", "void UserV2.setDivision(String)",
-      "void UserV2.setEmailAddress(String)", "void UserV2.setFirstName(String)", "void UserV2.setId(Long)",
-      "void UserV2.setJobFunction(String)", "void UserV2.setLastName(String)", "void UserV2.setLocation(String)",
-      "void UserV2.setMobilePhoneNumber(String)", "void UserV2.setTitle(String)", "void UserV2.setUsername(String)",
-      "void UserV2.setWorkPhoneNumber(String)", "UserV2 UserV2.title(String)", "String UserV2.toString()",
-      "UserV2 UserV2.username(String)", "UserV2 UserV2.workPhoneNumber(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserV2.<init>()",
+    "UserV2 UserV2.avatars(AvatarList)",
+    "UserV2 UserV2.company(String)",
+    "UserV2 UserV2.department(String)",
+    "UserV2 UserV2.displayName(String)",
+    "UserV2 UserV2.division(String)",
+    "UserV2 UserV2.emailAddress(String)",
+    "UserV2 UserV2.firstName(String)",
+    "AvatarList UserV2.getAvatars()",
+    "String UserV2.getCompany()",
+    "String UserV2.getDepartment()",
+    "String UserV2.getDisplayName()",
+    "String UserV2.getDivision()",
+    "String UserV2.getEmailAddress()",
+    "String UserV2.getFirstName()",
+    "Long UserV2.getId()",
+    "String UserV2.getJobFunction()",
+    "String UserV2.getLastName()",
+    "String UserV2.getLocation()",
+    "String UserV2.getMobilePhoneNumber()",
+    "String UserV2.getTitle()",
+    "String UserV2.getUsername()",
+    "String UserV2.getWorkPhoneNumber()",
+    "UserV2 UserV2.id(Long)",
+    "UserV2 UserV2.jobFunction(String)",
+    "UserV2 UserV2.lastName(String)",
+    "UserV2 UserV2.location(String)",
+    "UserV2 UserV2.mobilePhoneNumber(String)",
+    "void UserV2.setAvatars(AvatarList)",
+    "void UserV2.setCompany(String)",
+    "void UserV2.setDepartment(String)",
+    "void UserV2.setDisplayName(String)",
+    "void UserV2.setDivision(String)",
+    "void UserV2.setEmailAddress(String)",
+    "void UserV2.setFirstName(String)",
+    "void UserV2.setId(Long)",
+    "void UserV2.setJobFunction(String)",
+    "void UserV2.setLastName(String)",
+    "void UserV2.setLocation(String)",
+    "void UserV2.setMobilePhoneNumber(String)",
+    "void UserV2.setTitle(String)",
+    "void UserV2.setUsername(String)",
+    "void UserV2.setWorkPhoneNumber(String)",
+    "UserV2 UserV2.title(String)",
+    "String UserV2.toString()",
+    "UserV2 UserV2.username(String)",
+    "UserV2 UserV2.workPhoneNumber(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserV2 actualUserV2 = new UserV2();
@@ -541,11 +618,25 @@ public class UserV2DiffblueTest {
     assertEquals("Job Function", actualJobFunction);
     assertEquals("Location", actualLocation);
     assertEquals(
-        "class UserV2 {\n" + "    id: 1\n" + "    emailAddress: 42 Main St\n" + "    firstName: Jane\n"
-            + "    lastName: Doe\n" + "    displayName: Display Name\n" + "    title: Dr\n" + "    company: Company\n"
-            + "    username: janedoe\n" + "    location: Location\n" + "    avatars: class AvatarList {\n"
-            + "        []\n" + "    }\n" + "    workPhoneNumber: 6625550144\n" + "    mobilePhoneNumber: 6625550144\n"
-            + "    jobFunction: Job Function\n" + "    department: Department\n" + "    division: Division\n" + "}",
+        "class UserV2 {\n"
+            + "    id: 1\n"
+            + "    emailAddress: 42 Main St\n"
+            + "    firstName: Jane\n"
+            + "    lastName: Doe\n"
+            + "    displayName: Display Name\n"
+            + "    title: Dr\n"
+            + "    company: Company\n"
+            + "    username: janedoe\n"
+            + "    location: Location\n"
+            + "    avatars: class AvatarList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    workPhoneNumber: 6625550144\n"
+            + "    mobilePhoneNumber: 6625550144\n"
+            + "    jobFunction: Job Function\n"
+            + "    department: Department\n"
+            + "    division: Division\n"
+            + "}",
         actualToStringResult);
     assertEquals("janedoe", actualUsername);
     assertEquals(1L, actualId.longValue());

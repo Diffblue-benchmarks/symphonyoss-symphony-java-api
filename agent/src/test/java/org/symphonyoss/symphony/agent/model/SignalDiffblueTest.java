@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class SignalDiffblueTest {
   /**
    * Test {@link Signal#equals(Object)}, and {@link Signal#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Signal#equals(Object)}
    *   <li>{@link Signal#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class SignalDiffblueTest {
 
     // Act and Assert
     assertEquals(signal, signal2);
-    int expectedHashCodeResult = signal.hashCode();
-    assertEquals(expectedHashCodeResult, signal2.hashCode());
+    assertEquals(signal.hashCode(), signal2.hashCode());
   }
 
   /**
    * Test {@link Signal#equals(Object)}, and {@link Signal#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Signal#equals(Object)}
    *   <li>{@link Signal#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -177,14 +195,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -197,14 +217,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -213,14 +235,16 @@ public class SignalDiffblueTest {
 
   /**
    * Test {@link Signal#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Signal#equals(Object)}
+   *
+   * <p>Method under test: {@link Signal#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Signal.equals(Object)", "int Signal.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -229,8 +253,9 @@ public class SignalDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Signal}
    *   <li>{@link Signal#companyWide(Boolean)}
@@ -255,13 +280,29 @@ public class SignalDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Signal.<init>()", "Signal Signal.companyWide(Boolean)", "Boolean Signal.getCompanyWide()",
-      "String Signal.getId()", "String Signal.getName()", "String Signal.getQuery()", "Long Signal.getTimestamp()",
-      "Boolean Signal.getVisibleOnProfile()", "Signal Signal.id(String)", "Signal Signal.name(String)",
-      "Signal Signal.query(String)", "void Signal.setCompanyWide(Boolean)", "void Signal.setId(String)",
-      "void Signal.setName(String)", "void Signal.setQuery(String)", "void Signal.setTimestamp(Long)",
-      "void Signal.setVisibleOnProfile(Boolean)", "Signal Signal.timestamp(Long)", "String Signal.toString()",
-      "Signal Signal.visibleOnProfile(Boolean)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Signal.<init>()",
+    "Signal Signal.companyWide(Boolean)",
+    "Boolean Signal.getCompanyWide()",
+    "String Signal.getId()",
+    "String Signal.getName()",
+    "String Signal.getQuery()",
+    "Long Signal.getTimestamp()",
+    "Boolean Signal.getVisibleOnProfile()",
+    "Signal Signal.id(String)",
+    "Signal Signal.name(String)",
+    "Signal Signal.query(String)",
+    "void Signal.setCompanyWide(Boolean)",
+    "void Signal.setId(String)",
+    "void Signal.setName(String)",
+    "void Signal.setQuery(String)",
+    "void Signal.setTimestamp(Long)",
+    "void Signal.setVisibleOnProfile(Boolean)",
+    "Signal Signal.timestamp(Long)",
+    "String Signal.toString()",
+    "Signal Signal.visibleOnProfile(Boolean)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Signal actualSignal = new Signal();
@@ -289,8 +330,16 @@ public class SignalDiffblueTest {
     assertEquals("42", actualId);
     assertEquals("Name", actualName);
     assertEquals("Query", actualQuery);
-    assertEquals("class Signal {\n" + "    name: Name\n" + "    query: Query\n" + "    visibleOnProfile: true\n"
-        + "    companyWide: true\n" + "    id: 42\n" + "    timestamp: 10\n" + "}", actualToStringResult);
+    assertEquals(
+        "class Signal {\n"
+            + "    name: Name\n"
+            + "    query: Query\n"
+            + "    visibleOnProfile: true\n"
+            + "    companyWide: true\n"
+            + "    id: 42\n"
+            + "    timestamp: 10\n"
+            + "}",
+        actualToStringResult);
     assertEquals(10L, actualTimestamp.longValue());
     assertTrue(actualCompanyWide);
     assertTrue(actualVisibleOnProfile);

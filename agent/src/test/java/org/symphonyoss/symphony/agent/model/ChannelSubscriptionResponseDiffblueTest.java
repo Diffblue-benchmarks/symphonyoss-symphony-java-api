@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,58 +13,77 @@ import org.junit.Test;
 public class ChannelSubscriptionResponseDiffblueTest {
   /**
    * Test {@link ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}.
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}
+   *
+   * <p>Method under test: {@link
+   * ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.addSubscriptionErrorsItem(ChannelSubscriptionError)"})
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.addSubscriptionErrorsItem(ChannelSubscriptionError)"
+  })
   public void testAddSubscriptionErrorsItem() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
     channelSubscriptionResponse.subscriptionErrors(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(channelSubscriptionResponse,
-        channelSubscriptionResponse.addSubscriptionErrorsItem(new ChannelSubscriptionError()));
+    // Act
+    ChannelSubscriptionResponse actualAddSubscriptionErrorsItemResult =
+        channelSubscriptionResponse.addSubscriptionErrorsItem(new ChannelSubscriptionError());
+
+    // Assert
+    assertSame(channelSubscriptionResponse, actualAddSubscriptionErrorsItemResult);
   }
 
   /**
    * Test {@link ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}.
+   *
    * <ul>
-   *   <li>Given {@link ChannelSubscriptionResponse} (default constructor).</li>
+   *   <li>Given {@link ChannelSubscriptionResponse} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}
+   *
+   * <p>Method under test: {@link
+   * ChannelSubscriptionResponse#addSubscriptionErrorsItem(ChannelSubscriptionError)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.addSubscriptionErrorsItem(ChannelSubscriptionError)"})
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.addSubscriptionErrorsItem(ChannelSubscriptionError)"
+  })
   public void testAddSubscriptionErrorsItem_givenChannelSubscriptionResponse() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
 
-    // Act and Assert
-    assertSame(channelSubscriptionResponse,
-        channelSubscriptionResponse.addSubscriptionErrorsItem(new ChannelSubscriptionError()));
+    // Act
+    ChannelSubscriptionResponse actualAddSubscriptionErrorsItemResult =
+        channelSubscriptionResponse.addSubscriptionErrorsItem(new ChannelSubscriptionError());
+
+    // Assert
+    assertSame(channelSubscriptionResponse, actualAddSubscriptionErrorsItemResult);
   }
 
   /**
-   * Test {@link ChannelSubscriptionResponse#equals(Object)}, and {@link ChannelSubscriptionResponse#hashCode()}.
+   * Test {@link ChannelSubscriptionResponse#equals(Object)}, and {@link
+   * ChannelSubscriptionResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ChannelSubscriptionResponse#equals(Object)}
    *   <li>{@link ChannelSubscriptionResponse#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -71,26 +91,31 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
     // Act and Assert
     assertEquals(channelSubscriptionResponse, channelSubscriptionResponse2);
-    int expectedHashCodeResult = channelSubscriptionResponse.hashCode();
-    assertEquals(expectedHashCodeResult, channelSubscriptionResponse2.hashCode());
+    assertEquals(channelSubscriptionResponse.hashCode(), channelSubscriptionResponse2.hashCode());
   }
 
   /**
-   * Test {@link ChannelSubscriptionResponse#equals(Object)}, and {@link ChannelSubscriptionResponse#hashCode()}.
+   * Test {@link ChannelSubscriptionResponse#equals(Object)}, and {@link
+   * ChannelSubscriptionResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ChannelSubscriptionResponse#equals(Object)}
    *   <li>{@link ChannelSubscriptionResponse#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -103,16 +128,20 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -124,16 +153,20 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -146,16 +179,20 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -168,16 +205,20 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     ChannelSubscriptionResponse channelSubscriptionResponse = new ChannelSubscriptionResponse();
@@ -190,16 +231,20 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ChannelSubscriptionResponse(), null);
@@ -207,25 +252,31 @@ public class ChannelSubscriptionResponseDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriptionResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriptionResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriptionResponse.equals(Object)",
-      "int ChannelSubscriptionResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriptionResponse.equals(Object)",
+    "int ChannelSubscriptionResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
-    assertNotEquals(new ChannelSubscriptionResponse(), "Different type to ChannelSubscriptionResponse");
+    assertNotEquals(
+        new ChannelSubscriptionResponse(), "Different type to ChannelSubscriptionResponse");
   }
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ChannelSubscriptionResponse}
    *   <li>{@link ChannelSubscriptionResponse#failedSubscription(Long)}
@@ -244,45 +295,56 @@ public class ChannelSubscriptionResponseDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ChannelSubscriptionResponse.<init>()",
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.failedSubscription(Long)",
-      "Long ChannelSubscriptionResponse.getFailedSubscription()",
-      "Long ChannelSubscriptionResponse.getRequestedSubscription()",
-      "List ChannelSubscriptionResponse.getSubscriptionErrors()",
-      "Long ChannelSubscriptionResponse.getSuccessfulSubscription()",
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.requestedSubscription(Long)",
-      "void ChannelSubscriptionResponse.setFailedSubscription(Long)",
-      "void ChannelSubscriptionResponse.setRequestedSubscription(Long)",
-      "void ChannelSubscriptionResponse.setSubscriptionErrors(List)",
-      "void ChannelSubscriptionResponse.setSuccessfulSubscription(Long)",
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.subscriptionErrors(List)",
-      "ChannelSubscriptionResponse ChannelSubscriptionResponse.successfulSubscription(Long)",
-      "String ChannelSubscriptionResponse.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ChannelSubscriptionResponse.<init>()",
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.failedSubscription(Long)",
+    "Long ChannelSubscriptionResponse.getFailedSubscription()",
+    "Long ChannelSubscriptionResponse.getRequestedSubscription()",
+    "List ChannelSubscriptionResponse.getSubscriptionErrors()",
+    "Long ChannelSubscriptionResponse.getSuccessfulSubscription()",
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.requestedSubscription(Long)",
+    "void ChannelSubscriptionResponse.setFailedSubscription(Long)",
+    "void ChannelSubscriptionResponse.setRequestedSubscription(Long)",
+    "void ChannelSubscriptionResponse.setSubscriptionErrors(List)",
+    "void ChannelSubscriptionResponse.setSuccessfulSubscription(Long)",
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.subscriptionErrors(List)",
+    "ChannelSubscriptionResponse ChannelSubscriptionResponse.successfulSubscription(Long)",
+    "String ChannelSubscriptionResponse.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
-    ChannelSubscriptionResponse actualChannelSubscriptionResponse = new ChannelSubscriptionResponse();
-    ChannelSubscriptionResponse actualFailedSubscriptionResult = actualChannelSubscriptionResponse
-        .failedSubscription(1L);
-    ChannelSubscriptionResponse actualRequestedSubscriptionResult = actualChannelSubscriptionResponse
-        .requestedSubscription(1L);
+    ChannelSubscriptionResponse actualChannelSubscriptionResponse =
+        new ChannelSubscriptionResponse();
+    ChannelSubscriptionResponse actualFailedSubscriptionResult =
+        actualChannelSubscriptionResponse.failedSubscription(1L);
+    ChannelSubscriptionResponse actualRequestedSubscriptionResult =
+        actualChannelSubscriptionResponse.requestedSubscription(1L);
     actualChannelSubscriptionResponse.setFailedSubscription(1L);
     actualChannelSubscriptionResponse.setRequestedSubscription(1L);
     actualChannelSubscriptionResponse.setSubscriptionErrors(new ArrayList<>());
     actualChannelSubscriptionResponse.setSuccessfulSubscription(1L);
     ArrayList<ChannelSubscriptionError> subscriptionErrors = new ArrayList<>();
-    ChannelSubscriptionResponse actualSubscriptionErrorsResult = actualChannelSubscriptionResponse
-        .subscriptionErrors(subscriptionErrors);
-    ChannelSubscriptionResponse actualSuccessfulSubscriptionResult = actualChannelSubscriptionResponse
-        .successfulSubscription(1L);
+    ChannelSubscriptionResponse actualSubscriptionErrorsResult =
+        actualChannelSubscriptionResponse.subscriptionErrors(subscriptionErrors);
+    ChannelSubscriptionResponse actualSuccessfulSubscriptionResult =
+        actualChannelSubscriptionResponse.successfulSubscription(1L);
     String actualToStringResult = actualChannelSubscriptionResponse.toString();
     Long actualFailedSubscription = actualChannelSubscriptionResponse.getFailedSubscription();
     Long actualRequestedSubscription = actualChannelSubscriptionResponse.getRequestedSubscription();
-    List<ChannelSubscriptionError> actualSubscriptionErrors = actualChannelSubscriptionResponse.getSubscriptionErrors();
-    Long actualSuccessfulSubscription = actualChannelSubscriptionResponse.getSuccessfulSubscription();
+    List<ChannelSubscriptionError> actualSubscriptionErrors =
+        actualChannelSubscriptionResponse.getSubscriptionErrors();
+    Long actualSuccessfulSubscription =
+        actualChannelSubscriptionResponse.getSuccessfulSubscription();
 
     // Assert
-    assertEquals("class ChannelSubscriptionResponse {\n" + "    requestedSubscription: 1\n"
-        + "    successfulSubscription: 1\n" + "    failedSubscription: 1\n" + "    subscriptionErrors: []\n" + "}",
+    assertEquals(
+        "class ChannelSubscriptionResponse {\n"
+            + "    requestedSubscription: 1\n"
+            + "    successfulSubscription: 1\n"
+            + "    failedSubscription: 1\n"
+            + "    subscriptionErrors: []\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualFailedSubscription.longValue());
     assertEquals(1L, actualRequestedSubscription.longValue());

@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserDetailDiffblueTest {
   /**
    * Test {@link UserDetail#equals(Object)}, and {@link UserDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserDetail#equals(Object)}
    *   <li>{@link UserDetail#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class UserDetailDiffblueTest {
 
     // Act and Assert
     assertEquals(userDetail, userDetail2);
-    int expectedHashCodeResult = userDetail.hashCode();
-    assertEquals(expectedHashCodeResult, userDetail2.hashCode());
+    assertEquals(userDetail.hashCode(), userDetail2.hashCode());
   }
 
   /**
    * Test {@link UserDetail#equals(Object)}, and {@link UserDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserDetail#equals(Object)}
    *   <li>{@link UserDetail#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -196,14 +216,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -216,14 +238,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -236,14 +260,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -252,14 +278,16 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test {@link UserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link UserDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserDetail.equals(Object)", "int UserDetail.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -268,8 +296,9 @@ public class UserDetailDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserDetail}
    *   <li>{@link UserDetail#apps(IntegerList)}
@@ -300,19 +329,35 @@ public class UserDetailDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserDetail.<init>()", "UserDetail UserDetail.apps(IntegerList)",
-      "UserDetail UserDetail.avatar(Avatar)", "UserDetail UserDetail.disclaimers(IntegerList)",
-      "UserDetail UserDetail.features(IntegerList)", "IntegerList UserDetail.getApps()",
-      "Avatar UserDetail.getAvatar()", "IntegerList UserDetail.getDisclaimers()",
-      "IntegerList UserDetail.getFeatures()", "IntegerList UserDetail.getGroups()", "StringList UserDetail.getRoles()",
-      "UserAttributes UserDetail.getUserAttributes()", "UserSystemInfo UserDetail.getUserSystemInfo()",
-      "UserDetail UserDetail.groups(IntegerList)", "UserDetail UserDetail.roles(StringList)",
-      "void UserDetail.setApps(IntegerList)", "void UserDetail.setAvatar(Avatar)",
-      "void UserDetail.setDisclaimers(IntegerList)", "void UserDetail.setFeatures(IntegerList)",
-      "void UserDetail.setGroups(IntegerList)", "void UserDetail.setRoles(StringList)",
-      "void UserDetail.setUserAttributes(UserAttributes)", "void UserDetail.setUserSystemInfo(UserSystemInfo)",
-      "String UserDetail.toString()", "UserDetail UserDetail.userAttributes(UserAttributes)",
-      "UserDetail UserDetail.userSystemInfo(UserSystemInfo)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserDetail.<init>()",
+    "UserDetail UserDetail.apps(IntegerList)",
+    "UserDetail UserDetail.avatar(Avatar)",
+    "UserDetail UserDetail.disclaimers(IntegerList)",
+    "UserDetail UserDetail.features(IntegerList)",
+    "IntegerList UserDetail.getApps()",
+    "Avatar UserDetail.getAvatar()",
+    "IntegerList UserDetail.getDisclaimers()",
+    "IntegerList UserDetail.getFeatures()",
+    "IntegerList UserDetail.getGroups()",
+    "StringList UserDetail.getRoles()",
+    "UserAttributes UserDetail.getUserAttributes()",
+    "UserSystemInfo UserDetail.getUserSystemInfo()",
+    "UserDetail UserDetail.groups(IntegerList)",
+    "UserDetail UserDetail.roles(StringList)",
+    "void UserDetail.setApps(IntegerList)",
+    "void UserDetail.setAvatar(Avatar)",
+    "void UserDetail.setDisclaimers(IntegerList)",
+    "void UserDetail.setFeatures(IntegerList)",
+    "void UserDetail.setGroups(IntegerList)",
+    "void UserDetail.setRoles(StringList)",
+    "void UserDetail.setUserAttributes(UserAttributes)",
+    "void UserDetail.setUserSystemInfo(UserSystemInfo)",
+    "String UserDetail.toString()",
+    "UserDetail UserDetail.userAttributes(UserAttributes)",
+    "UserDetail UserDetail.userSystemInfo(UserSystemInfo)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserDetail actualUserDetail = new UserDetail();
@@ -348,23 +393,59 @@ public class UserDetailDiffblueTest {
     IntegerList actualGroups = actualUserDetail.getGroups();
     StringList actualRoles = actualUserDetail.getRoles();
     UserAttributes actualUserAttributes = actualUserDetail.getUserAttributes();
+    UserSystemInfo actualUserSystemInfo = actualUserDetail.getUserSystemInfo();
 
     // Assert
     assertEquals(
-        "class UserDetail {\n" + "    userAttributes: class UserAttributes {\n" + "        emailAddress: null\n"
-            + "        firstName: null\n" + "        lastName: null\n" + "        userName: null\n"
-            + "        displayName: null\n" + "        companyName: null\n" + "        department: null\n"
-            + "        division: null\n" + "        title: null\n" + "        workPhoneNumber: null\n"
-            + "        mobilePhoneNumber: null\n" + "        smsNumber: null\n" + "        accountType: null\n"
-            + "        location: null\n" + "        jobFunction: null\n" + "        assetClasses: null\n"
-            + "        industries: null\n" + "    }\n" + "    userSystemInfo: class UserSystemInfo {\n"
-            + "        id: null\n" + "        status: null\n" + "        createdDate: null\n"
-            + "        createdBy: null\n" + "        lastUpdatedDate: null\n" + "        lastLoginDate: null\n"
-            + "        lastPasswordReset: null\n" + "    }\n" + "    features: class IntegerList {\n" + "        []\n"
-            + "    }\n" + "    apps: class IntegerList {\n" + "        []\n" + "    }\n"
-            + "    groups: class IntegerList {\n" + "        []\n" + "    }\n" + "    roles: class StringList {\n"
-            + "        []\n" + "    }\n" + "    disclaimers: class IntegerList {\n" + "        []\n" + "    }\n"
-            + "    avatar: class Avatar {\n" + "        size: null\n" + "        url: null\n" + "    }\n" + "}",
+        "class UserDetail {\n"
+            + "    userAttributes: class UserAttributes {\n"
+            + "        emailAddress: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        userName: null\n"
+            + "        displayName: null\n"
+            + "        companyName: null\n"
+            + "        department: null\n"
+            + "        division: null\n"
+            + "        title: null\n"
+            + "        workPhoneNumber: null\n"
+            + "        mobilePhoneNumber: null\n"
+            + "        smsNumber: null\n"
+            + "        accountType: null\n"
+            + "        location: null\n"
+            + "        jobFunction: null\n"
+            + "        assetClasses: null\n"
+            + "        industries: null\n"
+            + "    }\n"
+            + "    userSystemInfo: class UserSystemInfo {\n"
+            + "        id: null\n"
+            + "        status: null\n"
+            + "        createdDate: null\n"
+            + "        createdBy: null\n"
+            + "        lastUpdatedDate: null\n"
+            + "        lastLoginDate: null\n"
+            + "        lastPasswordReset: null\n"
+            + "    }\n"
+            + "    features: class IntegerList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    apps: class IntegerList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    groups: class IntegerList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    roles: class StringList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    disclaimers: class IntegerList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "    avatar: class Avatar {\n"
+            + "        size: null\n"
+            + "        url: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(avatar, actualAvatar);
     assertSame(apps, actualApps);
@@ -381,6 +462,6 @@ public class UserDetailDiffblueTest {
     assertSame(actualUserDetail, actualRolesResult);
     assertSame(actualUserDetail, actualUserAttributesResult);
     assertSame(actualUserDetail, actualUserSystemInfoResult);
-    assertSame(userSystemInfo, actualUserDetail.getUserSystemInfo());
+    assertSame(userSystemInfo, actualUserSystemInfo);
   }
 }

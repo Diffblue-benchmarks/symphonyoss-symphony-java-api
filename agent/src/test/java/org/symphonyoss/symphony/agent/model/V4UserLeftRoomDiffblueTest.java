@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4UserLeftRoomDiffblueTest {
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}, and {@link V4UserLeftRoom#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4UserLeftRoom#equals(Object)}
    *   <li>{@link V4UserLeftRoom#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4UserLeftRoomDiffblueTest {
 
     // Act and Assert
     assertEquals(v4UserLeftRoom, v4UserLeftRoom2);
-    int expectedHashCodeResult = v4UserLeftRoom.hashCode();
-    assertEquals(expectedHashCodeResult, v4UserLeftRoom2.hashCode());
+    assertEquals(v4UserLeftRoom.hashCode(), v4UserLeftRoom2.hashCode());
   }
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}, and {@link V4UserLeftRoom#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4UserLeftRoom#equals(Object)}
    *   <li>{@link V4UserLeftRoom#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserLeftRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserLeftRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserLeftRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserLeftRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserLeftRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserLeftRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserLeftRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserLeftRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test {@link V4UserLeftRoom#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4UserLeftRoom#equals(Object)}
+   *
+   * <p>Method under test: {@link V4UserLeftRoom#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4UserLeftRoom.equals(Object)", "int V4UserLeftRoom.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4UserLeftRoomDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4UserLeftRoom}
    *   <li>{@link V4UserLeftRoom#affectedUser(V4User)}
@@ -162,10 +179,17 @@ public class V4UserLeftRoomDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4UserLeftRoom.<init>()", "V4UserLeftRoom V4UserLeftRoom.affectedUser(V4User)",
-      "V4User V4UserLeftRoom.getAffectedUser()", "V4Stream V4UserLeftRoom.getStream()",
-      "void V4UserLeftRoom.setAffectedUser(V4User)", "void V4UserLeftRoom.setStream(V4Stream)",
-      "V4UserLeftRoom V4UserLeftRoom.stream(V4Stream)", "String V4UserLeftRoom.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4UserLeftRoom.<init>()",
+    "V4UserLeftRoom V4UserLeftRoom.affectedUser(V4User)",
+    "V4User V4UserLeftRoom.getAffectedUser()",
+    "V4Stream V4UserLeftRoom.getStream()",
+    "void V4UserLeftRoom.setAffectedUser(V4User)",
+    "void V4UserLeftRoom.setStream(V4Stream)",
+    "V4UserLeftRoom V4UserLeftRoom.stream(V4Stream)",
+    "String V4UserLeftRoom.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4UserLeftRoom actualV4UserLeftRoom = new V4UserLeftRoom();
@@ -180,11 +204,24 @@ public class V4UserLeftRoomDiffblueTest {
 
     // Assert
     assertEquals(
-        "class V4UserLeftRoom {\n" + "    stream: class V4Stream {\n" + "        streamId: null\n"
-            + "        streamType: null\n" + "        roomName: null\n" + "        members: null\n"
-            + "        external: null\n" + "        crossPod: null\n" + "    }\n" + "    affectedUser: class V4User {\n"
-            + "        userId: null\n" + "        firstName: null\n" + "        lastName: null\n"
-            + "        displayName: null\n" + "        email: null\n" + "        username: null\n" + "    }\n" + "}",
+        "class V4UserLeftRoom {\n"
+            + "    stream: class V4Stream {\n"
+            + "        streamId: null\n"
+            + "        streamType: null\n"
+            + "        roomName: null\n"
+            + "        members: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "    }\n"
+            + "    affectedUser: class V4User {\n"
+            + "        userId: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        displayName: null\n"
+            + "        email: null\n"
+            + "        username: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(stream, actualV4UserLeftRoom.getStream());
     assertSame(affectedUser, actualAffectedUser);

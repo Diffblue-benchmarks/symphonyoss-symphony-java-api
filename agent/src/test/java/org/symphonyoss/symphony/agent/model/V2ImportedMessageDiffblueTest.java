@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.agent.model.V2ImportedMessage.FormatEnum;
@@ -11,19 +12,25 @@ import org.symphonyoss.symphony.agent.model.V2ImportedMessage.FormatEnum;
 public class V2ImportedMessageDiffblueTest {
   /**
    * Test {@link V2ImportedMessage#equals(Object)}, and {@link V2ImportedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2ImportedMessage#equals(Object)}
    *   <li>{@link V2ImportedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -31,25 +38,30 @@ public class V2ImportedMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(v2ImportedMessage, v2ImportedMessage2);
-    int expectedHashCodeResult = v2ImportedMessage.hashCode();
-    assertEquals(expectedHashCodeResult, v2ImportedMessage2.hashCode());
+    assertEquals(v2ImportedMessage.hashCode(), v2ImportedMessage2.hashCode());
   }
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}, and {@link V2ImportedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2ImportedMessage#equals(Object)}
    *   <li>{@link V2ImportedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -62,15 +74,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2ImportedMessage(), 1);
@@ -78,15 +95,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -98,15 +120,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -118,15 +145,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -138,15 +170,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -158,15 +195,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -178,15 +220,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -198,15 +245,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     V2ImportedMessage v2ImportedMessage = new V2ImportedMessage();
@@ -218,15 +270,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2ImportedMessage(), null);
@@ -234,15 +291,20 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test {@link V2ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link V2ImportedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2ImportedMessage.equals(Object)", "int V2ImportedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2ImportedMessage.equals(Object)",
+    "int V2ImportedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2ImportedMessage(), "Different type to V2ImportedMessage");
@@ -250,14 +312,16 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -266,14 +330,16 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -282,14 +348,16 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -305,8 +373,9 @@ public class V2ImportedMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2ImportedMessage}
    *   <li>{@link V2ImportedMessage#format(FormatEnum)}
@@ -334,29 +403,46 @@ public class V2ImportedMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2ImportedMessage.<init>()", "V2ImportedMessage V2ImportedMessage.format(FormatEnum)",
-      "FormatEnum V2ImportedMessage.getFormat()", "Long V2ImportedMessage.getIntendedMessageFromUserId()",
-      "Long V2ImportedMessage.getIntendedMessageTimestamp()", "String V2ImportedMessage.getMessage()",
-      "String V2ImportedMessage.getOriginalMessageId()", "String V2ImportedMessage.getOriginatingSystemId()",
-      "String V2ImportedMessage.getStreamId()", "V2ImportedMessage V2ImportedMessage.intendedMessageFromUserId(Long)",
-      "V2ImportedMessage V2ImportedMessage.intendedMessageTimestamp(Long)",
-      "V2ImportedMessage V2ImportedMessage.message(String)",
-      "V2ImportedMessage V2ImportedMessage.originalMessageId(String)",
-      "V2ImportedMessage V2ImportedMessage.originatingSystemId(String)", "void V2ImportedMessage.setFormat(FormatEnum)",
-      "void V2ImportedMessage.setIntendedMessageFromUserId(Long)",
-      "void V2ImportedMessage.setIntendedMessageTimestamp(Long)", "void V2ImportedMessage.setMessage(String)",
-      "void V2ImportedMessage.setOriginalMessageId(String)", "void V2ImportedMessage.setOriginatingSystemId(String)",
-      "void V2ImportedMessage.setStreamId(String)", "V2ImportedMessage V2ImportedMessage.streamId(String)",
-      "String V2ImportedMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2ImportedMessage.<init>()",
+    "V2ImportedMessage V2ImportedMessage.format(FormatEnum)",
+    "FormatEnum V2ImportedMessage.getFormat()",
+    "Long V2ImportedMessage.getIntendedMessageFromUserId()",
+    "Long V2ImportedMessage.getIntendedMessageTimestamp()",
+    "String V2ImportedMessage.getMessage()",
+    "String V2ImportedMessage.getOriginalMessageId()",
+    "String V2ImportedMessage.getOriginatingSystemId()",
+    "String V2ImportedMessage.getStreamId()",
+    "V2ImportedMessage V2ImportedMessage.intendedMessageFromUserId(Long)",
+    "V2ImportedMessage V2ImportedMessage.intendedMessageTimestamp(Long)",
+    "V2ImportedMessage V2ImportedMessage.message(String)",
+    "V2ImportedMessage V2ImportedMessage.originalMessageId(String)",
+    "V2ImportedMessage V2ImportedMessage.originatingSystemId(String)",
+    "void V2ImportedMessage.setFormat(FormatEnum)",
+    "void V2ImportedMessage.setIntendedMessageFromUserId(Long)",
+    "void V2ImportedMessage.setIntendedMessageTimestamp(Long)",
+    "void V2ImportedMessage.setMessage(String)",
+    "void V2ImportedMessage.setOriginalMessageId(String)",
+    "void V2ImportedMessage.setOriginatingSystemId(String)",
+    "void V2ImportedMessage.setStreamId(String)",
+    "V2ImportedMessage V2ImportedMessage.streamId(String)",
+    "String V2ImportedMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2ImportedMessage actualV2ImportedMessage = new V2ImportedMessage();
     V2ImportedMessage actualFormatResult = actualV2ImportedMessage.format(FormatEnum.TEXT);
-    V2ImportedMessage actualIntendedMessageFromUserIdResult = actualV2ImportedMessage.intendedMessageFromUserId(1L);
-    V2ImportedMessage actualIntendedMessageTimestampResult = actualV2ImportedMessage.intendedMessageTimestamp(1L);
-    V2ImportedMessage actualMessageResult = actualV2ImportedMessage.message("Not all who wander are lost");
-    V2ImportedMessage actualOriginalMessageIdResult = actualV2ImportedMessage.originalMessageId("42");
-    V2ImportedMessage actualOriginatingSystemIdResult = actualV2ImportedMessage.originatingSystemId("42");
+    V2ImportedMessage actualIntendedMessageFromUserIdResult =
+        actualV2ImportedMessage.intendedMessageFromUserId(1L);
+    V2ImportedMessage actualIntendedMessageTimestampResult =
+        actualV2ImportedMessage.intendedMessageTimestamp(1L);
+    V2ImportedMessage actualMessageResult =
+        actualV2ImportedMessage.message("Not all who wander are lost");
+    V2ImportedMessage actualOriginalMessageIdResult =
+        actualV2ImportedMessage.originalMessageId("42");
+    V2ImportedMessage actualOriginatingSystemIdResult =
+        actualV2ImportedMessage.originatingSystemId("42");
     actualV2ImportedMessage.setFormat(FormatEnum.TEXT);
     actualV2ImportedMessage.setIntendedMessageFromUserId(1L);
     actualV2ImportedMessage.setIntendedMessageTimestamp(1L);
@@ -379,9 +465,15 @@ public class V2ImportedMessageDiffblueTest {
     assertEquals("42", actualV2ImportedMessage.getStreamId());
     assertEquals("Not all who wander are lost", actualMessage);
     assertEquals(
-        "class V2ImportedMessage {\n" + "    message: Not all who wander are lost\n" + "    format: TEXT\n"
-            + "    intendedMessageTimestamp: 1\n" + "    intendedMessageFromUserId: 1\n"
-            + "    originatingSystemId: 42\n" + "    originalMessageId: 42\n" + "    streamId: 42\n" + "}",
+        "class V2ImportedMessage {\n"
+            + "    message: Not all who wander are lost\n"
+            + "    format: TEXT\n"
+            + "    intendedMessageTimestamp: 1\n"
+            + "    intendedMessageFromUserId: 1\n"
+            + "    originatingSystemId: 42\n"
+            + "    originalMessageId: 42\n"
+            + "    streamId: 42\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualIntendedMessageFromUserId.longValue());
     assertEquals(1L, actualIntendedMessageTimestamp.longValue());

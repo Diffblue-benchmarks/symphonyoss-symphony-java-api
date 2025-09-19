@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.agent.model.MessageSubmission.FormatEnum;
@@ -11,19 +12,25 @@ import org.symphonyoss.symphony.agent.model.MessageSubmission.FormatEnum;
 public class MessageSubmissionDiffblueTest {
   /**
    * Test {@link MessageSubmission#equals(Object)}, and {@link MessageSubmission#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageSubmission#equals(Object)}
    *   <li>{@link MessageSubmission#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     MessageSubmission messageSubmission = new MessageSubmission();
@@ -31,25 +38,30 @@ public class MessageSubmissionDiffblueTest {
 
     // Act and Assert
     assertEquals(messageSubmission, messageSubmission2);
-    int expectedHashCodeResult = messageSubmission.hashCode();
-    assertEquals(expectedHashCodeResult, messageSubmission2.hashCode());
+    assertEquals(messageSubmission.hashCode(), messageSubmission2.hashCode());
   }
 
   /**
    * Test {@link MessageSubmission#equals(Object)}, and {@link MessageSubmission#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageSubmission#equals(Object)}
    *   <li>{@link MessageSubmission#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     MessageSubmission messageSubmission = new MessageSubmission();
@@ -62,15 +74,20 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSubmission(), 1);
@@ -78,15 +95,20 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     MessageSubmission messageSubmission = new MessageSubmission();
@@ -98,15 +120,20 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     MessageSubmission messageSubmission = new MessageSubmission();
@@ -118,15 +145,20 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSubmission(), null);
@@ -134,15 +166,20 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSubmission.equals(Object)", "int MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSubmission.equals(Object)",
+    "int MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSubmission(), "Different type to MessageSubmission");
@@ -150,14 +187,16 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -166,14 +205,16 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -182,14 +223,16 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -205,8 +248,9 @@ public class MessageSubmissionDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link MessageSubmission}
    *   <li>{@link MessageSubmission#format(FormatEnum)}
@@ -219,15 +263,23 @@ public class MessageSubmissionDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void MessageSubmission.<init>()", "MessageSubmission MessageSubmission.format(FormatEnum)",
-      "FormatEnum MessageSubmission.getFormat()", "String MessageSubmission.getMessage()",
-      "MessageSubmission MessageSubmission.message(String)", "void MessageSubmission.setFormat(FormatEnum)",
-      "void MessageSubmission.setMessage(String)", "String MessageSubmission.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void MessageSubmission.<init>()",
+    "MessageSubmission MessageSubmission.format(FormatEnum)",
+    "FormatEnum MessageSubmission.getFormat()",
+    "String MessageSubmission.getMessage()",
+    "MessageSubmission MessageSubmission.message(String)",
+    "void MessageSubmission.setFormat(FormatEnum)",
+    "void MessageSubmission.setMessage(String)",
+    "String MessageSubmission.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     MessageSubmission actualMessageSubmission = new MessageSubmission();
     MessageSubmission actualFormatResult = actualMessageSubmission.format(FormatEnum.TEXT);
-    MessageSubmission actualMessageResult = actualMessageSubmission.message("Not all who wander are lost");
+    MessageSubmission actualMessageResult =
+        actualMessageSubmission.message("Not all who wander are lost");
     actualMessageSubmission.setFormat(FormatEnum.TEXT);
     actualMessageSubmission.setMessage("Not all who wander are lost");
     String actualToStringResult = actualMessageSubmission.toString();
@@ -235,7 +287,8 @@ public class MessageSubmissionDiffblueTest {
 
     // Assert
     assertEquals("Not all who wander are lost", actualMessageSubmission.getMessage());
-    assertEquals("class MessageSubmission {\n    format: TEXT\n    message: Not all who wander are lost\n}",
+    assertEquals(
+        "class MessageSubmission {\n    format: TEXT\n    message: Not all who wander are lost\n}",
         actualToStringResult);
     assertEquals(FormatEnum.TEXT, actualFormat);
     assertSame(actualMessageSubmission, actualFormatResult);

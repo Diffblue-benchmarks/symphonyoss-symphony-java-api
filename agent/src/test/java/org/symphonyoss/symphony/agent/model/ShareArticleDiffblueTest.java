@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ShareArticleDiffblueTest {
   /**
    * Test {@link ShareArticle#equals(Object)}, and {@link ShareArticle#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ShareArticle#equals(Object)}
    *   <li>{@link ShareArticle#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class ShareArticleDiffblueTest {
 
     // Act and Assert
     assertEquals(shareArticle, shareArticle2);
-    int expectedHashCodeResult = shareArticle.hashCode();
-    assertEquals(expectedHashCodeResult, shareArticle2.hashCode());
+    assertEquals(shareArticle.hashCode(), shareArticle2.hashCode());
   }
 
   /**
    * Test {@link ShareArticle#equals(Object)}, and {@link ShareArticle#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ShareArticle#equals(Object)}
    *   <li>{@link ShareArticle#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -196,14 +216,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -216,14 +238,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -236,14 +260,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -256,14 +282,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
@@ -276,14 +304,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual12() {
     // Arrange
@@ -296,14 +326,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual13() {
     // Arrange
@@ -316,14 +348,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual14() {
     // Arrange
@@ -336,14 +370,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -352,14 +388,16 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test {@link ShareArticle#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ShareArticle#equals(Object)}
+   *
+   * <p>Method under test: {@link ShareArticle#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ShareArticle.equals(Object)", "int ShareArticle.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -368,8 +406,9 @@ public class ShareArticleDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ShareArticle}
    *   <li>{@link ShareArticle#appIconUrl(String)}
@@ -415,33 +454,60 @@ public class ShareArticleDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ShareArticle.<init>()", "ShareArticle ShareArticle.appIconUrl(String)",
-      "ShareArticle ShareArticle.appId(String)", "ShareArticle ShareArticle.appName(String)",
-      "ShareArticle ShareArticle.articleId(String)", "ShareArticle ShareArticle.articleUrl(String)",
-      "ShareArticle ShareArticle.author(String)", "String ShareArticle.getAppIconUrl()",
-      "String ShareArticle.getAppId()", "String ShareArticle.getAppName()", "String ShareArticle.getArticleId()",
-      "String ShareArticle.getArticleUrl()", "String ShareArticle.getAuthor()", "String ShareArticle.getMessage()",
-      "Long ShareArticle.getPublishDate()", "String ShareArticle.getPublisher()", "String ShareArticle.getSubTitle()",
-      "String ShareArticle.getSummary()", "String ShareArticle.getThumbnailUrl()", "String ShareArticle.getTitle()",
-      "ShareArticle ShareArticle.message(String)", "ShareArticle ShareArticle.publishDate(Long)",
-      "ShareArticle ShareArticle.publisher(String)", "void ShareArticle.setAppIconUrl(String)",
-      "void ShareArticle.setAppId(String)", "void ShareArticle.setAppName(String)",
-      "void ShareArticle.setArticleId(String)", "void ShareArticle.setArticleUrl(String)",
-      "void ShareArticle.setAuthor(String)", "void ShareArticle.setMessage(String)",
-      "void ShareArticle.setPublishDate(Long)", "void ShareArticle.setPublisher(String)",
-      "void ShareArticle.setSubTitle(String)", "void ShareArticle.setSummary(String)",
-      "void ShareArticle.setThumbnailUrl(String)", "void ShareArticle.setTitle(String)",
-      "ShareArticle ShareArticle.subTitle(String)", "ShareArticle ShareArticle.summary(String)",
-      "ShareArticle ShareArticle.thumbnailUrl(String)", "ShareArticle ShareArticle.title(String)",
-      "String ShareArticle.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ShareArticle.<init>()",
+    "ShareArticle ShareArticle.appIconUrl(String)",
+    "ShareArticle ShareArticle.appId(String)",
+    "ShareArticle ShareArticle.appName(String)",
+    "ShareArticle ShareArticle.articleId(String)",
+    "ShareArticle ShareArticle.articleUrl(String)",
+    "ShareArticle ShareArticle.author(String)",
+    "String ShareArticle.getAppIconUrl()",
+    "String ShareArticle.getAppId()",
+    "String ShareArticle.getAppName()",
+    "String ShareArticle.getArticleId()",
+    "String ShareArticle.getArticleUrl()",
+    "String ShareArticle.getAuthor()",
+    "String ShareArticle.getMessage()",
+    "Long ShareArticle.getPublishDate()",
+    "String ShareArticle.getPublisher()",
+    "String ShareArticle.getSubTitle()",
+    "String ShareArticle.getSummary()",
+    "String ShareArticle.getThumbnailUrl()",
+    "String ShareArticle.getTitle()",
+    "ShareArticle ShareArticle.message(String)",
+    "ShareArticle ShareArticle.publishDate(Long)",
+    "ShareArticle ShareArticle.publisher(String)",
+    "void ShareArticle.setAppIconUrl(String)",
+    "void ShareArticle.setAppId(String)",
+    "void ShareArticle.setAppName(String)",
+    "void ShareArticle.setArticleId(String)",
+    "void ShareArticle.setArticleUrl(String)",
+    "void ShareArticle.setAuthor(String)",
+    "void ShareArticle.setMessage(String)",
+    "void ShareArticle.setPublishDate(Long)",
+    "void ShareArticle.setPublisher(String)",
+    "void ShareArticle.setSubTitle(String)",
+    "void ShareArticle.setSummary(String)",
+    "void ShareArticle.setThumbnailUrl(String)",
+    "void ShareArticle.setTitle(String)",
+    "ShareArticle ShareArticle.subTitle(String)",
+    "ShareArticle ShareArticle.summary(String)",
+    "ShareArticle ShareArticle.thumbnailUrl(String)",
+    "ShareArticle ShareArticle.title(String)",
+    "String ShareArticle.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ShareArticle actualShareArticle = new ShareArticle();
-    ShareArticle actualAppIconUrlResult = actualShareArticle.appIconUrl("https://example.org/example");
+    ShareArticle actualAppIconUrlResult =
+        actualShareArticle.appIconUrl("https://example.org/example");
     ShareArticle actualAppIdResult = actualShareArticle.appId("42");
     ShareArticle actualAppNameResult = actualShareArticle.appName("App Name");
     ShareArticle actualArticleIdResult = actualShareArticle.articleId("42");
-    ShareArticle actualArticleUrlResult = actualShareArticle.articleUrl("https://example.org/example");
+    ShareArticle actualArticleUrlResult =
+        actualShareArticle.articleUrl("https://example.org/example");
     ShareArticle actualAuthorResult = actualShareArticle.author("JaneDoe");
     ShareArticle actualMessageResult = actualShareArticle.message("Not all who wander are lost");
     ShareArticle actualPublishDateResult = actualShareArticle.publishDate(1L);
@@ -461,7 +527,8 @@ public class ShareArticleDiffblueTest {
     actualShareArticle.setTitle("Dr");
     ShareArticle actualSubTitleResult = actualShareArticle.subTitle("Dr");
     ShareArticle actualSummaryResult = actualShareArticle.summary("Summary");
-    ShareArticle actualThumbnailUrlResult = actualShareArticle.thumbnailUrl("https://example.org/example");
+    ShareArticle actualThumbnailUrlResult =
+        actualShareArticle.thumbnailUrl("https://example.org/example");
     ShareArticle actualTitleResult = actualShareArticle.title("Dr");
     String actualToStringResult = actualShareArticle.toString();
     String actualAppIconUrl = actualShareArticle.getAppIconUrl();
@@ -487,11 +554,23 @@ public class ShareArticleDiffblueTest {
     assertEquals("Not all who wander are lost", actualMessage);
     assertEquals("Publisher", actualPublisher);
     assertEquals("Summary", actualSummary);
-    assertEquals("class ShareArticle {\n" + "    articleId: 42\n" + "    title: Dr\n" + "    subTitle: Dr\n"
-        + "    message: Not all who wander are lost\n" + "    publisher: Publisher\n" + "    publishDate: 1\n"
-        + "    thumbnailUrl: https://example.org/example\n" + "    author: JaneDoe\n"
-        + "    articleUrl: https://example.org/example\n" + "    summary: Summary\n" + "    appId: 42\n"
-        + "    appName: App Name\n" + "    appIconUrl: https://example.org/example\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ShareArticle {\n"
+            + "    articleId: 42\n"
+            + "    title: Dr\n"
+            + "    subTitle: Dr\n"
+            + "    message: Not all who wander are lost\n"
+            + "    publisher: Publisher\n"
+            + "    publishDate: 1\n"
+            + "    thumbnailUrl: https://example.org/example\n"
+            + "    author: JaneDoe\n"
+            + "    articleUrl: https://example.org/example\n"
+            + "    summary: Summary\n"
+            + "    appId: 42\n"
+            + "    appName: App Name\n"
+            + "    appIconUrl: https://example.org/example\n"
+            + "}",
+        actualToStringResult);
     assertEquals("https://example.org/example", actualAppIconUrl);
     assertEquals("https://example.org/example", actualArticleUrl);
     assertEquals("https://example.org/example", actualThumbnailUrl);

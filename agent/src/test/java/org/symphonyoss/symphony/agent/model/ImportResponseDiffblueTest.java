@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ImportResponseDiffblueTest {
   /**
    * Test {@link ImportResponse#equals(Object)}, and {@link ImportResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ImportResponse#equals(Object)}
    *   <li>{@link ImportResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class ImportResponseDiffblueTest {
 
     // Act and Assert
     assertEquals(importResponse, importResponse2);
-    int expectedHashCodeResult = importResponse.hashCode();
-    assertEquals(expectedHashCodeResult, importResponse2.hashCode());
+    assertEquals(importResponse.hashCode(), importResponse2.hashCode());
   }
 
   /**
    * Test {@link ImportResponse#equals(Object)}, and {@link ImportResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ImportResponse#equals(Object)}
    *   <li>{@link ImportResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test {@link ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test {@link ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test {@link ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test {@link ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test {@link ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportResponse.equals(Object)", "int ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class ImportResponseDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ImportResponse}
    *   <li>{@link ImportResponse#diagnostic(String)}
@@ -162,10 +179,17 @@ public class ImportResponseDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ImportResponse.<init>()", "ImportResponse ImportResponse.diagnostic(String)",
-      "String ImportResponse.getDiagnostic()", "String ImportResponse.getMessageId()",
-      "ImportResponse ImportResponse.messageId(String)", "void ImportResponse.setDiagnostic(String)",
-      "void ImportResponse.setMessageId(String)", "String ImportResponse.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ImportResponse.<init>()",
+    "ImportResponse ImportResponse.diagnostic(String)",
+    "String ImportResponse.getDiagnostic()",
+    "String ImportResponse.getMessageId()",
+    "ImportResponse ImportResponse.messageId(String)",
+    "void ImportResponse.setDiagnostic(String)",
+    "void ImportResponse.setMessageId(String)",
+    "String ImportResponse.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ImportResponse actualImportResponse = new ImportResponse();
@@ -179,7 +203,9 @@ public class ImportResponseDiffblueTest {
     // Assert
     assertEquals("42", actualImportResponse.getMessageId());
     assertEquals("Diagnostic", actualDiagnostic);
-    assertEquals("class ImportResponse {\n    messageId: 42\n    diagnostic: Diagnostic\n}", actualToStringResult);
+    assertEquals(
+        "class ImportResponse {\n    messageId: 42\n    diagnostic: Diagnostic\n}",
+        actualToStringResult);
     assertSame(actualImportResponse, actualDiagnosticResult);
     assertSame(actualImportResponse, actualMessageIdResult);
   }

@@ -4,25 +4,33 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomDeactivatedMessageDiffblueTest {
   /**
-   * Test {@link RoomDeactivatedMessage#equals(Object)}, and {@link RoomDeactivatedMessage#hashCode()}.
+   * Test {@link RoomDeactivatedMessage#equals(Object)}, and {@link
+   * RoomDeactivatedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomDeactivatedMessage#equals(Object)}
    *   <li>{@link RoomDeactivatedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     RoomDeactivatedMessage roomDeactivatedMessage = new RoomDeactivatedMessage();
@@ -30,25 +38,31 @@ public class RoomDeactivatedMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(roomDeactivatedMessage, roomDeactivatedMessage2);
-    int expectedHashCodeResult = roomDeactivatedMessage.hashCode();
-    assertEquals(expectedHashCodeResult, roomDeactivatedMessage2.hashCode());
+    assertEquals(roomDeactivatedMessage.hashCode(), roomDeactivatedMessage2.hashCode());
   }
 
   /**
-   * Test {@link RoomDeactivatedMessage#equals(Object)}, and {@link RoomDeactivatedMessage#hashCode()}.
+   * Test {@link RoomDeactivatedMessage#equals(Object)}, and {@link
+   * RoomDeactivatedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomDeactivatedMessage#equals(Object)}
    *   <li>{@link RoomDeactivatedMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     RoomDeactivatedMessage roomDeactivatedMessage = new RoomDeactivatedMessage();
@@ -61,15 +75,20 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomDeactivatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomDeactivatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomDeactivatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomDeactivatedMessage(), 1);
@@ -77,15 +96,20 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomDeactivatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomDeactivatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomDeactivatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     RoomDeactivatedMessage roomDeactivatedMessage = new RoomDeactivatedMessage();
@@ -97,15 +121,20 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomDeactivatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomDeactivatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomDeactivatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     RoomDeactivatedMessage roomDeactivatedMessage = new RoomDeactivatedMessage();
@@ -117,15 +146,20 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomDeactivatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomDeactivatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomDeactivatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomDeactivatedMessage(), null);
@@ -133,15 +167,20 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test {@link RoomDeactivatedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomDeactivatedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomDeactivatedMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomDeactivatedMessage.equals(Object)", "int RoomDeactivatedMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomDeactivatedMessage.equals(Object)",
+    "int RoomDeactivatedMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomDeactivatedMessage(), "Different type to RoomDeactivatedMessage");
@@ -149,8 +188,9 @@ public class RoomDeactivatedMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomDeactivatedMessage}
    *   <li>{@link RoomDeactivatedMessage#deactivatedByUserId(Long)}
@@ -160,22 +200,35 @@ public class RoomDeactivatedMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomDeactivatedMessage.<init>()",
-      "RoomDeactivatedMessage RoomDeactivatedMessage.deactivatedByUserId(Long)",
-      "Long RoomDeactivatedMessage.getDeactivatedByUserId()",
-      "void RoomDeactivatedMessage.setDeactivatedByUserId(Long)", "String RoomDeactivatedMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomDeactivatedMessage.<init>()",
+    "RoomDeactivatedMessage RoomDeactivatedMessage.deactivatedByUserId(Long)",
+    "Long RoomDeactivatedMessage.getDeactivatedByUserId()",
+    "void RoomDeactivatedMessage.setDeactivatedByUserId(Long)",
+    "String RoomDeactivatedMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomDeactivatedMessage actualRoomDeactivatedMessage = new RoomDeactivatedMessage();
-    RoomDeactivatedMessage actualDeactivatedByUserIdResult = actualRoomDeactivatedMessage.deactivatedByUserId(1L);
+    RoomDeactivatedMessage actualDeactivatedByUserIdResult =
+        actualRoomDeactivatedMessage.deactivatedByUserId(1L);
     actualRoomDeactivatedMessage.setDeactivatedByUserId(1L);
     String actualToStringResult = actualRoomDeactivatedMessage.toString();
     Long actualDeactivatedByUserId = actualRoomDeactivatedMessage.getDeactivatedByUserId();
 
     // Assert
-    assertEquals("class RoomDeactivatedMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    deactivatedByUserId: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class RoomDeactivatedMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    deactivatedByUserId: 1\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualRoomDeactivatedMessage.getId());
     assertNull(actualRoomDeactivatedMessage.getStreamId());
     assertNull(actualRoomDeactivatedMessage.getTimestamp());

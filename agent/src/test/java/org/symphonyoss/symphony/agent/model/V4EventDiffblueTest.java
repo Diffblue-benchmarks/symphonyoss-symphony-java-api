@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4EventDiffblueTest {
   /**
    * Test {@link V4Event#equals(Object)}, and {@link V4Event#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Event#equals(Object)}
    *   <li>{@link V4Event#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class V4EventDiffblueTest {
 
     // Act and Assert
     assertEquals(v4Event, v4Event2);
-    int expectedHashCodeResult = v4Event.hashCode();
-    assertEquals(expectedHashCodeResult, v4Event2.hashCode());
+    assertEquals(v4Event.hashCode(), v4Event2.hashCode());
   }
 
   /**
    * Test {@link V4Event#equals(Object)}, and {@link V4Event#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Event#equals(Object)}
    *   <li>{@link V4Event#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -177,14 +195,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -197,14 +217,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -213,14 +235,16 @@ public class V4EventDiffblueTest {
 
   /**
    * Test {@link V4Event#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Event#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Event#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Event.equals(Object)", "int V4Event.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -229,8 +253,9 @@ public class V4EventDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4Event}
    *   <li>{@link V4Event#diagnostic(String)}
@@ -255,13 +280,29 @@ public class V4EventDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4Event.<init>()", "V4Event V4Event.diagnostic(String)", "String V4Event.getDiagnostic()",
-      "String V4Event.getId()", "V4Initiator V4Event.getInitiator()", "V4Payload V4Event.getPayload()",
-      "Long V4Event.getTimestamp()", "String V4Event.getType()", "V4Event V4Event.id(String)",
-      "V4Event V4Event.initiator(V4Initiator)", "V4Event V4Event.payload(V4Payload)",
-      "void V4Event.setDiagnostic(String)", "void V4Event.setId(String)", "void V4Event.setInitiator(V4Initiator)",
-      "void V4Event.setPayload(V4Payload)", "void V4Event.setTimestamp(Long)", "void V4Event.setType(String)",
-      "V4Event V4Event.timestamp(Long)", "String V4Event.toString()", "V4Event V4Event.type(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4Event.<init>()",
+    "V4Event V4Event.diagnostic(String)",
+    "String V4Event.getDiagnostic()",
+    "String V4Event.getId()",
+    "V4Initiator V4Event.getInitiator()",
+    "V4Payload V4Event.getPayload()",
+    "Long V4Event.getTimestamp()",
+    "String V4Event.getType()",
+    "V4Event V4Event.id(String)",
+    "V4Event V4Event.initiator(V4Initiator)",
+    "V4Event V4Event.payload(V4Payload)",
+    "void V4Event.setDiagnostic(String)",
+    "void V4Event.setId(String)",
+    "void V4Event.setInitiator(V4Initiator)",
+    "void V4Event.setPayload(V4Payload)",
+    "void V4Event.setTimestamp(Long)",
+    "void V4Event.setType(String)",
+    "V4Event V4Event.timestamp(Long)",
+    "String V4Event.toString()",
+    "V4Event V4Event.type(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4Event actualV4Event = new V4Event();
@@ -290,14 +331,32 @@ public class V4EventDiffblueTest {
     assertEquals("42", actualId);
     assertEquals("Diagnostic", actualDiagnostic);
     assertEquals("Type", actualV4Event.getType());
-    assertEquals("class V4Event {\n" + "    id: 42\n" + "    timestamp: 10\n" + "    type: Type\n"
-        + "    diagnostic: Diagnostic\n" + "    initiator: class V4Initiator {\n" + "        user: null\n" + "    }\n"
-        + "    payload: class V4Payload {\n" + "        messageSent: null\n" + "        sharedPost: null\n"
-        + "        instantMessageCreated: null\n" + "        roomCreated: null\n" + "        roomUpdated: null\n"
-        + "        roomDeactivated: null\n" + "        roomReactivated: null\n" + "        userJoinedRoom: null\n"
-        + "        userLeftRoom: null\n" + "        roomMemberPromotedToOwner: null\n"
-        + "        roomMemberDemotedFromOwner: null\n" + "        connectionRequested: null\n"
-        + "        connectionAccepted: null\n" + "        messageSuppressed: null\n" + "    }\n" + "}",
+    assertEquals(
+        "class V4Event {\n"
+            + "    id: 42\n"
+            + "    timestamp: 10\n"
+            + "    type: Type\n"
+            + "    diagnostic: Diagnostic\n"
+            + "    initiator: class V4Initiator {\n"
+            + "        user: null\n"
+            + "    }\n"
+            + "    payload: class V4Payload {\n"
+            + "        messageSent: null\n"
+            + "        sharedPost: null\n"
+            + "        instantMessageCreated: null\n"
+            + "        roomCreated: null\n"
+            + "        roomUpdated: null\n"
+            + "        roomDeactivated: null\n"
+            + "        roomReactivated: null\n"
+            + "        userJoinedRoom: null\n"
+            + "        userLeftRoom: null\n"
+            + "        roomMemberPromotedToOwner: null\n"
+            + "        roomMemberDemotedFromOwner: null\n"
+            + "        connectionRequested: null\n"
+            + "        connectionAccepted: null\n"
+            + "        messageSuppressed: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertNull(actualInitiator.getUser());
     assertEquals(10L, actualTimestamp.longValue());

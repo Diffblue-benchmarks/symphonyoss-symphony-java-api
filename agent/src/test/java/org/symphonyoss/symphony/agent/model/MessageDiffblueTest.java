@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class MessageDiffblueTest {
   /**
    * Test {@link Message#equals(Object)}, and {@link Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Message#equals(Object)}
    *   <li>{@link Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class MessageDiffblueTest {
 
     // Act and Assert
     assertEquals(message, message2);
-    int expectedHashCodeResult = message.hashCode();
-    assertEquals(expectedHashCodeResult, message2.hashCode());
+    assertEquals(message.hashCode(), message2.hashCode());
   }
 
   /**
    * Test {@link Message#equals(Object)}, and {@link Message#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Message#equals(Object)}
    *   <li>{@link Message#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -153,14 +169,16 @@ public class MessageDiffblueTest {
 
   /**
    * Test {@link Message#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Message#equals(Object)}
+   *
+   * <p>Method under test: {@link Message#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Message.equals(Object)", "int Message.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -169,8 +187,9 @@ public class MessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Message}
    *   <li>{@link Message#fromUserId(Long)}
@@ -183,9 +202,17 @@ public class MessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Message.<init>()", "Message Message.fromUserId(Long)", "Long Message.getFromUserId()",
-      "String Message.getMessage()", "Message Message.message(String)", "void Message.setFromUserId(Long)",
-      "void Message.setMessage(String)", "String Message.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Message.<init>()",
+    "Message Message.fromUserId(Long)",
+    "Long Message.getFromUserId()",
+    "String Message.getMessage()",
+    "Message Message.message(String)",
+    "void Message.setFromUserId(Long)",
+    "void Message.setMessage(String)",
+    "String Message.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Message actualMessage = new Message();
@@ -198,9 +225,18 @@ public class MessageDiffblueTest {
 
     // Assert
     assertEquals("Not all who wander are lost", actualMessage.getMessage());
-    assertEquals("class Message {\n" + "    class BaseMessage {\n" + "        id: null\n" + "        timestamp: null\n"
-        + "        messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    message: Not all who wander are lost\n" + "    fromUserId: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class Message {\n"
+            + "    class BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    message: Not all who wander are lost\n"
+            + "    fromUserId: 1\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualMessage.getId());
     assertNull(actualMessage.getMessageType());
     assertNull(actualMessage.getStreamId());

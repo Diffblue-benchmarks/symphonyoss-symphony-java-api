@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4MessageSentDiffblueTest {
   /**
    * Test {@link V4MessageSent#equals(Object)}, and {@link V4MessageSent#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4MessageSent#equals(Object)}
    *   <li>{@link V4MessageSent#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4MessageSent.equals(Object)", "int V4MessageSent.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4MessageSentDiffblueTest {
 
     // Act and Assert
     assertEquals(v4MessageSent, v4MessageSent2);
-    int expectedHashCodeResult = v4MessageSent.hashCode();
-    assertEquals(expectedHashCodeResult, v4MessageSent2.hashCode());
+    assertEquals(v4MessageSent.hashCode(), v4MessageSent2.hashCode());
   }
 
   /**
    * Test {@link V4MessageSent#equals(Object)}, and {@link V4MessageSent#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4MessageSent#equals(Object)}
    *   <li>{@link V4MessageSent#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4MessageSent.equals(Object)", "int V4MessageSent.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,30 +66,16 @@ public class V4MessageSentDiffblueTest {
 
   /**
    * Test {@link V4MessageSent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4MessageSent#equals(Object)}
+   *
+   * <p>Method under test: {@link V4MessageSent#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V4MessageSent.equals(Object)", "int V4MessageSent.hashCode()"})
-  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
-    // Arrange, Act and Assert
-    assertNotEquals(new V4MessageSent(), null);
-  }
-
-  /**
-   * Test {@link V4MessageSent#equals(Object)}.
-   * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link V4MessageSent#equals(Object)}
-   */
-  @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4MessageSent.equals(Object)", "int V4MessageSent.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -92,14 +84,16 @@ public class V4MessageSentDiffblueTest {
 
   /**
    * Test {@link V4MessageSent#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4MessageSent#equals(Object)}
+   *
+   * <p>Method under test: {@link V4MessageSent#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4MessageSent.equals(Object)", "int V4MessageSent.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -108,8 +102,9 @@ public class V4MessageSentDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4MessageSent}
    *   <li>{@link V4MessageSent#message(V4Message)}
@@ -119,9 +114,14 @@ public class V4MessageSentDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4MessageSent.<init>()", "V4Message V4MessageSent.getMessage()",
-      "V4MessageSent V4MessageSent.message(V4Message)", "void V4MessageSent.setMessage(V4Message)",
-      "String V4MessageSent.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4MessageSent.<init>()",
+    "V4Message V4MessageSent.getMessage()",
+    "V4MessageSent V4MessageSent.message(V4Message)",
+    "void V4MessageSent.setMessage(V4Message)",
+    "String V4MessageSent.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4MessageSent actualV4MessageSent = new V4MessageSent();
@@ -132,10 +132,19 @@ public class V4MessageSentDiffblueTest {
 
     // Assert
     assertEquals(
-        "class V4MessageSent {\n" + "    message: class V4Message {\n" + "        messageId: null\n"
-            + "        timestamp: null\n" + "        message: null\n" + "        data: null\n"
-            + "        attachments: null\n" + "        user: null\n" + "        stream: null\n"
-            + "        externalRecipients: null\n" + "        diagnostic: null\n" + "    }\n" + "}",
+        "class V4MessageSent {\n"
+            + "    message: class V4Message {\n"
+            + "        messageId: null\n"
+            + "        timestamp: null\n"
+            + "        message: null\n"
+            + "        data: null\n"
+            + "        attachments: null\n"
+            + "        user: null\n"
+            + "        stream: null\n"
+            + "        externalRecipients: null\n"
+            + "        diagnostic: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(message, actualV4MessageSent.getMessage());
     assertSame(actualV4MessageSent, actualMessageResult);

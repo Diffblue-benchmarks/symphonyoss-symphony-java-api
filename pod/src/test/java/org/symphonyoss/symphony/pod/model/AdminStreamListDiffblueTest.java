@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class AdminStreamListDiffblueTest {
   /**
    * Test {@link AdminStreamList#equals(Object)}, and {@link AdminStreamList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamList#equals(Object)}
    *   <li>{@link AdminStreamList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class AdminStreamListDiffblueTest {
 
     // Act and Assert
     assertEquals(adminStreamList, adminStreamList2);
-    int expectedHashCodeResult = adminStreamList.hashCode();
-    assertEquals(expectedHashCodeResult, adminStreamList2.hashCode());
+    assertEquals(adminStreamList.hashCode(), adminStreamList2.hashCode());
   }
 
   /**
    * Test {@link AdminStreamList#equals(Object)}, and {@link AdminStreamList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamList#equals(Object)}
    *   <li>{@link AdminStreamList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -192,14 +212,16 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test {@link AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamList.equals(Object)", "int AdminStreamList.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -208,8 +230,9 @@ public class AdminStreamListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AdminStreamList}
    *   <li>{@link AdminStreamList#count(Long)}
@@ -231,15 +254,26 @@ public class AdminStreamListDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AdminStreamList.<init>()", "AdminStreamList AdminStreamList.count(Long)",
-      "AdminStreamList AdminStreamList.filter(AdminStreamFilter)", "Long AdminStreamList.getCount()",
-      "AdminStreamFilter AdminStreamList.getFilter()", "Integer AdminStreamList.getLimit()",
-      "Integer AdminStreamList.getSkip()", "AdminStreamInfoList AdminStreamList.getStreams()",
-      "AdminStreamList AdminStreamList.limit(Integer)", "void AdminStreamList.setCount(Long)",
-      "void AdminStreamList.setFilter(AdminStreamFilter)", "void AdminStreamList.setLimit(Integer)",
-      "void AdminStreamList.setSkip(Integer)", "void AdminStreamList.setStreams(AdminStreamInfoList)",
-      "AdminStreamList AdminStreamList.skip(Integer)", "AdminStreamList AdminStreamList.streams(AdminStreamInfoList)",
-      "String AdminStreamList.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AdminStreamList.<init>()",
+    "AdminStreamList AdminStreamList.count(Long)",
+    "AdminStreamList AdminStreamList.filter(AdminStreamFilter)",
+    "Long AdminStreamList.getCount()",
+    "AdminStreamFilter AdminStreamList.getFilter()",
+    "Integer AdminStreamList.getLimit()",
+    "Integer AdminStreamList.getSkip()",
+    "AdminStreamInfoList AdminStreamList.getStreams()",
+    "AdminStreamList AdminStreamList.limit(Integer)",
+    "void AdminStreamList.setCount(Long)",
+    "void AdminStreamList.setFilter(AdminStreamFilter)",
+    "void AdminStreamList.setLimit(Integer)",
+    "void AdminStreamList.setSkip(Integer)",
+    "void AdminStreamList.setStreams(AdminStreamInfoList)",
+    "AdminStreamList AdminStreamList.skip(Integer)",
+    "AdminStreamList AdminStreamList.streams(AdminStreamInfoList)",
+    "String AdminStreamList.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AdminStreamList actualAdminStreamList = new AdminStreamList();
@@ -263,11 +297,25 @@ public class AdminStreamListDiffblueTest {
     AdminStreamInfoList actualStreams = actualAdminStreamList.getStreams();
 
     // Assert
-    assertEquals("class AdminStreamList {\n" + "    count: 3\n" + "    skip: 1\n" + "    limit: 1\n"
-        + "    filter: class AdminStreamFilter {\n" + "        streamTypes: null\n" + "        scope: null\n"
-        + "        origin: null\n" + "        status: null\n" + "        privacy: null\n" + "        startDate: null\n"
-        + "        endDate: null\n" + "    }\n" + "    streams: class AdminStreamInfoList {\n" + "        []\n"
-        + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class AdminStreamList {\n"
+            + "    count: 3\n"
+            + "    skip: 1\n"
+            + "    limit: 1\n"
+            + "    filter: class AdminStreamFilter {\n"
+            + "        streamTypes: null\n"
+            + "        scope: null\n"
+            + "        origin: null\n"
+            + "        status: null\n"
+            + "        privacy: null\n"
+            + "        startDate: null\n"
+            + "        endDate: null\n"
+            + "    }\n"
+            + "    streams: class AdminStreamInfoList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1, actualLimit.intValue());
     assertEquals(1, actualSkip.intValue());
     assertEquals(3L, actualCount.longValue());

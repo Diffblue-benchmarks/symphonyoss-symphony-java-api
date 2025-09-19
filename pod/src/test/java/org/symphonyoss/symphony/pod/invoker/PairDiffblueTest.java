@@ -1,20 +1,23 @@
 package org.symphonyoss.symphony.pod.invoker;
 
 import static org.junit.Assert.assertEquals;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class PairDiffblueTest {
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Pair#getName()}
    *   <li>{@link Pair#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String Pair.getName()", "String Pair.getValue()"})
   public void testGettersAndSetters() {
     // Arrange
@@ -30,14 +33,16 @@ public class PairDiffblueTest {
 
   /**
    * Test {@link Pair#Pair(String, String)}.
+   *
    * <ul>
-   *   <li>When empty string.</li>
-   *   <li>Then return Name is empty string.</li>
+   *   <li>When empty string.
+   *   <li>Then return Name is empty string.
    * </ul>
-   * <p>
-   * Method under test: {@link Pair#Pair(String, String)}
+   *
+   * <p>Method under test: {@link Pair#Pair(String, String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void Pair.<init>(String, String)"})
   public void testNewPair_whenEmptyString_thenReturnNameIsEmptyString() {
     // Arrange and Act
@@ -50,14 +55,16 @@ public class PairDiffblueTest {
 
   /**
    * Test {@link Pair#Pair(String, String)}.
+   *
    * <ul>
-   *   <li>When {@code Name}.</li>
-   *   <li>Then return {@code Name}.</li>
+   *   <li>When {@code Name}.
+   *   <li>Then return {@code Name}.
    * </ul>
-   * <p>
-   * Method under test: {@link Pair#Pair(String, String)}
+   *
+   * <p>Method under test: {@link Pair#Pair(String, String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void Pair.<init>(String, String)"})
   public void testNewPair_whenName_thenReturnName() {
     // Arrange and Act
@@ -70,14 +77,16 @@ public class PairDiffblueTest {
 
   /**
    * Test {@link Pair#Pair(String, String)}.
+   *
    * <ul>
-   *   <li>When {@code null}.</li>
-   *   <li>Then return Value is empty string.</li>
+   *   <li>When {@code null}.
+   *   <li>Then return Value is empty string.
    * </ul>
-   * <p>
-   * Method under test: {@link Pair#Pair(String, String)}
+   *
+   * <p>Method under test: {@link Pair#Pair(String, String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void Pair.<init>(String, String)"})
   public void testNewPair_whenNull_thenReturnValueIsEmptyString() {
     // Arrange and Act

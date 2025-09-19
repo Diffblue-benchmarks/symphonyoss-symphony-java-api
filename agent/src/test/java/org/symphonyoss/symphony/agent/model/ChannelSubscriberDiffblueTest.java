@@ -4,25 +4,32 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ChannelSubscriberDiffblueTest {
   /**
    * Test {@link ChannelSubscriber#equals(Object)}, and {@link ChannelSubscriber#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ChannelSubscriber#equals(Object)}
    *   <li>{@link ChannelSubscriber#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -30,25 +37,30 @@ public class ChannelSubscriberDiffblueTest {
 
     // Act and Assert
     assertEquals(channelSubscriber, channelSubscriber2);
-    int expectedHashCodeResult = channelSubscriber.hashCode();
-    assertEquals(expectedHashCodeResult, channelSubscriber2.hashCode());
+    assertEquals(channelSubscriber.hashCode(), channelSubscriber2.hashCode());
   }
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}, and {@link ChannelSubscriber#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ChannelSubscriber#equals(Object)}
    *   <li>{@link ChannelSubscriber#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -61,15 +73,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ChannelSubscriber(), 1);
@@ -77,15 +94,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -97,15 +119,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -117,15 +144,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -137,15 +169,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -157,15 +194,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     ChannelSubscriber channelSubscriber = new ChannelSubscriber();
@@ -177,15 +219,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ChannelSubscriber(), null);
@@ -193,15 +240,20 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test {@link ChannelSubscriber#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ChannelSubscriber#equals(Object)}
+   *
+   * <p>Method under test: {@link ChannelSubscriber#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ChannelSubscriber.equals(Object)", "int ChannelSubscriber.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ChannelSubscriber.equals(Object)",
+    "int ChannelSubscriber.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ChannelSubscriber(), "Different type to ChannelSubscriber");
@@ -209,8 +261,9 @@ public class ChannelSubscriberDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ChannelSubscriber}
    *   <li>{@link ChannelSubscriber#owner(Boolean)}
@@ -232,15 +285,26 @@ public class ChannelSubscriberDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ChannelSubscriber.<init>()", "Boolean ChannelSubscriber.getOwner()",
-      "Boolean ChannelSubscriber.getPushed()", "String ChannelSubscriber.getSubscriberName()",
-      "Long ChannelSubscriber.getTimestamp()", "Long ChannelSubscriber.getUserId()",
-      "ChannelSubscriber ChannelSubscriber.owner(Boolean)", "ChannelSubscriber ChannelSubscriber.pushed(Boolean)",
-      "void ChannelSubscriber.setOwner(Boolean)", "void ChannelSubscriber.setPushed(Boolean)",
-      "void ChannelSubscriber.setSubscriberName(String)", "void ChannelSubscriber.setTimestamp(Long)",
-      "void ChannelSubscriber.setUserId(Long)", "ChannelSubscriber ChannelSubscriber.subscriberName(String)",
-      "ChannelSubscriber ChannelSubscriber.timestamp(Long)", "String ChannelSubscriber.toString()",
-      "ChannelSubscriber ChannelSubscriber.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ChannelSubscriber.<init>()",
+    "Boolean ChannelSubscriber.getOwner()",
+    "Boolean ChannelSubscriber.getPushed()",
+    "String ChannelSubscriber.getSubscriberName()",
+    "Long ChannelSubscriber.getTimestamp()",
+    "Long ChannelSubscriber.getUserId()",
+    "ChannelSubscriber ChannelSubscriber.owner(Boolean)",
+    "ChannelSubscriber ChannelSubscriber.pushed(Boolean)",
+    "void ChannelSubscriber.setOwner(Boolean)",
+    "void ChannelSubscriber.setPushed(Boolean)",
+    "void ChannelSubscriber.setSubscriberName(String)",
+    "void ChannelSubscriber.setTimestamp(Long)",
+    "void ChannelSubscriber.setUserId(Long)",
+    "ChannelSubscriber ChannelSubscriber.subscriberName(String)",
+    "ChannelSubscriber ChannelSubscriber.timestamp(Long)",
+    "String ChannelSubscriber.toString()",
+    "ChannelSubscriber ChannelSubscriber.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ChannelSubscriber actualChannelSubscriber = new ChannelSubscriber();
@@ -251,7 +315,8 @@ public class ChannelSubscriberDiffblueTest {
     actualChannelSubscriber.setSubscriberName("Subscriber Name");
     actualChannelSubscriber.setTimestamp(10L);
     actualChannelSubscriber.setUserId(1L);
-    ChannelSubscriber actualSubscriberNameResult = actualChannelSubscriber.subscriberName("Subscriber Name");
+    ChannelSubscriber actualSubscriberNameResult =
+        actualChannelSubscriber.subscriberName("Subscriber Name");
     ChannelSubscriber actualTimestampResult = actualChannelSubscriber.timestamp(10L);
     ChannelSubscriber actualUserIdResult = actualChannelSubscriber.userId(1L);
     String actualToStringResult = actualChannelSubscriber.toString();
@@ -264,8 +329,13 @@ public class ChannelSubscriberDiffblueTest {
     // Assert
     assertEquals("Subscriber Name", actualSubscriberName);
     assertEquals(
-        "class ChannelSubscriber {\n" + "    pushed: true\n" + "    owner: true\n"
-            + "    subscriberName: Subscriber Name\n" + "    userId: 1\n" + "    timestamp: 10\n" + "}",
+        "class ChannelSubscriber {\n"
+            + "    pushed: true\n"
+            + "    owner: true\n"
+            + "    subscriberName: Subscriber Name\n"
+            + "    userId: 1\n"
+            + "    timestamp: 10\n"
+            + "}",
         actualToStringResult);
     assertEquals(10L, actualTimestamp.longValue());
     assertEquals(1L, actualUserId.longValue());

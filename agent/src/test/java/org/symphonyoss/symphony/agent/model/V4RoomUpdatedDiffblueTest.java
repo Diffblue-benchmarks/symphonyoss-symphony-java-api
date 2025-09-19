@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4RoomUpdatedDiffblueTest {
   /**
    * Test {@link V4RoomUpdated#equals(Object)}, and {@link V4RoomUpdated#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomUpdated#equals(Object)}
    *   <li>{@link V4RoomUpdated#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4RoomUpdatedDiffblueTest {
 
     // Act and Assert
     assertEquals(v4RoomUpdated, v4RoomUpdated2);
-    int expectedHashCodeResult = v4RoomUpdated.hashCode();
-    assertEquals(expectedHashCodeResult, v4RoomUpdated2.hashCode());
+    assertEquals(v4RoomUpdated.hashCode(), v4RoomUpdated2.hashCode());
   }
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}, and {@link V4RoomUpdated#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomUpdated#equals(Object)}
    *   <li>{@link V4RoomUpdated#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomUpdated#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomUpdated#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomUpdated#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomUpdated#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomUpdated#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomUpdated#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomUpdated#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomUpdated#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test {@link V4RoomUpdated#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomUpdated#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomUpdated#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomUpdated.equals(Object)", "int V4RoomUpdated.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4RoomUpdatedDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4RoomUpdated}
    *   <li>{@link V4RoomUpdated#newRoomProperties(V4RoomProperties)}
@@ -162,14 +179,22 @@ public class V4RoomUpdatedDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4RoomUpdated.<init>()", "V4RoomProperties V4RoomUpdated.getNewRoomProperties()",
-      "V4Stream V4RoomUpdated.getStream()", "V4RoomUpdated V4RoomUpdated.newRoomProperties(V4RoomProperties)",
-      "void V4RoomUpdated.setNewRoomProperties(V4RoomProperties)", "void V4RoomUpdated.setStream(V4Stream)",
-      "V4RoomUpdated V4RoomUpdated.stream(V4Stream)", "String V4RoomUpdated.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4RoomUpdated.<init>()",
+    "V4RoomProperties V4RoomUpdated.getNewRoomProperties()",
+    "V4Stream V4RoomUpdated.getStream()",
+    "V4RoomUpdated V4RoomUpdated.newRoomProperties(V4RoomProperties)",
+    "void V4RoomUpdated.setNewRoomProperties(V4RoomProperties)",
+    "void V4RoomUpdated.setStream(V4Stream)",
+    "V4RoomUpdated V4RoomUpdated.stream(V4Stream)",
+    "String V4RoomUpdated.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4RoomUpdated actualV4RoomUpdated = new V4RoomUpdated();
-    V4RoomUpdated actualNewRoomPropertiesResult = actualV4RoomUpdated.newRoomProperties(new V4RoomProperties());
+    V4RoomUpdated actualNewRoomPropertiesResult =
+        actualV4RoomUpdated.newRoomProperties(new V4RoomProperties());
     V4RoomProperties newRoomProperties = new V4RoomProperties();
     actualV4RoomUpdated.setNewRoomProperties(newRoomProperties);
     actualV4RoomUpdated.setStream(new V4Stream());
@@ -177,19 +202,39 @@ public class V4RoomUpdatedDiffblueTest {
     V4RoomUpdated actualStreamResult = actualV4RoomUpdated.stream(stream);
     String actualToStringResult = actualV4RoomUpdated.toString();
     V4RoomProperties actualNewRoomProperties = actualV4RoomUpdated.getNewRoomProperties();
+    V4Stream actualStream = actualV4RoomUpdated.getStream();
 
     // Assert
-    assertEquals("class V4RoomUpdated {\n" + "    stream: class V4Stream {\n" + "        streamId: null\n"
-        + "        streamType: null\n" + "        roomName: null\n" + "        members: null\n"
-        + "        external: null\n" + "        crossPod: null\n" + "    }\n"
-        + "    newRoomProperties: class V4RoomProperties {\n" + "        name: null\n" + "        description: null\n"
-        + "        creatorUser: null\n" + "        createdDate: null\n" + "        external: null\n"
-        + "        crossPod: null\n" + "        _public: null\n" + "        copyProtected: null\n"
-        + "        readOnly: null\n" + "        discoverable: null\n" + "        membersCanInvite: null\n"
-        + "        keywords: null\n" + "        canViewHistory: null\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V4RoomUpdated {\n"
+            + "    stream: class V4Stream {\n"
+            + "        streamId: null\n"
+            + "        streamType: null\n"
+            + "        roomName: null\n"
+            + "        members: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "    }\n"
+            + "    newRoomProperties: class V4RoomProperties {\n"
+            + "        name: null\n"
+            + "        description: null\n"
+            + "        creatorUser: null\n"
+            + "        createdDate: null\n"
+            + "        external: null\n"
+            + "        crossPod: null\n"
+            + "        _public: null\n"
+            + "        copyProtected: null\n"
+            + "        readOnly: null\n"
+            + "        discoverable: null\n"
+            + "        membersCanInvite: null\n"
+            + "        keywords: null\n"
+            + "        canViewHistory: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(newRoomProperties, actualNewRoomProperties);
     assertSame(actualV4RoomUpdated, actualNewRoomPropertiesResult);
     assertSame(actualV4RoomUpdated, actualStreamResult);
-    assertSame(stream, actualV4RoomUpdated.getStream());
+    assertSame(stream, actualStream);
   }
 }

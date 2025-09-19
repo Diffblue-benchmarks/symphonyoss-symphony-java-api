@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.UserStatus.StatusEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.pod.model.UserStatus.StatusEnum;
 public class UserStatusDiffblueTest {
   /**
    * Test {@link UserStatus#equals(Object)}, and {@link UserStatus#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserStatus#equals(Object)}
    *   <li>{@link UserStatus#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserStatus.equals(Object)", "int UserStatus.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class UserStatusDiffblueTest {
 
     // Act and Assert
     assertEquals(userStatus, userStatus2);
-    int expectedHashCodeResult = userStatus.hashCode();
-    assertEquals(expectedHashCodeResult, userStatus2.hashCode());
+    assertEquals(userStatus.hashCode(), userStatus2.hashCode());
   }
 
   /**
    * Test {@link UserStatus#equals(Object)}, and {@link UserStatus#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserStatus#equals(Object)}
    *   <li>{@link UserStatus#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserStatus.equals(Object)", "int UserStatus.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,30 +68,16 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test {@link UserStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link UserStatus#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserStatus.equals(Object)", "int UserStatus.hashCode()"})
-  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
-    // Arrange, Act and Assert
-    assertNotEquals(new UserStatus(), null);
-  }
-
-  /**
-   * Test {@link UserStatus#equals(Object)}.
-   * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link UserStatus#equals(Object)}
-   */
-  @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserStatus.equals(Object)", "int UserStatus.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -94,14 +86,16 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test {@link UserStatus#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserStatus#equals(Object)}
+   *
+   * <p>Method under test: {@link UserStatus#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserStatus.equals(Object)", "int UserStatus.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -110,8 +104,9 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserStatus}
    *   <li>{@link UserStatus#setStatus(StatusEnum)}
@@ -121,9 +116,14 @@ public class UserStatusDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserStatus.<init>()", "StatusEnum UserStatus.getStatus()",
-      "void UserStatus.setStatus(StatusEnum)", "UserStatus UserStatus.status(StatusEnum)",
-      "String UserStatus.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserStatus.<init>()",
+    "StatusEnum UserStatus.getStatus()",
+    "void UserStatus.setStatus(StatusEnum)",
+    "UserStatus UserStatus.status(StatusEnum)",
+    "String UserStatus.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserStatus actualUserStatus = new UserStatus();
@@ -139,14 +139,16 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code ENABLED}.</li>
-   *   <li>Then return {@code ENABLED}.</li>
+   *   <li>When {@code ENABLED}.
+   *   <li>Then return {@code ENABLED}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenEnabled_thenReturnEnabled() {
     // Arrange, Act and Assert
@@ -155,14 +157,16 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -171,14 +175,16 @@ public class UserStatusDiffblueTest {
 
   /**
    * Test StatusEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StatusEnum#toString()}
    *   <li>{@link StatusEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String StatusEnum.getValue()", "String StatusEnum.toString()"})
   public void testStatusEnumGettersAndSetters() {
     // Arrange

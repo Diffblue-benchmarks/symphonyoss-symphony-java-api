@@ -4,25 +4,32 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserAppEntitlementDiffblueTest {
   /**
    * Test {@link UserAppEntitlement#equals(Object)}, and {@link UserAppEntitlement#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserAppEntitlement#equals(Object)}
    *   <li>{@link UserAppEntitlement#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -30,25 +37,30 @@ public class UserAppEntitlementDiffblueTest {
 
     // Act and Assert
     assertEquals(userAppEntitlement, userAppEntitlement2);
-    int expectedHashCodeResult = userAppEntitlement.hashCode();
-    assertEquals(expectedHashCodeResult, userAppEntitlement2.hashCode());
+    assertEquals(userAppEntitlement.hashCode(), userAppEntitlement2.hashCode());
   }
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}, and {@link UserAppEntitlement#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserAppEntitlement#equals(Object)}
    *   <li>{@link UserAppEntitlement#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -61,15 +73,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserAppEntitlement(), 1);
@@ -77,15 +94,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -97,15 +119,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -117,15 +144,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -137,15 +169,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -157,15 +194,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     UserAppEntitlement userAppEntitlement = new UserAppEntitlement();
@@ -177,15 +219,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserAppEntitlement(), null);
@@ -193,15 +240,20 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test {@link UserAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link UserAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserAppEntitlement.equals(Object)", "int UserAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserAppEntitlement.equals(Object)",
+    "int UserAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserAppEntitlement(), "Different type to UserAppEntitlement");
@@ -209,8 +261,9 @@ public class UserAppEntitlementDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserAppEntitlement}
    *   <li>{@link UserAppEntitlement#appId(String)}
@@ -232,15 +285,26 @@ public class UserAppEntitlementDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserAppEntitlement.<init>()", "UserAppEntitlement UserAppEntitlement.appId(String)",
-      "UserAppEntitlement UserAppEntitlement.appName(String)", "String UserAppEntitlement.getAppId()",
-      "String UserAppEntitlement.getAppName()", "Boolean UserAppEntitlement.getInstall()",
-      "Boolean UserAppEntitlement.getListed()", "ProductList UserAppEntitlement.getProducts()",
-      "UserAppEntitlement UserAppEntitlement.install(Boolean)", "UserAppEntitlement UserAppEntitlement.listed(Boolean)",
-      "UserAppEntitlement UserAppEntitlement.products(ProductList)", "void UserAppEntitlement.setAppId(String)",
-      "void UserAppEntitlement.setAppName(String)", "void UserAppEntitlement.setInstall(Boolean)",
-      "void UserAppEntitlement.setListed(Boolean)", "void UserAppEntitlement.setProducts(ProductList)",
-      "String UserAppEntitlement.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserAppEntitlement.<init>()",
+    "UserAppEntitlement UserAppEntitlement.appId(String)",
+    "UserAppEntitlement UserAppEntitlement.appName(String)",
+    "String UserAppEntitlement.getAppId()",
+    "String UserAppEntitlement.getAppName()",
+    "Boolean UserAppEntitlement.getInstall()",
+    "Boolean UserAppEntitlement.getListed()",
+    "ProductList UserAppEntitlement.getProducts()",
+    "UserAppEntitlement UserAppEntitlement.install(Boolean)",
+    "UserAppEntitlement UserAppEntitlement.listed(Boolean)",
+    "UserAppEntitlement UserAppEntitlement.products(ProductList)",
+    "void UserAppEntitlement.setAppId(String)",
+    "void UserAppEntitlement.setAppName(String)",
+    "void UserAppEntitlement.setInstall(Boolean)",
+    "void UserAppEntitlement.setListed(Boolean)",
+    "void UserAppEntitlement.setProducts(ProductList)",
+    "String UserAppEntitlement.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserAppEntitlement actualUserAppEntitlement = new UserAppEntitlement();
@@ -265,8 +329,15 @@ public class UserAppEntitlementDiffblueTest {
     assertEquals("42", actualAppId);
     assertEquals("App Name", actualAppName);
     assertEquals(
-        "class UserAppEntitlement {\n" + "    appId: 42\n" + "    appName: App Name\n" + "    listed: true\n"
-            + "    install: true\n" + "    products: class ProductList {\n" + "        []\n" + "    }\n" + "}",
+        "class UserAppEntitlement {\n"
+            + "    appId: 42\n"
+            + "    appName: App Name\n"
+            + "    listed: true\n"
+            + "    install: true\n"
+            + "    products: class ProductList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertTrue(actualInstall);
     assertTrue(actualListed);

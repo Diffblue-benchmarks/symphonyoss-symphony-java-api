@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,56 +15,75 @@ import org.symphonyoss.symphony.agent.model.V2MessageSubmission.FormatEnum;
 public class V2MessageSubmissionDiffblueTest {
   /**
    * Test {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V2MessageSubmission} (default constructor).</li>
+   *   <li>Given {@link V2MessageSubmission} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2MessageSubmission V2MessageSubmission.addAttachmentsItem(AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV2MessageSubmission() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
 
-    // Act and Assert
-    assertSame(v2MessageSubmission, v2MessageSubmission.addAttachmentsItem(new AttachmentInfo()));
+    // Act
+    V2MessageSubmission actualAddAttachmentsItemResult =
+        v2MessageSubmission.addAttachmentsItem(new AttachmentInfo());
+
+    // Assert
+    assertSame(v2MessageSubmission, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V2MessageSubmission} (default constructor) attachments {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V2MessageSubmission} (default constructor) attachments {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#addAttachmentsItem(AttachmentInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2MessageSubmission V2MessageSubmission.addAttachmentsItem(AttachmentInfo)"})
   public void testAddAttachmentsItem_givenV2MessageSubmissionAttachmentsArrayList() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
     v2MessageSubmission.attachments(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v2MessageSubmission, v2MessageSubmission.addAttachmentsItem(new AttachmentInfo()));
+    // Act
+    V2MessageSubmission actualAddAttachmentsItemResult =
+        v2MessageSubmission.addAttachmentsItem(new AttachmentInfo());
+
+    // Assert
+    assertSame(v2MessageSubmission, actualAddAttachmentsItemResult);
   }
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}, and {@link V2MessageSubmission#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MessageSubmission#equals(Object)}
    *   <li>{@link V2MessageSubmission#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
@@ -71,25 +91,30 @@ public class V2MessageSubmissionDiffblueTest {
 
     // Act and Assert
     assertEquals(v2MessageSubmission, v2MessageSubmission2);
-    int expectedHashCodeResult = v2MessageSubmission.hashCode();
-    assertEquals(expectedHashCodeResult, v2MessageSubmission2.hashCode());
+    assertEquals(v2MessageSubmission.hashCode(), v2MessageSubmission2.hashCode());
   }
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}, and {@link V2MessageSubmission#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MessageSubmission#equals(Object)}
    *   <li>{@link V2MessageSubmission#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
@@ -102,15 +127,20 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
@@ -122,15 +152,20 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
@@ -143,15 +178,20 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V2MessageSubmission v2MessageSubmission = new V2MessageSubmission();
@@ -164,15 +204,20 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2MessageSubmission(), null);
@@ -180,15 +225,20 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test {@link V2MessageSubmission#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MessageSubmission#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MessageSubmission#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MessageSubmission.equals(Object)", "int V2MessageSubmission.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MessageSubmission.equals(Object)",
+    "int V2MessageSubmission.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2MessageSubmission(), "Different type to V2MessageSubmission");
@@ -196,14 +246,16 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -212,14 +264,16 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -228,14 +282,16 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -251,8 +307,9 @@ public class V2MessageSubmissionDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2MessageSubmission}
    *   <li>{@link V2MessageSubmission#attachments(List)}
@@ -268,18 +325,28 @@ public class V2MessageSubmissionDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2MessageSubmission.<init>()", "V2MessageSubmission V2MessageSubmission.attachments(List)",
-      "V2MessageSubmission V2MessageSubmission.format(FormatEnum)", "List V2MessageSubmission.getAttachments()",
-      "FormatEnum V2MessageSubmission.getFormat()", "String V2MessageSubmission.getMessage()",
-      "V2MessageSubmission V2MessageSubmission.message(String)", "void V2MessageSubmission.setAttachments(List)",
-      "void V2MessageSubmission.setFormat(FormatEnum)", "void V2MessageSubmission.setMessage(String)",
-      "String V2MessageSubmission.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2MessageSubmission.<init>()",
+    "V2MessageSubmission V2MessageSubmission.attachments(List)",
+    "V2MessageSubmission V2MessageSubmission.format(FormatEnum)",
+    "List V2MessageSubmission.getAttachments()",
+    "FormatEnum V2MessageSubmission.getFormat()",
+    "String V2MessageSubmission.getMessage()",
+    "V2MessageSubmission V2MessageSubmission.message(String)",
+    "void V2MessageSubmission.setAttachments(List)",
+    "void V2MessageSubmission.setFormat(FormatEnum)",
+    "void V2MessageSubmission.setMessage(String)",
+    "String V2MessageSubmission.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2MessageSubmission actualV2MessageSubmission = new V2MessageSubmission();
-    V2MessageSubmission actualAttachmentsResult = actualV2MessageSubmission.attachments(new ArrayList<>());
+    V2MessageSubmission actualAttachmentsResult =
+        actualV2MessageSubmission.attachments(new ArrayList<>());
     V2MessageSubmission actualFormatResult = actualV2MessageSubmission.format(FormatEnum.TEXT);
-    V2MessageSubmission actualMessageResult = actualV2MessageSubmission.message("Not all who wander are lost");
+    V2MessageSubmission actualMessageResult =
+        actualV2MessageSubmission.message("Not all who wander are lost");
     ArrayList<AttachmentInfo> attachments = new ArrayList<>();
     actualV2MessageSubmission.setAttachments(attachments);
     actualV2MessageSubmission.setFormat(FormatEnum.TEXT);
@@ -290,8 +357,13 @@ public class V2MessageSubmissionDiffblueTest {
 
     // Assert
     assertEquals("Not all who wander are lost", actualV2MessageSubmission.getMessage());
-    assertEquals("class V2MessageSubmission {\n" + "    format: TEXT\n" + "    message: Not all who wander are lost\n"
-        + "    attachments: []\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V2MessageSubmission {\n"
+            + "    format: TEXT\n"
+            + "    message: Not all who wander are lost\n"
+            + "    attachments: []\n"
+            + "}",
+        actualToStringResult);
     assertEquals(FormatEnum.TEXT, actualFormat);
     assertTrue(actualAttachments.isEmpty());
     assertSame(attachments, actualAttachments);

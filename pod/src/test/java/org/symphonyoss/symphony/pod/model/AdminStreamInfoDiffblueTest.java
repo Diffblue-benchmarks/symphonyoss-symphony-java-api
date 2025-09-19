@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class AdminStreamInfoDiffblueTest {
   /**
    * Test {@link AdminStreamInfo#equals(Object)}, and {@link AdminStreamInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamInfo#equals(Object)}
    *   <li>{@link AdminStreamInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class AdminStreamInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(adminStreamInfo, adminStreamInfo2);
-    int expectedHashCodeResult = adminStreamInfo.hashCode();
-    assertEquals(expectedHashCodeResult, adminStreamInfo2.hashCode());
+    assertEquals(adminStreamInfo.hashCode(), adminStreamInfo2.hashCode());
   }
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}, and {@link AdminStreamInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamInfo#equals(Object)}
    *   <li>{@link AdminStreamInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -177,14 +195,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -197,14 +217,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -213,14 +235,16 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test {@link AdminStreamInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AdminStreamInfo.equals(Object)", "int AdminStreamInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -229,8 +253,9 @@ public class AdminStreamInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AdminStreamInfo}
    *   <li>{@link AdminStreamInfo#attributes(AdminStreamAttributes)}
@@ -255,21 +280,34 @@ public class AdminStreamInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AdminStreamInfo.<init>()",
-      "AdminStreamInfo AdminStreamInfo.attributes(AdminStreamAttributes)",
-      "AdminStreamAttributes AdminStreamInfo.getAttributes()", "String AdminStreamInfo.getId()",
-      "Boolean AdminStreamInfo.getIsActive()", "Boolean AdminStreamInfo.getIsExternal()",
-      "Boolean AdminStreamInfo.getIsPublic()", "String AdminStreamInfo.getType()",
-      "AdminStreamInfo AdminStreamInfo.id(String)", "AdminStreamInfo AdminStreamInfo.isActive(Boolean)",
-      "AdminStreamInfo AdminStreamInfo.isExternal(Boolean)", "AdminStreamInfo AdminStreamInfo.isPublic(Boolean)",
-      "void AdminStreamInfo.setAttributes(AdminStreamAttributes)", "void AdminStreamInfo.setId(String)",
-      "void AdminStreamInfo.setIsActive(Boolean)", "void AdminStreamInfo.setIsExternal(Boolean)",
-      "void AdminStreamInfo.setIsPublic(Boolean)", "void AdminStreamInfo.setType(String)",
-      "String AdminStreamInfo.toString()", "AdminStreamInfo AdminStreamInfo.type(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AdminStreamInfo.<init>()",
+    "AdminStreamInfo AdminStreamInfo.attributes(AdminStreamAttributes)",
+    "AdminStreamAttributes AdminStreamInfo.getAttributes()",
+    "String AdminStreamInfo.getId()",
+    "Boolean AdminStreamInfo.getIsActive()",
+    "Boolean AdminStreamInfo.getIsExternal()",
+    "Boolean AdminStreamInfo.getIsPublic()",
+    "String AdminStreamInfo.getType()",
+    "AdminStreamInfo AdminStreamInfo.id(String)",
+    "AdminStreamInfo AdminStreamInfo.isActive(Boolean)",
+    "AdminStreamInfo AdminStreamInfo.isExternal(Boolean)",
+    "AdminStreamInfo AdminStreamInfo.isPublic(Boolean)",
+    "void AdminStreamInfo.setAttributes(AdminStreamAttributes)",
+    "void AdminStreamInfo.setId(String)",
+    "void AdminStreamInfo.setIsActive(Boolean)",
+    "void AdminStreamInfo.setIsExternal(Boolean)",
+    "void AdminStreamInfo.setIsPublic(Boolean)",
+    "void AdminStreamInfo.setType(String)",
+    "String AdminStreamInfo.toString()",
+    "AdminStreamInfo AdminStreamInfo.type(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AdminStreamInfo actualAdminStreamInfo = new AdminStreamInfo();
-    AdminStreamInfo actualAttributesResult = actualAdminStreamInfo.attributes(new AdminStreamAttributes());
+    AdminStreamInfo actualAttributesResult =
+        actualAdminStreamInfo.attributes(new AdminStreamAttributes());
     AdminStreamInfo actualIdResult = actualAdminStreamInfo.id("42");
     AdminStreamAttributes attributes = new AdminStreamAttributes();
     actualAdminStreamInfo.setAttributes(attributes);
@@ -292,12 +330,26 @@ public class AdminStreamInfoDiffblueTest {
     // Assert
     assertEquals("42", actualId);
     assertEquals("Type", actualAdminStreamInfo.getType());
-    assertEquals("class AdminStreamInfo {\n" + "    id: 42\n" + "    isExternal: true\n" + "    isActive: true\n"
-        + "    isPublic: true\n" + "    type: Type\n" + "    attributes: class AdminStreamAttributes {\n"
-        + "        roomName: null\n" + "        roomDescription: null\n" + "        members: null\n"
-        + "        createdByUserId: null\n" + "        createdDate: null\n" + "        lastModifiedDate: null\n"
-        + "        originCompany: null\n" + "        originCompanyId: null\n" + "        membersCount: null\n"
-        + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class AdminStreamInfo {\n"
+            + "    id: 42\n"
+            + "    isExternal: true\n"
+            + "    isActive: true\n"
+            + "    isPublic: true\n"
+            + "    type: Type\n"
+            + "    attributes: class AdminStreamAttributes {\n"
+            + "        roomName: null\n"
+            + "        roomDescription: null\n"
+            + "        members: null\n"
+            + "        createdByUserId: null\n"
+            + "        createdDate: null\n"
+            + "        lastModifiedDate: null\n"
+            + "        originCompany: null\n"
+            + "        originCompanyId: null\n"
+            + "        membersCount: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertTrue(actualIsActive);
     assertTrue(actualIsExternal);
     assertTrue(actualIsPublic);

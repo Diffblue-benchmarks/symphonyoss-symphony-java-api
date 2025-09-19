@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class AttachmentInfoDiffblueTest {
   /**
    * Test {@link AttachmentInfo#equals(Object)}, and {@link AttachmentInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AttachmentInfo#equals(Object)}
    *   <li>{@link AttachmentInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class AttachmentInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(attachmentInfo, attachmentInfo2);
-    int expectedHashCodeResult = attachmentInfo.hashCode();
-    assertEquals(expectedHashCodeResult, attachmentInfo2.hashCode());
+    assertEquals(attachmentInfo.hashCode(), attachmentInfo2.hashCode());
   }
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}, and {@link AttachmentInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AttachmentInfo#equals(Object)}
    *   <li>{@link AttachmentInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -152,14 +168,16 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean AttachmentInfo.equals(Object)", "int AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -168,8 +186,9 @@ public class AttachmentInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AttachmentInfo}
    *   <li>{@link AttachmentInfo#id(String)}
@@ -185,11 +204,20 @@ public class AttachmentInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AttachmentInfo.<init>()", "String AttachmentInfo.getId()", "String AttachmentInfo.getName()",
-      "Long AttachmentInfo.getSize()", "AttachmentInfo AttachmentInfo.id(String)",
-      "AttachmentInfo AttachmentInfo.name(String)", "void AttachmentInfo.setId(String)",
-      "void AttachmentInfo.setName(String)", "void AttachmentInfo.setSize(Long)",
-      "AttachmentInfo AttachmentInfo.size(Long)", "String AttachmentInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AttachmentInfo.<init>()",
+    "String AttachmentInfo.getId()",
+    "String AttachmentInfo.getName()",
+    "Long AttachmentInfo.getSize()",
+    "AttachmentInfo AttachmentInfo.id(String)",
+    "AttachmentInfo AttachmentInfo.name(String)",
+    "void AttachmentInfo.setId(String)",
+    "void AttachmentInfo.setName(String)",
+    "void AttachmentInfo.setSize(Long)",
+    "AttachmentInfo AttachmentInfo.size(Long)",
+    "String AttachmentInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AttachmentInfo actualAttachmentInfo = new AttachmentInfo();
@@ -206,7 +234,8 @@ public class AttachmentInfoDiffblueTest {
     // Assert
     assertEquals("42", actualId);
     assertEquals("Name", actualName);
-    assertEquals("class AttachmentInfo {\n    id: 42\n    name: Name\n    size: 3\n}", actualToStringResult);
+    assertEquals(
+        "class AttachmentInfo {\n    id: 42\n    name: Name\n    size: 3\n}", actualToStringResult);
     assertEquals(3L, actualAttachmentInfo.getSize().longValue());
     assertSame(actualAttachmentInfo, actualIdResult);
     assertSame(actualAttachmentInfo, actualNameResult);

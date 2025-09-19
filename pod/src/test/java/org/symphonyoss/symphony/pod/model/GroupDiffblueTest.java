@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,68 @@ import org.junit.Test;
 public class GroupDiffblueTest {
   /**
    * Test {@link Group#addPoliciesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link Group} (default constructor).</li>
+   *   <li>Given {@link Group} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link Group#addPoliciesItem(String)}
+   *
+   * <p>Method under test: {@link Group#addPoliciesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"Group Group.addPoliciesItem(String)"})
   public void testAddPoliciesItem_givenGroup() {
     // Arrange
     Group group = new Group();
 
-    // Act and Assert
-    assertSame(group, group.addPoliciesItem("Policies Item"));
+    // Act
+    Group actualAddPoliciesItemResult = group.addPoliciesItem("Policies Item");
+
+    // Assert
+    assertSame(group, actualAddPoliciesItemResult);
   }
 
   /**
    * Test {@link Group#addPoliciesItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link Group} (default constructor) policies {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link Group} (default constructor) policies {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#addPoliciesItem(String)}
+   *
+   * <p>Method under test: {@link Group#addPoliciesItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"Group Group.addPoliciesItem(String)"})
   public void testAddPoliciesItem_givenGroupPoliciesArrayList() {
     // Arrange
     Group group = new Group();
     group.policies(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(group, group.addPoliciesItem("Policies Item"));
+    // Act
+    Group actualAddPoliciesItemResult = group.addPoliciesItem("Policies Item");
+
+    // Assert
+    assertSame(group, actualAddPoliciesItemResult);
   }
 
   /**
    * Test {@link Group#equals(Object)}, and {@link Group#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Group#equals(Object)}
    *   <li>{@link Group#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +83,26 @@ public class GroupDiffblueTest {
 
     // Act and Assert
     assertEquals(group, group2);
-    int expectedHashCodeResult = group.hashCode();
-    assertEquals(expectedHashCodeResult, group2.hashCode());
+    assertEquals(group.hashCode(), group2.hashCode());
   }
 
   /**
    * Test {@link Group#equals(Object)}, and {@link Group#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Group#equals(Object)}
    *   <li>{@link Group#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +116,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +138,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +161,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -162,14 +184,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +207,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -204,14 +230,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -224,14 +252,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -244,14 +274,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -260,14 +292,16 @@ public class GroupDiffblueTest {
 
   /**
    * Test {@link Group#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Group#equals(Object)}
+   *
+   * <p>Method under test: {@link Group#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Group.equals(Object)", "int Group.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -276,8 +310,9 @@ public class GroupDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Group}
    *   <li>{@link Group#active(Boolean)}
@@ -305,14 +340,32 @@ public class GroupDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Group.<init>()", "Group Group.active(Boolean)", "Group Group.createdDate(Long)",
-      "Boolean Group.getActive()", "Long Group.getCreatedDate()", "String Group.getId()",
-      "Integer Group.getMemberCount()", "Long Group.getModifiedDate()", "String Group.getName()",
-      "List Group.getPolicies()", "Group Group.id(String)", "Group Group.memberCount(Integer)",
-      "Group Group.modifiedDate(Long)", "Group Group.name(String)", "Group Group.policies(List)",
-      "void Group.setActive(Boolean)", "void Group.setCreatedDate(Long)", "void Group.setId(String)",
-      "void Group.setMemberCount(Integer)", "void Group.setModifiedDate(Long)", "void Group.setName(String)",
-      "void Group.setPolicies(List)", "String Group.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Group.<init>()",
+    "Group Group.active(Boolean)",
+    "Group Group.createdDate(Long)",
+    "Boolean Group.getActive()",
+    "Long Group.getCreatedDate()",
+    "String Group.getId()",
+    "Integer Group.getMemberCount()",
+    "Long Group.getModifiedDate()",
+    "String Group.getName()",
+    "List Group.getPolicies()",
+    "Group Group.id(String)",
+    "Group Group.memberCount(Integer)",
+    "Group Group.modifiedDate(Long)",
+    "Group Group.name(String)",
+    "Group Group.policies(List)",
+    "void Group.setActive(Boolean)",
+    "void Group.setCreatedDate(Long)",
+    "void Group.setId(String)",
+    "void Group.setMemberCount(Integer)",
+    "void Group.setModifiedDate(Long)",
+    "void Group.setName(String)",
+    "void Group.setPolicies(List)",
+    "String Group.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Group actualGroup = new Group();
@@ -343,8 +396,17 @@ public class GroupDiffblueTest {
     // Assert
     assertEquals("42", actualId);
     assertEquals("Name", actualName);
-    assertEquals("class Group {\n" + "    id: 42\n" + "    name: Name\n" + "    active: true\n" + "    memberCount: 3\n"
-        + "    policies: []\n" + "    createdDate: 1\n" + "    modifiedDate: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class Group {\n"
+            + "    id: 42\n"
+            + "    name: Name\n"
+            + "    active: true\n"
+            + "    memberCount: 3\n"
+            + "    policies: []\n"
+            + "    createdDate: 1\n"
+            + "    modifiedDate: 1\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1L, actualCreatedDate.longValue());
     assertEquals(1L, actualModifiedDate.longValue());
     assertEquals(3, actualMemberCount.intValue());

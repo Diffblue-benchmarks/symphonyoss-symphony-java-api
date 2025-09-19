@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,69 @@ import org.junit.Test;
 public class StreamFilterDiffblueTest {
   /**
    * Test {@link StreamFilter#addStreamTypesItem(StreamType)}.
+   *
    * <ul>
-   *   <li>Given {@link StreamFilter} (default constructor).</li>
+   *   <li>Given {@link StreamFilter} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#addStreamTypesItem(StreamType)}
+   *
+   * <p>Method under test: {@link StreamFilter#addStreamTypesItem(StreamType)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StreamFilter StreamFilter.addStreamTypesItem(StreamType)"})
   public void testAddStreamTypesItem_givenStreamFilter() {
     // Arrange
     StreamFilter streamFilter = new StreamFilter();
 
-    // Act and Assert
-    assertSame(streamFilter, streamFilter.addStreamTypesItem(new StreamType()));
+    // Act
+    StreamFilter actualAddStreamTypesItemResult = streamFilter.addStreamTypesItem(new StreamType());
+
+    // Assert
+    assertSame(streamFilter, actualAddStreamTypesItemResult);
   }
 
   /**
    * Test {@link StreamFilter#addStreamTypesItem(StreamType)}.
+   *
    * <ul>
-   *   <li>Given {@link StreamFilter} (default constructor) streamTypes {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link StreamFilter} (default constructor) streamTypes {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#addStreamTypesItem(StreamType)}
+   *
+   * <p>Method under test: {@link StreamFilter#addStreamTypesItem(StreamType)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StreamFilter StreamFilter.addStreamTypesItem(StreamType)"})
   public void testAddStreamTypesItem_givenStreamFilterStreamTypesArrayList() {
     // Arrange
     StreamFilter streamFilter = new StreamFilter();
     streamFilter.streamTypes(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(streamFilter, streamFilter.addStreamTypesItem(new StreamType()));
+    // Act
+    StreamFilter actualAddStreamTypesItemResult = streamFilter.addStreamTypesItem(new StreamType());
+
+    // Assert
+    assertSame(streamFilter, actualAddStreamTypesItemResult);
   }
 
   /**
    * Test {@link StreamFilter#equals(Object)}, and {@link StreamFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamFilter#equals(Object)}
    *   <li>{@link StreamFilter#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +84,26 @@ public class StreamFilterDiffblueTest {
 
     // Act and Assert
     assertEquals(streamFilter, streamFilter2);
-    int expectedHashCodeResult = streamFilter.hashCode();
-    assertEquals(expectedHashCodeResult, streamFilter2.hashCode());
+    assertEquals(streamFilter.hashCode(), streamFilter2.hashCode());
   }
 
   /**
    * Test {@link StreamFilter#equals(Object)}, and {@link StreamFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StreamFilter#equals(Object)}
    *   <li>{@link StreamFilter#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +117,16 @@ public class StreamFilterDiffblueTest {
 
   /**
    * Test {@link StreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +139,16 @@ public class StreamFilterDiffblueTest {
 
   /**
    * Test {@link StreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -140,14 +161,16 @@ public class StreamFilterDiffblueTest {
 
   /**
    * Test {@link StreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -156,14 +179,16 @@ public class StreamFilterDiffblueTest {
 
   /**
    * Test {@link StreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link StreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link StreamFilter#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean StreamFilter.equals(Object)", "int StreamFilter.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -172,8 +197,9 @@ public class StreamFilterDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link StreamFilter}
    *   <li>{@link StreamFilter#includeInactiveStreams(Boolean)}
@@ -186,14 +212,22 @@ public class StreamFilterDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void StreamFilter.<init>()", "Boolean StreamFilter.getIncludeInactiveStreams()",
-      "List StreamFilter.getStreamTypes()", "StreamFilter StreamFilter.includeInactiveStreams(Boolean)",
-      "void StreamFilter.setIncludeInactiveStreams(Boolean)", "void StreamFilter.setStreamTypes(List)",
-      "StreamFilter StreamFilter.streamTypes(List)", "String StreamFilter.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void StreamFilter.<init>()",
+    "Boolean StreamFilter.getIncludeInactiveStreams()",
+    "List StreamFilter.getStreamTypes()",
+    "StreamFilter StreamFilter.includeInactiveStreams(Boolean)",
+    "void StreamFilter.setIncludeInactiveStreams(Boolean)",
+    "void StreamFilter.setStreamTypes(List)",
+    "StreamFilter StreamFilter.streamTypes(List)",
+    "String StreamFilter.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     StreamFilter actualStreamFilter = new StreamFilter();
-    StreamFilter actualIncludeInactiveStreamsResult = actualStreamFilter.includeInactiveStreams(true);
+    StreamFilter actualIncludeInactiveStreamsResult =
+        actualStreamFilter.includeInactiveStreams(true);
     actualStreamFilter.setIncludeInactiveStreams(true);
     actualStreamFilter.setStreamTypes(new ArrayList<>());
     ArrayList<StreamType> streamTypes = new ArrayList<>();
@@ -203,7 +237,8 @@ public class StreamFilterDiffblueTest {
     List<StreamType> actualStreamTypes = actualStreamFilter.getStreamTypes();
 
     // Assert
-    assertEquals("class StreamFilter {\n    streamTypes: []\n    includeInactiveStreams: true\n}",
+    assertEquals(
+        "class StreamFilter {\n    streamTypes: []\n    includeInactiveStreams: true\n}",
         actualToStringResult);
     assertTrue(actualStreamTypes.isEmpty());
     assertTrue(actualIncludeInactiveStreams);

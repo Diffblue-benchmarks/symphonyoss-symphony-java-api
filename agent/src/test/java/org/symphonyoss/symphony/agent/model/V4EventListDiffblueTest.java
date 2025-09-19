@@ -2,24 +2,28 @@ package org.symphonyoss.symphony.agent.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4EventListDiffblueTest {
   /**
    * Test {@link V4EventList#equals(Object)}, and {@link V4EventList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4EventList#equals(Object)}
    *   <li>{@link V4EventList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4EventList.equals(Object)", "int V4EventList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -28,24 +32,26 @@ public class V4EventListDiffblueTest {
 
     // Act and Assert
     assertEquals(v4EventList, v4EventList2);
-    int expectedHashCodeResult = v4EventList.hashCode();
-    assertEquals(expectedHashCodeResult, v4EventList2.hashCode());
+    assertEquals(v4EventList.hashCode(), v4EventList2.hashCode());
   }
 
   /**
    * Test {@link V4EventList#equals(Object)}, and {@link V4EventList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4EventList#equals(Object)}
    *   <li>{@link V4EventList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4EventList.equals(Object)", "int V4EventList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -59,14 +65,16 @@ public class V4EventListDiffblueTest {
 
   /**
    * Test {@link V4EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V4EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4EventList.equals(Object)", "int V4EventList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -79,14 +87,16 @@ public class V4EventListDiffblueTest {
 
   /**
    * Test {@link V4EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V4EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4EventList.equals(Object)", "int V4EventList.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -95,14 +105,16 @@ public class V4EventListDiffblueTest {
 
   /**
    * Test {@link V4EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V4EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4EventList.equals(Object)", "int V4EventList.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -111,17 +123,19 @@ public class V4EventListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4EventList}
    *   <li>{@link V4EventList#toString()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void V4EventList.<init>()", "java.lang.String V4EventList.toString()"})
   public void testGettersAndSetters() {
     // Arrange, Act and Assert
-    assertEquals("class V4EventList {\n    []\n}", (new V4EventList()).toString());
+    assertEquals("class V4EventList {\n    []\n}", new V4EventList().toString());
   }
 }

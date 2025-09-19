@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,71 @@ import org.junit.Test;
 public class V4AttachmentInfoDiffblueTest {
   /**
    * Test {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V4AttachmentInfo} (default constructor).</li>
+   *   <li>Given {@link V4AttachmentInfo} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4AttachmentInfo V4AttachmentInfo.addImagesItem(V4ThumbnailInfo)"})
   public void testAddImagesItem_givenV4AttachmentInfo() {
     // Arrange
     V4AttachmentInfo v4AttachmentInfo = new V4AttachmentInfo();
 
-    // Act and Assert
-    assertSame(v4AttachmentInfo, v4AttachmentInfo.addImagesItem(new V4ThumbnailInfo()));
+    // Act
+    V4AttachmentInfo actualAddImagesItemResult =
+        v4AttachmentInfo.addImagesItem(new V4ThumbnailInfo());
+
+    // Assert
+    assertSame(v4AttachmentInfo, actualAddImagesItemResult);
   }
 
   /**
    * Test {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}.
+   *
    * <ul>
-   *   <li>Given {@link V4AttachmentInfo} (default constructor) images {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V4AttachmentInfo} (default constructor) images {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#addImagesItem(V4ThumbnailInfo)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4AttachmentInfo V4AttachmentInfo.addImagesItem(V4ThumbnailInfo)"})
   public void testAddImagesItem_givenV4AttachmentInfoImagesArrayList() {
     // Arrange
     V4AttachmentInfo v4AttachmentInfo = new V4AttachmentInfo();
     v4AttachmentInfo.images(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v4AttachmentInfo, v4AttachmentInfo.addImagesItem(new V4ThumbnailInfo()));
+    // Act
+    V4AttachmentInfo actualAddImagesItemResult =
+        v4AttachmentInfo.addImagesItem(new V4ThumbnailInfo());
+
+    // Assert
+    assertSame(v4AttachmentInfo, actualAddImagesItemResult);
   }
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}, and {@link V4AttachmentInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4AttachmentInfo#equals(Object)}
    *   <li>{@link V4AttachmentInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +86,26 @@ public class V4AttachmentInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(v4AttachmentInfo, v4AttachmentInfo2);
-    int expectedHashCodeResult = v4AttachmentInfo.hashCode();
-    assertEquals(expectedHashCodeResult, v4AttachmentInfo2.hashCode());
+    assertEquals(v4AttachmentInfo.hashCode(), v4AttachmentInfo2.hashCode());
   }
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}, and {@link V4AttachmentInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4AttachmentInfo#equals(Object)}
    *   <li>{@link V4AttachmentInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +119,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +141,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +164,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -162,14 +187,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +210,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -199,14 +228,16 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test {@link V4AttachmentInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4AttachmentInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4AttachmentInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4AttachmentInfo.equals(Object)", "int V4AttachmentInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -215,8 +246,9 @@ public class V4AttachmentInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4AttachmentInfo}
    *   <li>{@link V4AttachmentInfo#id(String)}
@@ -235,13 +267,23 @@ public class V4AttachmentInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4AttachmentInfo.<init>()", "String V4AttachmentInfo.getId()",
-      "List V4AttachmentInfo.getImages()", "String V4AttachmentInfo.getName()", "Long V4AttachmentInfo.getSize()",
-      "V4AttachmentInfo V4AttachmentInfo.id(String)", "V4AttachmentInfo V4AttachmentInfo.images(List)",
-      "V4AttachmentInfo V4AttachmentInfo.name(String)", "void V4AttachmentInfo.setId(String)",
-      "void V4AttachmentInfo.setImages(List)", "void V4AttachmentInfo.setName(String)",
-      "void V4AttachmentInfo.setSize(Long)", "V4AttachmentInfo V4AttachmentInfo.size(Long)",
-      "String V4AttachmentInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4AttachmentInfo.<init>()",
+    "String V4AttachmentInfo.getId()",
+    "List V4AttachmentInfo.getImages()",
+    "String V4AttachmentInfo.getName()",
+    "Long V4AttachmentInfo.getSize()",
+    "V4AttachmentInfo V4AttachmentInfo.id(String)",
+    "V4AttachmentInfo V4AttachmentInfo.images(List)",
+    "V4AttachmentInfo V4AttachmentInfo.name(String)",
+    "void V4AttachmentInfo.setId(String)",
+    "void V4AttachmentInfo.setImages(List)",
+    "void V4AttachmentInfo.setName(String)",
+    "void V4AttachmentInfo.setSize(Long)",
+    "V4AttachmentInfo V4AttachmentInfo.size(Long)",
+    "String V4AttachmentInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4AttachmentInfo actualV4AttachmentInfo = new V4AttachmentInfo();
@@ -262,7 +304,8 @@ public class V4AttachmentInfoDiffblueTest {
     // Assert
     assertEquals("42", actualId);
     assertEquals("Name", actualName);
-    assertEquals("class V4AttachmentInfo {\n    id: 42\n    name: Name\n    size: 3\n    images: []\n}",
+    assertEquals(
+        "class V4AttachmentInfo {\n    id: 42\n    name: Name\n    size: 3\n    images: []\n}",
         actualToStringResult);
     assertEquals(3L, actualV4AttachmentInfo.getSize().longValue());
     assertTrue(actualImages.isEmpty());

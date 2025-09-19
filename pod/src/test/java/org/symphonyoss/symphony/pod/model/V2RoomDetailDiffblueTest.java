@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2RoomDetailDiffblueTest {
   /**
    * Test {@link V2RoomDetail#equals(Object)}, and {@link V2RoomDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2RoomDetail#equals(Object)}
    *   <li>{@link V2RoomDetail#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V2RoomDetailDiffblueTest {
 
     // Act and Assert
     assertEquals(v2RoomDetail, v2RoomDetail2);
-    int expectedHashCodeResult = v2RoomDetail.hashCode();
-    assertEquals(expectedHashCodeResult, v2RoomDetail2.hashCode());
+    assertEquals(v2RoomDetail.hashCode(), v2RoomDetail2.hashCode());
   }
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}, and {@link V2RoomDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2RoomDetail#equals(Object)}
    *   <li>{@link V2RoomDetail#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test {@link V2RoomDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomDetail#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomDetail.equals(Object)", "int V2RoomDetail.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V2RoomDetailDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2RoomDetail}
    *   <li>{@link V2RoomDetail#roomAttributes(V2RoomAttributes)}
@@ -162,16 +179,24 @@ public class V2RoomDetailDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2RoomDetail.<init>()", "V2RoomAttributes V2RoomDetail.getRoomAttributes()",
-      "RoomSystemInfo V2RoomDetail.getRoomSystemInfo()", "V2RoomDetail V2RoomDetail.roomAttributes(V2RoomAttributes)",
-      "V2RoomDetail V2RoomDetail.roomSystemInfo(RoomSystemInfo)",
-      "void V2RoomDetail.setRoomAttributes(V2RoomAttributes)", "void V2RoomDetail.setRoomSystemInfo(RoomSystemInfo)",
-      "String V2RoomDetail.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2RoomDetail.<init>()",
+    "V2RoomAttributes V2RoomDetail.getRoomAttributes()",
+    "RoomSystemInfo V2RoomDetail.getRoomSystemInfo()",
+    "V2RoomDetail V2RoomDetail.roomAttributes(V2RoomAttributes)",
+    "V2RoomDetail V2RoomDetail.roomSystemInfo(RoomSystemInfo)",
+    "void V2RoomDetail.setRoomAttributes(V2RoomAttributes)",
+    "void V2RoomDetail.setRoomSystemInfo(RoomSystemInfo)",
+    "String V2RoomDetail.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2RoomDetail actualV2RoomDetail = new V2RoomDetail();
-    V2RoomDetail actualRoomAttributesResult = actualV2RoomDetail.roomAttributes(new V2RoomAttributes());
-    V2RoomDetail actualRoomSystemInfoResult = actualV2RoomDetail.roomSystemInfo(new RoomSystemInfo());
+    V2RoomDetail actualRoomAttributesResult =
+        actualV2RoomDetail.roomAttributes(new V2RoomAttributes());
+    V2RoomDetail actualRoomSystemInfoResult =
+        actualV2RoomDetail.roomSystemInfo(new RoomSystemInfo());
     V2RoomAttributes roomAttributes = new V2RoomAttributes();
     actualV2RoomDetail.setRoomAttributes(roomAttributes);
     RoomSystemInfo roomSystemInfo = new RoomSystemInfo();
@@ -180,12 +205,26 @@ public class V2RoomDetailDiffblueTest {
     V2RoomAttributes actualRoomAttributes = actualV2RoomDetail.getRoomAttributes();
 
     // Assert
-    assertEquals("class V2RoomDetail {\n" + "    roomAttributes: class V2RoomAttributes {\n" + "        name: null\n"
-        + "        keywords: null\n" + "        description: null\n" + "        membersCanInvite: null\n"
-        + "        discoverable: null\n" + "        _public: null\n" + "        readOnly: null\n"
-        + "        copyProtected: null\n" + "    }\n" + "    roomSystemInfo: class RoomSystemInfo {\n"
-        + "        id: null\n" + "        creationDate: null\n" + "        createdByUserId: null\n"
-        + "        active: null\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V2RoomDetail {\n"
+            + "    roomAttributes: class V2RoomAttributes {\n"
+            + "        name: null\n"
+            + "        keywords: null\n"
+            + "        description: null\n"
+            + "        membersCanInvite: null\n"
+            + "        discoverable: null\n"
+            + "        _public: null\n"
+            + "        readOnly: null\n"
+            + "        copyProtected: null\n"
+            + "    }\n"
+            + "    roomSystemInfo: class RoomSystemInfo {\n"
+            + "        id: null\n"
+            + "        creationDate: null\n"
+            + "        createdByUserId: null\n"
+            + "        active: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(roomSystemInfo, actualV2RoomDetail.getRoomSystemInfo());
     assertSame(roomAttributes, actualRoomAttributes);
     assertSame(actualV2RoomDetail, actualRoomAttributesResult);

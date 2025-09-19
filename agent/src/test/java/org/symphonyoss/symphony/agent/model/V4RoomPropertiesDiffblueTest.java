@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,71 @@ import org.junit.Test;
 public class V4RoomPropertiesDiffblueTest {
   /**
    * Test {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}.
+   *
    * <ul>
-   *   <li>Given {@link V4RoomProperties} (default constructor).</li>
+   *   <li>Given {@link V4RoomProperties} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4RoomProperties V4RoomProperties.addKeywordsItem(V4KeyValuePair)"})
   public void testAddKeywordsItem_givenV4RoomProperties() {
     // Arrange
     V4RoomProperties v4RoomProperties = new V4RoomProperties();
 
-    // Act and Assert
-    assertSame(v4RoomProperties, v4RoomProperties.addKeywordsItem(new V4KeyValuePair()));
+    // Act
+    V4RoomProperties actualAddKeywordsItemResult =
+        v4RoomProperties.addKeywordsItem(new V4KeyValuePair());
+
+    // Assert
+    assertSame(v4RoomProperties, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}.
+   *
    * <ul>
-   *   <li>Given {@link V4RoomProperties} (default constructor) keywords {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V4RoomProperties} (default constructor) keywords {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#addKeywordsItem(V4KeyValuePair)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4RoomProperties V4RoomProperties.addKeywordsItem(V4KeyValuePair)"})
   public void testAddKeywordsItem_givenV4RoomPropertiesKeywordsArrayList() {
     // Arrange
     V4RoomProperties v4RoomProperties = new V4RoomProperties();
     v4RoomProperties.keywords(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v4RoomProperties, v4RoomProperties.addKeywordsItem(new V4KeyValuePair()));
+    // Act
+    V4RoomProperties actualAddKeywordsItemResult =
+        v4RoomProperties.addKeywordsItem(new V4KeyValuePair());
+
+    // Assert
+    assertSame(v4RoomProperties, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}, and {@link V4RoomProperties#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomProperties#equals(Object)}
    *   <li>{@link V4RoomProperties#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +86,26 @@ public class V4RoomPropertiesDiffblueTest {
 
     // Act and Assert
     assertEquals(v4RoomProperties, v4RoomProperties2);
-    int expectedHashCodeResult = v4RoomProperties.hashCode();
-    assertEquals(expectedHashCodeResult, v4RoomProperties2.hashCode());
+    assertEquals(v4RoomProperties.hashCode(), v4RoomProperties2.hashCode());
   }
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}, and {@link V4RoomProperties#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4RoomProperties#equals(Object)}
    *   <li>{@link V4RoomProperties#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +119,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +141,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +164,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -162,14 +187,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +210,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -204,14 +233,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -225,14 +256,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -246,14 +279,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -267,14 +302,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
@@ -288,14 +325,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
@@ -309,14 +348,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
@@ -330,14 +371,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual12() {
     // Arrange
@@ -351,14 +394,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual13() {
     // Arrange
@@ -371,14 +416,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -387,14 +434,16 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test {@link V4RoomProperties#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4RoomProperties#equals(Object)}
+   *
+   * <p>Method under test: {@link V4RoomProperties#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4RoomProperties.equals(Object)", "int V4RoomProperties.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -403,8 +452,9 @@ public class V4RoomPropertiesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4RoomProperties}
    *   <li>{@link V4RoomProperties#_public(Boolean)}
@@ -450,28 +500,50 @@ public class V4RoomPropertiesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4RoomProperties.<init>()", "V4RoomProperties V4RoomProperties._public(Boolean)",
-      "V4RoomProperties V4RoomProperties.canViewHistory(Boolean)",
-      "V4RoomProperties V4RoomProperties.copyProtected(Boolean)", "V4RoomProperties V4RoomProperties.createdDate(Long)",
-      "V4RoomProperties V4RoomProperties.creatorUser(V4User)", "V4RoomProperties V4RoomProperties.crossPod(Boolean)",
-      "V4RoomProperties V4RoomProperties.description(String)",
-      "V4RoomProperties V4RoomProperties.discoverable(Boolean)", "V4RoomProperties V4RoomProperties.external(Boolean)",
-      "Boolean V4RoomProperties.getCanViewHistory()", "Boolean V4RoomProperties.getCopyProtected()",
-      "Long V4RoomProperties.getCreatedDate()", "V4User V4RoomProperties.getCreatorUser()",
-      "Boolean V4RoomProperties.getCrossPod()", "String V4RoomProperties.getDescription()",
-      "Boolean V4RoomProperties.getDiscoverable()", "Boolean V4RoomProperties.getExternal()",
-      "List V4RoomProperties.getKeywords()", "Boolean V4RoomProperties.getMembersCanInvite()",
-      "String V4RoomProperties.getName()", "Boolean V4RoomProperties.getPublic()",
-      "Boolean V4RoomProperties.getReadOnly()", "V4RoomProperties V4RoomProperties.keywords(List)",
-      "V4RoomProperties V4RoomProperties.membersCanInvite(Boolean)", "V4RoomProperties V4RoomProperties.name(String)",
-      "V4RoomProperties V4RoomProperties.readOnly(Boolean)", "void V4RoomProperties.setCanViewHistory(Boolean)",
-      "void V4RoomProperties.setCopyProtected(Boolean)", "void V4RoomProperties.setCreatedDate(Long)",
-      "void V4RoomProperties.setCreatorUser(V4User)", "void V4RoomProperties.setCrossPod(Boolean)",
-      "void V4RoomProperties.setDescription(String)", "void V4RoomProperties.setDiscoverable(Boolean)",
-      "void V4RoomProperties.setExternal(Boolean)", "void V4RoomProperties.setKeywords(List)",
-      "void V4RoomProperties.setMembersCanInvite(Boolean)", "void V4RoomProperties.setName(String)",
-      "void V4RoomProperties.setPublic(Boolean)", "void V4RoomProperties.setReadOnly(Boolean)",
-      "String V4RoomProperties.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4RoomProperties.<init>()",
+    "V4RoomProperties V4RoomProperties._public(Boolean)",
+    "V4RoomProperties V4RoomProperties.canViewHistory(Boolean)",
+    "V4RoomProperties V4RoomProperties.copyProtected(Boolean)",
+    "V4RoomProperties V4RoomProperties.createdDate(Long)",
+    "V4RoomProperties V4RoomProperties.creatorUser(V4User)",
+    "V4RoomProperties V4RoomProperties.crossPod(Boolean)",
+    "V4RoomProperties V4RoomProperties.description(String)",
+    "V4RoomProperties V4RoomProperties.discoverable(Boolean)",
+    "V4RoomProperties V4RoomProperties.external(Boolean)",
+    "Boolean V4RoomProperties.getCanViewHistory()",
+    "Boolean V4RoomProperties.getCopyProtected()",
+    "Long V4RoomProperties.getCreatedDate()",
+    "V4User V4RoomProperties.getCreatorUser()",
+    "Boolean V4RoomProperties.getCrossPod()",
+    "String V4RoomProperties.getDescription()",
+    "Boolean V4RoomProperties.getDiscoverable()",
+    "Boolean V4RoomProperties.getExternal()",
+    "List V4RoomProperties.getKeywords()",
+    "Boolean V4RoomProperties.getMembersCanInvite()",
+    "String V4RoomProperties.getName()",
+    "Boolean V4RoomProperties.getPublic()",
+    "Boolean V4RoomProperties.getReadOnly()",
+    "V4RoomProperties V4RoomProperties.keywords(List)",
+    "V4RoomProperties V4RoomProperties.membersCanInvite(Boolean)",
+    "V4RoomProperties V4RoomProperties.name(String)",
+    "V4RoomProperties V4RoomProperties.readOnly(Boolean)",
+    "void V4RoomProperties.setCanViewHistory(Boolean)",
+    "void V4RoomProperties.setCopyProtected(Boolean)",
+    "void V4RoomProperties.setCreatedDate(Long)",
+    "void V4RoomProperties.setCreatorUser(V4User)",
+    "void V4RoomProperties.setCrossPod(Boolean)",
+    "void V4RoomProperties.setDescription(String)",
+    "void V4RoomProperties.setDiscoverable(Boolean)",
+    "void V4RoomProperties.setExternal(Boolean)",
+    "void V4RoomProperties.setKeywords(List)",
+    "void V4RoomProperties.setMembersCanInvite(Boolean)",
+    "void V4RoomProperties.setName(String)",
+    "void V4RoomProperties.setPublic(Boolean)",
+    "void V4RoomProperties.setReadOnly(Boolean)",
+    "String V4RoomProperties.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4RoomProperties actualV4RoomProperties = new V4RoomProperties();
@@ -481,8 +553,8 @@ public class V4RoomPropertiesDiffblueTest {
     V4RoomProperties actualCreatedDateResult = actualV4RoomProperties.createdDate(1L);
     V4RoomProperties actualCreatorUserResult = actualV4RoomProperties.creatorUser(new V4User());
     V4RoomProperties actualCrossPodResult = actualV4RoomProperties.crossPod(true);
-    V4RoomProperties actualDescriptionResult = actualV4RoomProperties
-        .description("The characteristics of someone or something");
+    V4RoomProperties actualDescriptionResult =
+        actualV4RoomProperties.description("The characteristics of someone or something");
     V4RoomProperties actualDiscoverableResult = actualV4RoomProperties.discoverable(true);
     V4RoomProperties actualExternalResult = actualV4RoomProperties.external(true);
     V4RoomProperties actualKeywordsResult = actualV4RoomProperties.keywords(new ArrayList<>());
@@ -523,13 +595,28 @@ public class V4RoomPropertiesDiffblueTest {
     assertEquals("Name", actualName);
     assertEquals("The characteristics of someone or something", actualDescription);
     assertEquals(
-        "class V4RoomProperties {\n" + "    name: Name\n"
-            + "    description: The characteristics of someone or something\n" + "    creatorUser: class V4User {\n"
-            + "        userId: null\n" + "        firstName: null\n" + "        lastName: null\n"
-            + "        displayName: null\n" + "        email: null\n" + "        username: null\n" + "    }\n"
-            + "    createdDate: 1\n" + "    external: true\n" + "    crossPod: true\n" + "    _public: true\n"
-            + "    copyProtected: true\n" + "    readOnly: true\n" + "    discoverable: true\n"
-            + "    membersCanInvite: true\n" + "    keywords: []\n" + "    canViewHistory: true\n" + "}",
+        "class V4RoomProperties {\n"
+            + "    name: Name\n"
+            + "    description: The characteristics of someone or something\n"
+            + "    creatorUser: class V4User {\n"
+            + "        userId: null\n"
+            + "        firstName: null\n"
+            + "        lastName: null\n"
+            + "        displayName: null\n"
+            + "        email: null\n"
+            + "        username: null\n"
+            + "    }\n"
+            + "    createdDate: 1\n"
+            + "    external: true\n"
+            + "    crossPod: true\n"
+            + "    _public: true\n"
+            + "    copyProtected: true\n"
+            + "    readOnly: true\n"
+            + "    discoverable: true\n"
+            + "    membersCanInvite: true\n"
+            + "    keywords: []\n"
+            + "    canViewHistory: true\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualCreatedDate.longValue());
     assertTrue(actualKeywords.isEmpty());

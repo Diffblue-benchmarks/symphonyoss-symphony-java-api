@@ -3,25 +3,33 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class AdminJustifiedUserActionDiffblueTest {
   /**
-   * Test {@link AdminJustifiedUserAction#equals(Object)}, and {@link AdminJustifiedUserAction#hashCode()}.
+   * Test {@link AdminJustifiedUserAction#equals(Object)}, and {@link
+   * AdminJustifiedUserAction#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminJustifiedUserAction#equals(Object)}
    *   <li>{@link AdminJustifiedUserAction#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     AdminJustifiedUserAction adminJustifiedUserAction = new AdminJustifiedUserAction();
@@ -29,25 +37,31 @@ public class AdminJustifiedUserActionDiffblueTest {
 
     // Act and Assert
     assertEquals(adminJustifiedUserAction, adminJustifiedUserAction2);
-    int expectedHashCodeResult = adminJustifiedUserAction.hashCode();
-    assertEquals(expectedHashCodeResult, adminJustifiedUserAction2.hashCode());
+    assertEquals(adminJustifiedUserAction.hashCode(), adminJustifiedUserAction2.hashCode());
   }
 
   /**
-   * Test {@link AdminJustifiedUserAction#equals(Object)}, and {@link AdminJustifiedUserAction#hashCode()}.
+   * Test {@link AdminJustifiedUserAction#equals(Object)}, and {@link
+   * AdminJustifiedUserAction#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminJustifiedUserAction#equals(Object)}
    *   <li>{@link AdminJustifiedUserAction#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     AdminJustifiedUserAction adminJustifiedUserAction = new AdminJustifiedUserAction();
@@ -60,15 +74,20 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test {@link AdminJustifiedUserAction#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminJustifiedUserAction#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminJustifiedUserAction#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminJustifiedUserAction(), 1);
@@ -76,15 +95,20 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test {@link AdminJustifiedUserAction#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminJustifiedUserAction#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminJustifiedUserAction#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     AdminJustifiedUserAction adminJustifiedUserAction = new AdminJustifiedUserAction();
@@ -96,15 +120,20 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test {@link AdminJustifiedUserAction#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminJustifiedUserAction#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminJustifiedUserAction#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     AdminJustifiedUserAction adminJustifiedUserAction = new AdminJustifiedUserAction();
@@ -116,15 +145,20 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test {@link AdminJustifiedUserAction#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminJustifiedUserAction#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminJustifiedUserAction#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminJustifiedUserAction(), null);
@@ -132,15 +166,20 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test {@link AdminJustifiedUserAction#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminJustifiedUserAction#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminJustifiedUserAction#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminJustifiedUserAction.equals(Object)", "int AdminJustifiedUserAction.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminJustifiedUserAction.equals(Object)",
+    "int AdminJustifiedUserAction.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminJustifiedUserAction(), "Different type to AdminJustifiedUserAction");
@@ -148,8 +187,9 @@ public class AdminJustifiedUserActionDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AdminJustifiedUserAction}
    *   <li>{@link AdminJustifiedUserAction#justification(String)}
@@ -162,15 +202,22 @@ public class AdminJustifiedUserActionDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AdminJustifiedUserAction.<init>()", "String AdminJustifiedUserAction.getJustification()",
-      "Long AdminJustifiedUserAction.getUserId()",
-      "AdminJustifiedUserAction AdminJustifiedUserAction.justification(String)",
-      "void AdminJustifiedUserAction.setJustification(String)", "void AdminJustifiedUserAction.setUserId(Long)",
-      "String AdminJustifiedUserAction.toString()", "AdminJustifiedUserAction AdminJustifiedUserAction.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AdminJustifiedUserAction.<init>()",
+    "String AdminJustifiedUserAction.getJustification()",
+    "Long AdminJustifiedUserAction.getUserId()",
+    "AdminJustifiedUserAction AdminJustifiedUserAction.justification(String)",
+    "void AdminJustifiedUserAction.setJustification(String)",
+    "void AdminJustifiedUserAction.setUserId(Long)",
+    "String AdminJustifiedUserAction.toString()",
+    "AdminJustifiedUserAction AdminJustifiedUserAction.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AdminJustifiedUserAction actualAdminJustifiedUserAction = new AdminJustifiedUserAction();
-    AdminJustifiedUserAction actualJustificationResult = actualAdminJustifiedUserAction.justification("Justification");
+    AdminJustifiedUserAction actualJustificationResult =
+        actualAdminJustifiedUserAction.justification("Justification");
     actualAdminJustifiedUserAction.setJustification("Justification");
     actualAdminJustifiedUserAction.setUserId(1L);
     AdminJustifiedUserAction actualUserIdResult = actualAdminJustifiedUserAction.userId(1L);
@@ -179,7 +226,8 @@ public class AdminJustifiedUserActionDiffblueTest {
 
     // Assert
     assertEquals("Justification", actualJustification);
-    assertEquals("class AdminJustifiedUserAction {\n    userId: 1\n    justification: Justification\n}",
+    assertEquals(
+        "class AdminJustifiedUserAction {\n    userId: 1\n    justification: Justification\n}",
         actualToStringResult);
     assertEquals(1L, actualAdminJustifiedUserAction.getUserId().longValue());
     assertSame(actualAdminJustifiedUserAction, actualJustificationResult);

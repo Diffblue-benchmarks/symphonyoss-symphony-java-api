@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ProductDiffblueTest {
   /**
    * Test {@link Product#equals(Object)}, and {@link Product#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Product#equals(Object)}
    *   <li>{@link Product#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class ProductDiffblueTest {
 
     // Act and Assert
     assertEquals(product, product2);
-    int expectedHashCodeResult = product.hashCode();
-    assertEquals(expectedHashCodeResult, product2.hashCode());
+    assertEquals(product.hashCode(), product2.hashCode());
   }
 
   /**
    * Test {@link Product#equals(Object)}, and {@link Product#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Product#equals(Object)}
    *   <li>{@link Product#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -137,14 +151,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -157,14 +173,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -177,14 +195,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -193,14 +213,16 @@ public class ProductDiffblueTest {
 
   /**
    * Test {@link Product#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Product#equals(Object)}
+   *
+   * <p>Method under test: {@link Product#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Product.equals(Object)", "int Product.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -209,8 +231,9 @@ public class ProductDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Product}
    *   <li>{@link Product#appId(String)}
@@ -232,12 +255,26 @@ public class ProductDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Product.<init>()", "Product Product.appId(String)", "String Product.getAppId()",
-      "String Product.getName()", "String Product.getSku()", "Boolean Product.getSubscribed()",
-      "String Product.getType()", "Product Product.name(String)", "void Product.setAppId(String)",
-      "void Product.setName(String)", "void Product.setSku(String)", "void Product.setSubscribed(Boolean)",
-      "void Product.setType(String)", "Product Product.sku(String)", "Product Product.subscribed(Boolean)",
-      "String Product.toString()", "Product Product.type(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Product.<init>()",
+    "Product Product.appId(String)",
+    "String Product.getAppId()",
+    "String Product.getName()",
+    "String Product.getSku()",
+    "Boolean Product.getSubscribed()",
+    "String Product.getType()",
+    "Product Product.name(String)",
+    "void Product.setAppId(String)",
+    "void Product.setName(String)",
+    "void Product.setSku(String)",
+    "void Product.setSubscribed(Boolean)",
+    "void Product.setType(String)",
+    "Product Product.sku(String)",
+    "Product Product.subscribed(Boolean)",
+    "String Product.toString()",
+    "Product Product.type(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Product actualProduct = new Product();

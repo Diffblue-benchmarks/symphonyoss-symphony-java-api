@@ -3,25 +3,32 @@ package org.symphonyoss.symphony.authenticator.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class ExtensionAppTokensDiffblueTest {
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}, and {@link ExtensionAppTokens#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ExtensionAppTokens#equals(Object)}
    *   <li>{@link ExtensionAppTokens#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -29,25 +36,30 @@ public class ExtensionAppTokensDiffblueTest {
 
     // Act and Assert
     assertEquals(extensionAppTokens, extensionAppTokens2);
-    int expectedHashCodeResult = extensionAppTokens.hashCode();
-    assertEquals(expectedHashCodeResult, extensionAppTokens2.hashCode());
+    assertEquals(extensionAppTokens.hashCode(), extensionAppTokens2.hashCode());
   }
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}, and {@link ExtensionAppTokens#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ExtensionAppTokens#equals(Object)}
    *   <li>{@link ExtensionAppTokens#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -60,15 +72,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ExtensionAppTokens(), 1);
@@ -76,15 +93,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -96,15 +118,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -116,15 +143,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -136,15 +168,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     ExtensionAppTokens extensionAppTokens = new ExtensionAppTokens();
@@ -156,15 +193,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ExtensionAppTokens(), null);
@@ -172,15 +214,20 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test {@link ExtensionAppTokens#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ExtensionAppTokens#equals(Object)}
+   *
+   * <p>Method under test: {@link ExtensionAppTokens#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ExtensionAppTokens.equals(Object)", "int ExtensionAppTokens.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ExtensionAppTokens.equals(Object)",
+    "int ExtensionAppTokens.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ExtensionAppTokens(), "Different type to ExtensionAppTokens");
@@ -188,8 +235,9 @@ public class ExtensionAppTokensDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ExtensionAppTokens}
    *   <li>{@link ExtensionAppTokens#appId(String)}
@@ -208,13 +256,23 @@ public class ExtensionAppTokensDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ExtensionAppTokens.<init>()", "ExtensionAppTokens ExtensionAppTokens.appId(String)",
-      "ExtensionAppTokens ExtensionAppTokens.appToken(String)", "ExtensionAppTokens ExtensionAppTokens.expireAt(Long)",
-      "String ExtensionAppTokens.getAppId()", "String ExtensionAppTokens.getAppToken()",
-      "Long ExtensionAppTokens.getExpireAt()", "String ExtensionAppTokens.getSymphonyToken()",
-      "void ExtensionAppTokens.setAppId(String)", "void ExtensionAppTokens.setAppToken(String)",
-      "void ExtensionAppTokens.setExpireAt(Long)", "void ExtensionAppTokens.setSymphonyToken(String)",
-      "ExtensionAppTokens ExtensionAppTokens.symphonyToken(String)", "String ExtensionAppTokens.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ExtensionAppTokens.<init>()",
+    "ExtensionAppTokens ExtensionAppTokens.appId(String)",
+    "ExtensionAppTokens ExtensionAppTokens.appToken(String)",
+    "ExtensionAppTokens ExtensionAppTokens.expireAt(Long)",
+    "String ExtensionAppTokens.getAppId()",
+    "String ExtensionAppTokens.getAppToken()",
+    "Long ExtensionAppTokens.getExpireAt()",
+    "String ExtensionAppTokens.getSymphonyToken()",
+    "void ExtensionAppTokens.setAppId(String)",
+    "void ExtensionAppTokens.setAppToken(String)",
+    "void ExtensionAppTokens.setExpireAt(Long)",
+    "void ExtensionAppTokens.setSymphonyToken(String)",
+    "ExtensionAppTokens ExtensionAppTokens.symphonyToken(String)",
+    "String ExtensionAppTokens.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ExtensionAppTokens actualExtensionAppTokens = new ExtensionAppTokens();
@@ -235,8 +293,14 @@ public class ExtensionAppTokensDiffblueTest {
     assertEquals("42", actualAppId);
     assertEquals("ABC123", actualAppToken);
     assertEquals("ABC123", actualExtensionAppTokens.getSymphonyToken());
-    assertEquals("class ExtensionAppTokens {\n" + "    appId: 42\n" + "    appToken: ABC123\n"
-        + "    symphonyToken: ABC123\n" + "    expireAt: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ExtensionAppTokens {\n"
+            + "    appId: 42\n"
+            + "    appToken: ABC123\n"
+            + "    symphonyToken: ABC123\n"
+            + "    expireAt: 1\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1L, actualExpireAt.longValue());
     assertSame(actualExtensionAppTokens, actualAppIdResult);
     assertSame(actualExtensionAppTokens, actualAppTokenResult);

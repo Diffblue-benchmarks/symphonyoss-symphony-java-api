@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4ImportResponseDiffblueTest {
   /**
    * Test {@link V4ImportResponse#equals(Object)}, and {@link V4ImportResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4ImportResponse#equals(Object)}
    *   <li>{@link V4ImportResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4ImportResponseDiffblueTest {
 
     // Act and Assert
     assertEquals(v4ImportResponse, v4ImportResponse2);
-    int expectedHashCodeResult = v4ImportResponse.hashCode();
-    assertEquals(expectedHashCodeResult, v4ImportResponse2.hashCode());
+    assertEquals(v4ImportResponse.hashCode(), v4ImportResponse2.hashCode());
   }
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}, and {@link V4ImportResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4ImportResponse#equals(Object)}
    *   <li>{@link V4ImportResponse#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -172,14 +190,16 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test {@link V4ImportResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ImportResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ImportResponse#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ImportResponse.equals(Object)", "int V4ImportResponse.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -188,8 +208,9 @@ public class V4ImportResponseDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4ImportResponse}
    *   <li>{@link V4ImportResponse#diagnostic(String)}
@@ -208,21 +229,31 @@ public class V4ImportResponseDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4ImportResponse.<init>()", "V4ImportResponse V4ImportResponse.diagnostic(String)",
-      "String V4ImportResponse.getDiagnostic()", "String V4ImportResponse.getMessageId()",
-      "String V4ImportResponse.getOriginalMessageId()", "String V4ImportResponse.getOriginatingSystemId()",
-      "V4ImportResponse V4ImportResponse.messageId(String)",
-      "V4ImportResponse V4ImportResponse.originalMessageId(String)",
-      "V4ImportResponse V4ImportResponse.originatingSystemId(String)", "void V4ImportResponse.setDiagnostic(String)",
-      "void V4ImportResponse.setMessageId(String)", "void V4ImportResponse.setOriginalMessageId(String)",
-      "void V4ImportResponse.setOriginatingSystemId(String)", "String V4ImportResponse.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4ImportResponse.<init>()",
+    "V4ImportResponse V4ImportResponse.diagnostic(String)",
+    "String V4ImportResponse.getDiagnostic()",
+    "String V4ImportResponse.getMessageId()",
+    "String V4ImportResponse.getOriginalMessageId()",
+    "String V4ImportResponse.getOriginatingSystemId()",
+    "V4ImportResponse V4ImportResponse.messageId(String)",
+    "V4ImportResponse V4ImportResponse.originalMessageId(String)",
+    "V4ImportResponse V4ImportResponse.originatingSystemId(String)",
+    "void V4ImportResponse.setDiagnostic(String)",
+    "void V4ImportResponse.setMessageId(String)",
+    "void V4ImportResponse.setOriginalMessageId(String)",
+    "void V4ImportResponse.setOriginatingSystemId(String)",
+    "String V4ImportResponse.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4ImportResponse actualV4ImportResponse = new V4ImportResponse();
     V4ImportResponse actualDiagnosticResult = actualV4ImportResponse.diagnostic("Diagnostic");
     V4ImportResponse actualMessageIdResult = actualV4ImportResponse.messageId("42");
     V4ImportResponse actualOriginalMessageIdResult = actualV4ImportResponse.originalMessageId("42");
-    V4ImportResponse actualOriginatingSystemIdResult = actualV4ImportResponse.originatingSystemId("42");
+    V4ImportResponse actualOriginatingSystemIdResult =
+        actualV4ImportResponse.originatingSystemId("42");
     actualV4ImportResponse.setDiagnostic("Diagnostic");
     actualV4ImportResponse.setMessageId("42");
     actualV4ImportResponse.setOriginalMessageId("42");
@@ -237,8 +268,14 @@ public class V4ImportResponseDiffblueTest {
     assertEquals("42", actualOriginalMessageId);
     assertEquals("42", actualV4ImportResponse.getOriginatingSystemId());
     assertEquals("Diagnostic", actualDiagnostic);
-    assertEquals("class V4ImportResponse {\n" + "    messageId: 42\n" + "    originatingSystemId: 42\n"
-        + "    originalMessageId: 42\n" + "    diagnostic: Diagnostic\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V4ImportResponse {\n"
+            + "    messageId: 42\n"
+            + "    originatingSystemId: 42\n"
+            + "    originalMessageId: 42\n"
+            + "    diagnostic: Diagnostic\n"
+            + "}",
+        actualToStringResult);
     assertSame(actualV4ImportResponse, actualDiagnosticResult);
     assertSame(actualV4ImportResponse, actualMessageIdResult);
     assertSame(actualV4ImportResponse, actualOriginalMessageIdResult);

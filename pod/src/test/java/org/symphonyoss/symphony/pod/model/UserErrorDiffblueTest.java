@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserErrorDiffblueTest {
   /**
    * Test {@link UserError#equals(Object)}, and {@link UserError#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserError#equals(Object)}
    *   <li>{@link UserError#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class UserErrorDiffblueTest {
 
     // Act and Assert
     assertEquals(userError, userError2);
-    int expectedHashCodeResult = userError.hashCode();
-    assertEquals(expectedHashCodeResult, userError2.hashCode());
+    assertEquals(userError.hashCode(), userError2.hashCode());
   }
 
   /**
    * Test {@link UserError#equals(Object)}, and {@link UserError#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserError#equals(Object)}
    *   <li>{@link UserError#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -152,14 +168,16 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test {@link UserError#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserError#equals(Object)}
+   *
+   * <p>Method under test: {@link UserError#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserError.equals(Object)", "int UserError.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -168,8 +186,9 @@ public class UserErrorDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserError}
    *   <li>{@link UserError#email(String)}
@@ -185,10 +204,20 @@ public class UserErrorDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserError.<init>()", "UserError UserError.email(String)",
-      "UserError UserError.error(String)", "String UserError.getEmail()", "String UserError.getError()",
-      "String UserError.getId()", "UserError UserError.id(String)", "void UserError.setEmail(String)",
-      "void UserError.setError(String)", "void UserError.setId(String)", "String UserError.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserError.<init>()",
+    "UserError UserError.email(String)",
+    "UserError UserError.error(String)",
+    "String UserError.getEmail()",
+    "String UserError.getError()",
+    "String UserError.getId()",
+    "UserError UserError.id(String)",
+    "void UserError.setEmail(String)",
+    "void UserError.setError(String)",
+    "void UserError.setId(String)",
+    "String UserError.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserError actualUserError = new UserError();
@@ -205,7 +234,8 @@ public class UserErrorDiffblueTest {
     // Assert
     assertEquals("42", actualUserError.getId());
     assertEquals("An error occurred", actualError);
-    assertEquals("class UserError {\n    error: An error occurred\n    email: jane.doe@example.org\n    id: 42\n}",
+    assertEquals(
+        "class UserError {\n    error: An error occurred\n    email: jane.doe@example.org\n    id: 42\n}",
         actualToStringResult);
     assertEquals("jane.doe@example.org", actualEmail);
     assertSame(actualUserError, actualEmailResult);

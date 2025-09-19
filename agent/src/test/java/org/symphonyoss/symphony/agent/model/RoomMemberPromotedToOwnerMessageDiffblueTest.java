@@ -4,56 +4,72 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomMemberPromotedToOwnerMessageDiffblueTest {
   /**
-   * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}, and {@link RoomMemberPromotedToOwnerMessage#hashCode()}.
+   * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}, and {@link
+   * RoomMemberPromotedToOwnerMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    *   <li>{@link RoomMemberPromotedToOwnerMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage2 = new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage2 =
+        new RoomMemberPromotedToOwnerMessage();
 
     // Act and Assert
     assertEquals(roomMemberPromotedToOwnerMessage, roomMemberPromotedToOwnerMessage2);
-    int expectedHashCodeResult = roomMemberPromotedToOwnerMessage.hashCode();
-    assertEquals(expectedHashCodeResult, roomMemberPromotedToOwnerMessage2.hashCode());
+    assertEquals(
+        roomMemberPromotedToOwnerMessage.hashCode(), roomMemberPromotedToOwnerMessage2.hashCode());
   }
 
   /**
-   * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}, and {@link RoomMemberPromotedToOwnerMessage#hashCode()}.
+   * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}, and {@link
+   * RoomMemberPromotedToOwnerMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    *   <li>{@link RoomMemberPromotedToOwnerMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
 
     // Act and Assert
     assertEquals(roomMemberPromotedToOwnerMessage, roomMemberPromotedToOwnerMessage);
@@ -63,16 +79,20 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomMemberPromotedToOwnerMessage(), 1);
@@ -80,19 +100,24 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
     roomMemberPromotedToOwnerMessage.promotedByUserId(1L);
 
     // Act and Assert
@@ -101,19 +126,24 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
     roomMemberPromotedToOwnerMessage.promotedUserId(1L);
 
     // Act and Assert
@@ -122,19 +152,24 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
-    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage roomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
     roomMemberPromotedToOwnerMessage.id("42");
 
     // Act and Assert
@@ -143,16 +178,20 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new RoomMemberPromotedToOwnerMessage(), null);
@@ -160,25 +199,32 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
 
   /**
    * Test {@link RoomMemberPromotedToOwnerMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomMemberPromotedToOwnerMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
-      "int RoomMemberPromotedToOwnerMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean RoomMemberPromotedToOwnerMessage.equals(Object)",
+    "int RoomMemberPromotedToOwnerMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
-    assertNotEquals(new RoomMemberPromotedToOwnerMessage(), "Different type to RoomMemberPromotedToOwnerMessage");
+    assertNotEquals(
+        new RoomMemberPromotedToOwnerMessage(),
+        "Different type to RoomMemberPromotedToOwnerMessage");
   }
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomMemberPromotedToOwnerMessage}
    *   <li>{@link RoomMemberPromotedToOwnerMessage#promotedByUserId(Long)}
@@ -191,21 +237,25 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomMemberPromotedToOwnerMessage.<init>()",
-      "Long RoomMemberPromotedToOwnerMessage.getPromotedByUserId()",
-      "Long RoomMemberPromotedToOwnerMessage.getPromotedUserId()",
-      "RoomMemberPromotedToOwnerMessage RoomMemberPromotedToOwnerMessage.promotedByUserId(Long)",
-      "RoomMemberPromotedToOwnerMessage RoomMemberPromotedToOwnerMessage.promotedUserId(Long)",
-      "void RoomMemberPromotedToOwnerMessage.setPromotedByUserId(Long)",
-      "void RoomMemberPromotedToOwnerMessage.setPromotedUserId(Long)",
-      "String RoomMemberPromotedToOwnerMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomMemberPromotedToOwnerMessage.<init>()",
+    "Long RoomMemberPromotedToOwnerMessage.getPromotedByUserId()",
+    "Long RoomMemberPromotedToOwnerMessage.getPromotedUserId()",
+    "RoomMemberPromotedToOwnerMessage RoomMemberPromotedToOwnerMessage.promotedByUserId(Long)",
+    "RoomMemberPromotedToOwnerMessage RoomMemberPromotedToOwnerMessage.promotedUserId(Long)",
+    "void RoomMemberPromotedToOwnerMessage.setPromotedByUserId(Long)",
+    "void RoomMemberPromotedToOwnerMessage.setPromotedUserId(Long)",
+    "String RoomMemberPromotedToOwnerMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
-    RoomMemberPromotedToOwnerMessage actualRoomMemberPromotedToOwnerMessage = new RoomMemberPromotedToOwnerMessage();
-    RoomMemberPromotedToOwnerMessage actualPromotedByUserIdResult = actualRoomMemberPromotedToOwnerMessage
-        .promotedByUserId(1L);
-    RoomMemberPromotedToOwnerMessage actualPromotedUserIdResult = actualRoomMemberPromotedToOwnerMessage
-        .promotedUserId(1L);
+    RoomMemberPromotedToOwnerMessage actualRoomMemberPromotedToOwnerMessage =
+        new RoomMemberPromotedToOwnerMessage();
+    RoomMemberPromotedToOwnerMessage actualPromotedByUserIdResult =
+        actualRoomMemberPromotedToOwnerMessage.promotedByUserId(1L);
+    RoomMemberPromotedToOwnerMessage actualPromotedUserIdResult =
+        actualRoomMemberPromotedToOwnerMessage.promotedUserId(1L);
     actualRoomMemberPromotedToOwnerMessage.setPromotedByUserId(1L);
     actualRoomMemberPromotedToOwnerMessage.setPromotedUserId(1L);
     String actualToStringResult = actualRoomMemberPromotedToOwnerMessage.toString();
@@ -213,9 +263,18 @@ public class RoomMemberPromotedToOwnerMessageDiffblueTest {
     Long actualPromotedUserId = actualRoomMemberPromotedToOwnerMessage.getPromotedUserId();
 
     // Assert
-    assertEquals("class RoomMemberPromotedToOwnerMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    promotedByUserId: 1\n" + "    promotedUserId: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class RoomMemberPromotedToOwnerMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    promotedByUserId: 1\n"
+            + "    promotedUserId: 1\n"
+            + "}",
+        actualToStringResult);
     assertNull(actualRoomMemberPromotedToOwnerMessage.getId());
     assertNull(actualRoomMemberPromotedToOwnerMessage.getStreamId());
     assertNull(actualRoomMemberPromotedToOwnerMessage.getTimestamp());

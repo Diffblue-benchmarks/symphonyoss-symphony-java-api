@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.UserSystemInfo.StatusEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.pod.model.UserSystemInfo.StatusEnum;
 public class UserSystemInfoDiffblueTest {
   /**
    * Test {@link UserSystemInfo#equals(Object)}, and {@link UserSystemInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserSystemInfo#equals(Object)}
    *   <li>{@link UserSystemInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class UserSystemInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(userSystemInfo, userSystemInfo2);
-    int expectedHashCodeResult = userSystemInfo.hashCode();
-    assertEquals(expectedHashCodeResult, userSystemInfo2.hashCode());
+    assertEquals(userSystemInfo.hashCode(), userSystemInfo2.hashCode());
   }
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}, and {@link UserSystemInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserSystemInfo#equals(Object)}
    *   <li>{@link UserSystemInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,14 +68,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -78,14 +86,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -98,14 +108,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -118,14 +130,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -138,14 +152,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -158,14 +174,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -178,14 +196,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -198,14 +218,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -218,14 +240,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -234,14 +258,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test {@link UserSystemInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSystemInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSystemInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSystemInfo.equals(Object)", "int UserSystemInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -250,8 +276,9 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserSystemInfo}
    *   <li>{@link UserSystemInfo#createdBy(String)}
@@ -279,21 +306,37 @@ public class UserSystemInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserSystemInfo.<init>()", "UserSystemInfo UserSystemInfo.createdBy(String)",
-      "UserSystemInfo UserSystemInfo.createdDate(Long)", "String UserSystemInfo.getCreatedBy()",
-      "Long UserSystemInfo.getCreatedDate()", "Long UserSystemInfo.getId()", "Long UserSystemInfo.getLastLoginDate()",
-      "Long UserSystemInfo.getLastPasswordReset()", "Long UserSystemInfo.getLastUpdatedDate()",
-      "StatusEnum UserSystemInfo.getStatus()", "UserSystemInfo UserSystemInfo.id(Long)",
-      "UserSystemInfo UserSystemInfo.lastLoginDate(Long)", "UserSystemInfo UserSystemInfo.lastPasswordReset(Long)",
-      "UserSystemInfo UserSystemInfo.lastUpdatedDate(Long)", "void UserSystemInfo.setCreatedBy(String)",
-      "void UserSystemInfo.setCreatedDate(Long)", "void UserSystemInfo.setId(Long)",
-      "void UserSystemInfo.setLastLoginDate(Long)", "void UserSystemInfo.setLastPasswordReset(Long)",
-      "void UserSystemInfo.setLastUpdatedDate(Long)", "void UserSystemInfo.setStatus(StatusEnum)",
-      "UserSystemInfo UserSystemInfo.status(StatusEnum)", "String UserSystemInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserSystemInfo.<init>()",
+    "UserSystemInfo UserSystemInfo.createdBy(String)",
+    "UserSystemInfo UserSystemInfo.createdDate(Long)",
+    "String UserSystemInfo.getCreatedBy()",
+    "Long UserSystemInfo.getCreatedDate()",
+    "Long UserSystemInfo.getId()",
+    "Long UserSystemInfo.getLastLoginDate()",
+    "Long UserSystemInfo.getLastPasswordReset()",
+    "Long UserSystemInfo.getLastUpdatedDate()",
+    "StatusEnum UserSystemInfo.getStatus()",
+    "UserSystemInfo UserSystemInfo.id(Long)",
+    "UserSystemInfo UserSystemInfo.lastLoginDate(Long)",
+    "UserSystemInfo UserSystemInfo.lastPasswordReset(Long)",
+    "UserSystemInfo UserSystemInfo.lastUpdatedDate(Long)",
+    "void UserSystemInfo.setCreatedBy(String)",
+    "void UserSystemInfo.setCreatedDate(Long)",
+    "void UserSystemInfo.setId(Long)",
+    "void UserSystemInfo.setLastLoginDate(Long)",
+    "void UserSystemInfo.setLastPasswordReset(Long)",
+    "void UserSystemInfo.setLastUpdatedDate(Long)",
+    "void UserSystemInfo.setStatus(StatusEnum)",
+    "UserSystemInfo UserSystemInfo.status(StatusEnum)",
+    "String UserSystemInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserSystemInfo actualUserSystemInfo = new UserSystemInfo();
-    UserSystemInfo actualCreatedByResult = actualUserSystemInfo.createdBy("Jan 1, 2020 8:00am GMT+0100");
+    UserSystemInfo actualCreatedByResult =
+        actualUserSystemInfo.createdBy("Jan 1, 2020 8:00am GMT+0100");
     UserSystemInfo actualCreatedDateResult = actualUserSystemInfo.createdDate(1L);
     UserSystemInfo actualIdResult = actualUserSystemInfo.id(1L);
     UserSystemInfo actualLastLoginDateResult = actualUserSystemInfo.lastLoginDate(1L);
@@ -318,9 +361,17 @@ public class UserSystemInfoDiffblueTest {
 
     // Assert
     assertEquals("Jan 1, 2020 8:00am GMT+0100", actualCreatedBy);
-    assertEquals("class UserSystemInfo {\n" + "    id: 1\n" + "    status: ENABLED\n" + "    createdDate: 1\n"
-        + "    createdBy: Jan 1, 2020 8:00am GMT+0100\n" + "    lastUpdatedDate: 1\n" + "    lastLoginDate: 1\n"
-        + "    lastPasswordReset: 1\n" + "}", actualToStringResult);
+    assertEquals(
+        "class UserSystemInfo {\n"
+            + "    id: 1\n"
+            + "    status: ENABLED\n"
+            + "    createdDate: 1\n"
+            + "    createdBy: Jan 1, 2020 8:00am GMT+0100\n"
+            + "    lastUpdatedDate: 1\n"
+            + "    lastLoginDate: 1\n"
+            + "    lastPasswordReset: 1\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1L, actualCreatedDate.longValue());
     assertEquals(1L, actualId.longValue());
     assertEquals(1L, actualLastLoginDate.longValue());
@@ -338,14 +389,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code ENABLED}.</li>
-   *   <li>Then return {@code ENABLED}.</li>
+   *   <li>When {@code ENABLED}.
+   *   <li>Then return {@code ENABLED}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenEnabled_thenReturnEnabled() {
     // Arrange, Act and Assert
@@ -354,14 +407,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -370,14 +425,16 @@ public class UserSystemInfoDiffblueTest {
 
   /**
    * Test StatusEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StatusEnum#toString()}
    *   <li>{@link StatusEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String StatusEnum.getValue()", "String StatusEnum.toString()"})
   public void testStatusEnumGettersAndSetters() {
     // Arrange

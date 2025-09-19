@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.agent.model.ImportedMessage.FormatEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.agent.model.ImportedMessage.FormatEnum;
 public class ImportedMessageDiffblueTest {
   /**
    * Test {@link ImportedMessage#equals(Object)}, and {@link ImportedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ImportedMessage#equals(Object)}
    *   <li>{@link ImportedMessage#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class ImportedMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(importedMessage, importedMessage2);
-    int expectedHashCodeResult = importedMessage.hashCode();
-    assertEquals(expectedHashCodeResult, importedMessage2.hashCode());
+    assertEquals(importedMessage.hashCode(), importedMessage2.hashCode());
   }
 
   /**
    * Test {@link ImportedMessage#equals(Object)}, and {@link ImportedMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ImportedMessage#equals(Object)}
    *   <li>{@link ImportedMessage#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,14 +68,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -78,14 +86,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -98,14 +108,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -118,14 +130,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -138,14 +152,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -158,14 +174,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -178,14 +196,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -198,14 +218,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -214,14 +236,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test {@link ImportedMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ImportedMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link ImportedMessage#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean ImportedMessage.equals(Object)", "int ImportedMessage.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -230,14 +254,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -246,14 +272,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum {@link FormatEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code TEXT}.</li>
-   *   <li>Then return {@code TEXT}.</li>
+   *   <li>When {@code TEXT}.
+   *   <li>Then return {@code TEXT}.
    * </ul>
-   * <p>
-   * Method under test: {@link FormatEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link FormatEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"FormatEnum FormatEnum.fromValue(String)"})
   public void testFormatEnumFromValue_whenText_thenReturnText() {
     // Arrange, Act and Assert
@@ -262,14 +290,16 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test FormatEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link FormatEnum#toString()}
    *   <li>{@link FormatEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String FormatEnum.getValue()", "String FormatEnum.toString()"})
   public void testFormatEnumGettersAndSetters() {
     // Arrange
@@ -285,8 +315,9 @@ public class ImportedMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ImportedMessage}
    *   <li>{@link ImportedMessage#format(FormatEnum)}
@@ -311,25 +342,41 @@ public class ImportedMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ImportedMessage.<init>()", "ImportedMessage ImportedMessage.format(FormatEnum)",
-      "FormatEnum ImportedMessage.getFormat()", "Long ImportedMessage.getIntendedMessageFromUserId()",
-      "Long ImportedMessage.getIntendedMessageTimestamp()", "String ImportedMessage.getMessage()",
-      "String ImportedMessage.getOriginatingSystemId()", "String ImportedMessage.getStreamId()",
-      "ImportedMessage ImportedMessage.intendedMessageFromUserId(Long)",
-      "ImportedMessage ImportedMessage.intendedMessageTimestamp(Long)",
-      "ImportedMessage ImportedMessage.message(String)", "ImportedMessage ImportedMessage.originatingSystemId(String)",
-      "void ImportedMessage.setFormat(FormatEnum)", "void ImportedMessage.setIntendedMessageFromUserId(Long)",
-      "void ImportedMessage.setIntendedMessageTimestamp(Long)", "void ImportedMessage.setMessage(String)",
-      "void ImportedMessage.setOriginatingSystemId(String)", "void ImportedMessage.setStreamId(String)",
-      "ImportedMessage ImportedMessage.streamId(String)", "String ImportedMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ImportedMessage.<init>()",
+    "ImportedMessage ImportedMessage.format(FormatEnum)",
+    "FormatEnum ImportedMessage.getFormat()",
+    "Long ImportedMessage.getIntendedMessageFromUserId()",
+    "Long ImportedMessage.getIntendedMessageTimestamp()",
+    "String ImportedMessage.getMessage()",
+    "String ImportedMessage.getOriginatingSystemId()",
+    "String ImportedMessage.getStreamId()",
+    "ImportedMessage ImportedMessage.intendedMessageFromUserId(Long)",
+    "ImportedMessage ImportedMessage.intendedMessageTimestamp(Long)",
+    "ImportedMessage ImportedMessage.message(String)",
+    "ImportedMessage ImportedMessage.originatingSystemId(String)",
+    "void ImportedMessage.setFormat(FormatEnum)",
+    "void ImportedMessage.setIntendedMessageFromUserId(Long)",
+    "void ImportedMessage.setIntendedMessageTimestamp(Long)",
+    "void ImportedMessage.setMessage(String)",
+    "void ImportedMessage.setOriginatingSystemId(String)",
+    "void ImportedMessage.setStreamId(String)",
+    "ImportedMessage ImportedMessage.streamId(String)",
+    "String ImportedMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ImportedMessage actualImportedMessage = new ImportedMessage();
     ImportedMessage actualFormatResult = actualImportedMessage.format(FormatEnum.TEXT);
-    ImportedMessage actualIntendedMessageFromUserIdResult = actualImportedMessage.intendedMessageFromUserId(1L);
-    ImportedMessage actualIntendedMessageTimestampResult = actualImportedMessage.intendedMessageTimestamp(1L);
-    ImportedMessage actualMessageResult = actualImportedMessage.message("Not all who wander are lost");
-    ImportedMessage actualOriginatingSystemIdResult = actualImportedMessage.originatingSystemId("42");
+    ImportedMessage actualIntendedMessageFromUserIdResult =
+        actualImportedMessage.intendedMessageFromUserId(1L);
+    ImportedMessage actualIntendedMessageTimestampResult =
+        actualImportedMessage.intendedMessageTimestamp(1L);
+    ImportedMessage actualMessageResult =
+        actualImportedMessage.message("Not all who wander are lost");
+    ImportedMessage actualOriginatingSystemIdResult =
+        actualImportedMessage.originatingSystemId("42");
     actualImportedMessage.setFormat(FormatEnum.TEXT);
     actualImportedMessage.setIntendedMessageFromUserId(1L);
     actualImportedMessage.setIntendedMessageTimestamp(1L);
@@ -348,9 +395,16 @@ public class ImportedMessageDiffblueTest {
     assertEquals("42", actualOriginatingSystemId);
     assertEquals("42", actualImportedMessage.getStreamId());
     assertEquals("Not all who wander are lost", actualMessage);
-    assertEquals("class ImportedMessage {\n" + "    message: Not all who wander are lost\n" + "    format: TEXT\n"
-        + "    intendedMessageTimestamp: 1\n" + "    intendedMessageFromUserId: 1\n" + "    originatingSystemId: 42\n"
-        + "    streamId: 42\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ImportedMessage {\n"
+            + "    message: Not all who wander are lost\n"
+            + "    format: TEXT\n"
+            + "    intendedMessageTimestamp: 1\n"
+            + "    intendedMessageFromUserId: 1\n"
+            + "    originatingSystemId: 42\n"
+            + "    streamId: 42\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1L, actualIntendedMessageFromUserId.longValue());
     assertEquals(1L, actualIntendedMessageTimestamp.longValue());
     assertEquals(FormatEnum.TEXT, actualFormat);

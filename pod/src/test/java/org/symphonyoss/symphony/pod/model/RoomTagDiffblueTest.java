@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomTagDiffblueTest {
   /**
    * Test {@link RoomTag#equals(Object)}, and {@link RoomTag#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomTag#equals(Object)}
    *   <li>{@link RoomTag#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class RoomTagDiffblueTest {
 
     // Act and Assert
     assertEquals(roomTag, roomTag2);
-    int expectedHashCodeResult = roomTag.hashCode();
-    assertEquals(expectedHashCodeResult, roomTag2.hashCode());
+    assertEquals(roomTag.hashCode(), roomTag2.hashCode());
   }
 
   /**
    * Test {@link RoomTag#equals(Object)}, and {@link RoomTag#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomTag#equals(Object)}
    *   <li>{@link RoomTag#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test {@link RoomTag#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomTag#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomTag#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test {@link RoomTag#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomTag#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomTag#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test {@link RoomTag#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomTag#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomTag#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test {@link RoomTag#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomTag#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomTag#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test {@link RoomTag#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomTag#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomTag#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomTag.equals(Object)", "int RoomTag.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class RoomTagDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomTag}
    *   <li>{@link RoomTag#key(String)}
@@ -162,9 +179,17 @@ public class RoomTagDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomTag.<init>()", "String RoomTag.getKey()", "String RoomTag.getValue()",
-      "RoomTag RoomTag.key(String)", "void RoomTag.setKey(String)", "void RoomTag.setValue(String)",
-      "String RoomTag.toString()", "RoomTag RoomTag.value(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomTag.<init>()",
+    "String RoomTag.getKey()",
+    "String RoomTag.getValue()",
+    "RoomTag RoomTag.key(String)",
+    "void RoomTag.setKey(String)",
+    "void RoomTag.setValue(String)",
+    "String RoomTag.toString()",
+    "RoomTag RoomTag.value(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomTag actualRoomTag = new RoomTag();

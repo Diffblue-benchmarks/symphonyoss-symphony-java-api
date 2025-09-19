@@ -5,25 +5,32 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserLeftRoomMessageDiffblueTest {
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}, and {@link UserLeftRoomMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserLeftRoomMessage#equals(Object)}
    *   <li>{@link UserLeftRoomMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -31,25 +38,30 @@ public class UserLeftRoomMessageDiffblueTest {
 
     // Act and Assert
     assertEquals(userLeftRoomMessage, userLeftRoomMessage2);
-    int expectedHashCodeResult = userLeftRoomMessage.hashCode();
-    assertEquals(expectedHashCodeResult, userLeftRoomMessage2.hashCode());
+    assertEquals(userLeftRoomMessage.hashCode(), userLeftRoomMessage2.hashCode());
   }
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}, and {@link UserLeftRoomMessage#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserLeftRoomMessage#equals(Object)}
    *   <li>{@link UserLeftRoomMessage#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -62,15 +74,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserLeftRoomMessage(), 1);
@@ -78,15 +95,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -98,15 +120,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -118,15 +145,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -138,15 +170,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     UserLeftRoomMessage userLeftRoomMessage = new UserLeftRoomMessage();
@@ -158,15 +195,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserLeftRoomMessage(), null);
@@ -174,15 +216,20 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test {@link UserLeftRoomMessage#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserLeftRoomMessage#equals(Object)}
+   *
+   * <p>Method under test: {@link UserLeftRoomMessage#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserLeftRoomMessage.equals(Object)", "int UserLeftRoomMessage.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserLeftRoomMessage.equals(Object)",
+    "int UserLeftRoomMessage.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserLeftRoomMessage(), "Different type to UserLeftRoomMessage");
@@ -190,8 +237,9 @@ public class UserLeftRoomMessageDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserLeftRoomMessage}
    *   <li>{@link UserLeftRoomMessage#informationBarrierRemediation(Boolean)}
@@ -207,34 +255,50 @@ public class UserLeftRoomMessageDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserLeftRoomMessage.<init>()",
-      "Boolean UserLeftRoomMessage.getInformationBarrierRemediation()",
-      "Long UserLeftRoomMessage.getMemberLeftUserId()", "Long UserLeftRoomMessage.getRemovedByUserId()",
-      "UserLeftRoomMessage UserLeftRoomMessage.informationBarrierRemediation(Boolean)",
-      "UserLeftRoomMessage UserLeftRoomMessage.memberLeftUserId(Long)",
-      "UserLeftRoomMessage UserLeftRoomMessage.removedByUserId(Long)",
-      "void UserLeftRoomMessage.setInformationBarrierRemediation(Boolean)",
-      "void UserLeftRoomMessage.setMemberLeftUserId(Long)", "void UserLeftRoomMessage.setRemovedByUserId(Long)",
-      "String UserLeftRoomMessage.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserLeftRoomMessage.<init>()",
+    "Boolean UserLeftRoomMessage.getInformationBarrierRemediation()",
+    "Long UserLeftRoomMessage.getMemberLeftUserId()",
+    "Long UserLeftRoomMessage.getRemovedByUserId()",
+    "UserLeftRoomMessage UserLeftRoomMessage.informationBarrierRemediation(Boolean)",
+    "UserLeftRoomMessage UserLeftRoomMessage.memberLeftUserId(Long)",
+    "UserLeftRoomMessage UserLeftRoomMessage.removedByUserId(Long)",
+    "void UserLeftRoomMessage.setInformationBarrierRemediation(Boolean)",
+    "void UserLeftRoomMessage.setMemberLeftUserId(Long)",
+    "void UserLeftRoomMessage.setRemovedByUserId(Long)",
+    "String UserLeftRoomMessage.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserLeftRoomMessage actualUserLeftRoomMessage = new UserLeftRoomMessage();
-    UserLeftRoomMessage actualInformationBarrierRemediationResult = actualUserLeftRoomMessage
-        .informationBarrierRemediation(true);
-    UserLeftRoomMessage actualMemberLeftUserIdResult = actualUserLeftRoomMessage.memberLeftUserId(1L);
+    UserLeftRoomMessage actualInformationBarrierRemediationResult =
+        actualUserLeftRoomMessage.informationBarrierRemediation(true);
+    UserLeftRoomMessage actualMemberLeftUserIdResult =
+        actualUserLeftRoomMessage.memberLeftUserId(1L);
     actualUserLeftRoomMessage.setInformationBarrierRemediation(true);
     actualUserLeftRoomMessage.setMemberLeftUserId(1L);
     actualUserLeftRoomMessage.setRemovedByUserId(1L);
     UserLeftRoomMessage actualRemovedByUserIdResult = actualUserLeftRoomMessage.removedByUserId(1L);
     String actualToStringResult = actualUserLeftRoomMessage.toString();
-    Boolean actualInformationBarrierRemediation = actualUserLeftRoomMessage.getInformationBarrierRemediation();
+    Boolean actualInformationBarrierRemediation =
+        actualUserLeftRoomMessage.getInformationBarrierRemediation();
     Long actualMemberLeftUserId = actualUserLeftRoomMessage.getMemberLeftUserId();
     Long actualRemovedByUserId = actualUserLeftRoomMessage.getRemovedByUserId();
 
     // Assert
-    assertEquals("class UserLeftRoomMessage {\n" + "    class V2BaseMessage {\n" + "        id: null\n"
-        + "        timestamp: null\n" + "        v2messageType: null\n" + "        streamId: null\n" + "    }\n"
-        + "    removedByUserId: 1\n" + "    memberLeftUserId: 1\n" + "    informationBarrierRemediation: true\n" + "}",
+    assertEquals(
+        "class UserLeftRoomMessage {\n"
+            + "    class V2BaseMessage {\n"
+            + "        id: null\n"
+            + "        timestamp: null\n"
+            + "        v2messageType: null\n"
+            + "        streamId: null\n"
+            + "    }\n"
+            + "    removedByUserId: 1\n"
+            + "    memberLeftUserId: 1\n"
+            + "    informationBarrierRemediation: true\n"
+            + "}",
         actualToStringResult);
     assertNull(actualUserLeftRoomMessage.getId());
     assertNull(actualUserLeftRoomMessage.getStreamId());

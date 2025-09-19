@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,55 +15,69 @@ import org.symphonyoss.symphony.pod.model.BulkActionResult.OverallResultEnum;
 public class BulkActionResultDiffblueTest {
   /**
    * Test {@link BulkActionResult#addResultsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link BulkActionResult} (default constructor).</li>
+   *   <li>Given {@link BulkActionResult} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#addResultsItem(String)}
+   *
+   * <p>Method under test: {@link BulkActionResult#addResultsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"BulkActionResult BulkActionResult.addResultsItem(String)"})
   public void testAddResultsItem_givenBulkActionResult() {
     // Arrange
     BulkActionResult bulkActionResult = new BulkActionResult();
 
-    // Act and Assert
-    assertSame(bulkActionResult, bulkActionResult.addResultsItem("Results Item"));
+    // Act
+    BulkActionResult actualAddResultsItemResult = bulkActionResult.addResultsItem("Results Item");
+
+    // Assert
+    assertSame(bulkActionResult, actualAddResultsItemResult);
   }
 
   /**
    * Test {@link BulkActionResult#addResultsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link BulkActionResult} (default constructor) results {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link BulkActionResult} (default constructor) results {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#addResultsItem(String)}
+   *
+   * <p>Method under test: {@link BulkActionResult#addResultsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"BulkActionResult BulkActionResult.addResultsItem(String)"})
   public void testAddResultsItem_givenBulkActionResultResultsArrayList() {
     // Arrange
     BulkActionResult bulkActionResult = new BulkActionResult();
     bulkActionResult.results(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(bulkActionResult, bulkActionResult.addResultsItem("Results Item"));
+    // Act
+    BulkActionResult actualAddResultsItemResult = bulkActionResult.addResultsItem("Results Item");
+
+    // Assert
+    assertSame(bulkActionResult, actualAddResultsItemResult);
   }
 
   /**
    * Test {@link BulkActionResult#equals(Object)}, and {@link BulkActionResult#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link BulkActionResult#equals(Object)}
    *   <li>{@link BulkActionResult#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -71,24 +86,26 @@ public class BulkActionResultDiffblueTest {
 
     // Act and Assert
     assertEquals(bulkActionResult, bulkActionResult2);
-    int expectedHashCodeResult = bulkActionResult.hashCode();
-    assertEquals(expectedHashCodeResult, bulkActionResult2.hashCode());
+    assertEquals(bulkActionResult.hashCode(), bulkActionResult2.hashCode());
   }
 
   /**
    * Test {@link BulkActionResult#equals(Object)}, and {@link BulkActionResult#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link BulkActionResult#equals(Object)}
    *   <li>{@link BulkActionResult#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -102,14 +119,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test {@link BulkActionResult#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#equals(Object)}
+   *
+   * <p>Method under test: {@link BulkActionResult#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -122,14 +141,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test {@link BulkActionResult#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#equals(Object)}
+   *
+   * <p>Method under test: {@link BulkActionResult#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -143,14 +164,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test {@link BulkActionResult#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#equals(Object)}
+   *
+   * <p>Method under test: {@link BulkActionResult#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -159,14 +182,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test {@link BulkActionResult#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link BulkActionResult#equals(Object)}
+   *
+   * <p>Method under test: {@link BulkActionResult#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean BulkActionResult.equals(Object)", "int BulkActionResult.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -175,8 +200,9 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link BulkActionResult}
    *   <li>{@link BulkActionResult#overallResult(OverallResultEnum)}
@@ -189,14 +215,22 @@ public class BulkActionResultDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void BulkActionResult.<init>()", "OverallResultEnum BulkActionResult.getOverallResult()",
-      "List BulkActionResult.getResults()", "BulkActionResult BulkActionResult.overallResult(OverallResultEnum)",
-      "BulkActionResult BulkActionResult.results(List)", "void BulkActionResult.setOverallResult(OverallResultEnum)",
-      "void BulkActionResult.setResults(List)", "String BulkActionResult.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void BulkActionResult.<init>()",
+    "OverallResultEnum BulkActionResult.getOverallResult()",
+    "List BulkActionResult.getResults()",
+    "BulkActionResult BulkActionResult.overallResult(OverallResultEnum)",
+    "BulkActionResult BulkActionResult.results(List)",
+    "void BulkActionResult.setOverallResult(OverallResultEnum)",
+    "void BulkActionResult.setResults(List)",
+    "String BulkActionResult.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     BulkActionResult actualBulkActionResult = new BulkActionResult();
-    BulkActionResult actualOverallResultResult = actualBulkActionResult.overallResult(OverallResultEnum.SUCCESS);
+    BulkActionResult actualOverallResultResult =
+        actualBulkActionResult.overallResult(OverallResultEnum.SUCCESS);
     BulkActionResult actualResultsResult = actualBulkActionResult.results(new ArrayList<>());
     actualBulkActionResult.setOverallResult(OverallResultEnum.SUCCESS);
     ArrayList<String> results = new ArrayList<>();
@@ -206,7 +240,9 @@ public class BulkActionResultDiffblueTest {
     List<String> actualResults = actualBulkActionResult.getResults();
 
     // Assert
-    assertEquals("class BulkActionResult {\n    overallResult: SUCCESS\n    results: []\n}", actualToStringResult);
+    assertEquals(
+        "class BulkActionResult {\n    overallResult: SUCCESS\n    results: []\n}",
+        actualToStringResult);
     assertEquals(OverallResultEnum.SUCCESS, actualOverallResult);
     assertTrue(actualResults.isEmpty());
     assertSame(results, actualResults);
@@ -216,14 +252,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test OverallResultEnum {@link OverallResultEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code SUCCESS}.</li>
-   *   <li>Then return {@code SUCCESS}.</li>
+   *   <li>When {@code SUCCESS}.
+   *   <li>Then return {@code SUCCESS}.
    * </ul>
-   * <p>
-   * Method under test: {@link OverallResultEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link OverallResultEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"OverallResultEnum OverallResultEnum.fromValue(String)"})
   public void testOverallResultEnumFromValue_whenSuccess_thenReturnSuccess() {
     // Arrange, Act and Assert
@@ -232,14 +270,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test OverallResultEnum {@link OverallResultEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link OverallResultEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link OverallResultEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"OverallResultEnum OverallResultEnum.fromValue(String)"})
   public void testOverallResultEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -248,14 +288,16 @@ public class BulkActionResultDiffblueTest {
 
   /**
    * Test OverallResultEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link OverallResultEnum#toString()}
    *   <li>{@link OverallResultEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String OverallResultEnum.getValue()", "String OverallResultEnum.toString()"})
   public void testOverallResultEnumGettersAndSetters() {
     // Arrange

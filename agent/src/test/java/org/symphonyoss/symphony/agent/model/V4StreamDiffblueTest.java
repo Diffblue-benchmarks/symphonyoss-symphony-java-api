@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,68 @@ import org.junit.Test;
 public class V4StreamDiffblueTest {
   /**
    * Test {@link V4Stream#addMembersItem(V4User)}.
+   *
    * <ul>
-   *   <li>Given {@link V4Stream} (default constructor).</li>
+   *   <li>Given {@link V4Stream} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#addMembersItem(V4User)}
+   *
+   * <p>Method under test: {@link V4Stream#addMembersItem(V4User)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4Stream V4Stream.addMembersItem(V4User)"})
   public void testAddMembersItem_givenV4Stream() {
     // Arrange
     V4Stream v4Stream = new V4Stream();
 
-    // Act and Assert
-    assertSame(v4Stream, v4Stream.addMembersItem(new V4User()));
+    // Act
+    V4Stream actualAddMembersItemResult = v4Stream.addMembersItem(new V4User());
+
+    // Assert
+    assertSame(v4Stream, actualAddMembersItemResult);
   }
 
   /**
    * Test {@link V4Stream#addMembersItem(V4User)}.
+   *
    * <ul>
-   *   <li>Given {@link V4Stream} (default constructor) members {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V4Stream} (default constructor) members {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#addMembersItem(V4User)}
+   *
+   * <p>Method under test: {@link V4Stream#addMembersItem(V4User)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V4Stream V4Stream.addMembersItem(V4User)"})
   public void testAddMembersItem_givenV4StreamMembersArrayList() {
     // Arrange
     V4Stream v4Stream = new V4Stream();
     v4Stream.members(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v4Stream, v4Stream.addMembersItem(new V4User()));
+    // Act
+    V4Stream actualAddMembersItemResult = v4Stream.addMembersItem(new V4User());
+
+    // Assert
+    assertSame(v4Stream, actualAddMembersItemResult);
   }
 
   /**
    * Test {@link V4Stream#equals(Object)}, and {@link V4Stream#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Stream#equals(Object)}
    *   <li>{@link V4Stream#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +83,26 @@ public class V4StreamDiffblueTest {
 
     // Act and Assert
     assertEquals(v4Stream, v4Stream2);
-    int expectedHashCodeResult = v4Stream.hashCode();
-    assertEquals(expectedHashCodeResult, v4Stream2.hashCode());
+    assertEquals(v4Stream.hashCode(), v4Stream2.hashCode());
   }
 
   /**
    * Test {@link V4Stream#equals(Object)}, and {@link V4Stream#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4Stream#equals(Object)}
    *   <li>{@link V4Stream#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +116,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +138,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +161,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -162,14 +184,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -183,14 +207,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -203,14 +229,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -223,14 +251,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -239,14 +269,16 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test {@link V4Stream#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4Stream#equals(Object)}
+   *
+   * <p>Method under test: {@link V4Stream#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4Stream.equals(Object)", "int V4Stream.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -255,8 +287,9 @@ public class V4StreamDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4Stream}
    *   <li>{@link V4Stream#crossPod(Boolean)}
@@ -281,13 +314,29 @@ public class V4StreamDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4Stream.<init>()", "V4Stream V4Stream.crossPod(Boolean)",
-      "V4Stream V4Stream.external(Boolean)", "Boolean V4Stream.getCrossPod()", "Boolean V4Stream.getExternal()",
-      "List V4Stream.getMembers()", "String V4Stream.getRoomName()", "String V4Stream.getStreamId()",
-      "String V4Stream.getStreamType()", "V4Stream V4Stream.members(List)", "V4Stream V4Stream.roomName(String)",
-      "void V4Stream.setCrossPod(Boolean)", "void V4Stream.setExternal(Boolean)", "void V4Stream.setMembers(List)",
-      "void V4Stream.setRoomName(String)", "void V4Stream.setStreamId(String)", "void V4Stream.setStreamType(String)",
-      "V4Stream V4Stream.streamId(String)", "V4Stream V4Stream.streamType(String)", "String V4Stream.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4Stream.<init>()",
+    "V4Stream V4Stream.crossPod(Boolean)",
+    "V4Stream V4Stream.external(Boolean)",
+    "Boolean V4Stream.getCrossPod()",
+    "Boolean V4Stream.getExternal()",
+    "List V4Stream.getMembers()",
+    "String V4Stream.getRoomName()",
+    "String V4Stream.getStreamId()",
+    "String V4Stream.getStreamType()",
+    "V4Stream V4Stream.members(List)",
+    "V4Stream V4Stream.roomName(String)",
+    "void V4Stream.setCrossPod(Boolean)",
+    "void V4Stream.setExternal(Boolean)",
+    "void V4Stream.setMembers(List)",
+    "void V4Stream.setRoomName(String)",
+    "void V4Stream.setStreamId(String)",
+    "void V4Stream.setStreamType(String)",
+    "V4Stream V4Stream.streamId(String)",
+    "V4Stream V4Stream.streamType(String)",
+    "String V4Stream.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4Stream actualV4Stream = new V4Stream();
@@ -315,8 +364,15 @@ public class V4StreamDiffblueTest {
     assertEquals("42", actualStreamId);
     assertEquals("Room Name", actualRoomName);
     assertEquals("Stream Type", actualV4Stream.getStreamType());
-    assertEquals("class V4Stream {\n" + "    streamId: 42\n" + "    streamType: Stream Type\n"
-        + "    roomName: Room Name\n" + "    members: []\n" + "    external: true\n" + "    crossPod: true\n" + "}",
+    assertEquals(
+        "class V4Stream {\n"
+            + "    streamId: 42\n"
+            + "    streamType: Stream Type\n"
+            + "    roomName: Room Name\n"
+            + "    members: []\n"
+            + "    external: true\n"
+            + "    crossPod: true\n"
+            + "}",
         actualToStringResult);
     assertTrue(actualMembers.isEmpty());
     assertTrue(actualCrossPod);

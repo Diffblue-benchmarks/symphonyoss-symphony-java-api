@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,56 +13,75 @@ import org.junit.Test;
 public class ApplicationDetailDiffblueTest {
   /**
    * Test {@link ApplicationDetail#addPermissionsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link ApplicationDetail} (default constructor).</li>
+   *   <li>Given {@link ApplicationDetail} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#addPermissionsItem(String)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#addPermissionsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"ApplicationDetail ApplicationDetail.addPermissionsItem(String)"})
   public void testAddPermissionsItem_givenApplicationDetail() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
 
-    // Act and Assert
-    assertSame(applicationDetail, applicationDetail.addPermissionsItem("Permissions Item"));
+    // Act
+    ApplicationDetail actualAddPermissionsItemResult =
+        applicationDetail.addPermissionsItem("Permissions Item");
+
+    // Assert
+    assertSame(applicationDetail, actualAddPermissionsItemResult);
   }
 
   /**
    * Test {@link ApplicationDetail#addPermissionsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link ApplicationDetail} (default constructor) permissions {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link ApplicationDetail} (default constructor) permissions {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#addPermissionsItem(String)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#addPermissionsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"ApplicationDetail ApplicationDetail.addPermissionsItem(String)"})
   public void testAddPermissionsItem_givenApplicationDetailPermissionsArrayList() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
     applicationDetail.permissions(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(applicationDetail, applicationDetail.addPermissionsItem("Permissions Item"));
+    // Act
+    ApplicationDetail actualAddPermissionsItemResult =
+        applicationDetail.addPermissionsItem("Permissions Item");
+
+    // Assert
+    assertSame(applicationDetail, actualAddPermissionsItemResult);
   }
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}, and {@link ApplicationDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ApplicationDetail#equals(Object)}
    *   <li>{@link ApplicationDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -69,25 +89,30 @@ public class ApplicationDetailDiffblueTest {
 
     // Act and Assert
     assertEquals(applicationDetail, applicationDetail2);
-    int expectedHashCodeResult = applicationDetail.hashCode();
-    assertEquals(expectedHashCodeResult, applicationDetail2.hashCode());
+    assertEquals(applicationDetail.hashCode(), applicationDetail2.hashCode());
   }
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}, and {@link ApplicationDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ApplicationDetail#equals(Object)}
    *   <li>{@link ApplicationDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -100,15 +125,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -120,15 +150,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -141,15 +176,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -162,15 +202,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -183,15 +228,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -204,15 +254,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     ApplicationDetail applicationDetail = new ApplicationDetail();
@@ -224,15 +279,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ApplicationDetail(), null);
@@ -240,15 +300,20 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test {@link ApplicationDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link ApplicationDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link ApplicationDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean ApplicationDetail.equals(Object)", "int ApplicationDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean ApplicationDetail.equals(Object)",
+    "int ApplicationDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new ApplicationDetail(), "Different type to ApplicationDetail");
@@ -256,8 +321,9 @@ public class ApplicationDetailDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link ApplicationDetail}
    *   <li>{@link ApplicationDetail#allowOrigins(String)}
@@ -282,27 +348,43 @@ public class ApplicationDetailDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ApplicationDetail.<init>()", "ApplicationDetail ApplicationDetail.allowOrigins(String)",
-      "ApplicationDetail ApplicationDetail.applicationInfo(ApplicationInfo)",
-      "ApplicationDetail ApplicationDetail.cert(String)", "ApplicationDetail ApplicationDetail.description(String)",
-      "String ApplicationDetail.getAllowOrigins()", "ApplicationInfo ApplicationDetail.getApplicationInfo()",
-      "String ApplicationDetail.getCert()", "String ApplicationDetail.getDescription()",
-      "String ApplicationDetail.getIconUrl()", "List ApplicationDetail.getPermissions()",
-      "ApplicationDetail ApplicationDetail.iconUrl(String)", "ApplicationDetail ApplicationDetail.permissions(List)",
-      "void ApplicationDetail.setAllowOrigins(String)", "void ApplicationDetail.setApplicationInfo(ApplicationInfo)",
-      "void ApplicationDetail.setCert(String)", "void ApplicationDetail.setDescription(String)",
-      "void ApplicationDetail.setIconUrl(String)", "void ApplicationDetail.setPermissions(List)",
-      "String ApplicationDetail.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ApplicationDetail.<init>()",
+    "ApplicationDetail ApplicationDetail.allowOrigins(String)",
+    "ApplicationDetail ApplicationDetail.applicationInfo(ApplicationInfo)",
+    "ApplicationDetail ApplicationDetail.cert(String)",
+    "ApplicationDetail ApplicationDetail.description(String)",
+    "String ApplicationDetail.getAllowOrigins()",
+    "ApplicationInfo ApplicationDetail.getApplicationInfo()",
+    "String ApplicationDetail.getCert()",
+    "String ApplicationDetail.getDescription()",
+    "String ApplicationDetail.getIconUrl()",
+    "List ApplicationDetail.getPermissions()",
+    "ApplicationDetail ApplicationDetail.iconUrl(String)",
+    "ApplicationDetail ApplicationDetail.permissions(List)",
+    "void ApplicationDetail.setAllowOrigins(String)",
+    "void ApplicationDetail.setApplicationInfo(ApplicationInfo)",
+    "void ApplicationDetail.setCert(String)",
+    "void ApplicationDetail.setDescription(String)",
+    "void ApplicationDetail.setIconUrl(String)",
+    "void ApplicationDetail.setPermissions(List)",
+    "String ApplicationDetail.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ApplicationDetail actualApplicationDetail = new ApplicationDetail();
-    ApplicationDetail actualAllowOriginsResult = actualApplicationDetail.allowOrigins("Allow Origins");
-    ApplicationDetail actualApplicationInfoResult = actualApplicationDetail.applicationInfo(new ApplicationInfo());
+    ApplicationDetail actualAllowOriginsResult =
+        actualApplicationDetail.allowOrigins("Allow Origins");
+    ApplicationDetail actualApplicationInfoResult =
+        actualApplicationDetail.applicationInfo(new ApplicationInfo());
     ApplicationDetail actualCertResult = actualApplicationDetail.cert("Cert");
-    ApplicationDetail actualDescriptionResult = actualApplicationDetail
-        .description("The characteristics of someone or something");
-    ApplicationDetail actualIconUrlResult = actualApplicationDetail.iconUrl("https://example.org/example");
-    ApplicationDetail actualPermissionsResult = actualApplicationDetail.permissions(new ArrayList<>());
+    ApplicationDetail actualDescriptionResult =
+        actualApplicationDetail.description("The characteristics of someone or something");
+    ApplicationDetail actualIconUrlResult =
+        actualApplicationDetail.iconUrl("https://example.org/example");
+    ApplicationDetail actualPermissionsResult =
+        actualApplicationDetail.permissions(new ArrayList<>());
     actualApplicationDetail.setAllowOrigins("Allow Origins");
     ApplicationInfo applicationInfo = new ApplicationInfo();
     actualApplicationDetail.setApplicationInfo(applicationInfo);
@@ -323,11 +405,22 @@ public class ApplicationDetailDiffblueTest {
     assertEquals("Allow Origins", actualAllowOrigins);
     assertEquals("Cert", actualCert);
     assertEquals("The characteristics of someone or something", actualDescription);
-    assertEquals("class ApplicationDetail {\n" + "    applicationInfo: class ApplicationInfo {\n"
-        + "        appId: null\n" + "        name: null\n" + "        appUrl: null\n" + "        domain: null\n"
-        + "        publisher: null\n" + "    }\n" + "    iconUrl: https://example.org/example\n"
-        + "    description: The characteristics of someone or something\n" + "    allowOrigins: Allow Origins\n"
-        + "    permissions: []\n" + "    cert: Cert\n" + "}", actualToStringResult);
+    assertEquals(
+        "class ApplicationDetail {\n"
+            + "    applicationInfo: class ApplicationInfo {\n"
+            + "        appId: null\n"
+            + "        name: null\n"
+            + "        appUrl: null\n"
+            + "        domain: null\n"
+            + "        publisher: null\n"
+            + "    }\n"
+            + "    iconUrl: https://example.org/example\n"
+            + "    description: The characteristics of someone or something\n"
+            + "    allowOrigins: Allow Origins\n"
+            + "    permissions: []\n"
+            + "    cert: Cert\n"
+            + "}",
+        actualToStringResult);
     assertEquals("https://example.org/example", actualIconUrl);
     assertTrue(actualPermissions.isEmpty());
     assertSame(permissions, actualPermissions);

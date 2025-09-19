@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,55 +15,68 @@ import org.symphonyoss.symphony.pod.model.Policy.PolicyTypeEnum;
 public class PolicyDiffblueTest {
   /**
    * Test {@link Policy#addGroupsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link Policy} (default constructor).</li>
+   *   <li>Given {@link Policy} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#addGroupsItem(String)}
+   *
+   * <p>Method under test: {@link Policy#addGroupsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"Policy Policy.addGroupsItem(String)"})
   public void testAddGroupsItem_givenPolicy() {
     // Arrange
     Policy policy = new Policy();
 
-    // Act and Assert
-    assertSame(policy, policy.addGroupsItem("Groups Item"));
+    // Act
+    Policy actualAddGroupsItemResult = policy.addGroupsItem("Groups Item");
+
+    // Assert
+    assertSame(policy, actualAddGroupsItemResult);
   }
 
   /**
    * Test {@link Policy#addGroupsItem(String)}.
+   *
    * <ul>
-   *   <li>Given {@link Policy} (default constructor) groups {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link Policy} (default constructor) groups {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#addGroupsItem(String)}
+   *
+   * <p>Method under test: {@link Policy#addGroupsItem(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"Policy Policy.addGroupsItem(String)"})
   public void testAddGroupsItem_givenPolicyGroupsArrayList() {
     // Arrange
     Policy policy = new Policy();
     policy.groups(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(policy, policy.addGroupsItem("Groups Item"));
+    // Act
+    Policy actualAddGroupsItemResult = policy.addGroupsItem("Groups Item");
+
+    // Assert
+    assertSame(policy, actualAddGroupsItemResult);
   }
 
   /**
    * Test {@link Policy#equals(Object)}, and {@link Policy#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Policy#equals(Object)}
    *   <li>{@link Policy#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -71,24 +85,26 @@ public class PolicyDiffblueTest {
 
     // Act and Assert
     assertEquals(policy, policy2);
-    int expectedHashCodeResult = policy.hashCode();
-    assertEquals(expectedHashCodeResult, policy2.hashCode());
+    assertEquals(policy.hashCode(), policy2.hashCode());
   }
 
   /**
    * Test {@link Policy#equals(Object)}, and {@link Policy#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Policy#equals(Object)}
    *   <li>{@link Policy#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -102,14 +118,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -122,14 +140,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -143,14 +163,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -164,14 +186,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -185,14 +209,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -206,14 +232,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -226,14 +254,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -246,14 +276,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -262,14 +294,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test {@link Policy#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Policy#equals(Object)}
+   *
+   * <p>Method under test: {@link Policy#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Policy.equals(Object)", "int Policy.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -278,8 +312,9 @@ public class PolicyDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Policy}
    *   <li>{@link Policy#active(Boolean)}
@@ -307,14 +342,32 @@ public class PolicyDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Policy.<init>()", "Policy Policy.active(Boolean)", "Policy Policy.createdDate(Long)",
-      "Boolean Policy.getActive()", "Long Policy.getCreatedDate()", "List Policy.getGroups()", "String Policy.getId()",
-      "Integer Policy.getMemberCount()", "Long Policy.getModifiedDate()", "PolicyTypeEnum Policy.getPolicyType()",
-      "Policy Policy.groups(List)", "Policy Policy.id(String)", "Policy Policy.memberCount(Integer)",
-      "Policy Policy.modifiedDate(Long)", "Policy Policy.policyType(PolicyTypeEnum)", "void Policy.setActive(Boolean)",
-      "void Policy.setCreatedDate(Long)", "void Policy.setGroups(List)", "void Policy.setId(String)",
-      "void Policy.setMemberCount(Integer)", "void Policy.setModifiedDate(Long)",
-      "void Policy.setPolicyType(PolicyTypeEnum)", "String Policy.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Policy.<init>()",
+    "Policy Policy.active(Boolean)",
+    "Policy Policy.createdDate(Long)",
+    "Boolean Policy.getActive()",
+    "Long Policy.getCreatedDate()",
+    "List Policy.getGroups()",
+    "String Policy.getId()",
+    "Integer Policy.getMemberCount()",
+    "Long Policy.getModifiedDate()",
+    "PolicyTypeEnum Policy.getPolicyType()",
+    "Policy Policy.groups(List)",
+    "Policy Policy.id(String)",
+    "Policy Policy.memberCount(Integer)",
+    "Policy Policy.modifiedDate(Long)",
+    "Policy Policy.policyType(PolicyTypeEnum)",
+    "void Policy.setActive(Boolean)",
+    "void Policy.setCreatedDate(Long)",
+    "void Policy.setGroups(List)",
+    "void Policy.setId(String)",
+    "void Policy.setMemberCount(Integer)",
+    "void Policy.setModifiedDate(Long)",
+    "void Policy.setPolicyType(PolicyTypeEnum)",
+    "String Policy.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Policy actualPolicy = new Policy();
@@ -344,8 +397,16 @@ public class PolicyDiffblueTest {
 
     // Assert
     assertEquals("42", actualId);
-    assertEquals("class Policy {\n" + "    id: 42\n" + "    policyType: BLOCK\n" + "    active: true\n"
-        + "    memberCount: 3\n" + "    groups: []\n" + "    createdDate: 1\n" + "    modifiedDate: 1\n" + "}",
+    assertEquals(
+        "class Policy {\n"
+            + "    id: 42\n"
+            + "    policyType: BLOCK\n"
+            + "    active: true\n"
+            + "    memberCount: 3\n"
+            + "    groups: []\n"
+            + "    createdDate: 1\n"
+            + "    modifiedDate: 1\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualCreatedDate.longValue());
     assertEquals(1L, actualModifiedDate.longValue());
@@ -365,14 +426,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test PolicyTypeEnum {@link PolicyTypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code BLOCK}.</li>
-   *   <li>Then return {@code BLOCK}.</li>
+   *   <li>When {@code BLOCK}.
+   *   <li>Then return {@code BLOCK}.
    * </ul>
-   * <p>
-   * Method under test: {@link PolicyTypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link PolicyTypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"PolicyTypeEnum PolicyTypeEnum.fromValue(String)"})
   public void testPolicyTypeEnumFromValue_whenBlock_thenReturnBlock() {
     // Arrange, Act and Assert
@@ -381,14 +444,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test PolicyTypeEnum {@link PolicyTypeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link PolicyTypeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link PolicyTypeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"PolicyTypeEnum PolicyTypeEnum.fromValue(String)"})
   public void testPolicyTypeEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -397,14 +462,16 @@ public class PolicyDiffblueTest {
 
   /**
    * Test PolicyTypeEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link PolicyTypeEnum#toString()}
    *   <li>{@link PolicyTypeEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String PolicyTypeEnum.getValue()", "String PolicyTypeEnum.toString()"})
   public void testPolicyTypeEnumGettersAndSetters() {
     // Arrange

@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2PresenceDiffblueTest {
   /**
    * Test {@link V2Presence#equals(Object)}, and {@link V2Presence#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Presence#equals(Object)}
    *   <li>{@link V2Presence#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V2PresenceDiffblueTest {
 
     // Act and Assert
     assertEquals(v2Presence, v2Presence2);
-    int expectedHashCodeResult = v2Presence.hashCode();
-    assertEquals(expectedHashCodeResult, v2Presence2.hashCode());
+    assertEquals(v2Presence.hashCode(), v2Presence2.hashCode());
   }
 
   /**
    * Test {@link V2Presence#equals(Object)}, and {@link V2Presence#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Presence#equals(Object)}
    *   <li>{@link V2Presence#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -152,14 +168,16 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test {@link V2Presence#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Presence#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Presence#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Presence.equals(Object)", "int V2Presence.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -168,8 +186,9 @@ public class V2PresenceDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2Presence}
    *   <li>{@link V2Presence#category(String)}
@@ -185,10 +204,20 @@ public class V2PresenceDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2Presence.<init>()", "V2Presence V2Presence.category(String)",
-      "String V2Presence.getCategory()", "Long V2Presence.getTimestamp()", "Long V2Presence.getUserId()",
-      "void V2Presence.setCategory(String)", "void V2Presence.setTimestamp(Long)", "void V2Presence.setUserId(Long)",
-      "V2Presence V2Presence.timestamp(Long)", "String V2Presence.toString()", "V2Presence V2Presence.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2Presence.<init>()",
+    "V2Presence V2Presence.category(String)",
+    "String V2Presence.getCategory()",
+    "Long V2Presence.getTimestamp()",
+    "Long V2Presence.getUserId()",
+    "void V2Presence.setCategory(String)",
+    "void V2Presence.setTimestamp(Long)",
+    "void V2Presence.setUserId(Long)",
+    "V2Presence V2Presence.timestamp(Long)",
+    "String V2Presence.toString()",
+    "V2Presence V2Presence.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2Presence actualV2Presence = new V2Presence();
@@ -205,7 +234,8 @@ public class V2PresenceDiffblueTest {
 
     // Assert
     assertEquals("Category", actualCategory);
-    assertEquals("class V2Presence {\n    category: Category\n    userId: 1\n    timestamp: 10\n}",
+    assertEquals(
+        "class V2Presence {\n    category: Category\n    userId: 1\n    timestamp: 10\n}",
         actualToStringResult);
     assertEquals(10L, actualTimestamp.longValue());
     assertEquals(1L, actualUserId.longValue());

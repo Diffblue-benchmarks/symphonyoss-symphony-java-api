@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,56 +13,74 @@ import org.junit.Test;
 public class V2AdminStreamAttributesDiffblueTest {
   /**
    * Test {@link V2AdminStreamAttributes#addMembersItem(Long)}.
+   *
    * <ul>
-   *   <li>Given {@link V2AdminStreamAttributes} (default constructor).</li>
+   *   <li>Given {@link V2AdminStreamAttributes} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#addMembersItem(Long)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#addMembersItem(Long)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2AdminStreamAttributes V2AdminStreamAttributes.addMembersItem(Long)"})
   public void testAddMembersItem_givenV2AdminStreamAttributes() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
 
-    // Act and Assert
-    assertSame(v2AdminStreamAttributes, v2AdminStreamAttributes.addMembersItem(1L));
+    // Act
+    V2AdminStreamAttributes actualAddMembersItemResult = v2AdminStreamAttributes.addMembersItem(1L);
+
+    // Assert
+    assertSame(v2AdminStreamAttributes, actualAddMembersItemResult);
   }
 
   /**
    * Test {@link V2AdminStreamAttributes#addMembersItem(Long)}.
+   *
    * <ul>
-   *   <li>Given {@link V2AdminStreamAttributes} (default constructor) members {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V2AdminStreamAttributes} (default constructor) members {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#addMembersItem(Long)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#addMembersItem(Long)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2AdminStreamAttributes V2AdminStreamAttributes.addMembersItem(Long)"})
   public void testAddMembersItem_givenV2AdminStreamAttributesMembersArrayList() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
     v2AdminStreamAttributes.members(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v2AdminStreamAttributes, v2AdminStreamAttributes.addMembersItem(1L));
+    // Act
+    V2AdminStreamAttributes actualAddMembersItemResult = v2AdminStreamAttributes.addMembersItem(1L);
+
+    // Assert
+    assertSame(v2AdminStreamAttributes, actualAddMembersItemResult);
   }
 
   /**
-   * Test {@link V2AdminStreamAttributes#equals(Object)}, and {@link V2AdminStreamAttributes#hashCode()}.
+   * Test {@link V2AdminStreamAttributes#equals(Object)}, and {@link
+   * V2AdminStreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2AdminStreamAttributes#equals(Object)}
    *   <li>{@link V2AdminStreamAttributes#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -69,25 +88,31 @@ public class V2AdminStreamAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(v2AdminStreamAttributes, v2AdminStreamAttributes2);
-    int expectedHashCodeResult = v2AdminStreamAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, v2AdminStreamAttributes2.hashCode());
+    assertEquals(v2AdminStreamAttributes.hashCode(), v2AdminStreamAttributes2.hashCode());
   }
 
   /**
-   * Test {@link V2AdminStreamAttributes#equals(Object)}, and {@link V2AdminStreamAttributes#hashCode()}.
+   * Test {@link V2AdminStreamAttributes#equals(Object)}, and {@link
+   * V2AdminStreamAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2AdminStreamAttributes#equals(Object)}
    *   <li>{@link V2AdminStreamAttributes#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -100,15 +125,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -120,15 +150,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -141,15 +176,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -162,15 +202,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -182,15 +227,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -202,15 +252,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -222,15 +277,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -242,15 +302,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -262,15 +327,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -282,15 +352,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
     V2AdminStreamAttributes v2AdminStreamAttributes = new V2AdminStreamAttributes();
@@ -302,15 +377,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2AdminStreamAttributes(), null);
@@ -318,15 +398,20 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamAttributes#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamAttributes.equals(Object)", "int V2AdminStreamAttributes.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamAttributes.equals(Object)",
+    "int V2AdminStreamAttributes.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2AdminStreamAttributes(), "Different type to V2AdminStreamAttributes");
@@ -334,8 +419,9 @@ public class V2AdminStreamAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2AdminStreamAttributes}
    *   <li>{@link V2AdminStreamAttributes#createdByUserId(Long)}
@@ -372,43 +458,63 @@ public class V2AdminStreamAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2AdminStreamAttributes.<init>()",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.createdByUserId(Long)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.createdDate(Long)",
-      "Long V2AdminStreamAttributes.getCreatedByUserId()", "Long V2AdminStreamAttributes.getCreatedDate()",
-      "Long V2AdminStreamAttributes.getLastMessageDate()", "Long V2AdminStreamAttributes.getLastModifiedDate()",
-      "List V2AdminStreamAttributes.getMembers()", "Integer V2AdminStreamAttributes.getMembersCount()",
-      "String V2AdminStreamAttributes.getOriginCompany()", "Integer V2AdminStreamAttributes.getOriginCompanyId()",
-      "String V2AdminStreamAttributes.getRoomDescription()", "String V2AdminStreamAttributes.getRoomName()",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.lastMessageDate(Long)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.lastModifiedDate(Long)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.members(List)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.membersCount(Integer)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.originCompany(String)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.originCompanyId(Integer)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.roomDescription(String)",
-      "V2AdminStreamAttributes V2AdminStreamAttributes.roomName(String)",
-      "void V2AdminStreamAttributes.setCreatedByUserId(Long)", "void V2AdminStreamAttributes.setCreatedDate(Long)",
-      "void V2AdminStreamAttributes.setLastMessageDate(Long)", "void V2AdminStreamAttributes.setLastModifiedDate(Long)",
-      "void V2AdminStreamAttributes.setMembers(List)", "void V2AdminStreamAttributes.setMembersCount(Integer)",
-      "void V2AdminStreamAttributes.setOriginCompany(String)",
-      "void V2AdminStreamAttributes.setOriginCompanyId(Integer)",
-      "void V2AdminStreamAttributes.setRoomDescription(String)", "void V2AdminStreamAttributes.setRoomName(String)",
-      "String V2AdminStreamAttributes.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2AdminStreamAttributes.<init>()",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.createdByUserId(Long)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.createdDate(Long)",
+    "Long V2AdminStreamAttributes.getCreatedByUserId()",
+    "Long V2AdminStreamAttributes.getCreatedDate()",
+    "Long V2AdminStreamAttributes.getLastMessageDate()",
+    "Long V2AdminStreamAttributes.getLastModifiedDate()",
+    "List V2AdminStreamAttributes.getMembers()",
+    "Integer V2AdminStreamAttributes.getMembersCount()",
+    "String V2AdminStreamAttributes.getOriginCompany()",
+    "Integer V2AdminStreamAttributes.getOriginCompanyId()",
+    "String V2AdminStreamAttributes.getRoomDescription()",
+    "String V2AdminStreamAttributes.getRoomName()",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.lastMessageDate(Long)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.lastModifiedDate(Long)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.members(List)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.membersCount(Integer)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.originCompany(String)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.originCompanyId(Integer)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.roomDescription(String)",
+    "V2AdminStreamAttributes V2AdminStreamAttributes.roomName(String)",
+    "void V2AdminStreamAttributes.setCreatedByUserId(Long)",
+    "void V2AdminStreamAttributes.setCreatedDate(Long)",
+    "void V2AdminStreamAttributes.setLastMessageDate(Long)",
+    "void V2AdminStreamAttributes.setLastModifiedDate(Long)",
+    "void V2AdminStreamAttributes.setMembers(List)",
+    "void V2AdminStreamAttributes.setMembersCount(Integer)",
+    "void V2AdminStreamAttributes.setOriginCompany(String)",
+    "void V2AdminStreamAttributes.setOriginCompanyId(Integer)",
+    "void V2AdminStreamAttributes.setRoomDescription(String)",
+    "void V2AdminStreamAttributes.setRoomName(String)",
+    "String V2AdminStreamAttributes.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2AdminStreamAttributes actualV2AdminStreamAttributes = new V2AdminStreamAttributes();
-    V2AdminStreamAttributes actualCreatedByUserIdResult = actualV2AdminStreamAttributes.createdByUserId(1L);
+    V2AdminStreamAttributes actualCreatedByUserIdResult =
+        actualV2AdminStreamAttributes.createdByUserId(1L);
     V2AdminStreamAttributes actualCreatedDateResult = actualV2AdminStreamAttributes.createdDate(1L);
-    V2AdminStreamAttributes actualLastMessageDateResult = actualV2AdminStreamAttributes.lastMessageDate(1L);
-    V2AdminStreamAttributes actualLastModifiedDateResult = actualV2AdminStreamAttributes.lastModifiedDate(1L);
-    V2AdminStreamAttributes actualMembersResult = actualV2AdminStreamAttributes.members(new ArrayList<>());
-    V2AdminStreamAttributes actualMembersCountResult = actualV2AdminStreamAttributes.membersCount(3);
-    V2AdminStreamAttributes actualOriginCompanyResult = actualV2AdminStreamAttributes.originCompany("Origin Company");
-    V2AdminStreamAttributes actualOriginCompanyIdResult = actualV2AdminStreamAttributes.originCompanyId(1);
-    V2AdminStreamAttributes actualRoomDescriptionResult = actualV2AdminStreamAttributes
-        .roomDescription("Room Description");
-    V2AdminStreamAttributes actualRoomNameResult = actualV2AdminStreamAttributes.roomName("Room Name");
+    V2AdminStreamAttributes actualLastMessageDateResult =
+        actualV2AdminStreamAttributes.lastMessageDate(1L);
+    V2AdminStreamAttributes actualLastModifiedDateResult =
+        actualV2AdminStreamAttributes.lastModifiedDate(1L);
+    V2AdminStreamAttributes actualMembersResult =
+        actualV2AdminStreamAttributes.members(new ArrayList<>());
+    V2AdminStreamAttributes actualMembersCountResult =
+        actualV2AdminStreamAttributes.membersCount(3);
+    V2AdminStreamAttributes actualOriginCompanyResult =
+        actualV2AdminStreamAttributes.originCompany("Origin Company");
+    V2AdminStreamAttributes actualOriginCompanyIdResult =
+        actualV2AdminStreamAttributes.originCompanyId(1);
+    V2AdminStreamAttributes actualRoomDescriptionResult =
+        actualV2AdminStreamAttributes.roomDescription("Room Description");
+    V2AdminStreamAttributes actualRoomNameResult =
+        actualV2AdminStreamAttributes.roomName("Room Name");
     actualV2AdminStreamAttributes.setCreatedByUserId(1L);
     actualV2AdminStreamAttributes.setCreatedDate(1L);
     actualV2AdminStreamAttributes.setLastMessageDate(1L);
@@ -435,10 +541,19 @@ public class V2AdminStreamAttributesDiffblueTest {
     assertEquals("Origin Company", actualOriginCompany);
     assertEquals("Room Description", actualRoomDescription);
     assertEquals("Room Name", actualV2AdminStreamAttributes.getRoomName());
-    assertEquals("class V2AdminStreamAttributes {\n" + "    roomName: Room Name\n"
-        + "    roomDescription: Room Description\n" + "    members: []\n" + "    createdByUserId: 1\n"
-        + "    createdDate: 1\n" + "    lastModifiedDate: 1\n" + "    originCompany: Origin Company\n"
-        + "    originCompanyId: 1\n" + "    membersCount: 3\n" + "    lastMessageDate: 1\n" + "}",
+    assertEquals(
+        "class V2AdminStreamAttributes {\n"
+            + "    roomName: Room Name\n"
+            + "    roomDescription: Room Description\n"
+            + "    members: []\n"
+            + "    createdByUserId: 1\n"
+            + "    createdDate: 1\n"
+            + "    lastModifiedDate: 1\n"
+            + "    originCompany: Origin Company\n"
+            + "    originCompanyId: 1\n"
+            + "    membersCount: 3\n"
+            + "    lastMessageDate: 1\n"
+            + "}",
         actualToStringResult);
     assertEquals(1, actualOriginCompanyId.intValue());
     assertEquals(1L, actualCreatedByUserId.longValue());

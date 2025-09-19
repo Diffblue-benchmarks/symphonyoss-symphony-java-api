@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4SharedPostDiffblueTest {
   /**
    * Test {@link V4SharedPost#equals(Object)}, and {@link V4SharedPost#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4SharedPost#equals(Object)}
    *   <li>{@link V4SharedPost#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4SharedPostDiffblueTest {
 
     // Act and Assert
     assertEquals(v4SharedPost, v4SharedPost2);
-    int expectedHashCodeResult = v4SharedPost.hashCode();
-    assertEquals(expectedHashCodeResult, v4SharedPost2.hashCode());
+    assertEquals(v4SharedPost.hashCode(), v4SharedPost2.hashCode());
   }
 
   /**
    * Test {@link V4SharedPost#equals(Object)}, and {@link V4SharedPost#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4SharedPost#equals(Object)}
    *   <li>{@link V4SharedPost#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test {@link V4SharedPost#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4SharedPost#equals(Object)}
+   *
+   * <p>Method under test: {@link V4SharedPost#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test {@link V4SharedPost#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4SharedPost#equals(Object)}
+   *
+   * <p>Method under test: {@link V4SharedPost#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test {@link V4SharedPost#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4SharedPost#equals(Object)}
+   *
+   * <p>Method under test: {@link V4SharedPost#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test {@link V4SharedPost#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4SharedPost#equals(Object)}
+   *
+   * <p>Method under test: {@link V4SharedPost#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test {@link V4SharedPost#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4SharedPost#equals(Object)}
+   *
+   * <p>Method under test: {@link V4SharedPost#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4SharedPost.equals(Object)", "int V4SharedPost.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4SharedPostDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4SharedPost}
    *   <li>{@link V4SharedPost#message(V4Message)}
@@ -162,10 +179,17 @@ public class V4SharedPostDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4SharedPost.<init>()", "V4Message V4SharedPost.getMessage()",
-      "V4Message V4SharedPost.getSharedMessage()", "V4SharedPost V4SharedPost.message(V4Message)",
-      "void V4SharedPost.setMessage(V4Message)", "void V4SharedPost.setSharedMessage(V4Message)",
-      "V4SharedPost V4SharedPost.sharedMessage(V4Message)", "String V4SharedPost.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4SharedPost.<init>()",
+    "V4Message V4SharedPost.getMessage()",
+    "V4Message V4SharedPost.getSharedMessage()",
+    "V4SharedPost V4SharedPost.message(V4Message)",
+    "void V4SharedPost.setMessage(V4Message)",
+    "void V4SharedPost.setSharedMessage(V4Message)",
+    "V4SharedPost V4SharedPost.sharedMessage(V4Message)",
+    "String V4SharedPost.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4SharedPost actualV4SharedPost = new V4SharedPost();
@@ -179,14 +203,32 @@ public class V4SharedPostDiffblueTest {
     V4Message actualMessage = actualV4SharedPost.getMessage();
 
     // Assert
-    assertEquals("class V4SharedPost {\n" + "    message: class V4Message {\n" + "        messageId: null\n"
-        + "        timestamp: null\n" + "        message: null\n" + "        data: null\n"
-        + "        attachments: null\n" + "        user: null\n" + "        stream: null\n"
-        + "        externalRecipients: null\n" + "        diagnostic: null\n" + "    }\n"
-        + "    sharedMessage: class V4Message {\n" + "        messageId: null\n" + "        timestamp: null\n"
-        + "        message: null\n" + "        data: null\n" + "        attachments: null\n" + "        user: null\n"
-        + "        stream: null\n" + "        externalRecipients: null\n" + "        diagnostic: null\n" + "    }\n"
-        + "}", actualToStringResult);
+    assertEquals(
+        "class V4SharedPost {\n"
+            + "    message: class V4Message {\n"
+            + "        messageId: null\n"
+            + "        timestamp: null\n"
+            + "        message: null\n"
+            + "        data: null\n"
+            + "        attachments: null\n"
+            + "        user: null\n"
+            + "        stream: null\n"
+            + "        externalRecipients: null\n"
+            + "        diagnostic: null\n"
+            + "    }\n"
+            + "    sharedMessage: class V4Message {\n"
+            + "        messageId: null\n"
+            + "        timestamp: null\n"
+            + "        message: null\n"
+            + "        data: null\n"
+            + "        attachments: null\n"
+            + "        user: null\n"
+            + "        stream: null\n"
+            + "        externalRecipients: null\n"
+            + "        diagnostic: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(message, actualMessage);
     assertSame(sharedMessage, actualV4SharedPost.getSharedMessage());
     assertSame(actualV4SharedPost, actualMessageResult);

@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,69 @@ import org.junit.Test;
 public class V2RoomAttributesDiffblueTest {
   /**
    * Test {@link V2RoomAttributes#addKeywordsItem(RoomTag)}.
+   *
    * <ul>
-   *   <li>Given {@link V2RoomAttributes} (default constructor).</li>
+   *   <li>Given {@link V2RoomAttributes} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#addKeywordsItem(RoomTag)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#addKeywordsItem(RoomTag)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2RoomAttributes V2RoomAttributes.addKeywordsItem(RoomTag)"})
   public void testAddKeywordsItem_givenV2RoomAttributes() {
     // Arrange
     V2RoomAttributes v2RoomAttributes = new V2RoomAttributes();
 
-    // Act and Assert
-    assertSame(v2RoomAttributes, v2RoomAttributes.addKeywordsItem(new RoomTag()));
+    // Act
+    V2RoomAttributes actualAddKeywordsItemResult = v2RoomAttributes.addKeywordsItem(new RoomTag());
+
+    // Assert
+    assertSame(v2RoomAttributes, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link V2RoomAttributes#addKeywordsItem(RoomTag)}.
+   *
    * <ul>
-   *   <li>Given {@link V2RoomAttributes} (default constructor) keywords {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V2RoomAttributes} (default constructor) keywords {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#addKeywordsItem(RoomTag)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#addKeywordsItem(RoomTag)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V2RoomAttributes V2RoomAttributes.addKeywordsItem(RoomTag)"})
   public void testAddKeywordsItem_givenV2RoomAttributesKeywordsArrayList() {
     // Arrange
     V2RoomAttributes v2RoomAttributes = new V2RoomAttributes();
     v2RoomAttributes.keywords(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v2RoomAttributes, v2RoomAttributes.addKeywordsItem(new RoomTag()));
+    // Act
+    V2RoomAttributes actualAddKeywordsItemResult = v2RoomAttributes.addKeywordsItem(new RoomTag());
+
+    // Assert
+    assertSame(v2RoomAttributes, actualAddKeywordsItemResult);
   }
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}, and {@link V2RoomAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2RoomAttributes#equals(Object)}
    *   <li>{@link V2RoomAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +84,26 @@ public class V2RoomAttributesDiffblueTest {
 
     // Act and Assert
     assertEquals(v2RoomAttributes, v2RoomAttributes2);
-    int expectedHashCodeResult = v2RoomAttributes.hashCode();
-    assertEquals(expectedHashCodeResult, v2RoomAttributes2.hashCode());
+    assertEquals(v2RoomAttributes.hashCode(), v2RoomAttributes2.hashCode());
   }
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}, and {@link V2RoomAttributes#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2RoomAttributes#equals(Object)}
    *   <li>{@link V2RoomAttributes#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +117,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +139,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -141,14 +162,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -161,14 +184,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -181,14 +206,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -201,14 +228,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -221,14 +250,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -241,14 +272,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -261,14 +294,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -277,14 +312,16 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test {@link V2RoomAttributes#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2RoomAttributes#equals(Object)}
+   *
+   * <p>Method under test: {@link V2RoomAttributes#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2RoomAttributes.equals(Object)", "int V2RoomAttributes.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -293,8 +330,9 @@ public class V2RoomAttributesDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2RoomAttributes}
    *   <li>{@link V2RoomAttributes#_public(Boolean)}
@@ -325,27 +363,42 @@ public class V2RoomAttributesDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2RoomAttributes.<init>()", "V2RoomAttributes V2RoomAttributes._public(Boolean)",
-      "V2RoomAttributes V2RoomAttributes.copyProtected(Boolean)",
-      "V2RoomAttributes V2RoomAttributes.description(String)",
-      "V2RoomAttributes V2RoomAttributes.discoverable(Boolean)", "Boolean V2RoomAttributes.getCopyProtected()",
-      "String V2RoomAttributes.getDescription()", "Boolean V2RoomAttributes.getDiscoverable()",
-      "List V2RoomAttributes.getKeywords()", "Boolean V2RoomAttributes.getMembersCanInvite()",
-      "String V2RoomAttributes.getName()", "Boolean V2RoomAttributes.getPublic()",
-      "Boolean V2RoomAttributes.getReadOnly()", "V2RoomAttributes V2RoomAttributes.keywords(List)",
-      "V2RoomAttributes V2RoomAttributes.membersCanInvite(Boolean)", "V2RoomAttributes V2RoomAttributes.name(String)",
-      "V2RoomAttributes V2RoomAttributes.readOnly(Boolean)", "void V2RoomAttributes.setCopyProtected(Boolean)",
-      "void V2RoomAttributes.setDescription(String)", "void V2RoomAttributes.setDiscoverable(Boolean)",
-      "void V2RoomAttributes.setKeywords(List)", "void V2RoomAttributes.setMembersCanInvite(Boolean)",
-      "void V2RoomAttributes.setName(String)", "void V2RoomAttributes.setPublic(Boolean)",
-      "void V2RoomAttributes.setReadOnly(Boolean)", "String V2RoomAttributes.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2RoomAttributes.<init>()",
+    "V2RoomAttributes V2RoomAttributes._public(Boolean)",
+    "V2RoomAttributes V2RoomAttributes.copyProtected(Boolean)",
+    "V2RoomAttributes V2RoomAttributes.description(String)",
+    "V2RoomAttributes V2RoomAttributes.discoverable(Boolean)",
+    "Boolean V2RoomAttributes.getCopyProtected()",
+    "String V2RoomAttributes.getDescription()",
+    "Boolean V2RoomAttributes.getDiscoverable()",
+    "List V2RoomAttributes.getKeywords()",
+    "Boolean V2RoomAttributes.getMembersCanInvite()",
+    "String V2RoomAttributes.getName()",
+    "Boolean V2RoomAttributes.getPublic()",
+    "Boolean V2RoomAttributes.getReadOnly()",
+    "V2RoomAttributes V2RoomAttributes.keywords(List)",
+    "V2RoomAttributes V2RoomAttributes.membersCanInvite(Boolean)",
+    "V2RoomAttributes V2RoomAttributes.name(String)",
+    "V2RoomAttributes V2RoomAttributes.readOnly(Boolean)",
+    "void V2RoomAttributes.setCopyProtected(Boolean)",
+    "void V2RoomAttributes.setDescription(String)",
+    "void V2RoomAttributes.setDiscoverable(Boolean)",
+    "void V2RoomAttributes.setKeywords(List)",
+    "void V2RoomAttributes.setMembersCanInvite(Boolean)",
+    "void V2RoomAttributes.setName(String)",
+    "void V2RoomAttributes.setPublic(Boolean)",
+    "void V2RoomAttributes.setReadOnly(Boolean)",
+    "String V2RoomAttributes.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2RoomAttributes actualV2RoomAttributes = new V2RoomAttributes();
     V2RoomAttributes actual_publicResult = actualV2RoomAttributes._public(true);
     V2RoomAttributes actualCopyProtectedResult = actualV2RoomAttributes.copyProtected(true);
-    V2RoomAttributes actualDescriptionResult = actualV2RoomAttributes
-        .description("The characteristics of someone or something");
+    V2RoomAttributes actualDescriptionResult =
+        actualV2RoomAttributes.description("The characteristics of someone or something");
     V2RoomAttributes actualDiscoverableResult = actualV2RoomAttributes.discoverable(true);
     V2RoomAttributes actualKeywordsResult = actualV2RoomAttributes.keywords(new ArrayList<>());
     V2RoomAttributes actualMembersCanInviteResult = actualV2RoomAttributes.membersCanInvite(true);
@@ -373,10 +426,18 @@ public class V2RoomAttributesDiffblueTest {
     // Assert
     assertEquals("Name", actualName);
     assertEquals("The characteristics of someone or something", actualDescription);
-    assertEquals("class V2RoomAttributes {\n" + "    name: Name\n" + "    keywords: []\n"
-        + "    description: The characteristics of someone or something\n" + "    membersCanInvite: true\n"
-        + "    discoverable: true\n" + "    _public: true\n" + "    readOnly: true\n" + "    copyProtected: true\n"
-        + "}", actualToStringResult);
+    assertEquals(
+        "class V2RoomAttributes {\n"
+            + "    name: Name\n"
+            + "    keywords: []\n"
+            + "    description: The characteristics of someone or something\n"
+            + "    membersCanInvite: true\n"
+            + "    discoverable: true\n"
+            + "    _public: true\n"
+            + "    readOnly: true\n"
+            + "    copyProtected: true\n"
+            + "}",
+        actualToStringResult);
     assertTrue(actualKeywords.isEmpty());
     assertTrue(actualCopyProtected);
     assertTrue(actualDiscoverable);

@@ -3,25 +3,32 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2AdminStreamListDiffblueTest {
   /**
    * Test {@link V2AdminStreamList#equals(Object)}, and {@link V2AdminStreamList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2AdminStreamList#equals(Object)}
    *   <li>{@link V2AdminStreamList#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -29,25 +36,30 @@ public class V2AdminStreamListDiffblueTest {
 
     // Act and Assert
     assertEquals(v2AdminStreamList, v2AdminStreamList2);
-    int expectedHashCodeResult = v2AdminStreamList.hashCode();
-    assertEquals(expectedHashCodeResult, v2AdminStreamList2.hashCode());
+    assertEquals(v2AdminStreamList.hashCode(), v2AdminStreamList2.hashCode());
   }
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}, and {@link V2AdminStreamList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2AdminStreamList#equals(Object)}
    *   <li>{@link V2AdminStreamList#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -60,15 +72,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2AdminStreamList(), 1);
@@ -76,15 +93,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -96,15 +118,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -116,15 +143,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -136,15 +168,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -156,15 +193,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     V2AdminStreamList v2AdminStreamList = new V2AdminStreamList();
@@ -176,15 +218,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2AdminStreamList(), null);
@@ -192,15 +239,20 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test {@link V2AdminStreamList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2AdminStreamList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2AdminStreamList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2AdminStreamList.equals(Object)", "int V2AdminStreamList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2AdminStreamList.equals(Object)",
+    "int V2AdminStreamList.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2AdminStreamList(), "Different type to V2AdminStreamList");
@@ -208,8 +260,9 @@ public class V2AdminStreamListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2AdminStreamList}
    *   <li>{@link V2AdminStreamList#count(Long)}
@@ -231,15 +284,26 @@ public class V2AdminStreamListDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2AdminStreamList.<init>()", "V2AdminStreamList V2AdminStreamList.count(Long)",
-      "V2AdminStreamList V2AdminStreamList.filter(AdminStreamFilter)", "Long V2AdminStreamList.getCount()",
-      "AdminStreamFilter V2AdminStreamList.getFilter()", "Integer V2AdminStreamList.getLimit()",
-      "Integer V2AdminStreamList.getSkip()", "V2AdminStreamInfoList V2AdminStreamList.getStreams()",
-      "V2AdminStreamList V2AdminStreamList.limit(Integer)", "void V2AdminStreamList.setCount(Long)",
-      "void V2AdminStreamList.setFilter(AdminStreamFilter)", "void V2AdminStreamList.setLimit(Integer)",
-      "void V2AdminStreamList.setSkip(Integer)", "void V2AdminStreamList.setStreams(V2AdminStreamInfoList)",
-      "V2AdminStreamList V2AdminStreamList.skip(Integer)",
-      "V2AdminStreamList V2AdminStreamList.streams(V2AdminStreamInfoList)", "String V2AdminStreamList.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2AdminStreamList.<init>()",
+    "V2AdminStreamList V2AdminStreamList.count(Long)",
+    "V2AdminStreamList V2AdminStreamList.filter(AdminStreamFilter)",
+    "Long V2AdminStreamList.getCount()",
+    "AdminStreamFilter V2AdminStreamList.getFilter()",
+    "Integer V2AdminStreamList.getLimit()",
+    "Integer V2AdminStreamList.getSkip()",
+    "V2AdminStreamInfoList V2AdminStreamList.getStreams()",
+    "V2AdminStreamList V2AdminStreamList.limit(Integer)",
+    "void V2AdminStreamList.setCount(Long)",
+    "void V2AdminStreamList.setFilter(AdminStreamFilter)",
+    "void V2AdminStreamList.setLimit(Integer)",
+    "void V2AdminStreamList.setSkip(Integer)",
+    "void V2AdminStreamList.setStreams(V2AdminStreamInfoList)",
+    "V2AdminStreamList V2AdminStreamList.skip(Integer)",
+    "V2AdminStreamList V2AdminStreamList.streams(V2AdminStreamInfoList)",
+    "String V2AdminStreamList.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2AdminStreamList actualV2AdminStreamList = new V2AdminStreamList();
@@ -263,11 +327,25 @@ public class V2AdminStreamListDiffblueTest {
     V2AdminStreamInfoList actualStreams = actualV2AdminStreamList.getStreams();
 
     // Assert
-    assertEquals("class V2AdminStreamList {\n" + "    count: 3\n" + "    skip: 1\n" + "    limit: 1\n"
-        + "    filter: class AdminStreamFilter {\n" + "        streamTypes: null\n" + "        scope: null\n"
-        + "        origin: null\n" + "        status: null\n" + "        privacy: null\n" + "        startDate: null\n"
-        + "        endDate: null\n" + "    }\n" + "    streams: class V2AdminStreamInfoList {\n" + "        []\n"
-        + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V2AdminStreamList {\n"
+            + "    count: 3\n"
+            + "    skip: 1\n"
+            + "    limit: 1\n"
+            + "    filter: class AdminStreamFilter {\n"
+            + "        streamTypes: null\n"
+            + "        scope: null\n"
+            + "        origin: null\n"
+            + "        status: null\n"
+            + "        privacy: null\n"
+            + "        startDate: null\n"
+            + "        endDate: null\n"
+            + "    }\n"
+            + "    streams: class V2AdminStreamInfoList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1, actualLimit.intValue());
     assertEquals(1, actualSkip.intValue());
     assertEquals(3L, actualCount.longValue());

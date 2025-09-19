@@ -2,6 +2,7 @@ package org.symphonyoss.symphony.pod.invoker.auth;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,10 +14,11 @@ import org.symphonyoss.symphony.pod.invoker.Pair;
 public class ApiKeyAuthDiffblueTest {
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams() {
     // Arrange
@@ -36,10 +38,11 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams2() {
     // Arrange
@@ -59,13 +62,16 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Given {@link ApiKeyAuth#ApiKeyAuth(String, String)} with {@code Location} and {@code Param Name} ApiKey is {@code Api Key}.</li>
+   *   <li>Given {@link ApiKeyAuth#ApiKeyAuth(String, String)} with {@code Location} and {@code
+   *       Param Name} ApiKey is {@code Api Key}.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams_givenApiKeyAuthWithLocationAndParamNameApiKeyIsApiKey() {
     // Arrange
@@ -84,14 +90,17 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Given {@link ApiKeyAuth#ApiKeyAuth(String, String)} with {@code Location} and {@code Param Name}.</li>
-   *   <li>Then {@link HashMap#HashMap()} Empty.</li>
+   *   <li>Given {@link ApiKeyAuth#ApiKeyAuth(String, String)} with {@code Location} and {@code
+   *       Param Name}.
+   *   <li>Then {@link HashMap#HashMap()} Empty.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams_givenApiKeyAuthWithLocationAndParamName_thenHashMapEmpty() {
     // Arrange
@@ -109,15 +118,52 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Given {@link ApiKeyAuth#ApiKeyAuth(String, String)} with location is {@code query} and {@code Param Name} ApiKey is {@code Api Key}.</li>
+   *   <li>Given {@link Pair#Pair(String, String)} with name is {@code query} and value is {@code
+   *       42}.
+   *   <li>Then {@link ArrayList#ArrayList()} size is two.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
-  public void testApplyToParams_givenApiKeyAuthWithLocationIsQueryAndParamNameApiKeyIsApiKey() {
+  public void testApplyToParams_givenPairWithNameIsQueryAndValueIs42_thenArrayListSizeIsTwo() {
+    // Arrange
+    ApiKeyAuth apiKeyAuth = new ApiKeyAuth("query", "Param Name");
+    apiKeyAuth.setApiKey("Api Key");
+
+    ArrayList<Pair> queryParams = new ArrayList<>();
+    queryParams.add(new Pair("query", "42"));
+
+    // Act
+    apiKeyAuth.applyToParams(queryParams, new HashMap<>());
+
+    // Assert
+    assertEquals(2, queryParams.size());
+    Pair getResult = queryParams.get(0);
+    assertEquals("42", getResult.getValue());
+    Pair getResult2 = queryParams.get(1);
+    assertEquals("Api Key", getResult2.getValue());
+    assertEquals("Param Name", getResult2.getName());
+    assertEquals("query", getResult.getName());
+  }
+
+  /**
+   * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
+   * <ul>
+   *   <li>Then {@link ArrayList#ArrayList()} first Value is {@code Api Key}.
+   * </ul>
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   */
+  @Test
+  @ManagedByDiffblue
+  @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
+  public void testApplyToParams_thenArrayListFirstValueIsApiKey() {
     // Arrange
     ApiKeyAuth apiKeyAuth = new ApiKeyAuth("query", "Param Name");
     apiKeyAuth.setApiKey("Api Key");
@@ -135,70 +181,15 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Given {@link Pair#Pair(String, String)} with {@code Name} and value is {@code 42}.</li>
-   *   <li>Then {@link ArrayList#ArrayList()} first Value is {@code 42}.</li>
+   *   <li>Then {@link ArrayList#ArrayList()} first Value is empty string.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
-  @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
-  public void testApplyToParams_givenPairWithNameAndValueIs42_thenArrayListFirstValueIs42() {
-    // Arrange
-    ApiKeyAuth apiKeyAuth = new ApiKeyAuth("Location", "Param Name");
-
-    ArrayList<Pair> queryParams = new ArrayList<>();
-    queryParams.add(new Pair("Name", "42"));
-
-    // Act
-    apiKeyAuth.applyToParams(queryParams, new HashMap<>());
-
-    // Assert that nothing has changed
-    assertEquals(1, queryParams.size());
-    Pair getResult = queryParams.get(0);
-    assertEquals("42", getResult.getValue());
-    assertEquals("Name", getResult.getName());
-  }
-
-  /**
-   * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
-   * <ul>
-   *   <li>Given {@link Pair#Pair(String, String)} with {@code Name} and value is {@code 42}.</li>
-   *   <li>Then {@link ArrayList#ArrayList()} size is two.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
-   */
-  @Test
-  @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
-  public void testApplyToParams_givenPairWithNameAndValueIs42_thenArrayListSizeIsTwo() {
-    // Arrange
-    ApiKeyAuth apiKeyAuth = new ApiKeyAuth("Location", "Param Name");
-
-    ArrayList<Pair> queryParams = new ArrayList<>();
-    queryParams.add(new Pair("Name", "42"));
-    queryParams.add(new Pair("Name", "42"));
-
-    // Act
-    apiKeyAuth.applyToParams(queryParams, new HashMap<>());
-
-    // Assert that nothing has changed
-    assertEquals(2, queryParams.size());
-    Pair getResult = queryParams.get(0);
-    assertEquals("42", getResult.getValue());
-    assertEquals("Name", getResult.getName());
-  }
-
-  /**
-   * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
-   * <ul>
-   *   <li>Then {@link ArrayList#ArrayList()} first Value is empty string.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
-   */
-  @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams_thenArrayListFirstValueIsEmptyString() {
     // Arrange
@@ -218,13 +209,15 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Then {@link ArrayList#ArrayList()} first Value is {@code query Api Key}.</li>
+   *   <li>Then {@link ArrayList#ArrayList()} first Value is {@code query Api Key}.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams_thenArrayListFirstValueIsQueryApiKey() {
     // Arrange
@@ -245,13 +238,15 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test {@link ApiKeyAuth#applyToParams(List, Map)}.
+   *
    * <ul>
-   *   <li>Then {@link HashMap#HashMap()} size is one.</li>
+   *   <li>Then {@link HashMap#HashMap()} size is one.
    * </ul>
-   * <p>
-   * Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
+   *
+   * <p>Method under test: {@link ApiKeyAuth#applyToParams(List, Map)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"void ApiKeyAuth.applyToParams(List, Map)"})
   public void testApplyToParams_thenHashMapSizeIsOne() {
     // Arrange
@@ -271,8 +266,9 @@ public class ApiKeyAuthDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ApiKeyAuth#ApiKeyAuth(String, String)}
    *   <li>{@link ApiKeyAuth#setApiKey(String)}
@@ -284,9 +280,16 @@ public class ApiKeyAuthDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void ApiKeyAuth.<init>(String, String)", "String ApiKeyAuth.getApiKey()",
-      "String ApiKeyAuth.getApiKeyPrefix()", "String ApiKeyAuth.getLocation()", "String ApiKeyAuth.getParamName()",
-      "void ApiKeyAuth.setApiKey(String)", "void ApiKeyAuth.setApiKeyPrefix(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void ApiKeyAuth.<init>(String, String)",
+    "String ApiKeyAuth.getApiKey()",
+    "String ApiKeyAuth.getApiKeyPrefix()",
+    "String ApiKeyAuth.getLocation()",
+    "String ApiKeyAuth.getParamName()",
+    "void ApiKeyAuth.setApiKey(String)",
+    "void ApiKeyAuth.setApiKeyPrefix(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     ApiKeyAuth actualApiKeyAuth = new ApiKeyAuth("Location", "Param Name");

@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2MembershipListDiffblueTest {
   /**
    * Test {@link V2MembershipList#equals(Object)}, and {@link V2MembershipList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MembershipList#equals(Object)}
    *   <li>{@link V2MembershipList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V2MembershipListDiffblueTest {
 
     // Act and Assert
     assertEquals(v2MembershipList, v2MembershipList2);
-    int expectedHashCodeResult = v2MembershipList.hashCode();
-    assertEquals(expectedHashCodeResult, v2MembershipList2.hashCode());
+    assertEquals(v2MembershipList.hashCode(), v2MembershipList2.hashCode());
   }
 
   /**
    * Test {@link V2MembershipList#equals(Object)}, and {@link V2MembershipList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MembershipList#equals(Object)}
    *   <li>{@link V2MembershipList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -172,14 +190,16 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test {@link V2MembershipList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MembershipList#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MembershipList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2MembershipList.equals(Object)", "int V2MembershipList.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -188,8 +208,9 @@ public class V2MembershipListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2MembershipList}
    *   <li>{@link V2MembershipList#count(Integer)}
@@ -208,13 +229,23 @@ public class V2MembershipListDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2MembershipList.<init>()", "V2MembershipList V2MembershipList.count(Integer)",
-      "Integer V2MembershipList.getCount()", "Integer V2MembershipList.getLimit()",
-      "V2MemberInfoList V2MembershipList.getMembers()", "Integer V2MembershipList.getSkip()",
-      "V2MembershipList V2MembershipList.limit(Integer)", "V2MembershipList V2MembershipList.members(V2MemberInfoList)",
-      "void V2MembershipList.setCount(Integer)", "void V2MembershipList.setLimit(Integer)",
-      "void V2MembershipList.setMembers(V2MemberInfoList)", "void V2MembershipList.setSkip(Integer)",
-      "V2MembershipList V2MembershipList.skip(Integer)", "String V2MembershipList.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2MembershipList.<init>()",
+    "V2MembershipList V2MembershipList.count(Integer)",
+    "Integer V2MembershipList.getCount()",
+    "Integer V2MembershipList.getLimit()",
+    "V2MemberInfoList V2MembershipList.getMembers()",
+    "Integer V2MembershipList.getSkip()",
+    "V2MembershipList V2MembershipList.limit(Integer)",
+    "V2MembershipList V2MembershipList.members(V2MemberInfoList)",
+    "void V2MembershipList.setCount(Integer)",
+    "void V2MembershipList.setLimit(Integer)",
+    "void V2MembershipList.setMembers(V2MemberInfoList)",
+    "void V2MembershipList.setSkip(Integer)",
+    "V2MembershipList V2MembershipList.skip(Integer)",
+    "String V2MembershipList.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2MembershipList actualV2MembershipList = new V2MembershipList();
@@ -234,8 +265,16 @@ public class V2MembershipListDiffblueTest {
     Integer actualSkip = actualV2MembershipList.getSkip();
 
     // Assert
-    assertEquals("class V2MembershipList {\n" + "    count: 3\n" + "    skip: 1\n" + "    limit: 1\n"
-        + "    members: class V2MemberInfoList {\n" + "        []\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V2MembershipList {\n"
+            + "    count: 3\n"
+            + "    skip: 1\n"
+            + "    limit: 1\n"
+            + "    members: class V2MemberInfoList {\n"
+            + "        []\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1, actualLimit.intValue());
     assertEquals(1, actualSkip.intValue());
     assertEquals(3, actualCount.intValue());

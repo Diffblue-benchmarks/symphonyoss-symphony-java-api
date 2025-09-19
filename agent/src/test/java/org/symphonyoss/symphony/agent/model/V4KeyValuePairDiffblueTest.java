@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4KeyValuePairDiffblueTest {
   /**
    * Test {@link V4KeyValuePair#equals(Object)}, and {@link V4KeyValuePair#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4KeyValuePair#equals(Object)}
    *   <li>{@link V4KeyValuePair#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4KeyValuePairDiffblueTest {
 
     // Act and Assert
     assertEquals(v4KeyValuePair, v4KeyValuePair2);
-    int expectedHashCodeResult = v4KeyValuePair.hashCode();
-    assertEquals(expectedHashCodeResult, v4KeyValuePair2.hashCode());
+    assertEquals(v4KeyValuePair.hashCode(), v4KeyValuePair2.hashCode());
   }
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}, and {@link V4KeyValuePair#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4KeyValuePair#equals(Object)}
    *   <li>{@link V4KeyValuePair#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4KeyValuePair#equals(Object)}
+   *
+   * <p>Method under test: {@link V4KeyValuePair#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4KeyValuePair#equals(Object)}
+   *
+   * <p>Method under test: {@link V4KeyValuePair#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4KeyValuePair#equals(Object)}
+   *
+   * <p>Method under test: {@link V4KeyValuePair#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4KeyValuePair#equals(Object)}
+   *
+   * <p>Method under test: {@link V4KeyValuePair#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test {@link V4KeyValuePair#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4KeyValuePair#equals(Object)}
+   *
+   * <p>Method under test: {@link V4KeyValuePair#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4KeyValuePair.equals(Object)", "int V4KeyValuePair.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4KeyValuePairDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4KeyValuePair}
    *   <li>{@link V4KeyValuePair#key(String)}
@@ -162,10 +179,17 @@ public class V4KeyValuePairDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4KeyValuePair.<init>()", "String V4KeyValuePair.getKey()",
-      "String V4KeyValuePair.getValue()", "V4KeyValuePair V4KeyValuePair.key(String)",
-      "void V4KeyValuePair.setKey(String)", "void V4KeyValuePair.setValue(String)", "String V4KeyValuePair.toString()",
-      "V4KeyValuePair V4KeyValuePair.value(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4KeyValuePair.<init>()",
+    "String V4KeyValuePair.getKey()",
+    "String V4KeyValuePair.getValue()",
+    "V4KeyValuePair V4KeyValuePair.key(String)",
+    "void V4KeyValuePair.setKey(String)",
+    "void V4KeyValuePair.setValue(String)",
+    "String V4KeyValuePair.toString()",
+    "V4KeyValuePair V4KeyValuePair.value(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4KeyValuePair actualV4KeyValuePair = new V4KeyValuePair();

@@ -3,25 +3,32 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class MessageSearchQueryDiffblueTest {
   /**
    * Test {@link MessageSearchQuery#equals(Object)}, and {@link MessageSearchQuery#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageSearchQuery#equals(Object)}
    *   <li>{@link MessageSearchQuery#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -29,25 +36,30 @@ public class MessageSearchQueryDiffblueTest {
 
     // Act and Assert
     assertEquals(messageSearchQuery, messageSearchQuery2);
-    int expectedHashCodeResult = messageSearchQuery.hashCode();
-    assertEquals(expectedHashCodeResult, messageSearchQuery2.hashCode());
+    assertEquals(messageSearchQuery.hashCode(), messageSearchQuery2.hashCode());
   }
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}, and {@link MessageSearchQuery#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageSearchQuery#equals(Object)}
    *   <li>{@link MessageSearchQuery#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -60,15 +72,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSearchQuery(), 1);
@@ -76,15 +93,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -96,15 +118,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -116,15 +143,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -136,15 +168,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -156,15 +193,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -176,15 +218,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -196,15 +243,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -216,15 +268,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -236,15 +293,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual10() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -256,15 +318,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual11() {
     // Arrange
     MessageSearchQuery messageSearchQuery = new MessageSearchQuery();
@@ -276,15 +343,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSearchQuery(), null);
@@ -292,15 +364,20 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test {@link MessageSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageSearchQuery#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageSearchQuery.equals(Object)", "int MessageSearchQuery.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageSearchQuery.equals(Object)",
+    "int MessageSearchQuery.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageSearchQuery(), "Different type to MessageSearchQuery");
@@ -308,8 +385,9 @@ public class MessageSearchQueryDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link MessageSearchQuery}
    *   <li>{@link MessageSearchQuery#author(Long)}
@@ -346,22 +424,41 @@ public class MessageSearchQueryDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void MessageSearchQuery.<init>()", "MessageSearchQuery MessageSearchQuery.author(Long)",
-      "MessageSearchQuery MessageSearchQuery.cashtag(String)", "MessageSearchQuery MessageSearchQuery.fromDate(Long)",
-      "Long MessageSearchQuery.getAuthor()", "String MessageSearchQuery.getCashtag()",
-      "Long MessageSearchQuery.getFromDate()", "String MessageSearchQuery.getHashtag()",
-      "Long MessageSearchQuery.getMention()", "String MessageSearchQuery.getSignal()",
-      "String MessageSearchQuery.getStreamId()", "String MessageSearchQuery.getStreamType()",
-      "String MessageSearchQuery.getText()", "Long MessageSearchQuery.getToDate()",
-      "MessageSearchQuery MessageSearchQuery.hashtag(String)", "MessageSearchQuery MessageSearchQuery.mention(Long)",
-      "void MessageSearchQuery.setAuthor(Long)", "void MessageSearchQuery.setCashtag(String)",
-      "void MessageSearchQuery.setFromDate(Long)", "void MessageSearchQuery.setHashtag(String)",
-      "void MessageSearchQuery.setMention(Long)", "void MessageSearchQuery.setSignal(String)",
-      "void MessageSearchQuery.setStreamId(String)", "void MessageSearchQuery.setStreamType(String)",
-      "void MessageSearchQuery.setText(String)", "void MessageSearchQuery.setToDate(Long)",
-      "MessageSearchQuery MessageSearchQuery.signal(String)", "MessageSearchQuery MessageSearchQuery.streamId(String)",
-      "MessageSearchQuery MessageSearchQuery.streamType(String)", "MessageSearchQuery MessageSearchQuery.text(String)",
-      "MessageSearchQuery MessageSearchQuery.toDate(Long)", "String MessageSearchQuery.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void MessageSearchQuery.<init>()",
+    "MessageSearchQuery MessageSearchQuery.author(Long)",
+    "MessageSearchQuery MessageSearchQuery.cashtag(String)",
+    "MessageSearchQuery MessageSearchQuery.fromDate(Long)",
+    "Long MessageSearchQuery.getAuthor()",
+    "String MessageSearchQuery.getCashtag()",
+    "Long MessageSearchQuery.getFromDate()",
+    "String MessageSearchQuery.getHashtag()",
+    "Long MessageSearchQuery.getMention()",
+    "String MessageSearchQuery.getSignal()",
+    "String MessageSearchQuery.getStreamId()",
+    "String MessageSearchQuery.getStreamType()",
+    "String MessageSearchQuery.getText()",
+    "Long MessageSearchQuery.getToDate()",
+    "MessageSearchQuery MessageSearchQuery.hashtag(String)",
+    "MessageSearchQuery MessageSearchQuery.mention(Long)",
+    "void MessageSearchQuery.setAuthor(Long)",
+    "void MessageSearchQuery.setCashtag(String)",
+    "void MessageSearchQuery.setFromDate(Long)",
+    "void MessageSearchQuery.setHashtag(String)",
+    "void MessageSearchQuery.setMention(Long)",
+    "void MessageSearchQuery.setSignal(String)",
+    "void MessageSearchQuery.setStreamId(String)",
+    "void MessageSearchQuery.setStreamType(String)",
+    "void MessageSearchQuery.setText(String)",
+    "void MessageSearchQuery.setToDate(Long)",
+    "MessageSearchQuery MessageSearchQuery.signal(String)",
+    "MessageSearchQuery MessageSearchQuery.streamId(String)",
+    "MessageSearchQuery MessageSearchQuery.streamType(String)",
+    "MessageSearchQuery MessageSearchQuery.text(String)",
+    "MessageSearchQuery MessageSearchQuery.toDate(Long)",
+    "String MessageSearchQuery.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     MessageSearchQuery actualMessageSearchQuery = new MessageSearchQuery();
@@ -404,9 +501,19 @@ public class MessageSearchQueryDiffblueTest {
     assertEquals("Signal", actualSignal);
     assertEquals("Stream Type", actualStreamType);
     assertEquals("Text", actualText);
-    assertEquals("class MessageSearchQuery {\n" + "    text: Text\n" + "    streamId: 42\n"
-        + "    streamType: Stream Type\n" + "    author: 1\n" + "    hashtag: Hashtag\n" + "    cashtag: Cashtag\n"
-        + "    mention: 1\n" + "    signal: Signal\n" + "    fromDate: 1\n" + "    toDate: 1\n" + "}",
+    assertEquals(
+        "class MessageSearchQuery {\n"
+            + "    text: Text\n"
+            + "    streamId: 42\n"
+            + "    streamType: Stream Type\n"
+            + "    author: 1\n"
+            + "    hashtag: Hashtag\n"
+            + "    cashtag: Cashtag\n"
+            + "    mention: 1\n"
+            + "    signal: Signal\n"
+            + "    fromDate: 1\n"
+            + "    toDate: 1\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualAuthor.longValue());
     assertEquals(1L, actualFromDate.longValue());

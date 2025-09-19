@@ -3,25 +3,32 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class MessageStatusUserDiffblueTest {
   /**
    * Test {@link MessageStatusUser#equals(Object)}, and {@link MessageStatusUser#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageStatusUser#equals(Object)}
    *   <li>{@link MessageStatusUser#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -29,25 +36,30 @@ public class MessageStatusUserDiffblueTest {
 
     // Act and Assert
     assertEquals(messageStatusUser, messageStatusUser2);
-    int expectedHashCodeResult = messageStatusUser.hashCode();
-    assertEquals(expectedHashCodeResult, messageStatusUser2.hashCode());
+    assertEquals(messageStatusUser.hashCode(), messageStatusUser2.hashCode());
   }
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}, and {@link MessageStatusUser#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageStatusUser#equals(Object)}
    *   <li>{@link MessageStatusUser#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -60,15 +72,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageStatusUser(), 1);
@@ -76,15 +93,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -96,15 +118,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -116,15 +143,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -136,15 +168,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -156,15 +193,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -176,15 +218,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -196,15 +243,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     MessageStatusUser messageStatusUser = new MessageStatusUser();
@@ -216,15 +268,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageStatusUser(), null);
@@ -232,15 +289,20 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test {@link MessageStatusUser#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageStatusUser#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageStatusUser#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageStatusUser.equals(Object)", "int MessageStatusUser.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageStatusUser.equals(Object)",
+    "int MessageStatusUser.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageStatusUser(), "Different type to MessageStatusUser");
@@ -248,8 +310,9 @@ public class MessageStatusUserDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link MessageStatusUser}
    *   <li>{@link MessageStatusUser#displayName(String)}
@@ -277,18 +340,32 @@ public class MessageStatusUserDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void MessageStatusUser.<init>()", "MessageStatusUser MessageStatusUser.displayName(String)",
-      "MessageStatusUser MessageStatusUser.email(String)", "MessageStatusUser MessageStatusUser.firstName(String)",
-      "String MessageStatusUser.getDisplayName()", "String MessageStatusUser.getEmail()",
-      "String MessageStatusUser.getFirstName()", "String MessageStatusUser.getLastName()",
-      "String MessageStatusUser.getTimestamp()", "String MessageStatusUser.getUserId()",
-      "String MessageStatusUser.getUserName()", "MessageStatusUser MessageStatusUser.lastName(String)",
-      "void MessageStatusUser.setDisplayName(String)", "void MessageStatusUser.setEmail(String)",
-      "void MessageStatusUser.setFirstName(String)", "void MessageStatusUser.setLastName(String)",
-      "void MessageStatusUser.setTimestamp(String)", "void MessageStatusUser.setUserId(String)",
-      "void MessageStatusUser.setUserName(String)", "MessageStatusUser MessageStatusUser.timestamp(String)",
-      "String MessageStatusUser.toString()", "MessageStatusUser MessageStatusUser.userId(String)",
-      "MessageStatusUser MessageStatusUser.userName(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void MessageStatusUser.<init>()",
+    "MessageStatusUser MessageStatusUser.displayName(String)",
+    "MessageStatusUser MessageStatusUser.email(String)",
+    "MessageStatusUser MessageStatusUser.firstName(String)",
+    "String MessageStatusUser.getDisplayName()",
+    "String MessageStatusUser.getEmail()",
+    "String MessageStatusUser.getFirstName()",
+    "String MessageStatusUser.getLastName()",
+    "String MessageStatusUser.getTimestamp()",
+    "String MessageStatusUser.getUserId()",
+    "String MessageStatusUser.getUserName()",
+    "MessageStatusUser MessageStatusUser.lastName(String)",
+    "void MessageStatusUser.setDisplayName(String)",
+    "void MessageStatusUser.setEmail(String)",
+    "void MessageStatusUser.setFirstName(String)",
+    "void MessageStatusUser.setLastName(String)",
+    "void MessageStatusUser.setTimestamp(String)",
+    "void MessageStatusUser.setUserId(String)",
+    "void MessageStatusUser.setUserName(String)",
+    "MessageStatusUser MessageStatusUser.timestamp(String)",
+    "String MessageStatusUser.toString()",
+    "MessageStatusUser MessageStatusUser.userId(String)",
+    "MessageStatusUser MessageStatusUser.userName(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     MessageStatusUser actualMessageStatusUser = new MessageStatusUser();
@@ -320,9 +397,17 @@ public class MessageStatusUserDiffblueTest {
     assertEquals("Doe", actualLastName);
     assertEquals("Jane", actualFirstName);
     assertEquals("Timestamp", actualTimestamp);
-    assertEquals("class MessageStatusUser {\n" + "    userId: 42\n" + "    firstName: Jane\n" + "    lastName: Doe\n"
-        + "    displayName: Display Name\n" + "    email: jane.doe@example.org\n" + "    userName: janedoe\n"
-        + "    timestamp: Timestamp\n" + "}", actualToStringResult);
+    assertEquals(
+        "class MessageStatusUser {\n"
+            + "    userId: 42\n"
+            + "    firstName: Jane\n"
+            + "    lastName: Doe\n"
+            + "    displayName: Display Name\n"
+            + "    email: jane.doe@example.org\n"
+            + "    userName: janedoe\n"
+            + "    timestamp: Timestamp\n"
+            + "}",
+        actualToStringResult);
     assertEquals("jane.doe@example.org", actualEmail);
     assertEquals("janedoe", actualMessageStatusUser.getUserName());
     assertSame(actualMessageStatusUser, actualDisplayNameResult);

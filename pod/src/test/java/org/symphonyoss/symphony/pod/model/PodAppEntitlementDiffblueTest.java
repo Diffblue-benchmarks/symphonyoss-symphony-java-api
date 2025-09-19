@@ -4,25 +4,32 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class PodAppEntitlementDiffblueTest {
   /**
    * Test {@link PodAppEntitlement#equals(Object)}, and {@link PodAppEntitlement#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link PodAppEntitlement#equals(Object)}
    *   <li>{@link PodAppEntitlement#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -30,25 +37,30 @@ public class PodAppEntitlementDiffblueTest {
 
     // Act and Assert
     assertEquals(podAppEntitlement, podAppEntitlement2);
-    int expectedHashCodeResult = podAppEntitlement.hashCode();
-    assertEquals(expectedHashCodeResult, podAppEntitlement2.hashCode());
+    assertEquals(podAppEntitlement.hashCode(), podAppEntitlement2.hashCode());
   }
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}, and {@link PodAppEntitlement#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link PodAppEntitlement#equals(Object)}
    *   <li>{@link PodAppEntitlement#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -61,15 +73,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new PodAppEntitlement(), 1);
@@ -77,15 +94,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -97,15 +119,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -117,15 +144,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -137,15 +169,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -157,15 +194,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     PodAppEntitlement podAppEntitlement = new PodAppEntitlement();
@@ -177,15 +219,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new PodAppEntitlement(), null);
@@ -193,15 +240,20 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test {@link PodAppEntitlement#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link PodAppEntitlement#equals(Object)}
+   *
+   * <p>Method under test: {@link PodAppEntitlement#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean PodAppEntitlement.equals(Object)", "int PodAppEntitlement.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean PodAppEntitlement.equals(Object)",
+    "int PodAppEntitlement.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new PodAppEntitlement(), "Different type to PodAppEntitlement");
@@ -209,8 +261,9 @@ public class PodAppEntitlementDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link PodAppEntitlement}
    *   <li>{@link PodAppEntitlement#appId(String)}
@@ -232,15 +285,26 @@ public class PodAppEntitlementDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void PodAppEntitlement.<init>()", "PodAppEntitlement PodAppEntitlement.appId(String)",
-      "PodAppEntitlement PodAppEntitlement.appName(String)", "PodAppEntitlement PodAppEntitlement.enable(Boolean)",
-      "String PodAppEntitlement.getAppId()", "String PodAppEntitlement.getAppName()",
-      "Boolean PodAppEntitlement.getEnable()", "Boolean PodAppEntitlement.getInstall()",
-      "Boolean PodAppEntitlement.getListed()", "PodAppEntitlement PodAppEntitlement.install(Boolean)",
-      "PodAppEntitlement PodAppEntitlement.listed(Boolean)", "void PodAppEntitlement.setAppId(String)",
-      "void PodAppEntitlement.setAppName(String)", "void PodAppEntitlement.setEnable(Boolean)",
-      "void PodAppEntitlement.setInstall(Boolean)", "void PodAppEntitlement.setListed(Boolean)",
-      "String PodAppEntitlement.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void PodAppEntitlement.<init>()",
+    "PodAppEntitlement PodAppEntitlement.appId(String)",
+    "PodAppEntitlement PodAppEntitlement.appName(String)",
+    "PodAppEntitlement PodAppEntitlement.enable(Boolean)",
+    "String PodAppEntitlement.getAppId()",
+    "String PodAppEntitlement.getAppName()",
+    "Boolean PodAppEntitlement.getEnable()",
+    "Boolean PodAppEntitlement.getInstall()",
+    "Boolean PodAppEntitlement.getListed()",
+    "PodAppEntitlement PodAppEntitlement.install(Boolean)",
+    "PodAppEntitlement PodAppEntitlement.listed(Boolean)",
+    "void PodAppEntitlement.setAppId(String)",
+    "void PodAppEntitlement.setAppName(String)",
+    "void PodAppEntitlement.setEnable(Boolean)",
+    "void PodAppEntitlement.setInstall(Boolean)",
+    "void PodAppEntitlement.setListed(Boolean)",
+    "String PodAppEntitlement.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     PodAppEntitlement actualPodAppEntitlement = new PodAppEntitlement();
@@ -263,8 +327,15 @@ public class PodAppEntitlementDiffblueTest {
     // Assert
     assertEquals("42", actualAppId);
     assertEquals("App Name", actualAppName);
-    assertEquals("class PodAppEntitlement {\n" + "    appId: 42\n" + "    appName: App Name\n" + "    enable: true\n"
-        + "    listed: true\n" + "    install: true\n" + "}", actualToStringResult);
+    assertEquals(
+        "class PodAppEntitlement {\n"
+            + "    appId: 42\n"
+            + "    appName: App Name\n"
+            + "    enable: true\n"
+            + "    listed: true\n"
+            + "    install: true\n"
+            + "}",
+        actualToStringResult);
     assertTrue(actualEnable);
     assertTrue(actualInstall);
     assertTrue(actualPodAppEntitlement.getListed());

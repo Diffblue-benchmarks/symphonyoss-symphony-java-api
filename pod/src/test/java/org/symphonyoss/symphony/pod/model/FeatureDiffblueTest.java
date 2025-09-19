@@ -4,24 +4,28 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class FeatureDiffblueTest {
   /**
    * Test {@link Feature#equals(Object)}, and {@link Feature#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Feature#equals(Object)}
    *   <li>{@link Feature#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -30,24 +34,26 @@ public class FeatureDiffblueTest {
 
     // Act and Assert
     assertEquals(feature, feature2);
-    int expectedHashCodeResult = feature.hashCode();
-    assertEquals(expectedHashCodeResult, feature2.hashCode());
+    assertEquals(feature.hashCode(), feature2.hashCode());
   }
 
   /**
    * Test {@link Feature#equals(Object)}, and {@link Feature#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link Feature#equals(Object)}
    *   <li>{@link Feature#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -61,14 +67,16 @@ public class FeatureDiffblueTest {
 
   /**
    * Test {@link Feature#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Feature#equals(Object)}
+   *
+   * <p>Method under test: {@link Feature#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -77,14 +85,16 @@ public class FeatureDiffblueTest {
 
   /**
    * Test {@link Feature#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Feature#equals(Object)}
+   *
+   * <p>Method under test: {@link Feature#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -97,14 +107,16 @@ public class FeatureDiffblueTest {
 
   /**
    * Test {@link Feature#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Feature#equals(Object)}
+   *
+   * <p>Method under test: {@link Feature#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -117,14 +129,16 @@ public class FeatureDiffblueTest {
 
   /**
    * Test {@link Feature#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Feature#equals(Object)}
+   *
+   * <p>Method under test: {@link Feature#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -133,14 +147,16 @@ public class FeatureDiffblueTest {
 
   /**
    * Test {@link Feature#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link Feature#equals(Object)}
+   *
+   * <p>Method under test: {@link Feature#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean Feature.equals(Object)", "int Feature.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -149,8 +165,9 @@ public class FeatureDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link Feature}
    *   <li>{@link Feature#enabled(Boolean)}
@@ -163,9 +180,17 @@ public class FeatureDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void Feature.<init>()", "Feature Feature.enabled(Boolean)", "Feature Feature.entitlment(String)",
-      "Boolean Feature.getEnabled()", "String Feature.getEntitlment()", "void Feature.setEnabled(Boolean)",
-      "void Feature.setEntitlment(String)", "String Feature.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void Feature.<init>()",
+    "Feature Feature.enabled(Boolean)",
+    "Feature Feature.entitlment(String)",
+    "Boolean Feature.getEnabled()",
+    "String Feature.getEntitlment()",
+    "void Feature.setEnabled(Boolean)",
+    "void Feature.setEntitlment(String)",
+    "String Feature.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     Feature actualFeature = new Feature();
@@ -178,7 +203,8 @@ public class FeatureDiffblueTest {
 
     // Assert
     assertEquals("Entitlment", actualFeature.getEntitlment());
-    assertEquals("class Feature {\n    entitlment: Entitlment\n    enabled: true\n}", actualToStringResult);
+    assertEquals(
+        "class Feature {\n    entitlment: Entitlment\n    enabled: true\n}", actualToStringResult);
     assertTrue(actualEnabled);
     assertSame(actualFeature, actualEnabledResult);
     assertSame(actualFeature, actualEntitlmentResult);

@@ -2,25 +2,32 @@ package org.symphonyoss.symphony.agent.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class MessageImportListDiffblueTest {
   /**
    * Test {@link MessageImportList#equals(Object)}, and {@link MessageImportList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageImportList#equals(Object)}
    *   <li>{@link MessageImportList#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageImportList.equals(Object)", "int MessageImportList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageImportList.equals(Object)",
+    "int MessageImportList.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     MessageImportList messageImportList = new MessageImportList();
@@ -28,25 +35,30 @@ public class MessageImportListDiffblueTest {
 
     // Act and Assert
     assertEquals(messageImportList, messageImportList2);
-    int expectedHashCodeResult = messageImportList.hashCode();
-    assertEquals(expectedHashCodeResult, messageImportList2.hashCode());
+    assertEquals(messageImportList.hashCode(), messageImportList2.hashCode());
   }
 
   /**
    * Test {@link MessageImportList#equals(Object)}, and {@link MessageImportList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link MessageImportList#equals(Object)}
    *   <li>{@link MessageImportList#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean MessageImportList.equals(Object)", "int MessageImportList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageImportList.equals(Object)",
+    "int MessageImportList.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     MessageImportList messageImportList = new MessageImportList();
@@ -59,15 +71,20 @@ public class MessageImportListDiffblueTest {
 
   /**
    * Test {@link MessageImportList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageImportList#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageImportList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageImportList.equals(Object)", "int MessageImportList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageImportList.equals(Object)",
+    "int MessageImportList.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     MessageImportList messageImportList = new MessageImportList();
@@ -79,15 +96,20 @@ public class MessageImportListDiffblueTest {
 
   /**
    * Test {@link MessageImportList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageImportList#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageImportList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageImportList.equals(Object)", "int MessageImportList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageImportList.equals(Object)",
+    "int MessageImportList.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageImportList(), null);
@@ -95,15 +117,20 @@ public class MessageImportListDiffblueTest {
 
   /**
    * Test {@link MessageImportList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link MessageImportList#equals(Object)}
+   *
+   * <p>Method under test: {@link MessageImportList#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean MessageImportList.equals(Object)", "int MessageImportList.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean MessageImportList.equals(Object)",
+    "int MessageImportList.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new MessageImportList(), "Different type to MessageImportList");
@@ -111,17 +138,22 @@ public class MessageImportListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link MessageImportList}
    *   <li>{@link MessageImportList#toString()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void MessageImportList.<init>()", "java.lang.String MessageImportList.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void MessageImportList.<init>()",
+    "java.lang.String MessageImportList.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange, Act and Assert
-    assertEquals("class MessageImportList {\n    []\n}", (new MessageImportList()).toString());
+    assertEquals("class MessageImportList {\n    []\n}", new MessageImportList().toString());
   }
 }

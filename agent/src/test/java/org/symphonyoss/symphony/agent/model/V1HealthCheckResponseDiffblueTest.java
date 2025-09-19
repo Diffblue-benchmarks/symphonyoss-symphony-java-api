@@ -4,25 +4,33 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V1HealthCheckResponseDiffblueTest {
   /**
-   * Test {@link V1HealthCheckResponse#equals(Object)}, and {@link V1HealthCheckResponse#hashCode()}.
+   * Test {@link V1HealthCheckResponse#equals(Object)}, and {@link
+   * V1HealthCheckResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V1HealthCheckResponse#equals(Object)}
    *   <li>{@link V1HealthCheckResponse#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -30,25 +38,31 @@ public class V1HealthCheckResponseDiffblueTest {
 
     // Act and Assert
     assertEquals(v1HealthCheckResponse, v1HealthCheckResponse2);
-    int expectedHashCodeResult = v1HealthCheckResponse.hashCode();
-    assertEquals(expectedHashCodeResult, v1HealthCheckResponse2.hashCode());
+    assertEquals(v1HealthCheckResponse.hashCode(), v1HealthCheckResponse2.hashCode());
   }
 
   /**
-   * Test {@link V1HealthCheckResponse#equals(Object)}, and {@link V1HealthCheckResponse#hashCode()}.
+   * Test {@link V1HealthCheckResponse#equals(Object)}, and {@link
+   * V1HealthCheckResponse#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V1HealthCheckResponse#equals(Object)}
    *   <li>{@link V1HealthCheckResponse#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -61,15 +75,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V1HealthCheckResponse(), 1);
@@ -77,15 +96,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -97,15 +121,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -117,15 +146,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -137,15 +171,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -157,15 +196,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     V1HealthCheckResponse v1HealthCheckResponse = new V1HealthCheckResponse();
@@ -177,15 +221,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V1HealthCheckResponse(), null);
@@ -193,15 +242,20 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test {@link V1HealthCheckResponse#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V1HealthCheckResponse#equals(Object)}
+   *
+   * <p>Method under test: {@link V1HealthCheckResponse#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V1HealthCheckResponse.equals(Object)", "int V1HealthCheckResponse.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V1HealthCheckResponse.equals(Object)",
+    "int V1HealthCheckResponse.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V1HealthCheckResponse(), "Different type to V1HealthCheckResponse");
@@ -209,8 +263,9 @@ public class V1HealthCheckResponseDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V1HealthCheckResponse}
    *   <li>{@link V1HealthCheckResponse#keyManagerConnectivity(Boolean)}
@@ -232,28 +287,37 @@ public class V1HealthCheckResponseDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V1HealthCheckResponse.<init>()", "Boolean V1HealthCheckResponse.getKeyManagerConnectivity()",
-      "String V1HealthCheckResponse.getKeyManagerConnectivityError()",
-      "Boolean V1HealthCheckResponse.getPodConnectivity()", "String V1HealthCheckResponse.getPodConnectivityError()",
-      "String V1HealthCheckResponse.getVersion()",
-      "V1HealthCheckResponse V1HealthCheckResponse.keyManagerConnectivity(Boolean)",
-      "V1HealthCheckResponse V1HealthCheckResponse.keyManagerConnectivityError(String)",
-      "V1HealthCheckResponse V1HealthCheckResponse.podConnectivity(Boolean)",
-      "V1HealthCheckResponse V1HealthCheckResponse.podConnectivityError(String)",
-      "void V1HealthCheckResponse.setKeyManagerConnectivity(Boolean)",
-      "void V1HealthCheckResponse.setKeyManagerConnectivityError(String)",
-      "void V1HealthCheckResponse.setPodConnectivity(Boolean)",
-      "void V1HealthCheckResponse.setPodConnectivityError(String)", "void V1HealthCheckResponse.setVersion(String)",
-      "String V1HealthCheckResponse.toString()", "V1HealthCheckResponse V1HealthCheckResponse.version(String)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V1HealthCheckResponse.<init>()",
+    "Boolean V1HealthCheckResponse.getKeyManagerConnectivity()",
+    "String V1HealthCheckResponse.getKeyManagerConnectivityError()",
+    "Boolean V1HealthCheckResponse.getPodConnectivity()",
+    "String V1HealthCheckResponse.getPodConnectivityError()",
+    "String V1HealthCheckResponse.getVersion()",
+    "V1HealthCheckResponse V1HealthCheckResponse.keyManagerConnectivity(Boolean)",
+    "V1HealthCheckResponse V1HealthCheckResponse.keyManagerConnectivityError(String)",
+    "V1HealthCheckResponse V1HealthCheckResponse.podConnectivity(Boolean)",
+    "V1HealthCheckResponse V1HealthCheckResponse.podConnectivityError(String)",
+    "void V1HealthCheckResponse.setKeyManagerConnectivity(Boolean)",
+    "void V1HealthCheckResponse.setKeyManagerConnectivityError(String)",
+    "void V1HealthCheckResponse.setPodConnectivity(Boolean)",
+    "void V1HealthCheckResponse.setPodConnectivityError(String)",
+    "void V1HealthCheckResponse.setVersion(String)",
+    "String V1HealthCheckResponse.toString()",
+    "V1HealthCheckResponse V1HealthCheckResponse.version(String)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V1HealthCheckResponse actualV1HealthCheckResponse = new V1HealthCheckResponse();
-    V1HealthCheckResponse actualKeyManagerConnectivityResult = actualV1HealthCheckResponse.keyManagerConnectivity(true);
-    V1HealthCheckResponse actualKeyManagerConnectivityErrorResult = actualV1HealthCheckResponse
-        .keyManagerConnectivityError("An error occurred");
-    V1HealthCheckResponse actualPodConnectivityResult = actualV1HealthCheckResponse.podConnectivity(true);
-    V1HealthCheckResponse actualPodConnectivityErrorResult = actualV1HealthCheckResponse
-        .podConnectivityError("An error occurred");
+    V1HealthCheckResponse actualKeyManagerConnectivityResult =
+        actualV1HealthCheckResponse.keyManagerConnectivity(true);
+    V1HealthCheckResponse actualKeyManagerConnectivityErrorResult =
+        actualV1HealthCheckResponse.keyManagerConnectivityError("An error occurred");
+    V1HealthCheckResponse actualPodConnectivityResult =
+        actualV1HealthCheckResponse.podConnectivity(true);
+    V1HealthCheckResponse actualPodConnectivityErrorResult =
+        actualV1HealthCheckResponse.podConnectivityError("An error occurred");
     actualV1HealthCheckResponse.setKeyManagerConnectivity(true);
     actualV1HealthCheckResponse.setKeyManagerConnectivityError("An error occurred");
     actualV1HealthCheckResponse.setPodConnectivity(true);
@@ -262,7 +326,8 @@ public class V1HealthCheckResponseDiffblueTest {
     V1HealthCheckResponse actualVersionResult = actualV1HealthCheckResponse.version("1.0.2");
     String actualToStringResult = actualV1HealthCheckResponse.toString();
     Boolean actualKeyManagerConnectivity = actualV1HealthCheckResponse.getKeyManagerConnectivity();
-    String actualKeyManagerConnectivityError = actualV1HealthCheckResponse.getKeyManagerConnectivityError();
+    String actualKeyManagerConnectivityError =
+        actualV1HealthCheckResponse.getKeyManagerConnectivityError();
     Boolean actualPodConnectivity = actualV1HealthCheckResponse.getPodConnectivity();
     String actualPodConnectivityError = actualV1HealthCheckResponse.getPodConnectivityError();
 
@@ -271,9 +336,13 @@ public class V1HealthCheckResponseDiffblueTest {
     assertEquals("An error occurred", actualKeyManagerConnectivityError);
     assertEquals("An error occurred", actualPodConnectivityError);
     assertEquals(
-        "class V1HealthCheckResponse {\n" + "    podConnectivity: true\n"
-            + "    podConnectivityError: An error occurred\n" + "    keyManagerConnectivity: true\n"
-            + "    keyManagerConnectivityError: An error occurred\n" + "    version: 1.0.2\n" + "}",
+        "class V1HealthCheckResponse {\n"
+            + "    podConnectivity: true\n"
+            + "    podConnectivityError: An error occurred\n"
+            + "    keyManagerConnectivity: true\n"
+            + "    keyManagerConnectivityError: An error occurred\n"
+            + "    version: 1.0.2\n"
+            + "}",
         actualToStringResult);
     assertTrue(actualKeyManagerConnectivity);
     assertTrue(actualPodConnectivity);

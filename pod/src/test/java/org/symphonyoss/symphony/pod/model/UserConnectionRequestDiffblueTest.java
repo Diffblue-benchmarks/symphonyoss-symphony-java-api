@@ -3,25 +3,33 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserConnectionRequestDiffblueTest {
   /**
-   * Test {@link UserConnectionRequest#equals(Object)}, and {@link UserConnectionRequest#hashCode()}.
+   * Test {@link UserConnectionRequest#equals(Object)}, and {@link
+   * UserConnectionRequest#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserConnectionRequest#equals(Object)}
    *   <li>{@link UserConnectionRequest#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserConnectionRequest.equals(Object)", "int UserConnectionRequest.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserConnectionRequest.equals(Object)",
+    "int UserConnectionRequest.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     UserConnectionRequest userConnectionRequest = new UserConnectionRequest();
@@ -29,25 +37,31 @@ public class UserConnectionRequestDiffblueTest {
 
     // Act and Assert
     assertEquals(userConnectionRequest, userConnectionRequest2);
-    int expectedHashCodeResult = userConnectionRequest.hashCode();
-    assertEquals(expectedHashCodeResult, userConnectionRequest2.hashCode());
+    assertEquals(userConnectionRequest.hashCode(), userConnectionRequest2.hashCode());
   }
 
   /**
-   * Test {@link UserConnectionRequest#equals(Object)}, and {@link UserConnectionRequest#hashCode()}.
+   * Test {@link UserConnectionRequest#equals(Object)}, and {@link
+   * UserConnectionRequest#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserConnectionRequest#equals(Object)}
    *   <li>{@link UserConnectionRequest#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean UserConnectionRequest.equals(Object)", "int UserConnectionRequest.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserConnectionRequest.equals(Object)",
+    "int UserConnectionRequest.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     UserConnectionRequest userConnectionRequest = new UserConnectionRequest();
@@ -60,31 +74,20 @@ public class UserConnectionRequestDiffblueTest {
 
   /**
    * Test {@link UserConnectionRequest#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnectionRequest#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnectionRequest#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserConnectionRequest.equals(Object)", "int UserConnectionRequest.hashCode()"})
-  public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
-    // Arrange, Act and Assert
-    assertNotEquals(new UserConnectionRequest(), null);
-  }
-
-  /**
-   * Test {@link UserConnectionRequest#equals(Object)}.
-   * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link UserConnectionRequest#equals(Object)}
-   */
-  @Test
-  @MethodsUnderTest({"boolean UserConnectionRequest.equals(Object)", "int UserConnectionRequest.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserConnectionRequest.equals(Object)",
+    "int UserConnectionRequest.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserConnectionRequest(), null);
@@ -92,15 +95,20 @@ public class UserConnectionRequestDiffblueTest {
 
   /**
    * Test {@link UserConnectionRequest#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnectionRequest#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnectionRequest#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean UserConnectionRequest.equals(Object)", "int UserConnectionRequest.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean UserConnectionRequest.equals(Object)",
+    "int UserConnectionRequest.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new UserConnectionRequest(), "Different type to UserConnectionRequest");
@@ -108,8 +116,9 @@ public class UserConnectionRequestDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserConnectionRequest}
    *   <li>{@link UserConnectionRequest#setUserId(Long)}
@@ -119,9 +128,14 @@ public class UserConnectionRequestDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserConnectionRequest.<init>()", "Long UserConnectionRequest.getUserId()",
-      "void UserConnectionRequest.setUserId(Long)", "String UserConnectionRequest.toString()",
-      "UserConnectionRequest UserConnectionRequest.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserConnectionRequest.<init>()",
+    "Long UserConnectionRequest.getUserId()",
+    "void UserConnectionRequest.setUserId(Long)",
+    "String UserConnectionRequest.toString()",
+    "UserConnectionRequest UserConnectionRequest.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserConnectionRequest actualUserConnectionRequest = new UserConnectionRequest();

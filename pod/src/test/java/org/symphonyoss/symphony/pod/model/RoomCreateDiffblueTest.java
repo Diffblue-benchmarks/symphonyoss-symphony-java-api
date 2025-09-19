@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class RoomCreateDiffblueTest {
   /**
    * Test {@link RoomCreate#equals(Object)}, and {@link RoomCreate#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomCreate#equals(Object)}
    *   <li>{@link RoomCreate#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class RoomCreateDiffblueTest {
 
     // Act and Assert
     assertEquals(roomCreate, roomCreate2);
-    int expectedHashCodeResult = roomCreate.hashCode();
-    assertEquals(expectedHashCodeResult, roomCreate2.hashCode());
+    assertEquals(roomCreate.hashCode(), roomCreate2.hashCode());
   }
 
   /**
    * Test {@link RoomCreate#equals(Object)}, and {@link RoomCreate#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link RoomCreate#equals(Object)}
    *   <li>{@link RoomCreate#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test {@link RoomCreate#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreate#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreate#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test {@link RoomCreate#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreate#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreate#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test {@link RoomCreate#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreate#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreate#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test {@link RoomCreate#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreate#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreate#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test {@link RoomCreate#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link RoomCreate#equals(Object)}
+   *
+   * <p>Method under test: {@link RoomCreate#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean RoomCreate.equals(Object)", "int RoomCreate.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class RoomCreateDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link RoomCreate}
    *   <li>{@link RoomCreate#immutableRoomAttributes(ImmutableRoomAttributes)}
@@ -162,30 +179,47 @@ public class RoomCreateDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void RoomCreate.<init>()", "ImmutableRoomAttributes RoomCreate.getImmutableRoomAttributes()",
-      "RoomAttributes RoomCreate.getRoomAttributes()",
-      "RoomCreate RoomCreate.immutableRoomAttributes(ImmutableRoomAttributes)",
-      "RoomCreate RoomCreate.roomAttributes(RoomAttributes)",
-      "void RoomCreate.setImmutableRoomAttributes(ImmutableRoomAttributes)",
-      "void RoomCreate.setRoomAttributes(RoomAttributes)", "String RoomCreate.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void RoomCreate.<init>()",
+    "ImmutableRoomAttributes RoomCreate.getImmutableRoomAttributes()",
+    "RoomAttributes RoomCreate.getRoomAttributes()",
+    "RoomCreate RoomCreate.immutableRoomAttributes(ImmutableRoomAttributes)",
+    "RoomCreate RoomCreate.roomAttributes(RoomAttributes)",
+    "void RoomCreate.setImmutableRoomAttributes(ImmutableRoomAttributes)",
+    "void RoomCreate.setRoomAttributes(RoomAttributes)",
+    "String RoomCreate.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     RoomCreate actualRoomCreate = new RoomCreate();
-    RoomCreate actualImmutableRoomAttributesResult = actualRoomCreate
-        .immutableRoomAttributes(new ImmutableRoomAttributes());
+    RoomCreate actualImmutableRoomAttributesResult =
+        actualRoomCreate.immutableRoomAttributes(new ImmutableRoomAttributes());
     RoomCreate actualRoomAttributesResult = actualRoomCreate.roomAttributes(new RoomAttributes());
     ImmutableRoomAttributes immutableRoomAttributes = new ImmutableRoomAttributes();
     actualRoomCreate.setImmutableRoomAttributes(immutableRoomAttributes);
     RoomAttributes roomAttributes = new RoomAttributes();
     actualRoomCreate.setRoomAttributes(roomAttributes);
     String actualToStringResult = actualRoomCreate.toString();
-    ImmutableRoomAttributes actualImmutableRoomAttributes = actualRoomCreate.getImmutableRoomAttributes();
+    ImmutableRoomAttributes actualImmutableRoomAttributes =
+        actualRoomCreate.getImmutableRoomAttributes();
 
     // Assert
-    assertEquals("class RoomCreate {\n" + "    roomAttributes: class RoomAttributes {\n" + "        name: null\n"
-        + "        description: null\n" + "        membersCanInvite: null\n" + "        discoverable: null\n"
-        + "    }\n" + "    immutableRoomAttributes: class ImmutableRoomAttributes {\n" + "        _public: null\n"
-        + "        readOnly: null\n" + "        copyProtected: null\n" + "    }\n" + "}", actualToStringResult);
+    assertEquals(
+        "class RoomCreate {\n"
+            + "    roomAttributes: class RoomAttributes {\n"
+            + "        name: null\n"
+            + "        description: null\n"
+            + "        membersCanInvite: null\n"
+            + "        discoverable: null\n"
+            + "    }\n"
+            + "    immutableRoomAttributes: class ImmutableRoomAttributes {\n"
+            + "        _public: null\n"
+            + "        readOnly: null\n"
+            + "        copyProtected: null\n"
+            + "    }\n"
+            + "}",
+        actualToStringResult);
     assertSame(immutableRoomAttributes, actualImmutableRoomAttributes);
     assertSame(roomAttributes, actualRoomCreate.getRoomAttributes());
     assertSame(actualRoomCreate, actualImmutableRoomAttributesResult);

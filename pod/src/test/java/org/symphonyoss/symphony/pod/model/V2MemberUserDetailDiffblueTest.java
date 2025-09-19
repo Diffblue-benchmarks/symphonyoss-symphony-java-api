@@ -4,25 +4,32 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2MemberUserDetailDiffblueTest {
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}, and {@link V2MemberUserDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MemberUserDetail#equals(Object)}
    *   <li>{@link V2MemberUserDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -30,25 +37,30 @@ public class V2MemberUserDetailDiffblueTest {
 
     // Act and Assert
     assertEquals(v2MemberUserDetail, v2MemberUserDetail2);
-    int expectedHashCodeResult = v2MemberUserDetail.hashCode();
-    assertEquals(expectedHashCodeResult, v2MemberUserDetail2.hashCode());
+    assertEquals(v2MemberUserDetail.hashCode(), v2MemberUserDetail2.hashCode());
   }
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}, and {@link V2MemberUserDetail#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2MemberUserDetail#equals(Object)}
    *   <li>{@link V2MemberUserDetail#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -61,15 +73,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2MemberUserDetail(), 1);
@@ -77,15 +94,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -97,15 +119,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -117,15 +144,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -137,15 +169,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -157,15 +194,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -177,15 +219,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -197,15 +244,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -217,15 +269,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual9() {
     // Arrange
     V2MemberUserDetail v2MemberUserDetail = new V2MemberUserDetail();
@@ -237,15 +294,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2MemberUserDetail(), null);
@@ -253,15 +315,20 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test {@link V2MemberUserDetail#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2MemberUserDetail#equals(Object)}
+   *
+   * <p>Method under test: {@link V2MemberUserDetail#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean V2MemberUserDetail.equals(Object)", "int V2MemberUserDetail.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean V2MemberUserDetail.equals(Object)",
+    "int V2MemberUserDetail.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new V2MemberUserDetail(), "Different type to V2MemberUserDetail");
@@ -269,8 +336,9 @@ public class V2MemberUserDetailDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2MemberUserDetail}
    *   <li>{@link V2MemberUserDetail#company(String)}
@@ -301,27 +369,42 @@ public class V2MemberUserDetailDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2MemberUserDetail.<init>()", "V2MemberUserDetail V2MemberUserDetail.company(String)",
-      "V2MemberUserDetail V2MemberUserDetail.companyId(Integer)",
-      "V2MemberUserDetail V2MemberUserDetail.displayName(String)",
-      "V2MemberUserDetail V2MemberUserDetail.email(String)", "V2MemberUserDetail V2MemberUserDetail.firstName(String)",
-      "String V2MemberUserDetail.getCompany()", "Integer V2MemberUserDetail.getCompanyId()",
-      "String V2MemberUserDetail.getDisplayName()", "String V2MemberUserDetail.getEmail()",
-      "String V2MemberUserDetail.getFirstName()", "Boolean V2MemberUserDetail.getIsExternal()",
-      "String V2MemberUserDetail.getLastName()", "Long V2MemberUserDetail.getUserId()",
-      "V2MemberUserDetail V2MemberUserDetail.isExternal(Boolean)",
-      "V2MemberUserDetail V2MemberUserDetail.lastName(String)", "void V2MemberUserDetail.setCompany(String)",
-      "void V2MemberUserDetail.setCompanyId(Integer)", "void V2MemberUserDetail.setDisplayName(String)",
-      "void V2MemberUserDetail.setEmail(String)", "void V2MemberUserDetail.setFirstName(String)",
-      "void V2MemberUserDetail.setIsExternal(Boolean)", "void V2MemberUserDetail.setLastName(String)",
-      "void V2MemberUserDetail.setUserId(Long)", "String V2MemberUserDetail.toString()",
-      "V2MemberUserDetail V2MemberUserDetail.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2MemberUserDetail.<init>()",
+    "V2MemberUserDetail V2MemberUserDetail.company(String)",
+    "V2MemberUserDetail V2MemberUserDetail.companyId(Integer)",
+    "V2MemberUserDetail V2MemberUserDetail.displayName(String)",
+    "V2MemberUserDetail V2MemberUserDetail.email(String)",
+    "V2MemberUserDetail V2MemberUserDetail.firstName(String)",
+    "String V2MemberUserDetail.getCompany()",
+    "Integer V2MemberUserDetail.getCompanyId()",
+    "String V2MemberUserDetail.getDisplayName()",
+    "String V2MemberUserDetail.getEmail()",
+    "String V2MemberUserDetail.getFirstName()",
+    "Boolean V2MemberUserDetail.getIsExternal()",
+    "String V2MemberUserDetail.getLastName()",
+    "Long V2MemberUserDetail.getUserId()",
+    "V2MemberUserDetail V2MemberUserDetail.isExternal(Boolean)",
+    "V2MemberUserDetail V2MemberUserDetail.lastName(String)",
+    "void V2MemberUserDetail.setCompany(String)",
+    "void V2MemberUserDetail.setCompanyId(Integer)",
+    "void V2MemberUserDetail.setDisplayName(String)",
+    "void V2MemberUserDetail.setEmail(String)",
+    "void V2MemberUserDetail.setFirstName(String)",
+    "void V2MemberUserDetail.setIsExternal(Boolean)",
+    "void V2MemberUserDetail.setLastName(String)",
+    "void V2MemberUserDetail.setUserId(Long)",
+    "String V2MemberUserDetail.toString()",
+    "V2MemberUserDetail V2MemberUserDetail.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2MemberUserDetail actualV2MemberUserDetail = new V2MemberUserDetail();
     V2MemberUserDetail actualCompanyResult = actualV2MemberUserDetail.company("Company");
     V2MemberUserDetail actualCompanyIdResult = actualV2MemberUserDetail.companyId(1);
-    V2MemberUserDetail actualDisplayNameResult = actualV2MemberUserDetail.displayName("Display Name");
+    V2MemberUserDetail actualDisplayNameResult =
+        actualV2MemberUserDetail.displayName("Display Name");
     V2MemberUserDetail actualEmailResult = actualV2MemberUserDetail.email("jane.doe@example.org");
     V2MemberUserDetail actualFirstNameResult = actualV2MemberUserDetail.firstName("Jane");
     V2MemberUserDetail actualLastNameResult = actualV2MemberUserDetail.lastName("Doe");
@@ -350,9 +433,18 @@ public class V2MemberUserDetailDiffblueTest {
     assertEquals("Display Name", actualDisplayName);
     assertEquals("Doe", actualLastName);
     assertEquals("Jane", actualFirstName);
-    assertEquals("class V2MemberUserDetail {\n" + "    userId: 1\n" + "    email: jane.doe@example.org\n"
-        + "    firstName: Jane\n" + "    lastName: Doe\n" + "    displayName: Display Name\n" + "    company: Company\n"
-        + "    companyId: 1\n" + "    isExternal: true\n" + "}", actualToStringResult);
+    assertEquals(
+        "class V2MemberUserDetail {\n"
+            + "    userId: 1\n"
+            + "    email: jane.doe@example.org\n"
+            + "    firstName: Jane\n"
+            + "    lastName: Doe\n"
+            + "    displayName: Display Name\n"
+            + "    company: Company\n"
+            + "    companyId: 1\n"
+            + "    isExternal: true\n"
+            + "}",
+        actualToStringResult);
     assertEquals("jane.doe@example.org", actualEmail);
     assertEquals(1, actualCompanyId.intValue());
     assertEquals(1L, actualUserId.longValue());

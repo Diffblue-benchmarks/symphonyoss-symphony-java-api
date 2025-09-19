@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class UserSearchQueryDiffblueTest {
   /**
    * Test {@link UserSearchQuery#equals(Object)}, and {@link UserSearchQuery#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserSearchQuery#equals(Object)}
    *   <li>{@link UserSearchQuery#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class UserSearchQueryDiffblueTest {
 
     // Act and Assert
     assertEquals(userSearchQuery, userSearchQuery2);
-    int expectedHashCodeResult = userSearchQuery.hashCode();
-    assertEquals(expectedHashCodeResult, userSearchQuery2.hashCode());
+    assertEquals(userSearchQuery.hashCode(), userSearchQuery2.hashCode());
   }
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}, and {@link UserSearchQuery#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserSearchQuery#equals(Object)}
    *   <li>{@link UserSearchQuery#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSearchQuery#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSearchQuery#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSearchQuery#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSearchQuery#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test {@link UserSearchQuery#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserSearchQuery#equals(Object)}
+   *
+   * <p>Method under test: {@link UserSearchQuery#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserSearchQuery.equals(Object)", "int UserSearchQuery.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class UserSearchQueryDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserSearchQuery}
    *   <li>{@link UserSearchQuery#filters(UserSearchFilter)}
@@ -162,10 +179,17 @@ public class UserSearchQueryDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserSearchQuery.<init>()", "UserSearchQuery UserSearchQuery.filters(UserSearchFilter)",
-      "UserSearchFilter UserSearchQuery.getFilters()", "String UserSearchQuery.getQuery()",
-      "UserSearchQuery UserSearchQuery.query(String)", "void UserSearchQuery.setFilters(UserSearchFilter)",
-      "void UserSearchQuery.setQuery(String)", "String UserSearchQuery.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserSearchQuery.<init>()",
+    "UserSearchQuery UserSearchQuery.filters(UserSearchFilter)",
+    "UserSearchFilter UserSearchQuery.getFilters()",
+    "String UserSearchQuery.getQuery()",
+    "UserSearchQuery UserSearchQuery.query(String)",
+    "void UserSearchQuery.setFilters(UserSearchFilter)",
+    "void UserSearchQuery.setQuery(String)",
+    "String UserSearchQuery.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserSearchQuery actualUserSearchQuery = new UserSearchQuery();
@@ -180,8 +204,14 @@ public class UserSearchQueryDiffblueTest {
     // Assert
     assertEquals("Query", actualUserSearchQuery.getQuery());
     assertEquals(
-        "class UserSearchQuery {\n" + "    query: Query\n" + "    filters: class UserSearchFilter {\n"
-            + "        title: null\n" + "        company: null\n" + "        location: null\n" + "    }\n" + "}",
+        "class UserSearchQuery {\n"
+            + "    query: Query\n"
+            + "    filters: class UserSearchFilter {\n"
+            + "        title: null\n"
+            + "        company: null\n"
+            + "        location: null\n"
+            + "    }\n"
+            + "}",
         actualToStringResult);
     assertSame(filters, actualFilters);
     assertSame(actualUserSearchQuery, actualFiltersResult);

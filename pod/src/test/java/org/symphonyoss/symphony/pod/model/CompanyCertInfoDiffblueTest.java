@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.pod.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class CompanyCertInfoDiffblueTest {
   /**
    * Test {@link CompanyCertInfo#equals(Object)}, and {@link CompanyCertInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link CompanyCertInfo#equals(Object)}
    *   <li>{@link CompanyCertInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class CompanyCertInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(companyCertInfo, companyCertInfo2);
-    int expectedHashCodeResult = companyCertInfo.hashCode();
-    assertEquals(expectedHashCodeResult, companyCertInfo2.hashCode());
+    assertEquals(companyCertInfo.hashCode(), companyCertInfo2.hashCode());
   }
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}, and {@link CompanyCertInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link CompanyCertInfo#equals(Object)}
    *   <li>{@link CompanyCertInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -176,14 +194,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
@@ -196,14 +216,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual8() {
     // Arrange
@@ -216,14 +238,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -232,14 +256,16 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test {@link CompanyCertInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link CompanyCertInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link CompanyCertInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean CompanyCertInfo.equals(Object)", "int CompanyCertInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -248,8 +274,9 @@ public class CompanyCertInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link CompanyCertInfo}
    *   <li>{@link CompanyCertInfo#commonName(String)}
@@ -277,25 +304,39 @@ public class CompanyCertInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void CompanyCertInfo.<init>()", "CompanyCertInfo CompanyCertInfo.commonName(String)",
-      "CompanyCertInfo CompanyCertInfo.expiryDate(Long)", "CompanyCertInfo CompanyCertInfo.fingerPrint(String)",
-      "String CompanyCertInfo.getCommonName()", "Long CompanyCertInfo.getExpiryDate()",
-      "String CompanyCertInfo.getFingerPrint()", "String CompanyCertInfo.getIssuerFingerPrint()",
-      "Long CompanyCertInfo.getLastSeen()", "Long CompanyCertInfo.getUpdatedAt()",
-      "Long CompanyCertInfo.getUpdatedBy()", "CompanyCertInfo CompanyCertInfo.issuerFingerPrint(String)",
-      "CompanyCertInfo CompanyCertInfo.lastSeen(Long)", "void CompanyCertInfo.setCommonName(String)",
-      "void CompanyCertInfo.setExpiryDate(Long)", "void CompanyCertInfo.setFingerPrint(String)",
-      "void CompanyCertInfo.setIssuerFingerPrint(String)", "void CompanyCertInfo.setLastSeen(Long)",
-      "void CompanyCertInfo.setUpdatedAt(Long)", "void CompanyCertInfo.setUpdatedBy(Long)",
-      "String CompanyCertInfo.toString()", "CompanyCertInfo CompanyCertInfo.updatedAt(Long)",
-      "CompanyCertInfo CompanyCertInfo.updatedBy(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void CompanyCertInfo.<init>()",
+    "CompanyCertInfo CompanyCertInfo.commonName(String)",
+    "CompanyCertInfo CompanyCertInfo.expiryDate(Long)",
+    "CompanyCertInfo CompanyCertInfo.fingerPrint(String)",
+    "String CompanyCertInfo.getCommonName()",
+    "Long CompanyCertInfo.getExpiryDate()",
+    "String CompanyCertInfo.getFingerPrint()",
+    "String CompanyCertInfo.getIssuerFingerPrint()",
+    "Long CompanyCertInfo.getLastSeen()",
+    "Long CompanyCertInfo.getUpdatedAt()",
+    "Long CompanyCertInfo.getUpdatedBy()",
+    "CompanyCertInfo CompanyCertInfo.issuerFingerPrint(String)",
+    "CompanyCertInfo CompanyCertInfo.lastSeen(Long)",
+    "void CompanyCertInfo.setCommonName(String)",
+    "void CompanyCertInfo.setExpiryDate(Long)",
+    "void CompanyCertInfo.setFingerPrint(String)",
+    "void CompanyCertInfo.setIssuerFingerPrint(String)",
+    "void CompanyCertInfo.setLastSeen(Long)",
+    "void CompanyCertInfo.setUpdatedAt(Long)",
+    "void CompanyCertInfo.setUpdatedBy(Long)",
+    "String CompanyCertInfo.toString()",
+    "CompanyCertInfo CompanyCertInfo.updatedAt(Long)",
+    "CompanyCertInfo CompanyCertInfo.updatedBy(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     CompanyCertInfo actualCompanyCertInfo = new CompanyCertInfo();
     CompanyCertInfo actualCommonNameResult = actualCompanyCertInfo.commonName("Common Name");
     CompanyCertInfo actualExpiryDateResult = actualCompanyCertInfo.expiryDate(1L);
-    CompanyCertInfo actualFingerPrintResult = actualCompanyCertInfo
-        .fingerPrint("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09");
+    CompanyCertInfo actualFingerPrintResult =
+        actualCompanyCertInfo.fingerPrint("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09");
     CompanyCertInfo actualLastSeenResult = actualCompanyCertInfo.lastSeen(1L);
     actualCompanyCertInfo.setCommonName("Common Name");
     actualCompanyCertInfo.setExpiryDate(1L);
@@ -306,8 +347,8 @@ public class CompanyCertInfoDiffblueTest {
     actualCompanyCertInfo.setUpdatedBy(1L);
     CompanyCertInfo actualUpdatedAtResult = actualCompanyCertInfo.updatedAt(1L);
     CompanyCertInfo actualUpdatedByResult = actualCompanyCertInfo.updatedBy(1L);
-    CompanyCertInfo actualIssuerFingerPrintResult = actualCompanyCertInfo
-        .issuerFingerPrint("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09");
+    CompanyCertInfo actualIssuerFingerPrintResult =
+        actualCompanyCertInfo.issuerFingerPrint("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09");
     String actualToStringResult = actualCompanyCertInfo.toString();
     String actualCommonName = actualCompanyCertInfo.getCommonName();
     Long actualExpiryDate = actualCompanyCertInfo.getExpiryDate();
@@ -321,9 +362,16 @@ public class CompanyCertInfoDiffblueTest {
     assertEquals("Common Name", actualCommonName);
     assertEquals("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09", actualFingerPrint);
     assertEquals("b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09", actualIssuerFingerPrint);
-    assertEquals("class CompanyCertInfo {\n" + "    fingerPrint: b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09\n"
-        + "    issuerFingerPrint: b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09\n" + "    lastSeen: 1\n"
-        + "    updatedAt: 1\n" + "    updatedBy: 1\n" + "    commonName: Common Name\n" + "    expiryDate: 1\n" + "}",
+    assertEquals(
+        "class CompanyCertInfo {\n"
+            + "    fingerPrint: b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09\n"
+            + "    issuerFingerPrint: b6:03:0e:39:97:9e:d0:e7:24:ce:a3:77:3e:01:42:09\n"
+            + "    lastSeen: 1\n"
+            + "    updatedAt: 1\n"
+            + "    updatedBy: 1\n"
+            + "    commonName: Common Name\n"
+            + "    expiryDate: 1\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualExpiryDate.longValue());
     assertEquals(1L, actualLastSeen.longValue());

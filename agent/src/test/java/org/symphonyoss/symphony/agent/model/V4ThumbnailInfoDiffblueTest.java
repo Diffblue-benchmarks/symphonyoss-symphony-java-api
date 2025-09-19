@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V4ThumbnailInfoDiffblueTest {
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}, and {@link V4ThumbnailInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4ThumbnailInfo#equals(Object)}
    *   <li>{@link V4ThumbnailInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V4ThumbnailInfoDiffblueTest {
 
     // Act and Assert
     assertEquals(v4ThumbnailInfo, v4ThumbnailInfo2);
-    int expectedHashCodeResult = v4ThumbnailInfo.hashCode();
-    assertEquals(expectedHashCodeResult, v4ThumbnailInfo2.hashCode());
+    assertEquals(v4ThumbnailInfo.hashCode(), v4ThumbnailInfo2.hashCode());
   }
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}, and {@link V4ThumbnailInfo#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V4ThumbnailInfo#equals(Object)}
    *   <li>{@link V4ThumbnailInfo#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ThumbnailInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ThumbnailInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ThumbnailInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ThumbnailInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ThumbnailInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ThumbnailInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ThumbnailInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ThumbnailInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -132,14 +146,16 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test {@link V4ThumbnailInfo#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V4ThumbnailInfo#equals(Object)}
+   *
+   * <p>Method under test: {@link V4ThumbnailInfo#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V4ThumbnailInfo.equals(Object)", "int V4ThumbnailInfo.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -148,8 +164,9 @@ public class V4ThumbnailInfoDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V4ThumbnailInfo}
    *   <li>{@link V4ThumbnailInfo#dimension(String)}
@@ -162,10 +179,17 @@ public class V4ThumbnailInfoDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V4ThumbnailInfo.<init>()", "V4ThumbnailInfo V4ThumbnailInfo.dimension(String)",
-      "String V4ThumbnailInfo.getDimension()", "String V4ThumbnailInfo.getId()",
-      "V4ThumbnailInfo V4ThumbnailInfo.id(String)", "void V4ThumbnailInfo.setDimension(String)",
-      "void V4ThumbnailInfo.setId(String)", "String V4ThumbnailInfo.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V4ThumbnailInfo.<init>()",
+    "V4ThumbnailInfo V4ThumbnailInfo.dimension(String)",
+    "String V4ThumbnailInfo.getDimension()",
+    "String V4ThumbnailInfo.getId()",
+    "V4ThumbnailInfo V4ThumbnailInfo.id(String)",
+    "void V4ThumbnailInfo.setDimension(String)",
+    "void V4ThumbnailInfo.setId(String)",
+    "String V4ThumbnailInfo.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V4ThumbnailInfo actualV4ThumbnailInfo = new V4ThumbnailInfo();
@@ -179,7 +203,8 @@ public class V4ThumbnailInfoDiffblueTest {
     // Assert
     assertEquals("42", actualV4ThumbnailInfo.getId());
     assertEquals("Dimension", actualDimension);
-    assertEquals("class V4ThumbnailInfo {\n    id: 42\n    dimension: Dimension\n}", actualToStringResult);
+    assertEquals(
+        "class V4ThumbnailInfo {\n    id: 42\n    dimension: Dimension\n}", actualToStringResult);
     assertSame(actualV4ThumbnailInfo, actualDimensionResult);
     assertSame(actualV4ThumbnailInfo, actualIdResult);
   }

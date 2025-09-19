@@ -1,0 +1,3086 @@
+{
+  "meta" : {
+    "reportVersion" : "2.7"
+  },
+  "run" : {
+    "version" : "2025.09.01-44e352d-licensed",
+    "creationTimestamp" : "2025-09-19T08:54:40.734Z",
+    "command" : "dcover create --coverage-reports --upload http://localhost:8080 --project-name symphonyoss-symphony-java-api --name with-diffblue-tests",
+    "totalTime" : 154.087,
+    "environmentDetectionTime" : 0.272,
+    "indexingTime" : 0.308,
+    "entryPointsTime" : 0.26,
+    "generationTime" : 507.997,
+    "timeToFirstTest" : 205.507,
+    "timeToLastTest" : 586.552,
+    "indexQueryTime" : 4.461,
+    "verificationTime" : 23.367,
+    "validationTime" : 12.611
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R005" : "Unable to load class",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T002" : "Trivial setter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T010" : "Abstract or interface method",
+    "T012" : "Synthetic method",
+    "T020" : "Other trivial method",
+    "T023" : "Testability unknown",
+    "V000" : "Validated successfully",
+    "V003" : "Tests discarded during validation"
+  },
+  "summary" : {
+    "classesCount" : 27,
+    "methodsCount" : 179,
+    "cumulativeDiffblueTestCount" : 154,
+    "cumulativeManualTestCount" : 0,
+    "completeTestCount" : 158,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "totalPhysicalLineCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 58,
+      "T001" : 36,
+      "T002" : 33,
+      "T003" : 13,
+      "T004" : 7,
+      "T005" : 21,
+      "T010" : 1,
+      "T012" : 2,
+      "T020" : 6,
+      "T023" : 2
+    },
+    "perMethodOutcome" : {
+      "R000" : 141,
+      "R005" : 7,
+      "R013" : 2,
+      "T003" : 13,
+      "T004" : 7,
+      "T005" : 4,
+      "T010" : 1,
+      "T012" : 2,
+      "T023" : 2
+    },
+    "perTestOutcome" : {
+      "R000" : 158
+    },
+    "perTestValidation" : {
+      "V000" : 154,
+      "V003" : 4
+    }
+  },
+  "classes" : {
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 7,
+        "T001" : 1,
+        "T002" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 4,
+        "R005" : 6
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$1" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$2" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$3" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$4" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$5" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$6" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T002" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 4,
+        "R005" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi$1" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient" : {
+      "methodsCount" : 41,
+      "completeTestCount" : 72,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 25,
+        "T001" : 10,
+        "T002" : 3,
+        "T003" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 36,
+        "R013" : 2,
+        "T003" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 72
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException" : {
+      "methodsCount" : 12,
+      "completeTestCount" : 9,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 3,
+        "T005" : 7
+      },
+      "perMethodOutcome" : {
+        "R000" : 12
+      },
+      "perTestOutcome" : {
+        "R000" : 9
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Configuration" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T002" : 1,
+        "T005" : 1,
+        "T023" : 1
+      },
+      "perMethodOutcome" : {
+        "T005" : 3,
+        "T023" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.JSON" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 4
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2,
+        "T003" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 3,
+        "T003" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 4
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.RFC3339DateFormat" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.StringUtil" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "T005" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 7
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 4,
+        "T002" : 2,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 8
+      },
+      "perTestOutcome" : {
+        "R000" : 10
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.Authentication" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T010" : 1
+      },
+      "perMethodOutcome" : {
+        "T010" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2,
+        "T002" : 2,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 6
+      },
+      "perTestOutcome" : {
+        "R000" : 3
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuth" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T002" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 4
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuthFlow" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 2,
+        "T023" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 2,
+        "T023" : 1
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T002" : 2,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 7,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 8,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 2,
+        "T002" : 4,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 10,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 8
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens" : {
+      "methodsCount" : 17,
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 4,
+        "T002" : 8,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 16,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 10
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T002" : 2,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 7,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T002" : 2,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 7,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 8,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 2,
+        "T002" : 4,
+        "T003" : 1,
+        "T005" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 10,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 8
+      }
+    }
+  },
+  "methods" : {
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$1.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        73
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$2.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        123
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$3.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        173
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$4.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        214
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$5.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        249
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi$6.<init>:(Lorg/symphonyoss/symphony/authenticator/api/AuthenticationApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        26,
+        27
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.<init>:(Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        29,
+        30,
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.getApiClient:()Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        34
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.setApiClient:(Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        38,
+        39
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1AppAuthenticatePost:()Lorg/symphonyoss/symphony/authenticator/model/Token;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        48,
+        51,
+        54,
+        55,
+        56,
+        61,
+        64,
+        66,
+        69,
+        71,
+        73,
+        74
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1AppUserUidAuthenticatePost:(Ljava/lang/Long;Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/OboAuthResponse;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        85,
+        88,
+        89,
+        93,
+        94,
+        98,
+        99,
+        102,
+        103,
+        104,
+        107,
+        108,
+        111,
+        114,
+        116,
+        119,
+        121,
+        123,
+        124
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1AppUsernameUsernameAuthenticatePost:(Ljava/lang/String;Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/OboAuthResponse;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        135,
+        138,
+        139,
+        143,
+        144,
+        148,
+        149,
+        152,
+        153,
+        154,
+        157,
+        158,
+        161,
+        164,
+        166,
+        169,
+        171,
+        173,
+        174
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1AuthenticateExtensionAppPost:(Lorg/symphonyoss/symphony/authenticator/model/AuthenticateRequest;)Lorg/symphonyoss/symphony/authenticator/model/ExtensionAppTokens;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        184,
+        187,
+        188,
+        192,
+        195,
+        196,
+        197,
+        202,
+        205,
+        207,
+        210,
+        212,
+        214,
+        215
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1AuthenticatePost:()Lorg/symphonyoss/symphony/authenticator/model/Token;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        224,
+        227,
+        230,
+        231,
+        232,
+        237,
+        240,
+        242,
+        245,
+        247,
+        249,
+        250
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.AuthenticationApi.v1LogoutPost:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/Token;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        260,
+        263,
+        264,
+        268,
+        271,
+        272,
+        273,
+        276,
+        277,
+        280,
+        283,
+        285,
+        288,
+        290,
+        292,
+        293
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi$1.<init>:(Lorg/symphonyoss/symphony/authenticator/api/PodApi;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        23,
+        24
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi.<init>:(Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        26,
+        27,
+        28
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi.getApiClient:()Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi.setApiClient:(Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35,
+        36
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.api.PodApi.v1AppPodCertificateGet:()Lorg/symphonyoss/symphony/authenticator/model/PodCertificate;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        45,
+        48,
+        51,
+        52,
+        53,
+        58,
+        61,
+        63,
+        66,
+        68,
+        70,
+        71
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        70,
+        54,
+        55,
+        56,
+        57,
+        61,
+        71,
+        72,
+        74,
+        77,
+        80,
+        82,
+        83
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.addDefaultHeader:(Ljava/lang/String;Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        233,
+        234
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.buildHttpClient:(Z)Ljavax/ws/rs/client/Client;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        737
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.buildResponseHeaders:(Ljavax/ws/rs/core/Response;)Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.deserialize:(Ljavax/ws/rs/core/Response;Ljavax/ws/rs/core/GenericType;)Ljava/lang/Object;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        544,
+        545,
+        548,
+        550,
+        551,
+        553,
+        554,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        564
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.downloadFileFromResponse:(Ljavax/ws/rs/core/Response;)Ljava/io/File;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        575,
+        576,
+        577,
+        578,
+        579
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.escapeString:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        490,
+        491,
+        492
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.formatDate:(Ljava/util/Date;)Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        339
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getAuthentication:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/auth/Authentication;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        142
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getAuthentications:()Ljava/util/Map;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        132
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getBasePath:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        103
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getConnectTimeout:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        284
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getDateFormat:()Ljava/text/DateFormat;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        305
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getHttpClient:()Ljavax/ws/rs/client/Client;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        94
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getJSON:()Lorg/symphonyoss/symphony/authenticator/invoker/JSON;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        90
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getResponseHeaders:()Ljava/util/Map;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        124
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getStatusCode:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        116
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.getTempFolderPath:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        266
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.invokeAPI:(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Object;Ljava/util/Map;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljavax/ws/rs/core/GenericType;)Ljava/lang/Object;" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      },
+      "lineNumbers" : [
+        636,
+        640,
+        642,
+        643,
+        644,
+        645,
+        647,
+        650,
+        652,
+        653,
+        654,
+        655,
+        657,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        667,
+        669,
+        671,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        685,
+        688,
+        689,
+        691,
+        692,
+        717,
+        720,
+        718,
+        692,
+        693,
+        694,
+        695,
+        717,
+        720,
+        718,
+        695,
+        697,
+        717,
+        720,
+        718,
+        697,
+        699,
+        700,
+        701,
+        703,
+        704,
+        707,
+        705,
+        709,
+        710,
+        712,
+        716,
+        717,
+        720,
+        718,
+        721
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.isDebugging:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        242
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.isJsonMime:(Ljava/lang/String;)Z" : {
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 10
+      },
+      "lineNumbers" : [
+        437,
+        438
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.parameterToPairs:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List;" : {
+      "completeTestCount" : 17,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 17
+      },
+      "lineNumbers" : [
+        374,
+        377,
+        380,
+        381,
+        383,
+        384,
+        387,
+        388,
+        392,
+        395,
+        396,
+        397,
+        398,
+        400,
+        403,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        415,
+        416,
+        417,
+        418,
+        419,
+        421,
+        423
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.parameterToString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      },
+      "lineNumbers" : [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        358,
+        359,
+        360,
+        362
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.parseDate:(Ljava/lang/String;)Ljava/util/Date;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        327,
+        328,
+        329
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.prepareDownloadFile:(Ljavax/ws/rs/core/Response;)Ljava/io/File;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        584,
+        585,
+        586,
+        588,
+        589,
+        590,
+        591,
+        595,
+        596,
+        597,
+        598,
+        600,
+        601,
+        602,
+        604,
+        605,
+        608,
+        609,
+        612,
+        613,
+        615
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.selectHeaderAccept:([Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      },
+      "lineNumbers" : [
+        451,
+        452,
+        454,
+        455,
+        456,
+        454,
+        459
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.selectHeaderContentType:([Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      },
+      "lineNumbers" : [
+        472,
+        473,
+        475,
+        476,
+        477,
+        475,
+        480
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.serialize:(Ljava/lang/Object;Ljava/util/Map;Ljava/lang/String;)Ljavax/ws/rs/client/Entity;" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        529,
+        531
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setAccessToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        206,
+        207,
+        208,
+        209,
+        211,
+        212
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setApiKey:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        178,
+        179,
+        180,
+        181,
+        183,
+        184
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setApiKeyPrefix:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        192,
+        193,
+        194,
+        195,
+        197,
+        198
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setBasePath:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        107,
+        108
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setConnectTimeout:(I)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        295,
+        296,
+        297
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setDateFormat:(Ljava/text/DateFormat;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        314,
+        316,
+        317
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setDebugging:(Z)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        252,
+        254,
+        255
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setHttpClient:(Ljavax/ws/rs/client/Client;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        98,
+        99
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setPassword:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        164,
+        165,
+        166,
+        167,
+        169,
+        170
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setTempFolderPath:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        275,
+        276
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setUserAgent:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        221,
+        222
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.setUsername:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        150,
+        151,
+        152,
+        153,
+        155,
+        156
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiClient.updateParamsForAuth:([Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        759,
+        760,
+        761,
+        762,
+        759,
+        764
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:()V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        25,
+        21,
+        22,
+        23,
+        25
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(ILjava/lang/String;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        55,
+        21,
+        22,
+        23,
+        56,
+        57
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(ILjava/util/Map;Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        51,
+        52
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        32,
+        21,
+        22,
+        23,
+        33
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(Ljava/lang/String;ILjava/util/Map;Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        43,
+        44
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;ILjava/util/Map;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        47,
+        48
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;ILjava/util/Map;Ljava/lang/String;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        36,
+        21,
+        22,
+        23,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.<init>:(Ljava/lang/Throwable;)V" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        28,
+        21,
+        22,
+        23,
+        29
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.getCode:()I" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.getResponseBody:()Ljava/lang/String;" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        89
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.ApiException.getResponseHeaders:()Ljava/util/Map;" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        80
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Configuration.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T023",
+      "perMethodOutcome" : "T023"
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Configuration.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "T005",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Configuration.getDefaultApiClient:()Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "T005",
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Configuration.setDefaultApiClient:(Lorg/symphonyoss/symphony/authenticator/invoker/ApiClient;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "T005",
+      "lineNumbers" : [
+        37,
+        38
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.JSON.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.JSON.getContext:(Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        37
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.JSON.setDateFormat:(Ljava/text/DateFormat;)V" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        32,
+        33
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.<init>:(Ljava/lang/String;Ljava/lang/String;)V" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        21,
+        18,
+        19,
+        22,
+        23,
+        24
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.getName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.getValue:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.isValidString:(Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        47,
+        48,
+        50
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.setName:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        29,
+        30
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.Pair.setValue:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        33,
+        35,
+        36
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.RFC3339DateFormat.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.RFC3339DateFormat.format:(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28,
+        29
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.StringUtil.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "T005",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.StringUtil.containsIgnoreCase:([Ljava/lang/String;Ljava/lang/String;)Z" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        26,
+        27,
+        28,
+        26,
+        30
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.StringUtil.join:([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        50,
+        53
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.<init>:(Ljava/lang/String;Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.applyToParams:(Ljava/util/List;Ljava/util/Map;)V" : {
+      "completeTestCount" : 9,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 9
+      },
+      "lineNumbers" : [
+        60,
+        61,
+        64,
+        65,
+        67,
+        69,
+        70,
+        71,
+        72,
+        74
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.getApiKey:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.getApiKeyPrefix:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        51
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.getLocation:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.getParamName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.setApiKey:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        47,
+        48
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.ApiKeyAuth.setApiKeyPrefix:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        55,
+        56
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.Authentication.applyToParams:(Ljava/util/List;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        26
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.applyToParams:(Ljava/util/List;Ljava/util/Map;)V" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        48,
+        49,
+        51,
+        52,
+        53
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.getPassword:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.getUsername:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.setPassword:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        43,
+        44
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.HttpBasicAuth.setUsername:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35,
+        36
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuth.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuth.applyToParams:(Ljava/util/List;Ljava/util/Map;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35,
+        36,
+        38
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuth.getAccessToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        26
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuth.setAccessToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        30,
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuthFlow.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T023",
+      "perMethodOutcome" : "T023"
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuthFlow.<init>:(Ljava/lang/String;I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuthFlow.valueOf:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/invoker/auth/OAuthFlow;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.invoker.auth.OAuthFlow.values:()[Lorg/symphonyoss/symphony/authenticator/invoker/auth/OAuthFlow;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        28,
+        29
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.appToken:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/AuthenticateRequest;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        33,
+        34
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        53,
+        54,
+        56,
+        57,
+        59,
+        60
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.getAppToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.hashCode:()I" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        65
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.setAppToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        47,
+        48
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        84,
+        85,
+        87
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.AuthenticateRequest.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        71,
+        72,
+        74,
+        75,
+        76
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28,
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.code:(Ljava/lang/Integer;)Lorg/symphonyoss/symphony/authenticator/model/Error;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35,
+        36
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        73,
+        74,
+        76,
+        77,
+        79,
+        80,
+        81,
+        80
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.getCode:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        45
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.getMessage:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        63
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.hashCode:()I" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        86
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.message:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/Error;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        53,
+        54
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.setCode:(Ljava/lang/Integer;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        49,
+        50
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.setMessage:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        67,
+        68
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        106,
+        107,
+        109
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Error.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        92,
+        93,
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28,
+        31,
+        34,
+        37
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.appId:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/ExtensionAppTokens;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        41,
+        42
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.appToken:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/ExtensionAppTokens;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        59,
+        60
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 9,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 9
+      },
+      "lineNumbers" : [
+        115,
+        116,
+        118,
+        119,
+        121,
+        122,
+        123,
+        124,
+        125,
+        122
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.expireAt:(Ljava/lang/Long;)Lorg/symphonyoss/symphony/authenticator/model/ExtensionAppTokens;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        95,
+        96
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.getAppId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        51
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.getAppToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        69
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.getExpireAt:()Ljava/lang/Long;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        105
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.getSymphonyToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        87
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.hashCode:()I" : {
+      "completeTestCount" : 9,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 9
+      },
+      "lineNumbers" : [
+        130
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.setAppId:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        55,
+        56
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.setAppToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        73,
+        74
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.setExpireAt:(Ljava/lang/Long;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        109,
+        110
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.setSymphonyToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        91,
+        92
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.symphonyToken:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/ExtensionAppTokens;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        77,
+        78
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        152,
+        153,
+        155
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.ExtensionAppTokens.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        136,
+        137,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        52,
+        53,
+        55,
+        56,
+        58,
+        59
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.getSessionToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        42
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.hashCode:()I" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        64
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.sessionToken:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/OboAuthResponse;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        32,
+        33
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.setSessionToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        46,
+        47
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        83,
+        84,
+        86
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.OboAuthResponse.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        70,
+        71,
+        73,
+        74,
+        75
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.certificate:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/PodCertificate;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        32,
+        33
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        52,
+        53,
+        55,
+        56,
+        58,
+        59
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.getCertificate:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        42
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.hashCode:()I" : {
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "lineNumbers" : [
+        64
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.setCertificate:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        46,
+        47
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        83,
+        84,
+        86
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.PodCertificate.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        70,
+        71,
+        73,
+        74,
+        75
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28,
+        31
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        73,
+        74,
+        76,
+        77,
+        79,
+        80,
+        81,
+        80
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.getName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        45
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.getToken:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        63
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.hashCode:()I" : {
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 7
+      },
+      "lineNumbers" : [
+        86
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.name:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/Token;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35,
+        36
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.setName:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        49,
+        50
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.setToken:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        67,
+        68
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.toIndentedString:(Ljava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        106,
+        107,
+        109
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        92,
+        93,
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    "org.symphonyoss.symphony.authenticator.model.Token.token:(Ljava/lang/String;)Lorg/symphonyoss/symphony/authenticator/model/Token;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        53,
+        54
+      ]
+    }
+  },
+  "validationMetrics" : { }
+}

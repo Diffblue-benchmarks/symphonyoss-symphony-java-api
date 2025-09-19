@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 import org.symphonyoss.symphony.pod.model.UserConnection.StatusEnum;
@@ -11,18 +12,21 @@ import org.symphonyoss.symphony.pod.model.UserConnection.StatusEnum;
 public class UserConnectionDiffblueTest {
   /**
    * Test {@link UserConnection#equals(Object)}, and {@link UserConnection#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserConnection#equals(Object)}
    *   <li>{@link UserConnection#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -31,24 +35,26 @@ public class UserConnectionDiffblueTest {
 
     // Act and Assert
     assertEquals(userConnection, userConnection2);
-    int expectedHashCodeResult = userConnection.hashCode();
-    assertEquals(expectedHashCodeResult, userConnection2.hashCode());
+    assertEquals(userConnection.hashCode(), userConnection2.hashCode());
   }
 
   /**
    * Test {@link UserConnection#equals(Object)}, and {@link UserConnection#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link UserConnection#equals(Object)}
    *   <li>{@link UserConnection#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -62,14 +68,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -78,14 +86,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -98,14 +108,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -118,14 +130,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -138,14 +152,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -158,14 +174,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
@@ -178,14 +196,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -194,14 +214,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test {@link UserConnection#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link UserConnection#equals(Object)}
+   *
+   * <p>Method under test: {@link UserConnection#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean UserConnection.equals(Object)", "int UserConnection.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -210,8 +232,9 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link UserConnection}
    *   <li>{@link UserConnection#firstRequestedAt(Long)}
@@ -233,14 +256,26 @@ public class UserConnectionDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void UserConnection.<init>()", "UserConnection UserConnection.firstRequestedAt(Long)",
-      "Long UserConnection.getFirstRequestedAt()", "Integer UserConnection.getRequestCounter()",
-      "StatusEnum UserConnection.getStatus()", "Long UserConnection.getUpdatedAt()", "Long UserConnection.getUserId()",
-      "UserConnection UserConnection.requestCounter(Integer)", "void UserConnection.setFirstRequestedAt(Long)",
-      "void UserConnection.setRequestCounter(Integer)", "void UserConnection.setStatus(StatusEnum)",
-      "void UserConnection.setUpdatedAt(Long)", "void UserConnection.setUserId(Long)",
-      "UserConnection UserConnection.status(StatusEnum)", "String UserConnection.toString()",
-      "UserConnection UserConnection.updatedAt(Long)", "UserConnection UserConnection.userId(Long)"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void UserConnection.<init>()",
+    "UserConnection UserConnection.firstRequestedAt(Long)",
+    "Long UserConnection.getFirstRequestedAt()",
+    "Integer UserConnection.getRequestCounter()",
+    "StatusEnum UserConnection.getStatus()",
+    "Long UserConnection.getUpdatedAt()",
+    "Long UserConnection.getUserId()",
+    "UserConnection UserConnection.requestCounter(Integer)",
+    "void UserConnection.setFirstRequestedAt(Long)",
+    "void UserConnection.setRequestCounter(Integer)",
+    "void UserConnection.setStatus(StatusEnum)",
+    "void UserConnection.setUpdatedAt(Long)",
+    "void UserConnection.setUserId(Long)",
+    "UserConnection UserConnection.status(StatusEnum)",
+    "String UserConnection.toString()",
+    "UserConnection UserConnection.updatedAt(Long)",
+    "UserConnection UserConnection.userId(Long)"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     UserConnection actualUserConnection = new UserConnection();
@@ -262,8 +297,15 @@ public class UserConnectionDiffblueTest {
     Long actualUserId = actualUserConnection.getUserId();
 
     // Assert
-    assertEquals("class UserConnection {\n" + "    userId: 1\n" + "    status: PENDING_INCOMING\n"
-        + "    firstRequestedAt: 1\n" + "    updatedAt: 1\n" + "    requestCounter: 3\n" + "}", actualToStringResult);
+    assertEquals(
+        "class UserConnection {\n"
+            + "    userId: 1\n"
+            + "    status: PENDING_INCOMING\n"
+            + "    firstRequestedAt: 1\n"
+            + "    updatedAt: 1\n"
+            + "    requestCounter: 3\n"
+            + "}",
+        actualToStringResult);
     assertEquals(1L, actualFirstRequestedAt.longValue());
     assertEquals(1L, actualUpdatedAt.longValue());
     assertEquals(1L, actualUserId.longValue());
@@ -278,14 +320,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code PENDING_INCOMING}.</li>
-   *   <li>Then return {@code PENDING_INCOMING}.</li>
+   *   <li>When {@code PENDING_INCOMING}.
+   *   <li>Then return {@code PENDING_INCOMING}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenPendingIncoming_thenReturnPendingIncoming() {
     // Arrange, Act and Assert
@@ -294,14 +338,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -310,14 +356,16 @@ public class UserConnectionDiffblueTest {
 
   /**
    * Test StatusEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StatusEnum#toString()}
    *   <li>{@link StatusEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String StatusEnum.getValue()", "String StatusEnum.toString()"})
   public void testStatusEnumGettersAndSetters() {
     // Arrange

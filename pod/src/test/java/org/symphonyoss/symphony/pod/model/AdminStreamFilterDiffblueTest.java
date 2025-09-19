@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,56 +18,75 @@ import org.symphonyoss.symphony.pod.model.AdminStreamFilter.StatusEnum;
 public class AdminStreamFilterDiffblueTest {
   /**
    * Test {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}.
+   *
    * <ul>
-   *   <li>Given {@link AdminStreamFilter} (default constructor).</li>
+   *   <li>Given {@link AdminStreamFilter} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AdminStreamFilter AdminStreamFilter.addStreamTypesItem(AdminStreamTypeEnum)"})
   public void testAddStreamTypesItem_givenAdminStreamFilter() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
 
-    // Act and Assert
-    assertSame(adminStreamFilter, adminStreamFilter.addStreamTypesItem(new AdminStreamTypeEnum()));
+    // Act
+    AdminStreamFilter actualAddStreamTypesItemResult =
+        adminStreamFilter.addStreamTypesItem(new AdminStreamTypeEnum());
+
+    // Assert
+    assertSame(adminStreamFilter, actualAddStreamTypesItemResult);
   }
 
   /**
    * Test {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}.
+   *
    * <ul>
-   *   <li>Given {@link AdminStreamFilter} (default constructor) streamTypes {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link AdminStreamFilter} (default constructor) streamTypes {@link
+   *       ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#addStreamTypesItem(AdminStreamTypeEnum)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"AdminStreamFilter AdminStreamFilter.addStreamTypesItem(AdminStreamTypeEnum)"})
   public void testAddStreamTypesItem_givenAdminStreamFilterStreamTypesArrayList() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
     adminStreamFilter.streamTypes(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(adminStreamFilter, adminStreamFilter.addStreamTypesItem(new AdminStreamTypeEnum()));
+    // Act
+    AdminStreamFilter actualAddStreamTypesItemResult =
+        adminStreamFilter.addStreamTypesItem(new AdminStreamTypeEnum());
+
+    // Assert
+    assertSame(adminStreamFilter, actualAddStreamTypesItemResult);
   }
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}, and {@link AdminStreamFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamFilter#equals(Object)}
    *   <li>{@link AdminStreamFilter#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -74,25 +94,30 @@ public class AdminStreamFilterDiffblueTest {
 
     // Act and Assert
     assertEquals(adminStreamFilter, adminStreamFilter2);
-    int expectedHashCodeResult = adminStreamFilter.hashCode();
-    assertEquals(expectedHashCodeResult, adminStreamFilter2.hashCode());
+    assertEquals(adminStreamFilter.hashCode(), adminStreamFilter2.hashCode());
   }
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}, and {@link AdminStreamFilter#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link AdminStreamFilter#equals(Object)}
    *   <li>{@link AdminStreamFilter#hashCode()}
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -105,15 +130,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -125,15 +155,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -145,15 +180,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -165,15 +205,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -185,15 +230,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -205,15 +255,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual6() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -225,15 +280,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual7() {
     // Arrange
     AdminStreamFilter adminStreamFilter = new AdminStreamFilter();
@@ -245,15 +305,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminStreamFilter(), null);
@@ -261,15 +326,20 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test {@link AdminStreamFilter#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link AdminStreamFilter#equals(Object)}
+   *
+   * <p>Method under test: {@link AdminStreamFilter#equals(Object)}
    */
   @Test
-  @MethodsUnderTest({"boolean AdminStreamFilter.equals(Object)", "int AdminStreamFilter.hashCode()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "boolean AdminStreamFilter.equals(Object)",
+    "int AdminStreamFilter.hashCode()"
+  })
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
     assertNotEquals(new AdminStreamFilter(), "Different type to AdminStreamFilter");
@@ -277,8 +347,9 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link AdminStreamFilter}
    *   <li>{@link AdminStreamFilter#endDate(Long)}
@@ -306,18 +377,32 @@ public class AdminStreamFilterDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void AdminStreamFilter.<init>()", "AdminStreamFilter AdminStreamFilter.endDate(Long)",
-      "Long AdminStreamFilter.getEndDate()", "OriginEnum AdminStreamFilter.getOrigin()",
-      "PrivacyEnum AdminStreamFilter.getPrivacy()", "ScopeEnum AdminStreamFilter.getScope()",
-      "Long AdminStreamFilter.getStartDate()", "StatusEnum AdminStreamFilter.getStatus()",
-      "List AdminStreamFilter.getStreamTypes()", "AdminStreamFilter AdminStreamFilter.origin(OriginEnum)",
-      "AdminStreamFilter AdminStreamFilter.privacy(PrivacyEnum)",
-      "AdminStreamFilter AdminStreamFilter.scope(ScopeEnum)", "void AdminStreamFilter.setEndDate(Long)",
-      "void AdminStreamFilter.setOrigin(OriginEnum)", "void AdminStreamFilter.setPrivacy(PrivacyEnum)",
-      "void AdminStreamFilter.setScope(ScopeEnum)", "void AdminStreamFilter.setStartDate(Long)",
-      "void AdminStreamFilter.setStatus(StatusEnum)", "void AdminStreamFilter.setStreamTypes(List)",
-      "AdminStreamFilter AdminStreamFilter.startDate(Long)", "AdminStreamFilter AdminStreamFilter.status(StatusEnum)",
-      "AdminStreamFilter AdminStreamFilter.streamTypes(List)", "String AdminStreamFilter.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void AdminStreamFilter.<init>()",
+    "AdminStreamFilter AdminStreamFilter.endDate(Long)",
+    "Long AdminStreamFilter.getEndDate()",
+    "OriginEnum AdminStreamFilter.getOrigin()",
+    "PrivacyEnum AdminStreamFilter.getPrivacy()",
+    "ScopeEnum AdminStreamFilter.getScope()",
+    "Long AdminStreamFilter.getStartDate()",
+    "StatusEnum AdminStreamFilter.getStatus()",
+    "List AdminStreamFilter.getStreamTypes()",
+    "AdminStreamFilter AdminStreamFilter.origin(OriginEnum)",
+    "AdminStreamFilter AdminStreamFilter.privacy(PrivacyEnum)",
+    "AdminStreamFilter AdminStreamFilter.scope(ScopeEnum)",
+    "void AdminStreamFilter.setEndDate(Long)",
+    "void AdminStreamFilter.setOrigin(OriginEnum)",
+    "void AdminStreamFilter.setPrivacy(PrivacyEnum)",
+    "void AdminStreamFilter.setScope(ScopeEnum)",
+    "void AdminStreamFilter.setStartDate(Long)",
+    "void AdminStreamFilter.setStatus(StatusEnum)",
+    "void AdminStreamFilter.setStreamTypes(List)",
+    "AdminStreamFilter AdminStreamFilter.startDate(Long)",
+    "AdminStreamFilter AdminStreamFilter.status(StatusEnum)",
+    "AdminStreamFilter AdminStreamFilter.streamTypes(List)",
+    "String AdminStreamFilter.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     AdminStreamFilter actualAdminStreamFilter = new AdminStreamFilter();
@@ -347,8 +432,15 @@ public class AdminStreamFilterDiffblueTest {
 
     // Assert
     assertEquals(
-        "class AdminStreamFilter {\n" + "    streamTypes: []\n" + "    scope: INTERNAL\n" + "    origin: INTERNAL\n"
-            + "    status: ACTIVE\n" + "    privacy: PUBLIC\n" + "    startDate: 1\n" + "    endDate: 1\n" + "}",
+        "class AdminStreamFilter {\n"
+            + "    streamTypes: []\n"
+            + "    scope: INTERNAL\n"
+            + "    origin: INTERNAL\n"
+            + "    status: ACTIVE\n"
+            + "    privacy: PUBLIC\n"
+            + "    startDate: 1\n"
+            + "    endDate: 1\n"
+            + "}",
         actualToStringResult);
     assertEquals(1L, actualEndDate.longValue());
     assertEquals(1L, actualStartDate.longValue());
@@ -369,14 +461,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test OriginEnum {@link OriginEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code INTERNAL}.</li>
-   *   <li>Then return {@code INTERNAL}.</li>
+   *   <li>When {@code INTERNAL}.
+   *   <li>Then return {@code INTERNAL}.
    * </ul>
-   * <p>
-   * Method under test: {@link OriginEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link OriginEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"OriginEnum OriginEnum.fromValue(String)"})
   public void testOriginEnumFromValue_whenInternal_thenReturnInternal() {
     // Arrange, Act and Assert
@@ -385,14 +479,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test OriginEnum {@link OriginEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link OriginEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link OriginEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"OriginEnum OriginEnum.fromValue(String)"})
   public void testOriginEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -401,14 +497,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test OriginEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link OriginEnum#toString()}
    *   <li>{@link OriginEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String OriginEnum.getValue()", "String OriginEnum.toString()"})
   public void testOriginEnumGettersAndSetters() {
     // Arrange
@@ -424,14 +522,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test PrivacyEnum {@link PrivacyEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code PUBLIC}.</li>
-   *   <li>Then return {@code PUBLIC}.</li>
+   *   <li>When {@code PUBLIC}.
+   *   <li>Then return {@code PUBLIC}.
    * </ul>
-   * <p>
-   * Method under test: {@link PrivacyEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link PrivacyEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"PrivacyEnum PrivacyEnum.fromValue(String)"})
   public void testPrivacyEnumFromValue_whenPublic_thenReturnPublic() {
     // Arrange, Act and Assert
@@ -440,14 +540,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test PrivacyEnum {@link PrivacyEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link PrivacyEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link PrivacyEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"PrivacyEnum PrivacyEnum.fromValue(String)"})
   public void testPrivacyEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -456,14 +558,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test PrivacyEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link PrivacyEnum#toString()}
    *   <li>{@link PrivacyEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String PrivacyEnum.getValue()", "String PrivacyEnum.toString()"})
   public void testPrivacyEnumGettersAndSetters() {
     // Arrange
@@ -479,14 +583,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test ScopeEnum {@link ScopeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code INTERNAL}.</li>
-   *   <li>Then return {@code INTERNAL}.</li>
+   *   <li>When {@code INTERNAL}.
+   *   <li>Then return {@code INTERNAL}.
    * </ul>
-   * <p>
-   * Method under test: {@link ScopeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link ScopeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"ScopeEnum ScopeEnum.fromValue(String)"})
   public void testScopeEnumFromValue_whenInternal_thenReturnInternal() {
     // Arrange, Act and Assert
@@ -495,14 +601,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test ScopeEnum {@link ScopeEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link ScopeEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link ScopeEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"ScopeEnum ScopeEnum.fromValue(String)"})
   public void testScopeEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -511,14 +619,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test ScopeEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link ScopeEnum#toString()}
    *   <li>{@link ScopeEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String ScopeEnum.getValue()", "String ScopeEnum.toString()"})
   public void testScopeEnumGettersAndSetters() {
     // Arrange
@@ -534,14 +644,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code ACTIVE}.</li>
-   *   <li>Then return {@code ACTIVE}.</li>
+   *   <li>When {@code ACTIVE}.
+   *   <li>Then return {@code ACTIVE}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenActive_thenReturnActive() {
     // Arrange, Act and Assert
@@ -550,14 +662,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test StatusEnum {@link StatusEnum#fromValue(String)}.
+   *
    * <ul>
-   *   <li>When {@code Text}.</li>
-   *   <li>Then return {@code null}.</li>
+   *   <li>When {@code Text}.
+   *   <li>Then return {@code null}.
    * </ul>
-   * <p>
-   * Method under test: {@link StatusEnum#fromValue(String)}
+   *
+   * <p>Method under test: {@link StatusEnum#fromValue(String)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"StatusEnum StatusEnum.fromValue(String)"})
   public void testStatusEnumFromValue_whenText_thenReturnNull() {
     // Arrange, Act and Assert
@@ -566,14 +680,16 @@ public class AdminStreamFilterDiffblueTest {
 
   /**
    * Test StatusEnum getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link StatusEnum#toString()}
    *   <li>{@link StatusEnum#getValue()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"String StatusEnum.getValue()", "String StatusEnum.toString()"})
   public void testStatusEnumGettersAndSetters() {
     // Arrange

@@ -3,24 +3,28 @@ package org.symphonyoss.symphony.agent.model;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import org.junit.Test;
 
 public class V2ErrorDiffblueTest {
   /**
    * Test {@link V2Error#equals(Object)}, and {@link V2Error#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Error#equals(Object)}
    *   <li>{@link V2Error#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -29,24 +33,26 @@ public class V2ErrorDiffblueTest {
 
     // Act and Assert
     assertEquals(v2Error, v2Error2);
-    int expectedHashCodeResult = v2Error.hashCode();
-    assertEquals(expectedHashCodeResult, v2Error2.hashCode());
+    assertEquals(v2Error.hashCode(), v2Error2.hashCode());
   }
 
   /**
    * Test {@link V2Error#equals(Object)}, and {@link V2Error#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V2Error#equals(Object)}
    *   <li>{@link V2Error#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -60,14 +66,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -76,14 +84,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -96,14 +106,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual3() {
     // Arrange
@@ -116,14 +128,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual4() {
     // Arrange
@@ -136,14 +150,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual5() {
     // Arrange
@@ -156,14 +172,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -172,14 +190,16 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test {@link V2Error#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V2Error#equals(Object)}
+   *
+   * <p>Method under test: {@link V2Error#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V2Error.equals(Object)", "int V2Error.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -188,8 +208,9 @@ public class V2ErrorDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V2Error}
    *   <li>{@link V2Error#code(Integer)}
@@ -205,10 +226,20 @@ public class V2ErrorDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V2Error.<init>()", "V2Error V2Error.code(Integer)", "V2Error V2Error.details(Object)",
-      "Integer V2Error.getCode()", "Object V2Error.getDetails()", "String V2Error.getMessage()",
-      "V2Error V2Error.message(String)", "void V2Error.setCode(Integer)", "void V2Error.setDetails(Object)",
-      "void V2Error.setMessage(String)", "String V2Error.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V2Error.<init>()",
+    "V2Error V2Error.code(Integer)",
+    "V2Error V2Error.details(Object)",
+    "Integer V2Error.getCode()",
+    "Object V2Error.getDetails()",
+    "String V2Error.getMessage()",
+    "V2Error V2Error.message(String)",
+    "void V2Error.setCode(Integer)",
+    "void V2Error.setDetails(Object)",
+    "void V2Error.setMessage(String)",
+    "String V2Error.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V2Error actualV2Error = new V2Error();
@@ -225,7 +256,8 @@ public class V2ErrorDiffblueTest {
     // Assert
     assertEquals("Details", actualDetails);
     assertEquals("Not all who wander are lost", actualV2Error.getMessage());
-    assertEquals("class V2Error {\n    code: 1\n    message: Not all who wander are lost\n    details: Details\n}",
+    assertEquals(
+        "class V2Error {\n    code: 1\n    message: Not all who wander are lost\n    details: Details\n}",
         actualToStringResult);
     assertEquals(1, actualCode.intValue());
     assertSame(actualV2Error, actualCodeResult);

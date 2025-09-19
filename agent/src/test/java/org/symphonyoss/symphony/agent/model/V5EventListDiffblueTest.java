@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
+import com.diffblue.cover.annotations.ManagedByDiffblue;
 import com.diffblue.cover.annotations.MethodsUnderTest;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,55 +13,68 @@ import org.junit.Test;
 public class V5EventListDiffblueTest {
   /**
    * Test {@link V5EventList#addEventsItem(V4Event)}.
+   *
    * <ul>
-   *   <li>Given {@link V5EventList} (default constructor).</li>
+   *   <li>Given {@link V5EventList} (default constructor).
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#addEventsItem(V4Event)}
+   *
+   * <p>Method under test: {@link V5EventList#addEventsItem(V4Event)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V5EventList V5EventList.addEventsItem(V4Event)"})
   public void testAddEventsItem_givenV5EventList() {
     // Arrange
     V5EventList v5EventList = new V5EventList();
 
-    // Act and Assert
-    assertSame(v5EventList, v5EventList.addEventsItem(new V4Event()));
+    // Act
+    V5EventList actualAddEventsItemResult = v5EventList.addEventsItem(new V4Event());
+
+    // Assert
+    assertSame(v5EventList, actualAddEventsItemResult);
   }
 
   /**
    * Test {@link V5EventList#addEventsItem(V4Event)}.
+   *
    * <ul>
-   *   <li>Given {@link V5EventList} (default constructor) events {@link ArrayList#ArrayList()}.</li>
+   *   <li>Given {@link V5EventList} (default constructor) events {@link ArrayList#ArrayList()}.
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#addEventsItem(V4Event)}
+   *
+   * <p>Method under test: {@link V5EventList#addEventsItem(V4Event)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"V5EventList V5EventList.addEventsItem(V4Event)"})
   public void testAddEventsItem_givenV5EventListEventsArrayList() {
     // Arrange
     V5EventList v5EventList = new V5EventList();
     v5EventList.events(new ArrayList<>());
 
-    // Act and Assert
-    assertSame(v5EventList, v5EventList.addEventsItem(new V4Event()));
+    // Act
+    V5EventList actualAddEventsItemResult = v5EventList.addEventsItem(new V4Event());
+
+    // Assert
+    assertSame(v5EventList, actualAddEventsItemResult);
   }
 
   /**
    * Test {@link V5EventList#equals(Object)}, and {@link V5EventList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is equal.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is equal.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V5EventList#equals(Object)}
    *   <li>{@link V5EventList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsEqual_thenReturnEqual() {
     // Arrange
@@ -69,24 +83,26 @@ public class V5EventListDiffblueTest {
 
     // Act and Assert
     assertEquals(v5EventList, v5EventList2);
-    int expectedHashCodeResult = v5EventList.hashCode();
-    assertEquals(expectedHashCodeResult, v5EventList2.hashCode());
+    assertEquals(v5EventList.hashCode(), v5EventList2.hashCode());
   }
 
   /**
    * Test {@link V5EventList#equals(Object)}, and {@link V5EventList#hashCode()}.
+   *
    * <ul>
-   *   <li>When other is same.</li>
-   *   <li>Then return equal.</li>
+   *   <li>When other is same.
+   *   <li>Then return equal.
    * </ul>
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>{@link V5EventList#equals(Object)}
    *   <li>{@link V5EventList#hashCode()}
    * </ul>
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEqualsAndHashCode_whenOtherIsSame_thenReturnEqual() {
     // Arrange
@@ -100,14 +116,16 @@ public class V5EventListDiffblueTest {
 
   /**
    * Test {@link V5EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V5EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual() {
     // Arrange
@@ -120,14 +138,16 @@ public class V5EventListDiffblueTest {
 
   /**
    * Test {@link V5EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is different.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is different.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V5EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEquals_whenOtherIsDifferent_thenReturnNotEqual2() {
     // Arrange
@@ -140,14 +160,16 @@ public class V5EventListDiffblueTest {
 
   /**
    * Test {@link V5EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is {@code null}.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is {@code null}.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V5EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEquals_whenOtherIsNull_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -156,14 +178,16 @@ public class V5EventListDiffblueTest {
 
   /**
    * Test {@link V5EventList#equals(Object)}.
+   *
    * <ul>
-   *   <li>When other is wrong type.</li>
-   *   <li>Then return not equal.</li>
+   *   <li>When other is wrong type.
+   *   <li>Then return not equal.
    * </ul>
-   * <p>
-   * Method under test: {@link V5EventList#equals(Object)}
+   *
+   * <p>Method under test: {@link V5EventList#equals(Object)}
    */
   @Test
+  @ManagedByDiffblue
   @MethodsUnderTest({"boolean V5EventList.equals(Object)", "int V5EventList.hashCode()"})
   public void testEquals_whenOtherIsWrongType_thenReturnNotEqual() {
     // Arrange, Act and Assert
@@ -172,8 +196,9 @@ public class V5EventListDiffblueTest {
 
   /**
    * Test getters and setters.
-   * <p>
-   * Methods under test:
+   *
+   * <p>Methods under test:
+   *
    * <ul>
    *   <li>default or parameterless constructor of {@link V5EventList}
    *   <li>{@link V5EventList#ackId(String)}
@@ -186,9 +211,17 @@ public class V5EventListDiffblueTest {
    * </ul>
    */
   @Test
-  @MethodsUnderTest({"void V5EventList.<init>()", "V5EventList V5EventList.ackId(String)",
-      "V5EventList V5EventList.events(List)", "String V5EventList.getAckId()", "List V5EventList.getEvents()",
-      "void V5EventList.setAckId(String)", "void V5EventList.setEvents(List)", "String V5EventList.toString()"})
+  @ManagedByDiffblue
+  @MethodsUnderTest({
+    "void V5EventList.<init>()",
+    "V5EventList V5EventList.ackId(String)",
+    "V5EventList V5EventList.events(List)",
+    "String V5EventList.getAckId()",
+    "List V5EventList.getEvents()",
+    "void V5EventList.setAckId(String)",
+    "void V5EventList.setEvents(List)",
+    "String V5EventList.toString()"
+  })
   public void testGettersAndSetters() {
     // Arrange and Act
     V5EventList actualV5EventList = new V5EventList();
